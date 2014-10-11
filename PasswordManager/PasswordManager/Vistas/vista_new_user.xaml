@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="PasswordManager.Vistas.vista_new_user"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="500">
+    <Grid MinWidth="500" MinHeight="500">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="72"/>
+            <RowDefinition Height="73"/>
+            <RowDefinition Height="89" />
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="66"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="74*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txt_username" Grid.Column="1" Margin="3" Grid.Row="1" TextWrapping="Wrap" Text="Robert" Padding="1,8,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Futura LT" BorderThickness="0"/>
+        <Label x:Name="btn_registrar" Content="Login" Grid.Column="1" Margin="3" Grid.Row="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FFE3005A" Foreground="White" FontFamily="Futura LT" MouseDown="btn_registrar_MouseDown"/>
+        <PasswordBox x:Name="txt_password" Grid.Column="1" Margin="3" Grid.Row="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" BorderThickness="0"/>
+        <PasswordBox x:Name="txt_repassword" Grid.Column="1" Margin="3" Grid.Row="3" BorderThickness="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+    </Grid>
+</UserControl>

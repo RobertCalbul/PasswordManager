@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="PasswordManager.Vistas.vista_login"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="500">
+    <Grid MinWidth="300" MinHeight="300">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="42"/>
+            <RowDefinition Height="72"/>
+            <RowDefinition Height="73"/>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="66"/>
+            <RowDefinition Height="108*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="65*"/>
+            <ColumnDefinition Width="307*"/>
+            <ColumnDefinition Width="63"/>
+            <ColumnDefinition Width="65*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txt_username" Grid.Column="1" Margin="3" Grid.Row="2" TextWrapping="Wrap" Text="Robert" Padding="1,8,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Futura LT" BorderThickness="0" Grid.ColumnSpan="2"/>
+        <Label x:Name="btn_login" Content="Login" Grid.Column="1" Margin="3" Grid.Row="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FFE3005A" Foreground="White" FontFamily="Futura LT" MouseDown="btn_login_MouseDown" Grid.ColumnSpan="2"/>
+        <Label x:Name="link_recuperar_pass" Content="Recuperar Contraseña" Grid.Column="1" Margin="3,3,3,0" Grid.Row="4" FontFamily="Futura LT" Foreground="#FF3398DC" HorizontalContentAlignment="Center" MouseDown="link_recuperar_pass_MouseDown" VerticalAlignment="Top" Height="26" Grid.ColumnSpan="2"/>
+        <PasswordBox x:Name="txt_password" Grid.Column="1" Margin="3" Grid.Row="3" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" BorderThickness="0" Grid.ColumnSpan="2"/>
+        <Label x:Name="btn_nuevo_usuario" Content="+" Grid.Column="2" Margin="3" Grid.Row="1" Background="#FFE3005A" FontFamily="Futura LT" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="White" MouseDown="btn_nuevo_usuario_MouseDown"/>
+
+    </Grid>
+</UserControl>

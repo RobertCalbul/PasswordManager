@@ -13,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PasswordManager
+namespace PasswordManager.Vistas
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para vista_agregar_items.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class vista_agregar_items : UserControl
     {
-        public MainWindow()
+        public vista_agregar_items()
         {
             InitializeComponent();
-            this.grid_body.Children.Add(new Vistas.vista_login(this));
         }
     }
 }

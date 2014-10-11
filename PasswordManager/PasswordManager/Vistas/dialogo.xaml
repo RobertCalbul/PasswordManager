@@ -1,0 +1,23 @@
+﻿<Window x:Class="PasswordManager.Vistas.dialogo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="dialogo" Height="150" Width="300" MinWidth="300" MinHeight="150" MaxWidth="300" MaxHeight="150" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="Manual">
+    <Border BorderThickness="1" BorderBrush="Black">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="21*"/>
+                <ColumnDefinition Width="246*"/>
+                <ColumnDefinition Width="21*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="82"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="12"/>
+            </Grid.RowDefinitions>
+            <Label x:Name="btn_aceptar" Content="Aceptar" Grid.Column="1" Margin="3" Grid.Row="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FFE3005A" Foreground="White" MouseDown="btn_aceptar_MouseDown"/>
+            <TextBlock x:Name="txt_contenido" Grid.Column="1" Margin="3" Grid.Row="1" TextWrapping="Wrap" Text="dsaasd asdsaddas asdasd asds das asdasd asdas dasadasd ad asdas dasd asd asdasd asd adas dasdasd asdas dasd asda dasdasdasda sds asdasdsd asd as" FontFamily="Futura LT" Padding="5"/>
+
+        </Grid>
+    </Border>
+</Window>
