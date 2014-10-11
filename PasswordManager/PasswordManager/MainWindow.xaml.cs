@@ -23,6 +23,8 @@ namespace PasswordManager
         public MainWindow()
         {
             InitializeComponent();
+            controller_login cl = new controller_login();
+            cl.agregar();
         }
     }
 }
