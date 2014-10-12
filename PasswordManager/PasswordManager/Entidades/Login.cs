@@ -8,13 +8,21 @@ namespace PasswordManager
 {
     class Login
     {
-        public Guid id { get; set; }
+        public int id { get; set; }
         public String username { get; set; }
         public String password { get; set; }
 
         public Login() { }
 
-        public Login(Guid id, String username, String password)
+        public Login(int id)
+        {
+            this.id = id;
+        }
+        public Login( String username)
+        {
+            this.username = username;
+        }
+        public Login(int id, String username, String password)
         {
             this.id = id;
             this.username = username;

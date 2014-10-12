@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PasswordManager.Algoritmo_Encriptacion;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -39,21 +40,30 @@ namespace PasswordManager.Vistas
             login = new Login(username, password);
             c_login = new controller_login();
 
-            if (c_login.find(login))
+            int id_login = c_login.find(login);
+            if (id_login > 0)
             {
-
+                this.main.session = id_login;
                 this.main.grid_body.Children.Clear();
-                this.main.grid_body.Children.Add(new Vistas.vista_manager());
+                this.main.grid_body.Children.Add(new Vistas.vista_manager(this.main));
             }
-            else { new Vistas.dialogo(this.main, "Revise el usuario o password.").ShowDialog(); }
+            else {
+                this.main.session = 0;
+                new Vistas.dialogo(this.main, "Revise el usuario o password.").ShowDialog(); 
+            }
         }
 
         private void link_recuperar_pass_MouseDown(object sender, MouseButtonEventArgs e)
         {
-           
+            Login login_ = new Login("rcalbul2011@alu.uct.cl");
+            controller_login c_login = new controller_login();
+            String restore = c_login.restore_password(login_);
+
+            EnviaCorreo e_correo = new EnviaCorreo("rcalbul2011@alu.uct.cl", restore);
+            e_correo.send();
         }
 
-        private void btn_nuevo_usuario_MouseDown(object sender, MouseButtonEventArgs e)
+        private void btn_nuevo_registro_MouseDown(object sender, MouseButtonEventArgs e)
         {
             this.main.grid_body.Children.Clear();
             this.main.grid_body.Children.Add(new Vistas.vista_new_user(this.main));

@@ -20,6 +20,7 @@ namespace PasswordManager
     /// </summary>
     public partial class MainWindow : Window
     {
+        public int session = 0;
         public MainWindow()
         {
             InitializeComponent();

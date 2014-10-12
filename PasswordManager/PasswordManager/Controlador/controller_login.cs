@@ -10,18 +10,23 @@ namespace PasswordManager
 {
     class controller_login
     {
-        private  SQLiteConnection conn = null;
-        private SQLiteCommand sqlite_cmd;
-        private SQLiteDataReader sqlite_datareader;
 
-        public int agregar(Login login) {
-            conn = new conexion_sqlite().getConection();
+
+        public int agregar(Login login)
+        {
+            String password = new Algoritmo_Encriptacion.Encriptacion().EncryptText(login.password);
             try
             {
-                conn.Open();
-                sqlite_cmd = conn.CreateCommand();
-                sqlite_cmd.CommandText = "INSERT OR IGNORE INTO LOGIN (username, password) values ('" + login.username + "','" + login.password + "')";
-                return sqlite_cmd.ExecuteNonQuery();
+                
+                using (SQLiteConnection c = new conexion_sqlite().getConection())
+                {
+                    c.Open();
+                    String sql = "INSERT OR IGNORE INTO LOGIN (username, password) values ('" + login.username + "','" + password + "')";
+                    using (SQLiteCommand cmd = new SQLiteCommand(sql, c))
+                    {
+                        return cmd.ExecuteNonQuery();
+                    }
+                }
 
             }
             catch (Exception e)
@@ -29,40 +34,67 @@ namespace PasswordManager
                 Console.WriteLine(e.Message);
                 return 0;
             }
-            finally {
-                if (conn != null) {
-                    conn.Close();
-                }
-            }
         }
 
-        public Boolean find(Login login) {
-            conn = new conexion_sqlite().getConection();
+        public int find(Login login)
+        {
+            String passwordEncrypt = new Algoritmo_Encriptacion.Encriptacion().EncryptText(login.password);
+            //String passwordDecencrypt = new Algoritmo_Encriptacion.Encriptacion().DecryptText(passwordEncrypt, login.password);
             try
             {
-                conn.Open();
-                sqlite_cmd = conn.CreateCommand();
-                sqlite_cmd.CommandText = "SELECT username, password FROM LOGIN WHERE username ='" + login.username + "' AND password = '" + login.password + "'";
-              
-                sqlite_datareader = sqlite_cmd.ExecuteReader();
-                if (sqlite_datareader.Read())
+                using (SQLiteConnection c = new conexion_sqlite().getConection())
                 {
-                    return true;
-                }
-                else {
-                    return false;
+                    c.Open();
+                    String sql = "SELECT id, username, password FROM LOGIN WHERE username ='" + login.username + "' AND password = '" + passwordEncrypt + "'";
+                    using (SQLiteCommand cmd = new SQLiteCommand(sql, c))
+                    {
+                        using (SQLiteDataReader rdr = cmd.ExecuteReader())
+                        {
+                            if (rdr.Read())
+                            {
+                                return Convert.ToInt32(rdr["id"]);
+                            }
+                            else
+                            {
+                                return -1;
+                            }
+                        }
+                    }
                 }
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message);
-                return false;
+                Console.WriteLine(e.Message);
+                return -1;
             }
-            finally {
-                if (conn != null) {
-                    conn.Close();
+
+        }
+
+        public String restore_password(Login login) {
+            String password = null;
+            try
+            {
+                using (SQLiteConnection c = new conexion_sqlite().getConection())
+                {
+                    c.Open();
+                    String sql = "SELECT password FROM LOGIN WHERE username = '"+login.username+"'";
+                    using (SQLiteCommand cmd = new SQLiteCommand(sql, c))
+                    {
+                        using (SQLiteDataReader rdr = cmd.ExecuteReader())
+                        {
+                            while (rdr.Read())
+                            {
+                                password =  new Algoritmo_Encriptacion.Encriptacion().DecryptText(rdr["password"].ToString());
+                            }
+                        }
+                    }
                 }
+                return password;
             }
+            catch (Exception e)
+            {
+                return password;
+            }  
         }
     }
 }

@@ -5,25 +5,31 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              d:DesignHeight="500" d:DesignWidth="500">
-    <Grid MinWidth="500" MinHeight="500">
+    <Grid MinWidth="300" MinHeight="300">
         <Grid.RowDefinitions>
-            <RowDefinition Height="9*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="29"/>
             <RowDefinition Height="72"/>
             <RowDefinition Height="73"/>
-            <RowDefinition Height="89" />
-            <RowDefinition Height="48"/>
-            <RowDefinition Height="66"/>
-            <RowDefinition Height="10*"/>
+            <RowDefinition Height="74"/>
+            <RowDefinition Height="46"/>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="32*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="13*"/>
-            <ColumnDefinition Width="74*"/>
-            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="65*"/>
+            <ColumnDefinition Width="307*"/>
+            <ColumnDefinition Width="63"/>
+            <ColumnDefinition Width="38"/>
+            <ColumnDefinition Width="28*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="txt_username" Grid.Column="1" Margin="3" Grid.Row="1" TextWrapping="Wrap" Text="Robert" Padding="1,8,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Futura LT" BorderThickness="0"/>
-        <Label x:Name="btn_registrar" Content="Login" Grid.Column="1" Margin="3" Grid.Row="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FFE3005A" Foreground="White" FontFamily="Futura LT" MouseDown="btn_registrar_MouseDown"/>
-        <PasswordBox x:Name="txt_password" Grid.Column="1" Margin="3" Grid.Row="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" BorderThickness="0"/>
-        <PasswordBox x:Name="txt_repassword" Grid.Column="1" Margin="3" Grid.Row="3" BorderThickness="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txt_username" Grid.Column="1" Margin="3" Grid.Row="2" TextWrapping="Wrap" Padding="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Futura LT" BorderThickness="0" Grid.ColumnSpan="2"/>
+        <Label x:Name="btn_registrar" Content="Registrar" Grid.Column="1" Margin="3" Grid.Row="6" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FFE3005A" Foreground="White" FontFamily="Futura LT" MouseDown="btn_registrar_MouseDown" Grid.ColumnSpan="2"/>
+        <PasswordBox x:Name="txt_password" Grid.Column="1" Margin="3" Grid.Row="3" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" BorderThickness="0" Grid.ColumnSpan="2"/>
+        <PasswordBox x:Name="txt_repassword" Grid.Column="1" Margin="3" Grid.Row="4" BorderThickness="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="2" KeyUp="txt_repassword_KeyUp"/>
+        <Image x:Name="btn_back" Grid.Column="2" Margin="0" Grid.Row="1" Source="/PasswordManager;component/src/back.png" MouseDown="btn_back_MouseDown"/>
+        <Image x:Name="img_ok" Grid.Column="3" Margin="5" Grid.Row="4" Source="/PasswordManager;component/src/ok.png" Visibility="Hidden"/>
 
     </Grid>
 </UserControl>

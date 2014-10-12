@@ -20,9 +20,45 @@ namespace PasswordManager.Vistas
     /// </summary>
     public partial class vista_agregar_items : UserControl
     {
-        public vista_agregar_items()
+        private Manager manager;
+        private MainWindow main;
+        private Vistas.vista_manager v_manager;
+        public vista_agregar_items(MainWindow main, Vistas.vista_manager v_manager)
         {
             InitializeComponent();
+            this.main = main;
+            this.v_manager = v_manager;
+        }
+
+        private void btn_agregar_item_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (isNotNull() == true)
+            {
+                String username = this.txt_username.Text.Trim();
+                String password = this.txt_password.Text.Trim();
+                String url = this.txt_url.Text.Trim();
+
+                manager = new Manager( username, password, url, this.main.session);
+                controller_manager c_manager = new controller_manager();
+
+                if (c_manager.agregar(manager) > 0)
+                {
+                    this.v_manager.load_data();
+                    new dialogo(this.main, "Item agregado correctamente.").ShowDialog();
+                }
+            }
+            else {
+                new dialogo(this.main,"Uno o mas campos se encuentran vacios.").ShowDialog();
+            }
+        }
+
+        private Boolean isNotNull() { 
+            Boolean ok = !string.IsNullOrEmpty(this.txt_username.Text) && !string.IsNullOrEmpty(this.txt_password.Text) && !string.IsNullOrEmpty(this.txt_url.Text)?true: false;
+            return ok;
+        }
+        private void btn_close_agregar_item_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.v_manager.quitar_layout_agregar_item();
         }
     }
 }
