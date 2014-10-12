@@ -5,6 +5,7 @@
 *.suo
 *.user
 *.sln.docstates
+*.json
 
 # Build results
 [Dd]ebug/
@@ -33,7 +34,7 @@ TestResult.xml
 [Dd]ebugPS/
 [Rr]eleasePS/
 dlldata.c
-*.json
+
 *_i.c
 *_p.c
 *_i.h
