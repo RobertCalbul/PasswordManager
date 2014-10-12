@@ -55,12 +55,8 @@ namespace PasswordManager.Vistas
 
         private void link_recuperar_pass_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Login login_ = new Login("rcalbul2011@alu.uct.cl");
-            controller_login c_login = new controller_login();
-            String restore = c_login.restore_password(login_);
-
-            EnviaCorreo e_correo = new EnviaCorreo("rcalbul2011@alu.uct.cl", restore);
-            e_correo.send();
+            this.main.grid_body.Children.Clear();
+            this.main.grid_body.Children.Add(new Vistas.vista_recuperar_password(this.main));
         }
 
         private void btn_nuevo_registro_MouseDown(object sender, MouseButtonEventArgs e)

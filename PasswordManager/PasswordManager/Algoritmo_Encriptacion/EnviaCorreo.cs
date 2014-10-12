@@ -23,7 +23,7 @@ namespace PasswordManager.Algoritmo_Encriptacion
             this.to = to;
             this.password = password;
         }
-        public void send()
+        public int send()
         {
 
             JSON json = getJson();
@@ -37,23 +37,19 @@ namespace PasswordManager.Algoritmo_Encriptacion
 
 
                 mnsj.Subject = "Restauracion contraseña.";
-
                 mnsj.To.Add(new MailAddress(this.to));
-
                 mnsj.From = new MailAddress(json.correo);
-
-
                 // mnsj.Attachments.Add(new Attachment("C:\\archivo.pdf"));
 
                 mnsj.Body = " Su contraseña es: "+this.password;
-
                 server.Send(mnsj);
 
-                MessageBox.Show("El Mail se ha Enviado Correctamente");
+                return 1;
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                MessageBox.Show(ex.ToString());
+                Console.WriteLine(e.Message);
+                return 0;
             }
         }
 
