@@ -25,6 +25,41 @@ namespace PasswordManager
         {
             InitializeComponent();
             this.grid_body.Children.Add(new Vistas.vista_login(this));
+            new conexion_sqlite().copyBD();
+        }
+
+        private void btn_close_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            try
+            {
+                this.Close();
+            }catch(Exception ex){
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        private void grid_principal_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            try
+            {
+                this.DragMove();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            try
+            {
+                this.DragMove();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

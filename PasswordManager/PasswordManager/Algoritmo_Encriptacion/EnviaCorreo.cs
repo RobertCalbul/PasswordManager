@@ -25,9 +25,9 @@ namespace PasswordManager.Algoritmo_Encriptacion
         }
         public int send()
         {
-
+            
             JSON json = getJson();
-
+          
             SmtpClient server = new SmtpClient("smtp.gmail.com", 587);
             server.Credentials = new System.Net.NetworkCredential(json.correo, json.password);
             server.EnableSsl = true;
@@ -55,25 +55,54 @@ namespace PasswordManager.Algoritmo_Encriptacion
 
         public JSON getJson()
         {
-
-            //string path = Environment.CurrentDirectory + @"\Algoritmo_Encriptacion\datos_correos.json";
-            string path = Path.Combine(Environment.CurrentDirectory, @"..\..\Algoritmo_Encriptacion\datos_correos.json");
-            Console.WriteLine("path " + path);
-            String aux = null;
-            if (File.Exists(path))
+            JSON json = null;
+            try
             {
-                StreamReader sreamReader = new StreamReader(path);
-                String line = sreamReader.ReadLine();
-                while (line != null)
-                {
-                    aux += line;
-                    line = sreamReader.ReadLine();
-                }
-            }
+                //string path = Environment.CurrentDirectory + @"\Algoritmo_Encriptacion\datos_correos.json";
+                string path = Path.Combine(Environment.CurrentDirectory, @"..\..\Algoritmo_Encriptacion\datos_correos.json");
 
-            JSON json = (JSON)new JavaScriptSerializer().Deserialize(aux, typeof(JSON));
-            Console.WriteLine(json.correo);
-            return json;
+                String aux = null;
+                if (File.Exists(path))
+                {
+                    StreamReader sreamReader = new StreamReader(path);
+                    String line = sreamReader.ReadLine();
+                    while (line != null)
+                    {
+                        aux += line;
+                        line = sreamReader.ReadLine();
+                    }
+                }
+
+                json = (JSON)new JavaScriptSerializer().Deserialize(aux, typeof(JSON));
+                Console.WriteLine(json.correo);
+                return json;
+            }catch(Exception e){
+                try {
+                    //string path = Environment.CurrentDirectory + @"\Algoritmo_Encriptacion\datos_correos.json";
+                    string path =  @"Algoritmo_Encriptacion\datos_correos.json";
+
+                    String aux = null;
+                    if (File.Exists(path))
+                    {
+                        StreamReader sreamReader = new StreamReader(path);
+                        String line = sreamReader.ReadLine();
+                        while (line != null)
+                        {
+                            aux += line;
+                            line = sreamReader.ReadLine();
+                        }
+                    }
+
+                    json = (JSON)new JavaScriptSerializer().Deserialize(aux, typeof(JSON));
+                    Console.WriteLine(json.correo);
+                    return json;
+                }
+                catch (Exception ex) {
+                    MessageBox.Show("envia " + e.Message);
+                    return json;
+                }
+                
+            }
         }
 
 

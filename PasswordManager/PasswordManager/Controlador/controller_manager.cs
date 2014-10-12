@@ -12,7 +12,6 @@ namespace PasswordManager
     class controller_manager
     {
 
-
         public int agregar(Manager manager)
         {
             try

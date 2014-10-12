@@ -14,10 +14,10 @@ namespace PasswordManager
 
         public int agregar(Login login)
         {
-            String password = new Algoritmo_Encriptacion.Encriptacion().EncryptText(login.password);
+           
             try
             {
-                
+                String password = new Algoritmo_Encriptacion.Encriptacion().EncryptText(login.password);
                 using (SQLiteConnection c = new conexion_sqlite().getConection())
                 {
                     c.Open();
@@ -31,7 +31,7 @@ namespace PasswordManager
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                MessageBox.Show(e.Message);
                 return 0;
             }
         }
