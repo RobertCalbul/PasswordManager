@@ -30,7 +30,7 @@ namespace PasswordManager
         public void copyBD() {
             System.IO.Directory.CreateDirectory(@"C:\PasswordManager");
             string fileName = "database.db";
-            string sourcePath = @"C:\Program Files (x86)\codigosimportantes.blogspot\Password Manager\";
+            string sourcePath = @"C:\Program Files (x86)\TheKiller\Setup\";
             string targetPath = @"C:\PasswordManager";
 
             // Use Path class to manipulate file and directory paths.
@@ -41,7 +41,7 @@ namespace PasswordManager
             {
                 if (!System.IO.Directory.Exists(sourcePath))
                 {
-                    sourcePath = @"C:\Program Files\codigosimportantes.blogspot\Password Manager\";
+                    sourcePath = @"C:\Program Files\TheKiller\Setup\";
                 }
 
                 if (!System.IO.Directory.Exists(targetPath))

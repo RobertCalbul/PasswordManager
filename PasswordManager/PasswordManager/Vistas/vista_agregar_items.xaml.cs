@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PasswordManager.Algoritmo_Encriptacion;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,6 +29,9 @@ namespace PasswordManager.Vistas
             InitializeComponent();
             this.main = main;
             this.v_manager = v_manager;
+            Placeholder.SetText(this.txt_username, "Username");
+            Placeholder.SetText(this.txt_password, "Password");
+            Placeholder.SetText(this.txt_url, "Url");
         }
 
         private void btn_agregar_item_MouseDown(object sender, MouseButtonEventArgs e)
@@ -43,7 +47,7 @@ namespace PasswordManager.Vistas
 
                 if (c_manager.agregar(manager) > 0)
                 {
-                    this.v_manager.load_data();
+                    this.v_manager.load_data(0);
                     new dialogo(this.main, "Item agregado correctamente.").ShowDialog();
                 }
             }

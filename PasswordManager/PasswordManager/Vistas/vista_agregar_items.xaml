@@ -3,12 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:src="clr-namespace:PasswordManager.Algoritmo_Encriptacion"
              mc:Ignorable="d" 
              d:DesignHeight="150" d:DesignWidth="500">
 
     <Grid Height="150" VerticalAlignment="Top">
         <Grid.Background>
-            <SolidColorBrush Color="Black" Opacity="0.9"/>
+            <SolidColorBrush Color="#FF292727" Opacity="0.9"/>
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>

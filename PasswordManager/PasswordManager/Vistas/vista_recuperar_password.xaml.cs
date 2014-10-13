@@ -26,6 +26,9 @@ namespace PasswordManager.Vistas
         {
             InitializeComponent();
             this.main = main;
+
+            Placeholder.SetText(this.txt_username, "E-Mail");
+
         }
 
         private void btn_recuperar_MouseDown(object sender, MouseButtonEventArgs e)
@@ -37,13 +40,11 @@ namespace PasswordManager.Vistas
                 String restore = c_login.restore_password(login_);
 
                 EnviaCorreo e_correo = new EnviaCorreo(login_.username, restore);
-                if (e_correo.send() > 0)
-                {
-                    new Vistas.dialogo(this.main, "La password se envio a su correo correctamente.").ShowDialog();
-                }
-                else
-                {
-                    new Vistas.dialogo(this.main, "La password no se envio corectamente\n Porfavor reenvie el correo.");
+
+                switch (e_correo.send()) {
+                    case 0: new Vistas.dialogo(this.main, "La password no se envio corectamente\n Porfavor reenvie el correo."); break;
+                    case 1: new Vistas.dialogo(this.main, "La password se envio a su correo correctamente.").ShowDialog(); break;
+                    case 2: new Vistas.dialogo(this.main, "Ingrese un correo valido.").ShowDialog(); break;
                 }
             }
             else {

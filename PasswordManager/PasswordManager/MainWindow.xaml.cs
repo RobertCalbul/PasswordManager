@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PasswordManager.Vistas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,7 +33,12 @@ namespace PasswordManager
         {
             try
             {
-                this.Close();
+                dialogo_pregunta d_pregunta = new dialogo_pregunta(this, "¿Realmente desea cerrar la aplicacion?");
+                d_pregunta.ShowDialog();
+                if (d_pregunta.DialogResult == true)
+                {
+                    this.Close();
+                }
             }catch(Exception ex){
                 Console.WriteLine(ex.Message);
             }

@@ -30,6 +30,13 @@ namespace PasswordManager.Vistas
             InitializeComponent();
             this.main = main;
 
+            Placeholder.SetText(this.txt_username, "Username");
+            Placeholder.SetText(this.txt_password,"Password");
+            /*xmlns:src="clr-namespace:Huan.WhiteDwarf.UI" to the root element, e.g. Window, and add
+            src:Placeholder.Text="Your Placeholder" to the TextBox/RichTextBox/PasswordBox.
+
+        To use it in code, use this
+        Huan.WhiteDwarf.UI.Placeholder.SetText(TextBoxName, PlaceholderText);*/
         }
 
         private void btn_login_MouseDown(object sender, MouseButtonEventArgs e)
@@ -64,5 +71,6 @@ namespace PasswordManager.Vistas
             this.main.grid_body.Children.Clear();
             this.main.grid_body.Children.Add(new Vistas.vista_new_user(this.main));
         }
+
     }
 }

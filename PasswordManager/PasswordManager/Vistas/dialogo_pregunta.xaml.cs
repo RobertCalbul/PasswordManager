@@ -16,24 +16,31 @@ using System.Windows.Shapes;
 namespace PasswordManager.Vistas
 {
     /// <summary>
-    /// Lógica de interacción para dialogo.xaml
+    /// Lógica de interacción para dialogo_pregunta.xaml
     /// </summary>
-    public partial class dialogo : Window
+    public partial class dialogo_pregunta : Window
     {
-        private MainWindow main;
-        public dialogo(MainWindow main, String message)
+        MainWindow main;
+        public dialogo_pregunta(MainWindow main,String pregunta)
         {
             InitializeComponent();
             this.main = main;
-            this.txt_contenido.Text = message;
             this.Top = this.main.Top + ((this.main.Height / 2) - (this.Height / 2));
             this.Left = this.main.Left + ((this.main.Width / 2) - (this.Width / 2));
-
-            Dispatcher.BeginInvoke(new Action(() => { addEfecto(); }));
+            this.txt_contenido.Text = pregunta;
+            Dispatcher.BeginInvoke(new Action(() => { addEfecto(); })); 
         }
 
         private void btn_aceptar_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            DialogResult = true;
+            Dispatcher.BeginInvoke(new Action(() => { QuitarEfecto(); }));
+            this.Close();
+        }
+
+        private void btn_cancelar_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DialogResult = false;
             Dispatcher.BeginInvoke(new Action(() => { QuitarEfecto(); }));
             this.Close();
         }
@@ -51,15 +58,6 @@ namespace PasswordManager.Vistas
             myBlurEffect.Radius = 0;
             myBlurEffect.KernelType = KernelType.Box;
             this.main.BitmapEffect = myBlurEffect;
-        }
-
-        private void Window_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.Enter)
-            {
-                Dispatcher.BeginInvoke(new Action(() => { QuitarEfecto(); }));
-                this.Close();
-            }
         }
     }
 }

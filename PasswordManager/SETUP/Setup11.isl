@@ -52,13 +52,13 @@
 	<summary>
 		<codepage>1252</codepage>
 		<title>Installation Database</title>
-		<subject>Password Manager</subject>
+		<subject>Setup</subject>
 		<author>##ID_STRING2##</author>
 		<keywords>Installer,MSI,Database</keywords>
 		<comments>Contact:  Your local administrator</comments>
 		<template>Intel;1033</template>
 		<lastauthor>Administrator</lastauthor>
-		<revnumber>{E8AA0C2B-2D4F-4862-9092-62B8BA0A3C3D}</revnumber>
+		<revnumber>{5F2BB95F-33F4-4DEA-B1B4-94A2DDAEFA59}</revnumber>
 		<lastprinted/>
 		<createdtm>06/21/1999 10:00</createdtm>
 		<lastsavedtm>07/14/2000 13:50</lastsavedtm>
@@ -265,6 +265,7 @@
 		<row><td>NewBinary16</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\InstallFirstUse.ico</td></row>
 		<row><td>NewBinary17</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\InstallPartial.ico</td></row>
 		<row><td>NewBinary18</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\InstallStateMenu.ico</td></row>
+		<row><td>NewBinary19</td><td/><td>&lt;ISProductFolder&gt;\redist\Language independent\i386\SerialNumCAHelper.dll</td></row>
 		<row><td>NewBinary2</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\New.ibd</td></row>
 		<row><td>NewBinary3</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\Up.ibd</td></row>
 		<row><td>NewBinary4</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\WarningIcon.ibd</td></row>
@@ -342,10 +343,10 @@
 		<col def="S0">ISDotNetInstallerArgsCommit</col>
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
-		<row><td>ISX_DEFAULTCOMPONENT</td><td>{5613A7FB-D070-4C60-8C8B-7F5A6A836880}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{E003E6BA-2185-492B-BE3B-0310EA4585BA}</td><td>ALGORITMO_ENCRIPTACION</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>NewComponent1</td><td>{2A5D3FFB-69C7-4D2D-B04A-CEE839CBD029}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>PasswordManager.Resultado_principal</td><td>{C937AAB7-B99B-4E15-92B7-376E1CC0E53A}</td><td>INSTALLDIR</td><td>2</td><td/><td>passwordmanager.resultado_pr</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT</td><td>{04379F4C-419E-4AA4-864D-FC93CF8BBE00}</td><td>ALGORITMO_ENCRIPTACION</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{A7C4C64F-6358-441E-B539-D4EC6FE042D3}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>NewComponent1</td><td>{8945B96C-EDAB-4883-974B-00EDF5AF447E}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>PasswordManager.Resultado_principal</td><td>{4FF91D62-B708-48B0-8083-394B3306D186}</td><td>INSTALLDIR</td><td>2</td><td/><td>passwordmanager.resultado_pr</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -942,7 +943,7 @@
 		<row><td>InstallChangeFolder</td><td>Up</td><td>DirectoryListUp</td><td>0</td><td>1</td><td>0</td></row>
 		<row><td>InstallWelcome</td><td>Back</td><td>NewDialog</td><td>SplashBitmap</td><td>Display_IsBitmapDlg</td><td>0</td></row>
 		<row><td>InstallWelcome</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
-		<row><td>InstallWelcome</td><td>Next</td><td>NewDialog</td><td>CustomerInformation</td><td>1</td><td>0</td></row>
+		<row><td>InstallWelcome</td><td>Next</td><td>NewDialog</td><td>ReadyToInstall</td><td>1</td><td>0</td></row>
 		<row><td>LicenseAgreement</td><td>Back</td><td>NewDialog</td><td>InstallWelcome</td><td>1</td><td>0</td></row>
 		<row><td>LicenseAgreement</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
 		<row><td>LicenseAgreement</td><td>ISPrintButton</td><td>DoAction</td><td>ISPrint</td><td>1</td><td>0</td></row>
@@ -977,7 +978,7 @@
 		<row><td>ReadmeInformation</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>1</td></row>
 		<row><td>ReadmeInformation</td><td>Next</td><td>NewDialog</td><td>CustomerInformation</td><td>1</td><td>1</td></row>
 		<row><td>ReadyToInstall</td><td>Back</td><td>NewDialog</td><td>CustomSetup</td><td>Installed OR _IsSetupTypeMin = "Custom"</td><td>2</td></row>
-		<row><td>ReadyToInstall</td><td>Back</td><td>NewDialog</td><td>CustomerInformation</td><td>NOT Installed</td><td>1</td></row>
+		<row><td>ReadyToInstall</td><td>Back</td><td>NewDialog</td><td>InstallWelcome</td><td>NOT Installed</td><td>1</td></row>
 		<row><td>ReadyToInstall</td><td>Back</td><td>NewDialog</td><td>MaintenanceType</td><td>Installed AND _IsMaintenance = "Reinstall"</td><td>3</td></row>
 		<row><td>ReadyToInstall</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
 		<row><td>ReadyToInstall</td><td>InstallNow</td><td>EndDialog</td><td>Return</td><td>OutOfNoRbDiskSpace &lt;&gt; 1</td><td>0</td></row>
@@ -1015,8 +1016,9 @@
 		<row><td>SetupCompleteError</td><td>Finish</td><td>DoAction</td><td>ShowMsiLog</td><td>MsiLogFileLocation And (ISSHOWMSILOG="1")</td><td>3</td></row>
 		<row><td>SetupCompleteError</td><td>Finish</td><td>EndDialog</td><td>Exit</td><td>1</td><td>2</td></row>
 		<row><td>SetupCompleteSuccess</td><td>OK</td><td>DoAction</td><td>CleanUp</td><td>ISSCRIPTRUNNING="1"</td><td>1</td></row>
-		<row><td>SetupCompleteSuccess</td><td>OK</td><td>DoAction</td><td>ShowMsiLog</td><td>MsiLogFileLocation And (ISSHOWMSILOG="1") And NOT ISENABLEDWUSFINISHDIALOG</td><td>6</td></row>
-		<row><td>SetupCompleteSuccess</td><td>OK</td><td>EndDialog</td><td>Exit</td><td>1</td><td>2</td></row>
+		<row><td>SetupCompleteSuccess</td><td>OK</td><td>DoAction</td><td>LaunchProgramFileFromSetupCompleteSuccess</td><td>LAUNCHPROGRAM And PROGRAMFILETOLAUNCHATEND &lt;&gt; "" And NOT Installed</td><td>2</td></row>
+		<row><td>SetupCompleteSuccess</td><td>OK</td><td>DoAction</td><td>ShowMsiLog</td><td>MsiLogFileLocation And (ISSHOWMSILOG="1") And NOT ISENABLEDWUSFINISHDIALOG</td><td>7</td></row>
+		<row><td>SetupCompleteSuccess</td><td>OK</td><td>EndDialog</td><td>Exit</td><td>1</td><td>3</td></row>
 		<row><td>SetupError</td><td>A</td><td>EndDialog</td><td>ErrorAbort</td><td>1</td><td>0</td></row>
 		<row><td>SetupError</td><td>C</td><td>EndDialog</td><td>ErrorCancel</td><td>1</td><td>0</td></row>
 		<row><td>SetupError</td><td>I</td><td>EndDialog</td><td>ErrorIgnore</td><td>1</td><td>0</td></row>
@@ -1071,6 +1073,7 @@
 		<row><td>ISSelfRegisterFiles</td><td>3073</td><td>ISSELFREG.DLL</td><td>ISSelfRegisterFiles</td><td/><td/></row>
 		<row><td>ISSelfRegisterFinalize</td><td>1</td><td>ISSELFREG.DLL</td><td>ISSelfRegisterFinalize</td><td/><td/></row>
 		<row><td>ISUnSelfRegisterFiles</td><td>3073</td><td>ISSELFREG.DLL</td><td>ISUnSelfRegisterFiles</td><td/><td/></row>
+		<row><td>LaunchProgramFileFromSetupCompleteSuccess</td><td>1</td><td>NewBinary19</td><td>LaunchProgram</td><td/><td/></row>
 		<row><td>SetARPINSTALLLOCATION</td><td>51</td><td>ARPINSTALLLOCATION</td><td>[INSTALLDIR]</td><td/><td/></row>
 		<row><td>SetAllUsersProfileNT</td><td>51</td><td>ALLUSERSPROFILE</td><td>[%SystemRoot]\Profiles\All Users</td><td/><td/></row>
 		<row><td>ShowMsiLog</td><td>226</td><td>SystemFolder</td><td>[SystemFolder]notepad.exe "[MsiLogFileLocation]"</td><td/><td>Shows Property-driven MSI Log</td></row>
@@ -1137,8 +1140,6 @@
 		<row><td>ALLUSERSPROFILE</td><td>TARGETDIR</td><td>.:ALLUSE~1|All Users</td><td/><td>0</td><td/></row>
 		<row><td>AdminToolsFolder</td><td>TARGETDIR</td><td>.:Admint~1|AdminTools</td><td/><td>0</td><td/></row>
 		<row><td>AppDataFolder</td><td>TARGETDIR</td><td>.:APPLIC~1|Application Data</td><td/><td>0</td><td/></row>
-		<row><td>CODIGOSIMPORTANTES.BLOGSPOT</td><td>ProgramFilesFolder</td><td>CODIGO~1|codigosimportantes.blogspot</td><td/><td>0</td><td/></row>
-		<row><td>COMPA_IA</td><td>ProgramFilesFolder</td><td>Compañia</td><td/><td>0</td><td/></row>
 		<row><td>CommonAppDataFolder</td><td>TARGETDIR</td><td>.:Common~1|CommonAppData</td><td/><td>0</td><td/></row>
 		<row><td>CommonFiles64Folder</td><td>TARGETDIR</td><td>.:Common64</td><td/><td>0</td><td/></row>
 		<row><td>CommonFilesFolder</td><td>TARGETDIR</td><td>.:Common</td><td/><td>0</td><td/></row>
@@ -1147,16 +1148,15 @@
 		<row><td>FavoritesFolder</td><td>TARGETDIR</td><td>.:FAVORI~1|Favorites</td><td/><td>0</td><td/></row>
 		<row><td>FontsFolder</td><td>TARGETDIR</td><td>.:Fonts</td><td/><td>0</td><td/></row>
 		<row><td>GlobalAssemblyCache</td><td>TARGETDIR</td><td>.:Global~1|GlobalAssemblyCache</td><td/><td>0</td><td/></row>
-		<row><td>INSTALLDIR</td><td>PASSWORD_MANAGER</td><td>.</td><td/><td>0</td><td/></row>
+		<row><td>INSTALLDIR</td><td>SETUP</td><td>.</td><td/><td>0</td><td/></row>
 		<row><td>ISCommonFilesFolder</td><td>CommonFilesFolder</td><td>Instal~1|InstallShield</td><td/><td>0</td><td/></row>
 		<row><td>ISMyCompanyDir</td><td>ProgramFilesFolder</td><td>MYCOMP~1|My Company Name</td><td/><td>0</td><td/></row>
 		<row><td>ISMyProductDir</td><td>ISMyCompanyDir</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
 		<row><td>ISYourDataBaseDir</td><td>INSTALLDIR</td><td>Database</td><td/><td>0</td><td/></row>
 		<row><td>LocalAppDataFolder</td><td>TARGETDIR</td><td>.:LocalA~1|LocalAppData</td><td/><td>0</td><td/></row>
-		<row><td>MY_PRODUCT_NAME</td><td>COMPA_IA</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
+		<row><td>MY_PRODUCT_NAME1</td><td>THEKILLER</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
 		<row><td>MyPicturesFolder</td><td>TARGETDIR</td><td>.:MyPict~1|MyPictures</td><td/><td>0</td><td/></row>
 		<row><td>NetHoodFolder</td><td>TARGETDIR</td><td>.:NetHood</td><td/><td>0</td><td/></row>
-		<row><td>PASSWORD_MANAGER</td><td>CODIGOSIMPORTANTES.BLOGSPOT</td><td>PASSWO~1|Password Manager</td><td/><td>0</td><td/></row>
 		<row><td>PersonalFolder</td><td>TARGETDIR</td><td>.:Personal</td><td/><td>0</td><td/></row>
 		<row><td>PrimaryVolumePath</td><td>TARGETDIR</td><td>.:Primar~1|PrimaryVolumePath</td><td/><td>0</td><td/></row>
 		<row><td>PrintHoodFolder</td><td>TARGETDIR</td><td>.:PRINTH~1|PrintHood</td><td/><td>0</td><td/></row>
@@ -1164,8 +1164,7 @@
 		<row><td>ProgramFilesFolder</td><td>TARGETDIR</td><td>.:PROGRA~1|program files</td><td/><td>0</td><td/></row>
 		<row><td>ProgramMenuFolder</td><td>TARGETDIR</td><td>.:Programs</td><td/><td>3</td><td/></row>
 		<row><td>RecentFolder</td><td>TARGETDIR</td><td>.:Recent</td><td/><td>0</td><td/></row>
-		<row><td>SETUP</td><td>COMPA_IA</td><td>SETUP</td><td/><td>0</td><td/></row>
-		<row><td>SETUP1</td><td>CODIGOSIMPORTANTES.BLOGSPOT</td><td>SETUP</td><td/><td>0</td><td/></row>
+		<row><td>SETUP</td><td>THEKILLER</td><td>Setup</td><td/><td>0</td><td/></row>
 		<row><td>SendToFolder</td><td>TARGETDIR</td><td>.:SendTo</td><td/><td>3</td><td/></row>
 		<row><td>StartMenuFolder</td><td>TARGETDIR</td><td>.:STARTM~1|Start Menu</td><td/><td>3</td><td/></row>
 		<row><td>StartupFolder</td><td>TARGETDIR</td><td>.:StartUp</td><td/><td>3</td><td/></row>
@@ -1173,13 +1172,14 @@
 		<row><td>System64Folder</td><td>TARGETDIR</td><td>.:System64</td><td/><td>0</td><td/></row>
 		<row><td>SystemFolder</td><td>TARGETDIR</td><td>.:System32</td><td/><td>0</td><td/></row>
 		<row><td>TARGETDIR</td><td/><td>SourceDir</td><td/><td>0</td><td/></row>
+		<row><td>THEKILLER</td><td>ProgramFilesFolder</td><td>THEKIL~1|TheKiller</td><td/><td>0</td><td/></row>
 		<row><td>TempFolder</td><td>TARGETDIR</td><td>.:Temp</td><td/><td>0</td><td/></row>
 		<row><td>TemplateFolder</td><td>TARGETDIR</td><td>.:ShellNew</td><td/><td>0</td><td/></row>
 		<row><td>USERPROFILE</td><td>TARGETDIR</td><td>.:USERPR~1|UserProfile</td><td/><td>0</td><td/></row>
 		<row><td>WindowsFolder</td><td>TARGETDIR</td><td>.:Windows</td><td/><td>0</td><td/></row>
 		<row><td>WindowsVolume</td><td>TARGETDIR</td><td>.:WinRoot</td><td/><td>0</td><td/></row>
-		<row><td>nombre_1_nombre_de_su_organizaci_n</td><td>ProgramMenuFolder</td><td>nombre~1|nombre de su organización</td><td/><td>1</td><td/></row>
-		<row><td>password_manager</td><td>nombre_1_nombre_de_su_organizaci_n</td><td>PASSWO~1|password manager</td><td/><td>1</td><td/></row>
+		<row><td>setup</td><td>thekil_1_thekiller</td><td>setup</td><td/><td>1</td><td/></row>
+		<row><td>thekil_1_thekiller</td><td>ProgramMenuFolder</td><td>thekil~1|thekiller</td><td/><td>1</td><td/></row>
 	</table>
 
 	<table name="DrLocator">
@@ -1889,8 +1889,8 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>database.db</td><td>ISX_DEFAULTCOMPONENT</td><td>database.db</td><td>0</td><td/><td/><td/><td>1</td><td>D:\REP GIT HUB\PasswordManager\PasswordManager\PasswordManager\bin\Debug\database.db</td><td>1</td><td/></row>
-		<row><td>datos_correos.json</td><td>ISX_DEFAULTCOMPONENT1</td><td>DATOS_~1.JSO|datos_correos.json</td><td>0</td><td/><td/><td/><td>1</td><td>D:\REP GIT HUB\PasswordManager\PasswordManager\PasswordManager\Algoritmo_Encriptacion\datos_correos.json</td><td>1</td><td/></row>
+		<row><td>database.db</td><td>ISX_DEFAULTCOMPONENT1</td><td>database.db</td><td>0</td><td/><td/><td/><td>1</td><td>D:\REP GIT HUB\PasswordManager\PasswordManager\PasswordManager\bin\Debug\database.db</td><td>1</td><td/></row>
+		<row><td>datos_correos.json</td><td>ISX_DEFAULTCOMPONENT</td><td>DATOS_~1.JSO|datos_correos.json</td><td>0</td><td/><td/><td/><td>1</td><td>D:\REP GIT HUB\PasswordManager\PasswordManager\PasswordManager\Algoritmo_Encriptacion\datos_correos.json</td><td>1</td><td/></row>
 		<row><td>passwordmanager.resultado_pr</td><td>PasswordManager.Resultado_principal</td><td>PasswordManager.Resultado principal</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;PasswordManager&gt;|Built</td><td>3</td><td/></row>
 	</table>
 
@@ -2035,10 +2035,10 @@
 		<col def="S0">FTPLocation</col>
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
-		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_7ABE1AEB_BEA9_417A_95FE_866053DD7BCE_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_C0C9A738_6DF2_49A9_B19A_C25320556164_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>NewComponent1</td><td/><td/><td>_06839E23_5E7C_43AE_A1CB_1FD573370DDD_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>PasswordManager.Resultado_principal</td><td/><td/><td>_C3C999D7_1A79_4509_9FC9_D621D2E84A52_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_23F219B7_6B50_4965_B51B_3B89E6E6DCF0_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_DCCEC2C0_E2AE_43A9_B914_98E238CE9848_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>NewComponent1</td><td/><td/><td>_410B28C8_1396_45E1_A83F_217B5887C952_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>PasswordManager.Resultado_principal</td><td/><td/><td>_F44E2C06_E750_4F87_9025_3D9CD0735C78_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -2186,6 +2186,7 @@
 		<col def="I2">Included</col>
 		<row><td>1033</td><td>0</td></row>
 		<row><td>1034</td><td>1</td></row>
+		<row><td>1036</td><td>0</td></row>
 	</table>
 
 	<table name="ISLinkerLibrary">
@@ -2657,1129 +2658,2228 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1034</td><td>codigosimportantes.blogspot</td><td>0</td><td/><td>1696742626</td></row>
-		<row><td>DN_AlwaysInstall</td><td>1034</td><td>Instalar siempre</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1034</td><td>La configuración de colores de su sistema no es adecuada para ejecutar [ProductName].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION35</td><td>1033</td><td>Microsoft .NET Framework 3.5 needs to be installed for this installation to continue.</td><td>0</td><td/><td>1696761058</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION35</td><td>1034</td><td>Microsoft .NET Framework 3.5 needs to be installed for this installation to continue.</td><td>0</td><td/><td>1696761058</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION35SP1</td><td>1033</td><td>Microsoft .NET Framework 3.5 SP1 needs to be installed for this installation to continue.</td><td>0</td><td/><td>1696761058</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION35SP1</td><td>1034</td><td>Microsoft .NET Framework 3.5 SP1 needs to be installed for this installation to continue.</td><td>0</td><td/><td>1696761058</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1033</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>1696761058</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1034</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>1696761058</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_OS</td><td>1034</td><td>El sistema operativo no es adecuado para ejecutar [ProductName].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_PROCESSOR</td><td>1034</td><td>El procesador no es adecuado para ejecutar [ProductName].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_RAM</td><td>1034</td><td>La cantidad de RAM no es adecuada para ejecutar [ProductName].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_SCREEN</td><td>1034</td><td>La resolución de pantalla no es adecuada para ejecutar [ProductName].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDPROP_SETUPTYPE_COMPACT</td><td>1034</td><td>Compacta</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDPROP_SETUPTYPE_COMPACT_DESC</td><td>1034</td><td>Descripción compacta</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDPROP_SETUPTYPE_COMPLETE</td><td>1034</td><td>Completa</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDPROP_SETUPTYPE_COMPLETE_DESC</td><td>1034</td><td>Descripción completa</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDPROP_SETUPTYPE_CUSTOM</td><td>1034</td><td>Personalizada</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDPROP_SETUPTYPE_CUSTOM_DESC</td><td>1034</td><td>Descripción personalizada</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDPROP_SETUPTYPE_CUSTOM_DESC_PRO</td><td>1034</td><td>Descripción personalizada</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDPROP_SETUPTYPE_TYPICAL</td><td>1034</td><td>Típica</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDPROP_SETUPTYPE_TYPICAL_DESC</td><td>1034</td><td>Descripción típica</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_1</td><td>1034</td><td>[1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_1b</td><td>1034</td><td>[1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_1c</td><td>1034</td><td>[1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_1d</td><td>1034</td><td>[1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Advertising</td><td>1034</td><td>Mostrar aplicación</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_AllocatingRegistry</td><td>1034</td><td>Asignando espacio del registro</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_AppCommandLine</td><td>1034</td><td>Aplicación: [1], Línea de comandos: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_AppId</td><td>1034</td><td>IdApl: [1]{{, Tipo de apl.: [2]}}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_AppIdAppTypeRSN</td><td>1034</td><td>IdApl: [1]{{, Tipo de apl.: [2], Usuarios: [3], RSN: [4]}}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Application</td><td>1034</td><td>Aplicación: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_BindingExes</td><td>1034</td><td>Enlazando archivos ejecutables</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_ClassId</td><td>1034</td><td>Id. de clase: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_ClsID</td><td>1034</td><td>Id. de clase: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_ComponentIDQualifier</td><td>1034</td><td>Id. del componente: [1], capacitador: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_ComponentIdQualifier2</td><td>1034</td><td>Id. del componente: [1], capacitador: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_ComputingSpace</td><td>1034</td><td>Calculando el espacio necesario</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_ComputingSpace2</td><td>1034</td><td>Calculando el espacio necesario</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_ComputingSpace3</td><td>1034</td><td>Calculando el espacio necesario</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_ContentTypeExtension</td><td>1034</td><td>Tipo de contenido MIME: [1], extensión: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_ContentTypeExtension2</td><td>1034</td><td>Tipo de contenido MIME: [1], extensión: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_CopyingNetworkFiles</td><td>1034</td><td>Copiando archivos de instalación de la red</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_CopyingNewFiles</td><td>1034</td><td>Copiando archivos nuevos</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_CreatingDuplicate</td><td>1034</td><td>Creando archivos duplicados</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_CreatingFolders</td><td>1034</td><td>Creando carpetas</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_CreatingIISRoots</td><td>1034</td><td>Creando raíces virtuales de IIS...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_CreatingShortcuts</td><td>1034</td><td>Creando accesos directos</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_DeletingServices</td><td>1034</td><td>Eliminando servicios</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_EnvironmentStrings</td><td>1034</td><td>Actualizando cadenas de entorno</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_EvaluateLaunchConditions</td><td>1034</td><td>Evaluando condiciones de inicio</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Extension</td><td>1034</td><td>Extensión: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Extension2</td><td>1034</td><td>Extensión: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Feature</td><td>1034</td><td>Función: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_FeatureColon</td><td>1034</td><td>Función: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_File</td><td>1034</td><td>Archivo: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_File2</td><td>1034</td><td>Archivo: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_FileDependencies</td><td>1034</td><td>Archivo: [1],  Dependencias: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_FileDir</td><td>1034</td><td>Archivo: [1], directorio: [9]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_FileDir2</td><td>1034</td><td>File: [1], Directory: [9]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_FileDir3</td><td>1034</td><td>Archivo: [1], directorio: [9]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_FileDirSize</td><td>1034</td><td>Archivo: [1], directorio: [9], tamaño: [6]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_FileDirSize2</td><td>1034</td><td>File: [1],  Directory: [9],  Size: [6]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_FileDirSize3</td><td>1034</td><td>Archivo: [1], directorio: [9], tamaño: [6]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_FileDirSize4</td><td>1034</td><td>Archivo: [1], directorio: [2], tamaño: [3]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_FileDirectorySize</td><td>1034</td><td>Archivo: [1], directorio: [9], tamaño: [6]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_FileFolder</td><td>1034</td><td>Archivo: [1], carpeta: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_FileFolder2</td><td>1034</td><td>Archivo: [1], carpeta: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_FileSectionKeyValue</td><td>1034</td><td>Archivo: [1], sección: [2], clave: [3], valor: [4]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_FileSectionKeyValue2</td><td>1034</td><td>Archivo: [1], sección: [2], clave: [3], valor: [4]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Folder</td><td>1034</td><td>Carpeta: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Folder1</td><td>1034</td><td>Carpeta: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Font</td><td>1034</td><td>Fuente: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Font2</td><td>1034</td><td>Fuente: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_FoundApp</td><td>1034</td><td>Se encontró esta aplicación: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_FreeSpace</td><td>1034</td><td>Espacio disponible: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_GeneratingScript</td><td>1034</td><td>Generando operaciones de secuencias de comandos para la acción:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_ISLockPermissionsCost</td><td>1034</td><td>Recogiendo información de permisos para los objetos…</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_ISLockPermissionsInstall</td><td>1034</td><td>Aplicando información de permisos para los objetos…</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_InitializeODBCDirs</td><td>1034</td><td>Inicializando directorios ODBC</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_InstallODBC</td><td>1034</td><td>Instalando componentes ODBC</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_InstallServices</td><td>1034</td><td>Instalando servicios nuevos</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_InstallingSystemCatalog</td><td>1034</td><td>Instalar catálogo del sistema</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_KeyName</td><td>1034</td><td>Clave: [1], nombre: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_KeyNameValue</td><td>1034</td><td>Clave: [1], nombre: [2], valor: [3]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_LibId</td><td>1034</td><td>Id. de la biblioteca: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Libid2</td><td>1034</td><td>LibID: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_MigratingFeatureStates</td><td>1034</td><td>Transfiriendo los estados de las características desde las aplicaciones relacionadas</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_MovingFiles</td><td>1034</td><td>Moviendo archivos</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_NameValueAction</td><td>1034</td><td>Nombre: [1], valor: [2], acción [3]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_NameValueAction2</td><td>1034</td><td>Nombre: [1], valor: [2], acción [3]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_PatchingFiles</td><td>1034</td><td>Revisando archivos</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_ProgID</td><td>1034</td><td>IdProg: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_ProgID2</td><td>1034</td><td>IdProg: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_PropertySignature</td><td>1034</td><td>Propiedad: [1], firma: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_PublishProductFeatures</td><td>1034</td><td>Publicar funciones del producto</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_PublishProductInfo</td><td>1034</td><td>Publicar información del producto</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_PublishingQualifiedComponents</td><td>1034</td><td>Publicar componentes aceptables</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RegUser</td><td>1034</td><td>Registrando usuario</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RegisterClassServer</td><td>1034</td><td>Registrando servidores de clases</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RegisterExtensionServers</td><td>1034</td><td>Registrando servidores de extensiones</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RegisterFonts</td><td>1034</td><td>Registrando fuentes</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RegisterMimeInfo</td><td>1034</td><td>Registrando información MIME</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RegisterTypeLibs</td><td>1034</td><td>Registrando bibliotecas de tipos</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RegisteringComPlus</td><td>1034</td><td>Registrando aplicaciones y componentes COM+</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RegisteringModules</td><td>1034</td><td>Registrando módulos</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RegisteringProduct</td><td>1034</td><td>Registrando el producto</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RegisteringProgIdentifiers</td><td>1034</td><td>Registrando identificadores de programa del registro</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RemoveApps</td><td>1034</td><td>Quitando aplicaciones</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RemovingBackup</td><td>1034</td><td>Quitando copias de seguridad</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RemovingDuplicates</td><td>1034</td><td>Quitando archivos duplicados</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RemovingFiles</td><td>1034</td><td>Quitando archivos</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RemovingFolders</td><td>1034</td><td>Quitando carpetas</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RemovingIISRoots</td><td>1034</td><td>Eliminando raíces virtuales de IIS...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RemovingIni</td><td>1034</td><td>Quitando entradas de archivos INI</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RemovingMoved</td><td>1034</td><td>Quitando archivos movidos</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RemovingODBC</td><td>1034</td><td>Quitando componentes ODBC</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RemovingRegistry</td><td>1034</td><td>Quitando valores del registro del sistema</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RemovingShortcuts</td><td>1034</td><td>Quitando accesos directos</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_RollingBack</td><td>1034</td><td>Acción de restauración:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_SearchForRelated</td><td>1034</td><td>Buscando aplicaciones relacionadas</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_SearchInstalled</td><td>1034</td><td>Buscando aplicaciones instaladas</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_SearchingQualifyingProducts</td><td>1034</td><td>Buscando productos necesarios</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_SearchingQualifyingProducts2</td><td>1034</td><td>Buscando productos necesarios</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Service</td><td>1034</td><td>Servicio: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Service2</td><td>1034</td><td>Servicio: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Service3</td><td>1034</td><td>Servicio: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Service4</td><td>1034</td><td>Servicio: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Shortcut</td><td>1034</td><td>Acceso directo: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Shortcut1</td><td>1034</td><td>Acceso directo: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_StartingServices</td><td>1034</td><td>Iniciando servicios</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_StoppingServices</td><td>1034</td><td>Deteniendo servicios</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_UnpublishProductFeatures</td><td>1034</td><td>Anular publicación de funciones del producto</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_UnpublishQualified</td><td>1034</td><td>Anular publicación de componentes aceptables</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_UnpublishingProductInfo</td><td>1034</td><td>Anular publicación de información del producto</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_UnregTypeLibs</td><td>1034</td><td>Eliminando del registro bibliotecas de tipos</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_UnregisterClassServers</td><td>1034</td><td>Eliminar del registro los servidores de clases</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_UnregisterExtensionServers</td><td>1034</td><td>Eliminando del registro los servidores de extensiones</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_UnregisterModules</td><td>1034</td><td>Eliminando módulos del registro</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_UnregisteringComPlus</td><td>1034</td><td>Quitando aplicaciones y componentes COM+ del registro</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_UnregisteringFonts</td><td>1034</td><td>Eliminando del registro las fuentes</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_UnregisteringMimeInfo</td><td>1034</td><td>Eliminando del registro información MIME</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_UnregisteringProgramIds</td><td>1034</td><td>Eliminando identificadores de programa del registro</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_UpdateComponentRegistration</td><td>1034</td><td>Actualizando el registro de componentes</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_UpdateEnvironmentStrings</td><td>1034</td><td>Actualizando cadenas de entorno</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_Validating</td><td>1034</td><td>Validando la instalación</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_WritingINI</td><td>1034</td><td>Escribiendo valores de los archivos INI</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ACTIONTEXT_WritingRegistry</td><td>1034</td><td>Escribiendo valores del registro del sistema</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_BACK</td><td>1034</td><td>&lt; &amp;Atrás</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_CANCEL</td><td>1034</td><td>Cancelar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_CANCEL2</td><td>1034</td><td>{&amp;Tahoma8}&amp;Cancelar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_CHANGE</td><td>1034</td><td>&amp;Cambiar...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_COMPLUS_PROGRESSTEXT_COST</td><td>1034</td><td>Coste de la aplicación COM+: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_COMPLUS_PROGRESSTEXT_INSTALL</td><td>1034</td><td>Instalando la aplicación COM+: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_COMPLUS_PROGRESSTEXT_UNINSTALL</td><td>1034</td><td>Desinstalando la aplicación COM+: [1]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_DIALOG_TEXT2_DESCRIPTION</td><td>1034</td><td>Descripción normal del cuadro de diálogo</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_DIALOG_TEXT_DESCRIPTION_EXTERIOR</td><td>1034</td><td>{&amp;TahomaBold10}Título del cuadro de diálogo en negrita</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_DIALOG_TEXT_DESCRIPTION_INTERIOR</td><td>1034</td><td>{&amp;MSSansBold8}Título del cuadro de diálogo en negrita</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_DIFX_AMD64</td><td>1034</td><td>[ProductName] requiere un procesador X64. Haga clic en Aceptar para salir del asistente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_DIFX_IA64</td><td>1034</td><td>[ProductName] requiere un procesador IA64. Haga clic en Aceptar para salir del asistente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_DIFX_X86</td><td>1034</td><td>[ProductName] requiere un procesador X86. Haga clic en Aceptar para salir del asistente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_DatabaseFolder_InstallDatabaseTo</td><td>1034</td><td>Instalar base de datos de [ProductName] en:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_0</td><td>1034</td><td>{{Error fatal: }}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1</td><td>1034</td><td>{{Error [1]. }}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_10</td><td>1034</td><td>=== Registro iniciado: [Date]  [Time] ===</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_100</td><td>1034</td><td>No se puede crear el acceso directo [2]. Compruebe que el archivo de acceso directo existe y que puede obtener acceso a él.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_101</td><td>1034</td><td>No se puede registrar la biblioteca de tipos para el archivo [2]. Póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_102</td><td>1034</td><td>No se puede quitar del registro la biblioteca de tipos del archivo [2]. Póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_103</td><td>1034</td><td>No se puede actualizar el archivo .ini [2][3]. Compruebe que el archivo existe y que puede obtener acceso a él.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_104</td><td>1034</td><td>No se puede programar el archivo [2] para que reemplace a [3] cuando se reinicie el sistema. Compruebe que dispone de permisos de escritura para el archivo [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_105</td><td>1034</td><td>Error al quitar el administrador de controladores ODBC; error de ODBC [2]: [3]. Póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_106</td><td>1034</td><td>Error al instalar el administrador de controladores ODBC; error de ODBC [2]: [3]. Póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_107</td><td>1034</td><td>Error al quitar el controlador ODBC [4]; error de ODBC [2]: [3]. Compruebe que dispone de suficientes privilegios para quitar controladores ODBC.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_108</td><td>1034</td><td>Error al instalar el controlador ODBC [4]; error de ODBC [2]: [3]. Compruebe que el archivo [4] existe y que puede obtener acceso a él.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_109</td><td>1034</td><td>Error al configurar el origen de datos de ODBC [4]; error de ODBC [2]: [3]. Compruebe que el archivo [4] y que puede obtener acceso a él.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_11</td><td>1034</td><td>=== Registro detenido: [Date]  [Time] ===</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_110</td><td>1034</td><td>Fallo al iniciar el servicio '[2]' ([3]). Compruebe que dispone de suficientes privilegios para iniciar servicios del sistema.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_111</td><td>1034</td><td>No se puede detener el servicio '[2]' ([3]). Compruebe que dispone de suficientes privilegios para detener servicios del sistema.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_112</td><td>1034</td><td>No se puede eliminar el servicio '[2]' ([3]). Compruebe que dispone de suficientes privilegios para quitar servicios del sistema.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_113</td><td>1034</td><td>No se puede instalar el servicio '[2]' ([3]). Compruebe que dispone de suficientes privilegios para instalar servicios del sistema.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_114</td><td>1034</td><td>No se puede actualizar la variable de entorno '[2]'. Compruebe que dispone de suficientes privilegios para modificar variables de entorno.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_115</td><td>1034</td><td>No tiene suficientes privilegios para completar esta instalación para todos los usuarios del equipo. Inicie la sesión como administrador y vuelva a realizar la instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_116</td><td>1034</td><td>No se puede establecer la seguridad para el archivo '[3]'. Error: [2]. Compruebe que dispone de suficientes privilegios para modificar los permisos de seguridad para este archivo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_117</td><td>1034</td><td>Los Servicios de componente (COM+ 1.0) no están instalados en este sistema.  Para realizar esta instalación, es necesario que los Servicios de componente estén instalados. Encontrará los Servicios de componente en Windows 2000.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_118</td><td>1034</td><td>Error al registrar la aplicación COM+.  Póngase en contacto con el personal de soporte para obtener más información.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_119</td><td>1034</td><td>Error al quitar la aplicación COM+ del registro. Póngase en contacto con el personal de soporte para obtener más información.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_12</td><td>1034</td><td>La acción se inició a las [Time]: [1].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_120</td><td>1034</td><td>Quitando las versiones anteriores de esta aplicación...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_121</td><td>1034</td><td>Preparando la eliminación de las versiones anteriores de esta aplicación...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_122</td><td>1034</td><td>Error al aplicar la revisión al archivo [2].  Probablemente el archivo ya se ha actualizado por otros medios y esta revisión no puede modificarlo.  Para obtener más información, consulte al proveedor de la revisión.  {{Error del sistema: [3]}}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_123</td><td>1034</td><td>[2] no puede instalar los productos requeridos. Póngase en contacto con su grupo de soporte técnico.  {{Error del sistema: [3].}}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_124</td><td>1034</td><td>No se puede quitar la versión anterior de [2]. Póngase en contacto con su grupo de soporte técnico.  {{Error del sistema: [3].}}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_125</td><td>1034</td><td>No se pudo cambiar la descripción del servicio '[2]' ([3]).</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_126</td><td>1034</td><td>El servicio Windows Installer no pudo actualizar el archivo del sistema [2] porque está protegido por Windows. Es posible que tenga que actualizar el sistema operativo para que este programa funcione correctamente. {{Versión del paquete: [3], Versión protegida del SO: [4]}}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_127</td><td>1034</td><td>El servicio Windows Installer no pudo actualizar el archivo protegido de Windows [2]. {{Versión del paquete: [3], Versión protegida del SO: [4], Error SFP: [5]}}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_128</td><td>1034</td><td>El servicio del Instalador del Windows no puede actualizar uno o varios archivos protegidos de Windows. Error de SFP: [2]. Lista de archivos protegidos: [3]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_129</td><td>1034</td><td>Las instalaciones del usuario se han desactivado en el equipo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_13</td><td>1034</td><td>La acción terminó a las [Time]: [1]. Valor devuelto: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_130</td><td>1034</td><td>Para configurar raíces virtuales de IIS, el programa de instalación necesita Internet Information Server 4.0 ó posterior. Compruebe que dispone de IIS 4.0 o posterior.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_131</td><td>1034</td><td>Para configurar raíces virtuales de IIS, el programa de instalación requiere derechos de administrador.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1329</td><td>1034</td><td>No es posible instalar un archivo necesario porque el archivo .cab [2] no está firmado digitalmente. Esto puede indicar que el archivo .cab está dañado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1330</td><td>1034</td><td>No es posible instalar un archivo necesario porque el archivo .cab [2] tiene una firma digital no válida. Esto puede indicar que el archivo .cab está dañado.{ El Verificador de confianza de Windows ha devuelto el error [3].}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1331</td><td>1034</td><td>Fallo al copiar correctamente el archivo [2]: Error de CRC.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1332</td><td>1034</td><td>Fallo al aplicar revisión correctamente el archivo [2]: Error de CRC.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1333</td><td>1034</td><td>Fallo al aplicar revisión correctamente el archivo [2]: Error de CRC.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1334</td><td>1034</td><td>No es posible instalar el archivo '[2]' porque no se pudo encontrar en el archivo .cab '[3]'. Esto podría indicar un error de red, un error de lectura del CD-ROM o un problema específico de este paquete.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1335</td><td>1034</td><td>El archivo .cab '[2]' necesario para esta instalación está dañado y no se puede utilizar. Esto podría indicar un error de red, un error de lectura del CD-ROM o un problema específico de este paquete.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1336</td><td>1034</td><td>Ha ocurrido un error al crear un archivo temporal necesario para completar esta instalación. Carpeta: [3]. Código de error de sistema: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_14</td><td>1034</td><td>Tiempo restante: {[1] minutos }{[2] segundos}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_15</td><td>1034</td><td>Memoria insuficiente. Cierre otras aplicaciones antes de intentarlo de nuevo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_16</td><td>1034</td><td>El instalador no responde.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1609</td><td>1034</td><td>Error al aplicar la configuración de seguridad. [2] no es un usuario o grupo válido. Puede ser un problema con el paquete o con la conexión a un controlador de dominio de la red. Compruebe la conexión de red y pulse Reintentar, o Cancelar para finalizar la instalación. No se encuentra la ID de seguridad del usuario, error de sistema [3]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1651</td><td>1034</td><td>El usuario de administración no ha aplicado la revisión correspondiente a una aplicación por equipos o administrada por usuarios que se encuentre en un estado de anuncio.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_17</td><td>1034</td><td>El instalador se detuvo antes de tiempo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1715</td><td>1034</td><td>[2] instalado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1716</td><td>1034</td><td>[2] configurado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1717</td><td>1034</td><td>[2] eliminado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1718</td><td>1034</td><td>Se ha rechazado el archivo [2] por la política de firma digital.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1719</td><td>1034</td><td>No se pudo acceder al servicio del Instalador de Windows. Póngase en contacto con el personal de asistencia para comprobar que está registrado y habilitado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1720</td><td>1034</td><td>Se produjo un problema con el paquete del Instalador de Windows. No se pudo ejecutar un archivo de comandos necesario para la instalación. Póngase en contacto con el personal de asistencia o el proveedor del paquete. Acción personalizada [2] error de archivo de comandos [3], [4]: [5] Línea [6], Columna [7], [8]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1721</td><td>1034</td><td>Se produjo un problema con este paquete del Instalador de Windows. No se pudo ejecutar un programa necesario para esta instalación. Póngase en contacto con el personal de asistencia o el proveedor del paquete. Acción: [2], ubicación: [3], comando: [4]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1722</td><td>1034</td><td>Se produjo un problema con este paquete del Instalador de Windows. La ejecución de un programa perteneciente a la instalación no ha finalizado según lo esperado. Póngase en contacto con el personal de asistencia o el proveedor del paquete. Acción [2], ubicación: [3], comando: [4]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1723</td><td>1034</td><td>Se produjo un problema con este paquete del Instalador de Windows. No se pudo ejecutar una dll necesaria para esta instalación. Póngase en contacto con el personal de asistencia o el proveedor del paquete. Acción [2], entrada: [3], biblioteca: [4]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1724</td><td>1034</td><td>La eliminación se ha completado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1725</td><td>1034</td><td>La eliminación no se ha realizado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1726</td><td>1034</td><td>El anuncio se ha completado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1727</td><td>1034</td><td>Fallo en el anuncio.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1728</td><td>1034</td><td>La configuración se ha completado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1729</td><td>1034</td><td>Fallo en la configuración.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1730</td><td>1034</td><td>Debe tener derechos de administrador para eliminar esta aplicación. Para eliminar esta aplicación, puede iniciar la sesión como administrador, o bien ponerse en contacto con el servicio de asistencia técnica para obtener ayuda.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1731</td><td>1034</td><td>El paquete de instalación de origen del producto [2] no está sincronizado con el paquete cliente. Intente ejecutar la instalación de nuevo con una copia válida del paquete de instalación '[3]'.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1732</td><td>1034</td><td>Es necesario reiniciar el equipo para completar la instalación de [2]. Hay otros usuarios actualmente conectados al equipo, y puede que pierdan su trabajo si reinicia. ¿Desea reiniciar el equipo ahora?</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_18</td><td>1034</td><td>Espere mientras Windows configura [ProductName]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_19</td><td>1034</td><td>Recopilando la información necesaria...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1935</td><td>1034</td><td>Ha ocurrido un error durante la instalación del componente del ensamblaje [2]. HRESULT: [3]. {{interfaz de ensamblaje: [4], función: [5], nombre de ensamblaje: [6]}}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1936</td><td>1034</td><td>Ha ocurrido un error durante la instalación del ensamblaje '[6]'. El ensamblaje no tiene un nombre seguro o no se ha registrado con la longitud de clave mínima. HRESULT: [3]. {{interfaz de ensamblaje: [4], función: [5], componente: [2]}}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1937</td><td>1034</td><td>Ha ocurrido un error durante la instalación del ensamblaje '[6]'. La firma del catálogo no se pudo comprobar o no es válida. HRESULT: [3]. {{interfaz de ensamblaje: [4], función: [5], componente: [2]}}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_1938</td><td>1034</td><td>Ha ocurrido un error durante la instalación del ensamblaje '[6]'. No se pudieron encontrar uno o más módulos del ensamblaje. HRESULT: [3]. {{interfaz de ensamblaje: [4], función: [5], componente: [2]}}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2</td><td>1034</td><td>Advertencia [1]. </td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_20</td><td>1034</td><td>La instalación de {[ProductName] } finalizó correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_21</td><td>1034</td><td>Fallo en la instalación de {[ProductName]}.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2101</td><td>1034</td><td>El sistema operativo no admite accesos directos.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2102</td><td>1034</td><td>Acción .ini no válida: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2103</td><td>1034</td><td>No se pudo resolver la ruta de la carpeta de shell [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2104</td><td>1034</td><td>Escribiendo archivo .ini: [3]: Error de sistema: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2105</td><td>1034</td><td>La creación de accesos directos [3] no se ha realizado correctamente. Error de sistema: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2106</td><td>1034</td><td>La eliminación de accesos directos [3] no se ha realizado correctamente. Error de sistema: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2107</td><td>1034</td><td>Error [3] al registrar la biblioteca de tipos [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2108</td><td>1034</td><td>Error [3] al anular el registro de la biblioteca de tipos [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2109</td><td>1034</td><td>Falta sección para acción .ini.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2110</td><td>1034</td><td>Falta clave para acción .ini.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2111</td><td>1034</td><td>La detección de las aplicaciones en ejecución no se ha realizado correctamente; no se han podido obtener datos de rendimiento. La operación de registro ha devuelto: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2112</td><td>1034</td><td>La detección de las aplicaciones en ejecución no se ha realizado correctamente; no se ha podido obtener el índice de rendimiento. La operación de registro ha devuelto: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2113</td><td>1034</td><td>La detección de las aplicaciones en ejecución no se ha realizado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_22</td><td>1034</td><td>Error al leer el archivo [2]. {{ Error del sistema [3].}} Compruebe que el archivo existe y que puede obtener acceso a él.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2200</td><td>1034</td><td>Base de datos: [2]. La creación del objeto de base de datos no se ha realizado correctamente, modo = [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2201</td><td>1034</td><td>Base de datos: [2]. La inicialización no se ha realizado correctamente; no hay suficiente memoria.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2202</td><td>1034</td><td>Base de datos: [2]. El acceso a datos no se ha realizado correctamente; no hay suficiente memoria.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2203</td><td>1034</td><td>Base de datos: [2]. No se puede abrir el archivo de base de datos. Error de sistema [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2204</td><td>1034</td><td>Base de datos: [2]. La tabla ya existe: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2205</td><td>1034</td><td>Base de datos: [2]. La tabla no existe: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2206</td><td>1034</td><td>Base de datos: [2]. La tabla no se pudo descartar: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2207</td><td>1034</td><td>Base de datos: [2]. Infracción de intento.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2208</td><td>1034</td><td>Base de datos: [2]. No hay suficientes parámetros para Ejecutar.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2209</td><td>1034</td><td>Base de datos: [2]. EL estado del cursor no es válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2210</td><td>1034</td><td>Base de datos: [2]. Tipo de datos de actualización no válido en la columna [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2211</td><td>1034</td><td>Base de datos: [2]. No se pudo crear la tabla de base de datos [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2212</td><td>1034</td><td>Base de datos: [2]. El estado de la base de datos no permite escribir en ella.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2213</td><td>1034</td><td>Base de datos: [2]. Error al guardar tablas de base de datos.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2214</td><td>1034</td><td>Base de datos: [2]. Error al escribir archivo de exportación: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2215</td><td>1034</td><td>Base de datos: [2]. No se puede abrir el archivo de importación: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2216</td><td>1034</td><td>Base de datos: [2]. Error de importación de formato de archivo: [3], Línea [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2217</td><td>1034</td><td>Base de datos: [2]. Estado incorrecto de Crear salida de base de datos [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2218</td><td>1034</td><td>Base de datos: [2]. No se ha proporcionado el nombre de la tabla.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2219</td><td>1034</td><td>Base de datos: [2]. Formato de base de datos del instalador no válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2220</td><td>1034</td><td>Base de datos: [2]. Datos de fila/campo no válidos.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2221</td><td>1034</td><td>Base de datos: [2]. Conflicto de código de página en el archivo de importación: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2222</td><td>1034</td><td>Base de datos: [2]. La página de código de combinación o transformación [3] difiere de la página de código de base de datos [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2223</td><td>1034</td><td>Base de datos: [2]. Las bases de datos son iguales. No se ha generado ninguna transformación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2224</td><td>1034</td><td>Base de datos: [2]. Generar transformación: Base de datos dañada. Tabla: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2225</td><td>1034</td><td>Base de datos: [2] Transformación: No se puede transformar una tabla temporal. Tabla: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2226</td><td>1034</td><td>Base de datos: [2]. La transformación no se ha realizado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2227</td><td>1034</td><td>Base de datos: [2]. Identificador no válido '[3]' en la consulta SQL: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2228</td><td>1034</td><td>Base de datos: [2]. Tabla desconocida '[3]' en la consulta SQL: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2229</td><td>1034</td><td>Base de datos: [2]. No se pudo cargar la tabla '[3]' en la consulta SQL: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2230</td><td>1034</td><td>Base de datos: [2]. Tabla repetida '[3]' en la consulta SQL: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2231</td><td>1034</td><td>Base de datos: [2]. Falta ')' en la consulta SQL: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2232</td><td>1034</td><td>Base de datos: [2]. Símbolo inesperado '[3]' en la consulta SQL: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2233</td><td>1034</td><td>Base de datos: [2]. No hay columnas en la cláusula SELECT de la consulta SQL: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2234</td><td>1034</td><td>Base de datos: [2]. No hay columnas en la cláusula ORDER BY de la consulta SQL: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2235</td><td>1034</td><td>Base de datos: [2]. La columna '[3]' no está presente o es ambigua en la consulta SQL: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2236</td><td>1034</td><td>Base de datos: [2]. Operador no válido '[3]' en la consulta SQL: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2237</td><td>1034</td><td>Base de datos: [2]. La cadena de consulta falta o no es válida: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2238</td><td>1034</td><td>Base de datos: [2]. Falta la cláusula FROM en la consulta SQL: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2239</td><td>1034</td><td>Base de datos: [2]. No hay suficientes valores en la instrucción INSERT de SQL.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2240</td><td>1034</td><td>Base de datos: [2]. Faltan columnas de actualización en la instrucción UPDATE de SQL.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2241</td><td>1034</td><td>Base de datos: [2]. Faltan columnas de inserción en la instrucción INSERT de SQL.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2242</td><td>1034</td><td>Base de datos: [2]. Columna '[3]' repetida.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2243</td><td>1034</td><td>Base de datos: [2]. No se han definido columnas principales para la creación de tablas.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2244</td><td>1034</td><td>Base de datos: [2]. Especificador de tipo no válido '[3]' en la consulta SQL [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2245</td><td>1034</td><td>IStorage::Stat ha fallado con el error [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2246</td><td>1034</td><td>Base de datos: [2]. Formato de transformación del instalador no válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2247</td><td>1034</td><td>Base de datos: [2] Fallo de lectura/escritura de la secuencia de transformación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2248</td><td>1034</td><td>Base de datos: [2] Generar transformación/combinación: El tipo de columna de la tabla base no coincide con el de la tabla de referencia. Tabla: [3] Nº de col: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2249</td><td>1034</td><td>Base de datos: [2] Generar transformación: Hay más columnas en la tabla base que en la tabla de referencia. Tabla: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2250</td><td>1034</td><td>Base de datos: [2] Transformación: No se puede añadir la fila existente. Tabla: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2251</td><td>1034</td><td>Base de datos: [2] Transformación: No se puede suprimir una fila que no existe. Tabla: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2252</td><td>1034</td><td>Base de datos: [2] Transformación: No se puede añadir la tabla existente. Tabla: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2253</td><td>1034</td><td>Base de datos: [2] Transformación: No se puede suprimir una tabla que no existe. Tabla: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2254</td><td>1034</td><td>Base de datos: [2] Transformación: No se puede actualizar una fila que no existe. Tabla: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2255</td><td>1034</td><td>Base de datos: [2] Transformación: Ya existe una columna con este nombre. Tabla: [3] Col: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2256</td><td>1034</td><td>Base de datos: [2] Generar transformación/combinación: El número de claves principales de la tabla base no coincide con el de la tabla de referencia. Tabla: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2257</td><td>1034</td><td>Base de datos: [2]. Intento de modificar tabla de sólo lectura: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2258</td><td>1034</td><td>Base de datos: [2]. No coincide el tipo en el parámetro: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2259</td><td>1034</td><td>Base de datos: [2] La actualización de tablas no se ha realizado correctamente</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2260</td><td>1034</td><td>La acción Copiar a de la ubicación de almacenamiento no se ha realizado correctamente. Error de sistema: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2261</td><td>1034</td><td>No se pudo eliminar la secuencia [2]. Error de sistema: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2262</td><td>1034</td><td>La secuencia no existe: [2]. Error de sistema: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2263</td><td>1034</td><td>No se pudo abrir la secuencia [2]. Error de sistema: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2264</td><td>1034</td><td>No se pudo eliminar la secuencia [2]. Error de sistema: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2265</td><td>1034</td><td>No se pudo confirmar la ubicación de almacenamiento. Error de sistema: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2266</td><td>1034</td><td>No se pudo deshacer la ubicación de almacenamiento. Error de sistema: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2267</td><td>1034</td><td>No se pudo suprimir la ubicación de almacenamiento [2]. Error de sistema: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2268</td><td>1034</td><td>Base de datos: [2]. Combinación: Se informó de la existencia de conflictos de combinación en las tablas [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2269</td><td>1034</td><td>Base de datos: [2]. Combinación: El número de columnas es diferente en la tabla '[3]' de las dos bases de datos.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2270</td><td>1034</td><td>Base de datos: [2]. Generar transformación/combinación: El nombre de la columna de la tabla base no coincide con el de la tabla de referencia. Tabla: [3] Nº de col: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2271</td><td>1034</td><td>La escritura de Información de resumen para la transformación no se ha realizado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2272</td><td>1034</td><td>Base de datos: [2]. Combinar base de datos no escribirá ningún cambio porque la base de datos está abierta en modo de sólo lectura.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2273</td><td>1034</td><td>Base de datos: [2]. Combinar base de datos: Se ha transmitido una referencia a la base de datos de base como base de datos de referencia.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2274</td><td>1034</td><td>Base de datos: [2]. Combinar base de datos: No es posible escribir errores en la tabla Error. Esto puede deberse a la existencia de una columna que no puede dejarse vacía en una tabla Error predefinida.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2275</td><td>1034</td><td>Base de datos: [2]. La operación de modificación especificada [3] no es válida para las combinaciones de tablas.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2276</td><td>1034</td><td>Base de datos: [2]. El sistema no admite la página de código [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2277</td><td>1034</td><td>Base de datos: [2]. Fallo al guardar la tabla [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2278</td><td>1034</td><td>Base de datos: [2]. Se ha superado el límite de expresiones establecido en 32 en la cláusula WHERE de la consulta SQL: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2279</td><td>1034</td><td>Base de datos: [2] Transformación: Demasiadas columnas en la tabla base [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2280</td><td>1034</td><td>Base de datos: [2]. No se pudo crear la columna [3] de la tabla [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2281</td><td>1034</td><td>No se pudo cambiar el nombre de la secuencia [2]. Error de sistema: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2282</td><td>1034</td><td>Nombre de secuencia [2] no válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_23</td><td>1034</td><td>No se puede crear el archivo '[2]'. Ya existe un directorio con ese nombre. Cancele la instalación y pruebe a instalar en una ubicación distinta.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2302</td><td>1034</td><td>Notificación de revisión: [2] bytes revisados hasta ahora.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2303</td><td>1034</td><td>Error al obtener información de volumen. Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2304</td><td>1034</td><td>Error al obtener espacio libre en disco. Obtener último error: [2]. Volumen: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2305</td><td>1034</td><td>Error durante la espera del subproceso de revisión. Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2306</td><td>1034</td><td>No se pudo crear el subproceso de la aplicación de revisión. Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2307</td><td>1034</td><td>El nombre de la clave del archivo de origen es nulo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2308</td><td>1034</td><td>El nombre del archivo de destino es nulo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2309</td><td>1034</td><td>Se intenta aplicar la revisión al archivo [2] con el proceso de revisión ya en curso.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2310</td><td>1034</td><td>Se intenta continuar con la revisión cuando no hay ninguna revisión en curso.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2315</td><td>1034</td><td>Falta separador de ruta: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2318</td><td>1034</td><td>El archivo no existe: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2319</td><td>1034</td><td>Error al configurar atributo de archivo: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2320</td><td>1034</td><td>No se puede escribir en el archivo: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2321</td><td>1034</td><td>Error al crear archivo: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2322</td><td>1034</td><td>Cancelado por el usuario.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2323</td><td>1034</td><td>Atributo de archivo no válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2324</td><td>1034</td><td>Error al abrir el archivo: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2325</td><td>1034</td><td>No se pudo obtener la hora de archivo del archivo: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2326</td><td>1034</td><td>Error en Archivo hasta fecha/hora DOS.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2327</td><td>1034</td><td>No se pudo eliminar el directorio: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2328</td><td>1034</td><td>Error al obtener información sobre la versión de archivo del archivo: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2329</td><td>1034</td><td>Error al suprimir archivo: [3]. Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2330</td><td>1034</td><td>Error al obtener atributos de archivo: [3]. Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2331</td><td>1034</td><td>Error al cargar la biblioteca [2] o al buscar el punto de entrada [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2332</td><td>1034</td><td>Error al obtener atributos de archivo. Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2333</td><td>1034</td><td>Error al configurar atributos de archivo. Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2334</td><td>1034</td><td>Error al convertir la hora de archivo a la hora local en el archivo: [3]. Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2335</td><td>1034</td><td>Ruta: [2] no es un elemento principal de [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2336</td><td>1034</td><td>Error al crear archivo temporal en la ruta: [3]. Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2337</td><td>1034</td><td>Error al cerrar el archivo: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2338</td><td>1034</td><td>No se pudo actualizar el recurso para el archivo: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2339</td><td>1034</td><td>No se pudo establecer la hora de archivo del archivo: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2340</td><td>1034</td><td>No se pudo actualizar el recurso para el archivo: [3], Falta el recurso.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2341</td><td>1034</td><td>No se pudo actualizar el recurso para el archivo: [3], El recurso es demasiado grande.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2342</td><td>1034</td><td>No se pudo actualizar el recurso para el archivo: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2343</td><td>1034</td><td>La ruta especificada está vacía.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2344</td><td>1034</td><td>No se pudo encontrar el archivo IMAGEHLP.DLL necesario para validar el archivo:[2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2345</td><td>1034</td><td>[2]: El archivo no contiene un valor de suma de comprobación válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2347</td><td>1034</td><td>Ignorado por el usuario.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2348</td><td>1034</td><td>Error al intentar leer desde la secuencia del archivo .cab.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2349</td><td>1034</td><td>Copia reanudada con información diferente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2350</td><td>1034</td><td>Error de servidor FDI</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2351</td><td>1034</td><td>Clave de archivo '[2]' no encontrada en el archivo .cab '[3]'. El proceso de instalación no puede continuar.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2352</td><td>1034</td><td>No se pudo inicializar el servidor del archivo .cab. Puede que falte el archivo 'CABINET.DLL' requerido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2353</td><td>1034</td><td>No es un archivo .cab.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2354</td><td>1034</td><td>No se puede gestionar el archivo .cab.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2355</td><td>1034</td><td>Archivo .cab dañado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2356</td><td>1034</td><td>No se pudo localizar el archivo .cab en la secuencia: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2357</td><td>1034</td><td>No se pueden establecer atributos.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2358</td><td>1034</td><td>Error al determinar si el archivo se encuentra en uso: [3]. Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2359</td><td>1034</td><td>No es posible crear el archivo de destino; puede que el archivo se encuentre en uso.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2360</td><td>1034</td><td>Marca de progreso.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2361</td><td>1034</td><td>Se requiere el archivo .cab siguiente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2362</td><td>1034</td><td>Carpeta no encontrada: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2363</td><td>1034</td><td>No se pudieron enumerar las subcarpetas de la carpeta: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2364</td><td>1034</td><td>Constante de enumeración incorrecta en la llamada Crear copiador.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2365</td><td>1034</td><td>No se pudo ejecutar Vincular imagen en el archivo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2366</td><td>1034</td><td>Fallo del usuario.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2367</td><td>1034</td><td>Anulado por el usuario.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2368</td><td>1034</td><td>Fallo al obtener información de los recursos de red. Error [2], ruta de red [3]. Error ampliado: proveedor de red [5], código de error [4], descripción del error [6].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2370</td><td>1034</td><td>Valor de suma de comprobación por redundancia cíclica (CRC) del archivo [2] no válido.{ El encabezado indica [3] para la suma de comprobación; el valor calculado es [4].}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2371</td><td>1034</td><td>No se pudo aplicar la revisión al archivo [2]. Obtener último error: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2372</td><td>1034</td><td>El archivo de revisión [2] está dañado o el formato no es válido. Intentando aplicar revisión al archivo [3]. Obtener último error: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2373</td><td>1034</td><td>El archivo [2] no es un archivo de revisión válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2374</td><td>1034</td><td>El archivo [2] no es un archivo de destino válido para el archivo de revisión [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2375</td><td>1034</td><td>Error de revisión desconocido: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2376</td><td>1034</td><td>Archivo .cab no encontrado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2379</td><td>1034</td><td>Error al abrir el archivo para su lectura: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2380</td><td>1034</td><td>Error al abrir el archivo para su escritura: [3]. Obtener último error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2381</td><td>1034</td><td>El directorio no existe: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2382</td><td>1034</td><td>La unidad no está lista: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_24</td><td>1034</td><td>Inserte el disco [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2401</td><td>1034</td><td>Se ha intentado realizar una operación de registro de 64 bits en un sistema operativo de 32 bits en relación a la clave [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2402</td><td>1034</td><td>No hay suficiente memoria.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_25</td><td>1034</td><td>El instalador no dispone de privilegios suficientes para obtener acceso al directorio [2] y no se puede continuar con la instalación. Inicie la sesión como administrador o póngase en contacto con el administrador del sistema.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2501</td><td>1034</td><td>No se pudo crear el enumerador del archivo de comandos de la acción para deshacer.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2502</td><td>1034</td><td>Se ha llamado a Finalizar instalación cuando no hay ninguna instalación en curso.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2503</td><td>1034</td><td>Se ha llamado a Ejecutar archivo de comandos cuando no se indica que se encuentre en curso.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_26</td><td>1034</td><td>Error al escribir en el archivo [2]. Compruebe que dispone de acceso a ese directorio.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2601</td><td>1034</td><td>Valor no válido para la propiedad [2]: '[3]'</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2602</td><td>1034</td><td>La [2] entrada de tabla '[3]' no tiene ninguna entrada asociada en la tabla Medios.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2603</td><td>1034</td><td>Nombre de tabla [2] duplicado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2604</td><td>1034</td><td>[2] Propiedad no definida.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2605</td><td>1034</td><td>No se pudo encontrar el servidor [2] en [3] o [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2606</td><td>1034</td><td>El valor de la propiedad [2] no es una ruta completa válida: '[3]'.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2607</td><td>1034</td><td>La tabla Medios no se ha encontrado o está vacía (necesaria para la instalación de los archivos).</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2608</td><td>1034</td><td>No se pudo crear un descriptor de seguridad para el objeto. Error: '[2]'.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2609</td><td>1034</td><td>Intente actualizar la configuración del producto antes de la inicialización.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2611</td><td>1034</td><td>El archivo [2] está marcado como comprimido, pero la entrada del medio asociado no especifica ningún archivo .cab.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2612</td><td>1034</td><td>La secuencia no se ha encontrado en la columna '[2]'. Clave principal: '[3]'.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2613</td><td>1034</td><td>La secuencia de la acción Eliminar productos existentes no es correcta.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2614</td><td>1034</td><td>No se pudo acceder al objeto IStorage desde el paquete de instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2615</td><td>1034</td><td>Se ha omitido la anulación del registro del módulo [2] debido a un fallo de resolución de origen.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2616</td><td>1034</td><td>Falta elemento principal del archivo complementario [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2617</td><td>1034</td><td>No se ha encontrado el componente compartido [2] en la tabla Componente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2618</td><td>1034</td><td>No se ha encontrado el componente de aplicación aislado [2] en la tabla Componente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2619</td><td>1034</td><td>Los componentes aislados [2], [3] no forman parte de la misma función.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2620</td><td>1034</td><td>El archivo de claves del componente de aplicación aislado [2] no se encuentra en la tabla Archivo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2621</td><td>1034</td><td>La información de la ID o DLL de recursos del acceso directo [2] no se ha establecido correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27</td><td>1034</td><td>Error al leer el archivo [2]. {{ Error del sistema [3].}} Compruebe que el archivo existe y que puede obtener acceso a él.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2701</td><td>1034</td><td>La profundidad de una función excede el máximo de [2] niveles de profundidad del árbol admitidos.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2702</td><td>1034</td><td>Un registro de la tabla Función ([2]) hace referencia a un elemento principal no existente en el campo Atributos.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2703</td><td>1034</td><td>No se ha definido el nombre de propiedad de la ruta de origen raíz: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2704</td><td>1034</td><td>Propiedad de directorio raíz no definida: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2705</td><td>1034</td><td>Tabla no válida: [2]; No se pudo vincular como árbol.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2706</td><td>1034</td><td>No se han creado las rutas de origen. No existe ninguna ruta para la entrada [2] en la tabla Directorio.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2707</td><td>1034</td><td>No se han creado las rutas de destino. No existe ninguna ruta para la entrada [2] en la tabla Directorios.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2708</td><td>1034</td><td>No se han encontrado entradas en la tabla de archivos.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2709</td><td>1034</td><td>No se ha encontrado el nombre del componente especificado ('[2]') en la tabla Componente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2710</td><td>1034</td><td>El estado 'Seleccionar' solicitado no es válido para este componente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2711</td><td>1034</td><td>No se ha encontrado el nombre de función especificado ('[2]') en la tabla Función.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2712</td><td>1034</td><td>Devolución no válida desde el cuadro de diálogo no modal: [3], en la acción [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2713</td><td>1034</td><td>Valor nulo en una columna que no puede dejarse vacía ('[2]' en la columna '[3]' de la tabla '[4]'.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2714</td><td>1034</td><td>Valor no válido para el nombre de carpeta predeterminado: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2715</td><td>1034</td><td>No se ha encontrado la clave de archivo especificada ('[2]') en la tabla Archivo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2716</td><td>1034</td><td>No se pudo crear un nombre de subcomponente aleatorio para el componente '[2]'.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2717</td><td>1034</td><td>Condición de acción incorrecta o acción personalizada de llamada a error '[2]'.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2718</td><td>1034</td><td>Falta el nombre de paquete para el código del producto '[2]'.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2719</td><td>1034</td><td>No se ha encontrado ni la ruta de la letra de la unidad ni la ruta UNC en el origen '[2]'.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2720</td><td>1034</td><td>Error al abrir clave de lista de orígenes. Error: '[2]'</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2721</td><td>1034</td><td>Acción personalizada [2] no encontrada en la secuencia de la tabla Binarios.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2722</td><td>1034</td><td>Acción personalizada [2] no encontrada en la tabla Archivo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2723</td><td>1034</td><td>La acción personalizada [2] especifica un tipo no admitido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2724</td><td>1034</td><td>La etiqueta del volumen '[2]' del medio desde el que ejecuta la instalación no coincide con la etiqueta '[3]' proporcionada en la tabla Medios. Esto únicamente es posible si sólo hay 1 entrada en la tabla Medios.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2725</td><td>1034</td><td>Tablas de base de datos no válidas</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2726</td><td>1034</td><td>Acción no encontrada: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2727</td><td>1034</td><td>La entrada de directorio '[2]' no existe en la tabla Directorio.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2728</td><td>1034</td><td>Error de definición de tabla: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2729</td><td>1034</td><td>El motor de instalación no se ha inicializado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2730</td><td>1034</td><td>Valor incorrecto en la base de datos. Tabla: '[2]'; Clave principal: '[3]'; Columna: '[4]'</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2731</td><td>1034</td><td>Administrador de selección no inicializado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2732</td><td>1034</td><td>Administrador de directorio no inicializado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2733</td><td>1034</td><td>Clave externa incorrecta ('[2]') en la columna '[3]' de la tabla '[4]'.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2734</td><td>1034</td><td>Carácter de modo de reinstalación no válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2735</td><td>1034</td><td>La acción personalizada '[2]' ha provocado una excepción no identificada y se ha detenido. Esto puede ser resultado de un error interno en la acción personalizada, como una infracción de acceso.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2736</td><td>1034</td><td>La generación del archivo temporal de acción personalizada no se ha realizado correctamente: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2737</td><td>1034</td><td>No se pudo acceder a la acción personalizada [2], entrada [3], biblioteca [4]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2738</td><td>1034</td><td>No se pudo acceder al tiempo de ejecución de VBScript para la acción personalizada [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2739</td><td>1034</td><td>No se pudo acceder al tiempo de ejecución de JavaScript para la acción personalizada [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2740</td><td>1034</td><td>Acción personalizada [2] error de archivo de comandos [3], [4]: [5] Línea [6], Columna [7], [8].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2741</td><td>1034</td><td>La información de configuración del producto [2] está dañada. Información no válida: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2742</td><td>1034</td><td>El cálculo de referencia del servidor no se ha realizado correctamente: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2743</td><td>1034</td><td>No se pudo ejecutar la acción personalizada [2], ubicación: [3], comando: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2744</td><td>1034</td><td>Fallo en archivo ejecutable llamado mediante la acción personalizada [2], ubicación: [3], comando: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2745</td><td>1034</td><td>Transformación de [2] no válida para el paquete [3]. Idioma previsto [4]; idioma encontrado [5].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2746</td><td>1034</td><td>Transformación de [2] no válida para el paquete [3]. Producto previsto [4]; producto encontrado [5].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2747</td><td>1034</td><td>Transformación de [2] no válida para el paquete [3]. Versión del producto prevista &lt; [4]; versión del producto encontrada [5].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2748</td><td>1034</td><td>Transformación de [2] no válida para el paquete [3]. Versión del producto prevista &lt;= [4]; versión del producto encontrada [5].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2749</td><td>1034</td><td>Transformación de [2] no válida para el paquete [3]. Versión del producto prevista == [4]; versión del producto encontrada [5].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2750</td><td>1034</td><td>Transformación de [2] no válida para el paquete [3]. Versión del producto prevista &gt;= [4]; versión del producto encontrada [5].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27502</td><td>1034</td><td>No se pudo conectar al [2] '[3]'. [3]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27503</td><td>1034</td><td>Error al recuperar la cadena de la versión de [2] '[3]'. [3]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27504</td><td>1034</td><td>No se cumplen los requisitos de la versión de SQL: [3]. Esta instalación requiere [2] [4] o posterior.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27505</td><td>1034</td><td>No se pudo abrir el archivo de comandos de SQL [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27506</td><td>1034</td><td>Error al ejecutar el archivo de comandos de SQL [2]. Línea [3]. [4]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27507</td><td>1034</td><td>Examinar servidores de bases de datos o conectarse a ellos requiere que MDAC esté instalado.  La instalación va a finalizar.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27508</td><td>1034</td><td>Error al instalar la aplicación COM+ [2]. [3]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27509</td><td>1034</td><td>Error al desinstalar la aplicación COM+ [2]. [3]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2751</td><td>1034</td><td>Transformación de [2] no válida para el paquete [3]. Versión del producto prevista &gt; [4]; versión del producto encontrada [5].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27510</td><td>1034</td><td>Error al instalar la aplicación COM+ [2]. No se pudo crear el objeto System.EnterpriseServices.RegistrationHelper. Para registrar los componentes utilizados por Microsoft(R) .NET, Microsoft(R) .NET Framework deberá estar instalado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27511</td><td>1034</td><td>No se pudo ejecutar el archivo de comandos de SQL [2]. La conexión no está abierta: [3]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27512</td><td>1034</td><td>Error al comenzar las transacciones para [2] '[3]'. Base de datos [4]. [5]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27513</td><td>1034</td><td>Error al realizar transacciones para [2] '[3]'. Base de datos [4]. [5]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27514</td><td>1034</td><td>Esta instalación necesita Microsoft SQL Server. El servidor especificado '[3]' es Microsoft SQL Server Desktop Engine o SQL Server Express.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27515</td><td>1034</td><td>Error al recuperar la versión esquemática desde [2] '[3]'. Base de datos: '[4]'. [5]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27516</td><td>1034</td><td>Error al escribir la versión esquemática hacia [2] '[3]'. Base de datos: '[4]'. [5]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27517</td><td>1034</td><td>Esta instalación requiere privilegios de administrador para instalar aplicaciones COM+. Inicie sesión como administrador e intente de nuevo llevar a cabo esta instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27518</td><td>1034</td><td>La aplicación COM+ "[2]" está configurada para funcionar como un servicio NT; esto requiere que su sistema tenga instalado COM+ 1.5 o posterior. Como su sistema tiene COM+ 1.0, esta aplicación no se instalará.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27519</td><td>1034</td><td>Error al actualizar el archivo XML [2]. [3]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2752</td><td>1034</td><td>No se pudo abrir la transformación [2] almacenada como almacenamiento secundario del paquete [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27520</td><td>1034</td><td>Error al abrir el archivo XML [2]. [3]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27521</td><td>1034</td><td>Para configurar archivos XML, el programa de instalación necesita MSXML 3.0 o posterior. Compruebe que dispone de la versión 3.0 o posterior.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27522</td><td>1034</td><td>Error al crear el archivo XML [2]. [3]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27523</td><td>1034</td><td>Error al cargar servidores.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27524</td><td>1034</td><td>Error al cargar NetApi32.DLL. ISNetApi.dll necesita que NetApi32.DLL se haya cargado correctamente y requiere un sistema operativo basado en NT.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27525</td><td>1034</td><td>El servidor no se ha encontrado. Compruebe que el servidor especificado existe. El nombre de servidor no puede estar vacío.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27526</td><td>1034</td><td>Error no especificado de ISNetApi.dll.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27527</td><td>1034</td><td>El búfer es demasiado pequeño.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27528</td><td>1034</td><td>Acceso denegado. Compruebe los derechos de administración.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27529</td><td>1034</td><td>Equipo no válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2753</td><td>1034</td><td>El archivo '[2]' no está marcado para su instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27530</td><td>1034</td><td>Se ha recibido un error desconocido de NetAPI. Error del sistema: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27531</td><td>1034</td><td>Excepción no identificada.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27532</td><td>1034</td><td>Nombre de usuario no válido para este servidor o dominio.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27533</td><td>1034</td><td>Las contraseñas que distinguen entre mayúscula y minúscula no coinciden.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27534</td><td>1034</td><td>La lista está vacía.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27535</td><td>1034</td><td>Infracción de acceso.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27536</td><td>1034</td><td>Error al obtener grupo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27537</td><td>1034</td><td>Error al añadir el usuario al grupo. Compruebe que el grupo existe para este dominio o servidor.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27538</td><td>1034</td><td>Error al crear usuario.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27539</td><td>1034</td><td>NetAPI devolvió el código de error ERROR_NETAPI_ERROR_NOT_PRIMARY.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2754</td><td>1034</td><td>El archivo '[2]' no es un archivo de revisión válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27540</td><td>1034</td><td>El usuario especificado ya existe.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27541</td><td>1034</td><td>El grupo especificado ya existe.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27542</td><td>1034</td><td>Contraseña no válida. Compruebe que la contraseña cumple con la política de contraseñas de red.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27543</td><td>1034</td><td>Nombre no válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27544</td><td>1034</td><td>Grupo no válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27545</td><td>1034</td><td>El nombre de usuario no se puede dejar en blanco y debe introducirse de acuerdo con el formato DOMINIO\Nombre de usuario.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27546</td><td>1034</td><td>Error al cargar o crear el archivo INI en el directorio TEMP.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27547</td><td>1034</td><td>ISNetAPI.dll no se ha cargado o se produjo un error al cargar la dll. Deberá cargar esta dll para realizar esta operación. Compruebe que la dll se encuentra en el directorio SUPPORTDIR.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27548</td><td>1034</td><td>Error al suprimir el archivo INI que contiene la nueva información de usuario del directorio TEMP del usuario.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27549</td><td>1034</td><td>Error al obtener el controlador principal de dominio (PDC).</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2755</td><td>1034</td><td>El servidor ha devuelto un error inesperado [2] al intentar instalar el paquete [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27550</td><td>1034</td><td>Para crear un usuario, cada campo deberá tener un valor.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27551</td><td>1034</td><td>No se ha encontrado el controlador ODBC para [2]. Este componente es necesario para establecer conexión con los servidores de bases de datos de [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27552</td><td>1034</td><td>Error al crear la base de datos [4]. Servidor: [2] [3]. [5]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27553</td><td>1034</td><td>Error al conectar a la base de datos [4]. Servidor: [2] [3]. [5]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27554</td><td>1034</td><td>Error al intentar abrir la conexión [2]. No hay metadatos de base de datos válidos asociados a esta conexión.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_27555</td><td>1034</td><td>Error al intentar aplicar los permisos al objeto '[2]'. Error del sistema: [3] ([4])</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2756</td><td>1034</td><td>Se ha utilizado la propiedad '[2]' como propiedad de directorio en una o más tablas, pero no se ha asignado ningún valor jamás.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2757</td><td>1034</td><td>No se pudo crear información de resumen para la transformación [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2758</td><td>1034</td><td>La transformación de [2] no contiene una versión de MSI.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2759</td><td>1034</td><td>La transformación [2] de la versión [3] no es compatible con el motor; Mín: [4], Máx: [5].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2760</td><td>1034</td><td>Transformación de [2] no válida para el paquete [3]. Código de actualización previsto [4], encontrado [5].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2761</td><td>1034</td><td>No se puede iniciar la transacción. No se ha inicializado correctamente la exclusión mutua global.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2762</td><td>1034</td><td>No se puede escribir el registro del archivo de comandos. La transacción no se ha iniciado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2763</td><td>1034</td><td>No se puede ejecutar el archivo de comandos. La transacción no se ha iniciado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2765</td><td>1034</td><td>Falta el nombre de ensamblaje en la tabla Nombre de ensamblaje: Componente: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2766</td><td>1034</td><td>El archivo [2] es un archivo de almacenamiento MSI no válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2767</td><td>1034</td><td>No hay más datos{ mientras se enumera [2]}.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2768</td><td>1034</td><td>La transformación del paquete de revisión no es válida.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2769</td><td>1034</td><td>La acción personalizada [2] no cerró [3] MSIHANDLE.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2770</td><td>1034</td><td>La carpeta almacenada en la caché local [2] no se ha definido en la tabla de carpetas de la caché interna.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2771</td><td>1034</td><td>Falta un componente en la actualización de la función [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2772</td><td>1034</td><td>La nueva función de actualización [2] debe ser una función de hoja.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_28</td><td>1034</td><td>Otra aplicación tiene acceso exclusivo al archivo '[2]'. Cierre todas las demás aplicaciones y haga clic en Reintentar.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2801</td><td>1034</td><td>Mensaje desconocido: Tipo [2]. No se realizará ninguna acción.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2802</td><td>1034</td><td>No se ha encontrado ningún editor para el evento [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2803</td><td>1034</td><td>Vista de cuadro de diálogo no encontró un registro para el cuadro de diálogo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2804</td><td>1034</td><td>En la activación del control [3] en el cuadro de diálogo [2], Cuadro de diálogo CMsi no evaluó la condición [3] de forma satisfactoria.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2806</td><td>1034</td><td>El cuadro de diálogo [2] no ha evaluado la condición [3] correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2807</td><td>1034</td><td>No se reconoce la acción [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2808</td><td>1034</td><td>El botón predeterminado no está definido correctamente en el cuadro de diálogo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2809</td><td>1034</td><td>En el cuadro de diálogo [2], los punteros de control siguientes no forman un ciclo. Hay un puntero desde [3] hasta [4], pero no hay ningún puntero más.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2810</td><td>1034</td><td>En el cuadro de diálogo [2], los punteros de control siguientes no forman un ciclo. Hay un puntero desde [3] y [5] hasta [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2811</td><td>1034</td><td>En el cuadro de diálogo [2], el control [3] debe aparecer centrado, pero esto no es posible.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2812</td><td>1034</td><td>No se reconoce el evento [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2813</td><td>1034</td><td>Se ha llamado al evento Fin de cuadro de diálogo con el argumento [2], pero el cuadro de diálogo tiene un elemento principal.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2814</td><td>1034</td><td>En el cuadro de diálogo [2], el control [3] menciona un control no existente [4] como el control siguiente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2815</td><td>1034</td><td>La tabla Condición de control tiene una fila sin una condición para el cuadro de diálogo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2816</td><td>1034</td><td>La tabla Asignación de eventos hace referencia a un control no válido [4] en el cuadro de diálogo [2] correspondiente al evento [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2817</td><td>1034</td><td>El evento [2] no ha establecido correctamente el atributo del control [4] en el cuadro de diálogo [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2818</td><td>1034</td><td>En la tabla Evento de control, Fin de cuadro de diálogo tiene un argumento [2] no reconocido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2819</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] requiere una propiedad vinculada a él.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2820</td><td>1034</td><td>Se ha intentado inicializar un controlador ya inicializado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2821</td><td>1034</td><td>Se ha intentado inicializar un cuadro de diálogo ya inicializado: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2822</td><td>1034</td><td>No se puede llamar a ningún otro método desde el cuadro de diálogo [2] hasta que no se hayan añadido todos los controles.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2823</td><td>1034</td><td>Se ha intentado inicializar un control ya inicializado: [3] en el cuadro de diálogo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2824</td><td>1034</td><td>El atributo de cuadro de diálogo [3] requiere un registro de [2] campo(s) como mínimo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2825</td><td>1034</td><td>El atributo de control [3] requiere un registro de [2] campo(s) como mínimo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2826</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] excede los límites del cuadro de diálogo [4] en [5] píxeles.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2827</td><td>1034</td><td>El botón [4] del grupo de botones de opción [3] del cuadro de diálogo [2] excede los límites del grupo [5] en [6] píxeles.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2828</td><td>1034</td><td>Se ha intentado eliminar el control [3] del cuadro de diálogo [2], pero el control no forma parte del cuadro de diálogo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2829</td><td>1034</td><td>Intente utilizar un cuadro de diálogo no inicializado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2830</td><td>1034</td><td>Intente utilizar un control no inicializado en el cuadro de diálogo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2831</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] no admite [5] el atributo [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2832</td><td>1034</td><td>El cuadro de diálogo [2] no admite el atributo [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2833</td><td>1034</td><td>El control [4] del cuadro de diálogo [3] ignoró el mensaje [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2834</td><td>1034</td><td>Los punteros siguientes del cuadro de diálogo [2] no forman una única repetición continua.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2835</td><td>1034</td><td>No se ha encontrado el control [2] en el cuadro de diálogo [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2836</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] no puede centrarse.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2837</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] desea que winproc devuelva [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2838</td><td>1034</td><td>El elemento [2] de la tabla de selección es elemento principal de sí mismo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2839</td><td>1034</td><td>La configuración de la propiedad [2] no se ha realizado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2840</td><td>1034</td><td>El nombre del cuadro de diálogo de error no coincide.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2841</td><td>1034</td><td>No se ha encontrado ningún botón Aceptar en el cuadro de diálogo de error.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2842</td><td>1034</td><td>No se ha encontrado ningún campo de texto en el cuadro de diálogo de error.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2843</td><td>1034</td><td>No se admite el atributo Cadena de error en cuadros de diálogo estándar.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2844</td><td>1034</td><td>No se puede ejecutar un cuadro de diálogo de error si no se ha establecido el atributo Cadena de error.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2845</td><td>1034</td><td>El ancho total de los botones excede el tamaño del cuadro de diálogo de error.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2846</td><td>1034</td><td>Establecer enfoque no encontró el control requerido en el cuadro de diálogo de error.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2847</td><td>1034</td><td>Se ha establecido el estilo de mapa de bits y el icono del control [3] del cuadro de diálogo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2848</td><td>1034</td><td>Se ha intentado establecer el control [3] como el botón predeterminado del cuadro de diálogo [2], pero el control no existe.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2849</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] es de un tipo al que no se puede asignar un valor entero.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2850</td><td>1034</td><td>Tipo de volumen no reconocido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2851</td><td>1034</td><td>Los datos del icono [2] no son válidos.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2852</td><td>1034</td><td>Es necesario añadir al menos un control al cuadro de diálogo [2] antes de poder utilizarlo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2853</td><td>1034</td><td>El cuadro de diálogo [2] es no modal. No se debe llamar al método de ejecución desde él.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2854</td><td>1034</td><td>En el cuadro de diálogo [2], se ha designado el control [3] como el primer control activo, pero no existe tal control.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2855</td><td>1034</td><td>El grupo de botones de opción [3] del cuadro de diálogo [2] tiene menos de 2 botones.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2856</td><td>1034</td><td>Creando una segunda copia del cuadro de diálogo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2857</td><td>1034</td><td>Se menciona el directorio [2] en la tabla de selección, pero no se encuentra.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2858</td><td>1034</td><td>Los datos del mapa de bits [2] no son válidos.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2859</td><td>1034</td><td>Mensaje de error de prueba.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2860</td><td>1034</td><td>El botón Cancelar no está definido correctamente en el cuadro de diálogo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2861</td><td>1034</td><td>Los siguientes punteros de los botones de opción del control [3] del cuadro de diálogo [2] no forman un ciclo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2862</td><td>1034</td><td>Los atributos del control [3] del cuadro de diálogo [2] no definen un tamaño de icono válido. Estableciendo un tamaño de 16.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2863</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] necesita que el icono [4] tenga el tamaño [5]x[5], pero dicho tamaño no se encuentra disponible. Cargando el primer tamaño disponible.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2864</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] recibió un evento de exploración, pero no hay ningún directorio configurable para la selección actual. La causa más probable es que el botón de exploración no se ha creado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2865</td><td>1034</td><td>El control [3] de la cartelera [2] excede los límites de la cartelera [4] en [5] píxeles.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2866</td><td>1034</td><td>No se permite al cuadro de diálogo [2] devolver el argumento [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2867</td><td>1034</td><td>No se ha establecido la propiedad del cuadro de diálogo de error.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2868</td><td>1034</td><td>El cuadro de diálogo de error [2] no tiene establecido el bit de estilo de error.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2869</td><td>1034</td><td>Se ha establecido el bit de estilo de error en el cuadro de diálogo [2], pero no se trata de un cuadro de diálogo de error.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2870</td><td>1034</td><td>La cadena de ayuda [4] del control [3] del cuadro de diálogo [2] no incluye el carácter separador.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2871</td><td>1034</td><td>La tabla [2] no está actualizada: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2872</td><td>1034</td><td>El argumento del control Comprobar ruta del cuadro de diálogo [2] no es válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2873</td><td>1034</td><td>En el cuadro de diálogo [2], el control [3] tiene un límite de longitud de cadena no válido: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2874</td><td>1034</td><td>El cambio de la fuente del texto a [2] no se ha realizado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2875</td><td>1034</td><td>El cambio del color del texto a [2] no se ha realizado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2876</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] tiene que truncar la cadena: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2877</td><td>1034</td><td>No se han encontrado los datos binarios [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2878</td><td>1034</td><td>En el cuadro de diálogo [2], el control [3] tiene un valor posible: [4]. Este valor no es válido o está duplicado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2879</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] no puede analizar la cadena de máscara: [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2880</td><td>1034</td><td>No ejecute los eventos de control restantes.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2881</td><td>1034</td><td>La inicialización del Controlador CMsi no se ha realizado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2882</td><td>1034</td><td>El registro de la clase de ventana de cuadro de diálogo no se ha realizado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2883</td><td>1034</td><td>Error de Crear nuevo cuadro de diálogo en el cuadro de diálogo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2884</td><td>1034</td><td>Fallo al crear una ventana para el cuadro de diálogo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2885</td><td>1034</td><td>Fallo al crear el control [3] en el cuadro de diálogo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2886</td><td>1034</td><td>La creación de la tabla [2] no se ha realizado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2887</td><td>1034</td><td>La creación de un cursor en la tabla [2] no se ha realizado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2888</td><td>1034</td><td>La ejecución de la vista [2] no se ha realizado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2889</td><td>1034</td><td>La creación de la ventana para el control [3] del cuadro de diálogo [2] no se ha realizado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2890</td><td>1034</td><td>Fallo del controlador al crear un cuadro de diálogo inicializado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2891</td><td>1034</td><td>Fallo al destruir ventana para el cuadro de diálogo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2892</td><td>1034</td><td>[2] es un control de valores enteros exclusivamente; [3] no es un valor entero válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2893</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] acepta valores de propiedades con [5] caracteres de longitud como máximo. El valor [4] excede este límite y ha sido truncado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2894</td><td>1034</td><td>La carga de RICHED20.DLL no se ha realizado correctamente. GetLastError() ha devuelto: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2895</td><td>1034</td><td>La liberación de RICHED20.DLL no se ha realizado correctamente. GetLastError() ha devuelto: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2896</td><td>1034</td><td>La ejecución de la acción [2] no se ha realizado correctamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2897</td><td>1034</td><td>Fallo al crear cualquier fuente [2] en este sistema.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2898</td><td>1034</td><td>En el caso del estilo de texto [2], el sistema ha creado una fuente '[3]' en el conjunto de caracteres [4].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2899</td><td>1034</td><td>Fallo al crear estilo de texto [2]. GetLastError() ha devuelto: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_29</td><td>1034</td><td>No hay espacio en disco suficiente para instalar el archivo [2]. Libere espacio en disco y haga clic en Reintentar, o bien, haga clic en Cancelar para salir.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2901</td><td>1034</td><td>Parámetro no válido para la operación [2]: Parámetro [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2902</td><td>1034</td><td>Se ha llamado a la operación [2] fuera de la secuencia.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2903</td><td>1034</td><td>Falta el archivo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2904</td><td>1034</td><td>No se pudo aplicar Vincular imagen al archivo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2905</td><td>1034</td><td>No se pudo leer el registro desde el archivo de comandos [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2906</td><td>1034</td><td>Falta encabezado en el archivo de comandos [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2907</td><td>1034</td><td>No se pudo crear un descriptor seguro de seguridad. Error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2908</td><td>1034</td><td>No se pudo registrar el componente [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2909</td><td>1034</td><td>No se pudo anular el registro del componente [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2910</td><td>1034</td><td>No se pudo determinar la ID de seguridad del usuario.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2911</td><td>1034</td><td>No se pudo eliminar la carpeta [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2912</td><td>1034</td><td>No se pudo programar el archivo [2] para su eliminación al reiniciar.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2919</td><td>1034</td><td>No se ha especificado un archivo .cab para el archivo comprimido: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2920</td><td>1034</td><td>No se ha especificado el directorio de origen para el archivo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2924</td><td>1034</td><td>Versión del archivo de comandos [2] no admitida. Versión del archivo de comandos: [3], versión mínima: [4], versión máxima: [5].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2927</td><td>1034</td><td>La identificación de Carpeta de shell [2] no es válida.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2928</td><td>1034</td><td>Se ha superado el número máximo de orígenes. Omitiendo origen '[2]'.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2929</td><td>1034</td><td>No se pudo determinar la raíz de publicación. Error: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2932</td><td>1034</td><td>No se pudo crear el archivo [2] a partir de los datos del archivo de comandos. Error: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2933</td><td>1034</td><td>No se pudo inicializar el archivo de comandos de la acción de deshacer [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2934</td><td>1034</td><td>No se pudo proteger la transformación [2]. Error [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2935</td><td>1034</td><td>No se pudo desproteger la transformación [2]. Error [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2936</td><td>1034</td><td>No se pudo encontrar la transformación [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2937</td><td>1034</td><td>El Instalador de Windows no puede instalar un catálogo de protección de archivos del sistema. Catálogo: [2], Error: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2938</td><td>1034</td><td>El Instalador de Windows no puede recuperar un catálogo de protección de archivos del sistema de la caché local. Catálogo: [2], Error: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2939</td><td>1034</td><td>El Instalador de Windows no puede suprimir un catálogo de protección de archivos del sistema de la caché local. Catálogo: [2], Error: [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2940</td><td>1034</td><td>Administrador de directorio no proporcionó una resolución de origen.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2941</td><td>1034</td><td>No es posible calcular la comprobación por redundancia cíclica (CRC) del archivo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2942</td><td>1034</td><td>No se ha ejecutado la acción Vincular imagen en el archivo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2943</td><td>1034</td><td>Esta versión de Windows no admite la distribución de paquetes de 64 bits. El archivo de comandos [2] corresponde a un paquete de 64 bits.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2944</td><td>1034</td><td>Error de Obtener tipo de asignación de producto.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_2945</td><td>1034</td><td>La instalación de ComPlus App [2] no se ha realizado correctamente a causa del error [3].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_3</td><td>1034</td><td>Información [1]. </td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_30</td><td>1034</td><td>No se encuentra el archivo de origen [2]. Compruebe que el archivo existe y que puede obtener acceso a él.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_3001</td><td>1034</td><td>Las revisiones de esta lista contienen información de secuencia incorrecta: [2][3][4][5][6][7][8][9][10][11][12][13][14][15][16].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_3002</td><td>1034</td><td>La revisión [2] contiene información de secuencia no válida. </td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_31</td><td>1034</td><td>Error al leer el archivo [3]. {{ Error del sistema [2].}} Compruebe que el archivo existe y que puede obtener acceso a él.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_32</td><td>1034</td><td>Error al escribir en el archivo [3]. {{ Error del sistema [2].}} Compruebe que dispone de acceso a ese directorio.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_33</td><td>1034</td><td>No se ha encontrado el archivo de origen {{(.CAB)}} [2]. Compruebe que el archivo existe y que puede obtener acceso a él.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_34</td><td>1034</td><td>No se puede crear el directorio '[2]'. Ya existe un archivo con este nombre. Cambie el nombre al archivo o quítelo y haga clic en Reintentar, o bien haga clic en Cancelar para salir.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_35</td><td>1034</td><td>El volumen [2] no está disponible en este momento. Seleccione otro volumen.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_36</td><td>1034</td><td>La ruta de acceso especificada, '[2]', no está disponible.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_37</td><td>1034</td><td>No se puede escribir en la carpeta especificada, '[2]'.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_38</td><td>1034</td><td>Se produjo un error de red al intentar leer el archivo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_39</td><td>1034</td><td>Se produjo un error al intentar crear el directorio [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_4</td><td>1034</td><td>Error interno [1]. [2]{, [3]}{, [4]}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_40</td><td>1034</td><td>Se produjo un error de red al intentar crear el directorio [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_41</td><td>1034</td><td>Se produjo un error de red al intentar abrir el archivo .CAB de origen [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_42</td><td>1034</td><td>La ruta de acceso especificada es demasiado larga: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_43</td><td>1034</td><td>El instalador no tiene suficientes privilegios para modificar el archivo [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_44</td><td>1034</td><td>Una parte de la ruta de acceso a la carpeta '[2]'no es válida porque está vacía o supera la longitud permitida por el sistema.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_45</td><td>1034</td><td>La ruta de acceso a la carpeta '[2]' contiene palabras no válidas para rutas de acceso a carpetas.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_46</td><td>1034</td><td>La ruta de acceso a la carpeta '[2]' contiene un carácter no válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_47</td><td>1034</td><td>'[2]' no es un nombre corto de archivo válido.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_48</td><td>1034</td><td>Error al obtener la seguridad del archivo: [3]. GetLastError: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_49</td><td>1034</td><td>Unidad no válida: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_5</td><td>1034</td><td>{{Disco lleno: }}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_50</td><td>1034</td><td>No se puede crear la clave [2]. {{ Error del sistema [3].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico. </td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_51</td><td>1034</td><td>No se puede abrir la clave [2]. {{ Error del sistema [3].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico. </td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_52</td><td>1034</td><td>No se puede eliminar el valor [2] de la clave [3]. {{Error del sistema [4].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico. </td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_53</td><td>1034</td><td>No se puede eliminar la clave [2]. {{Error del sistema [3].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico. </td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_54</td><td>1034</td><td>No se puede leer el valor [2] de la clave [3]. {{Error del sistema [4].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico. </td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_55</td><td>1034</td><td>No se puede escribir el valor [2] en la clave [3]. {{Error del sistema [4].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_56</td><td>1034</td><td>No se pueden obtener los nombres de los valores para la clave [2]. {{Error del sistema [3].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_57</td><td>1034</td><td>No se pueden obtener los nombres de las subclaves de la clave [2]. {{Error del sistema [3].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_58</td><td>1034</td><td>No se puede leer la información de seguridad de la clave [2]. {{Error del sistema [3].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_59</td><td>1034</td><td>No se puede aumentar el espacio disponible en el registro de configuraciones. Para instalar esta aplicación se requieren [2] KB de espacio en el registro.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_6</td><td>1034</td><td>Acción [Time]: [1]. [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_60</td><td>1034</td><td>Ya hay otra instalación en curso. Termine esa instalación antes de continuar con ésta.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_61</td><td>1034</td><td>Error al obtener acceso a los datos protegidos. Asegúrese de que Windows Installer está configurado correctamente y vuelva a intentar realizar la instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_62</td><td>1034</td><td>El usuario '[2]' ya inició previamente una instalación del producto '[3]', pero deberá ejecutar la instalación de nuevo para poder utilizar el producto. La instalación actual de este producto continuará.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_63</td><td>1034</td><td>El usuario '[2]' ya inició previamente una instalación del producto '[3]', pero deberá ejecutar la instalación de nuevo para poder utilizarlo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_64</td><td>1034</td><td>Espacio en disco insuficiente -- Volumen: '[2]'; espacio requerido: [3] KB; espacio disponible: [4] KB. Libere espacio en disco e inténtelo de nuevo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_65</td><td>1034</td><td>¿Está seguro de que desea cancelar la operación?</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_66</td><td>1034</td><td>El archivo [2][3] está en uso{ por el proceso siguiente: Nombre: [4], Id.: [5], Título de ventana: '[6]'}. Cierre esa aplicación e inténtelo de nuevo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_67</td><td>1034</td><td>El producto '[2]' ya está instalado, lo que impide que se instale este producto porque ambos productos son incompatibles entre sí.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_68</td><td>1034</td><td>Espacio en disco insuficiente -- Volumen: '[2]'; espacio requerido: [3] KB; espacio disponible: [4] KB. Si la función de restauración está deshabilitada, el espacio disponible es suficiente. Haga clic en 'Cancelar' para salir, en 'Reintentar' para volver a comprobar el espacio en disco disponible, o bien, en 'Omitir' para continuar sin habilitar la función de restauración.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_69</td><td>1034</td><td>No se puede obtener acceso a la ubicación de red [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_7</td><td>1034</td><td>[ProductName]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_70</td><td>1034</td><td>Deben cerrarse las aplicaciones siguientes antes de continuar con la instalación:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_71</td><td>1034</td><td>No se encuentra ningún producto compatible instalado en el equipo para instalar este producto.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_72</td><td>1034</td><td>La clave [2] no es válida. Compruebe que escribió la clave correcta.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_73</td><td>1034</td><td>El instalador debe reiniciar el sistema para que pueda continuar la configuración de [2]. Haga clic en Sí para reiniciar el sistema ahora o elija No si tiene previsto reiniciarlo manualmente más tarde.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_74</td><td>1034</td><td>Debe reiniciar el sistema para que los cambios de configuración efectuados en [2] tengan efecto. Haga clic en Sí para reiniciar el sistema ahora o elija No si tiene previsto reiniciarlo manualmente más tarde.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_75</td><td>1034</td><td>Actualmente hay una instalación de [2] en suspenso. Debe deshacer los cambios realizados por dicha instalación para poder continuar. ¿Desea deshacer esos cambios?</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_76</td><td>1034</td><td>Ya hay en curso una instalación anterior de este producto. Debe deshacer los cambios realizados por dicha instalación para poder continuar. ¿Desea deshacer esos cambios?</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_77</td><td>1034</td><td>No se encuentra ningún paquete de instalación para el producto [2]. Vuelva a intentar la instalación utilizando una copia válida del paquete de instalación '[3]'.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_78</td><td>1034</td><td>La operación de instalación finalizó satisfactoriamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_79</td><td>1034</td><td>Fallo en la operación de instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_8</td><td>1034</td><td>{[2]}{, [3]}{, [4]}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_80</td><td>1034</td><td>Producto: [2] -- [3]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_81</td><td>1034</td><td>Puede restaurar el equipo a su estado anterior o continuar con la instalación más tarde. ¿Desea restaurar el equipo?</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_82</td><td>1034</td><td>Se produjo un error mientras se escribía la información de instalación en el disco. Compruebe que hay suficiente espacio en disco disponible y haga clic en Reintentar, o bien haga clic en Cancelar para terminar la instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_83</td><td>1034</td><td>No se encuentran uno o varios archivos necesarios para restaurar el equipo a su estado anterior. La restauración no podrá realizarse.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_84</td><td>1034</td><td>La ruta de acceso [2] no es válida. Especifique una ruta de acceso válida.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_85</td><td>1034</td><td>Memoria insuficiente. Cierre otras aplicaciones antes de intentarlo de nuevo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_86</td><td>1034</td><td>No hay ningún disco en la unidad [2]. Inserte uno y haga clic en Reintentar, o bien haga clic en Cancelar para volver al volumen previamente seleccionado.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_87</td><td>1034</td><td>No hay ningún disco en la unidad [2]. Inserte uno y haga clic en Reintentar, o bien haga clic en Cancelar para volver al cuadro de diálogo de examinar y seleccionar un volumen distinto.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_88</td><td>1034</td><td>La carpeta [2] no existe. Escriba una ruta de acceso a una carpeta existente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_89</td><td>1034</td><td>No dispone de privilegios para leer esta carpeta.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_9</td><td>1034</td><td>Tipo de mensaje: [1], argumento: [2]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_90</td><td>1034</td><td>No se puede determinar una carpeta de destino válida para la instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_91</td><td>1034</td><td>Error al intentar leer la base de datos de instalación de origen: [2].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_92</td><td>1034</td><td>Programando la operación de reinicio: cambiando el nombre del archivo [2] a [3]. Para completar la operación se debe reiniciar el equipo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_93</td><td>1034</td><td>Programando la operación de reinicio: eliminando el archivo [2]. Para completar la operación se debe reiniciar el equipo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_94</td><td>1034</td><td>Error al registrar el módulo [2]. HRESULT [3].  Póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_95</td><td>1034</td><td>Error al eliminar el módulo [2] del registro. HRESULT [3]. Póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_96</td><td>1034</td><td>Fallo al almacenar el paquete [2] en la memoria caché. Error: [3]. Póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_97</td><td>1034</td><td>No se puede registrar la fuente [2]. Compruebe que dispone de suficientes permisos para instalar fuentes y que el sistema admite esta fuente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_98</td><td>1034</td><td>No se puede eliminar del registro la fuente [2]. Compruebe que dispone de suficientes permisos para quitar fuentes.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ERROR_99</td><td>1034</td><td>No se puede crear el acceso directo [2]. Compruebe que la carpeta de destino existe y que puede obtener acceso a ella.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_INSTALLDIR</td><td>1034</td><td>{&amp;Tahoma8}[INSTALLDIR]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_INSTALLSHIELD</td><td>1034</td><td>InstallShield</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_INSTALLSHIELD_FORMATTED</td><td>1034</td><td>{&amp;MSSWhiteSerif8}InstallShield</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ISSCRIPT_VERSION_MISSING</td><td>1034</td><td>El procesador de InstallScript no se encuentra en el equipo.  Si se encuentra disponible, ejecute ISScript.msi o póngase en contacto con el personal de asistencia para que le ayude.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_ISSCRIPT_VERSION_OLD</td><td>1034</td><td>Para ejecutar esta instalación es necesaria una versión del procesador InstallScript más reciente que la que se encuentra en el equipo.  Si se encuentra disponible, instale la versión más reciente de ISScript.msi o póngase en contacto con el personal de asistencia para que le ayude.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_NEXT</td><td>1034</td><td>&amp;Siguiente &gt;</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_OK</td><td>1034</td><td>{&amp;Tahoma8}&amp;Aceptar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PREREQUISITE_SETUP_BROWSE</td><td>1034</td><td>Abrir [SETUPEXENAME] original de [ProductName] </td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PREREQUISITE_SETUP_INVALID</td><td>1034</td><td>Este archivo ejecutable no parece ser el archivo ejecutable original de [ProductName]. Si no se utiliza el [SETUPEXENAME] original para instalar las dependencias adicionales, es posible que [ProductName] no funcione correctamente. ¿Desea buscar el [SETUPEXENAME] original?</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PREREQUISITE_SETUP_SEARCH</td><td>1034</td><td>Esta instalación puede requerir dependencias adicionales. Sin ellas, es posible que [ProductName] no funcione correctamente. ¿Desea buscar el [SETUPEXENAME] original?</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PREVENT_DOWNGRADE_EXIT</td><td>1034</td><td>Ya tienes una versión más reciente de esta aplicación instalada en tu ordenador. Si deseas instalar esta versión, primero deberás desinstalar la versión más reciente. Haz clic en Aceptar para salir del asistente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PRINT_BUTTON</td><td>1034</td><td>&amp;Imprimir</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PRODUCTNAME_INSTALLSHIELD</td><td>1034</td><td>[ProductName] - InstallShield Wizard</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_CREATEAPPPOOL</td><td>1034</td><td>Creando grupo de aplicación %s</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_CREATEAPPPOOLS</td><td>1034</td><td>Creando grupos de aplicación...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_CREATEVROOT</td><td>1034</td><td>Creando directorio virtual de IIS %s</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_CREATEVROOTS</td><td>1034</td><td>Creando directorios virtuales de IIS...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_CREATEWEBSERVICEEXTENSION</td><td>1034</td><td>Creando extensión de servicio Web</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_CREATEWEBSERVICEEXTENSIONS</td><td>1034</td><td>Creando extensiones de servicio Web...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_CREATEWEBSITE</td><td>1034</td><td>Creando sitio web de IIS %s</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_CREATEWEBSITES</td><td>1034</td><td>Creando sitios web de IIS...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_EXTRACT</td><td>1034</td><td>Extrayendo información para los directorios virtuales de IIS...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_EXTRACTDONE</td><td>1034</td><td>Información extraída para los directorios virtuales de IIS...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_REMOVEAPPPOOL</td><td>1034</td><td>Eliminando grupo de aplicación</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_REMOVEAPPPOOLS</td><td>1034</td><td>Eliminando grupos de aplicación...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_REMOVESITE</td><td>1034</td><td>Eliminando el sitio Web del puerto %d</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_REMOVEVROOT</td><td>1034</td><td>Eliminando directorio virtual de IIS %s</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_REMOVEVROOTS</td><td>1034</td><td>Eliminando directorios virtuales de IIS...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_REMOVEWEBSERVICEEXTENSION</td><td>1034</td><td>Eliminando extensión de servicio Web</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_REMOVEWEBSERVICEEXTENSIONS</td><td>1034</td><td>Eliminando extensiones de servicio Web...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_REMOVEWEBSITES</td><td>1034</td><td>Eliminando sitios web de IIS...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_ROLLBACKAPPPOOLS</td><td>1034</td><td>Deshaciendo grupos de aplicación...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_ROLLBACKVROOTS</td><td>1034</td><td>Deshaciendo cambios del sitio Web y directorio virtual...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>1034</td><td>Deshaciendo extensiones de servicio Web...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_TEXTFILECHANGS_REPLACE</td><td>1034</td><td>Reemplazando %s por %s en %s...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_XML_COSTING</td><td>1034</td><td>Calculando espacio en disco para instalar archivos XML...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_XML_CREATE_FILE</td><td>1034</td><td>Creando archivo XML %s...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_XML_FILES</td><td>1034</td><td>Realizando cambios en el archivo XML...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_XML_REMOVE_FILE</td><td>1034</td><td>Eliminado archivo XML %s...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_XML_ROLLBACK_FILES</td><td>1034</td><td>Deshaciendo cambios del archivo XML...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_PROGMSG_XML_UPDATE_FILE</td><td>1034</td><td>Actualizando archivo XML %s...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SETUPEXE_EXPIRE_MSG</td><td>1034</td><td>Esta configuración funcionará hasta %s. Se cerrará la instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SETUPEXE_LAUNCH_COND_E</td><td>1034</td><td>Esta configuración se creó con una versión de evaluación de InstallShield y solo se puede iniciar desde el archivo setup.exe.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLBROWSE_INTRO</td><td>1034</td><td>Seleccione el servidor de base de datos de destino en la lista de servidores que aparece a continuación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1034</td><td>En la lista de nombres de catálogo siguiente, seleccione el catálogo de base de datos de destino.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1034</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLLOGIN_BROWSE</td><td>1034</td><td>E&amp;xaminar...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLLOGIN_BROWSE_DB</td><td>1034</td><td>Exa&amp;minar...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLLOGIN_CATALOG</td><td>1034</td><td>&amp;Nombre del catálogo de base de datos:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLLOGIN_CONNECT</td><td>1034</td><td>Conectarse a través de:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLLOGIN_DESC</td><td>1034</td><td>Seleccione el servidor de base de datos y el método de autenticación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLLOGIN_ID</td><td>1034</td><td>ID &amp;inicio de sesión:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLLOGIN_INTRO</td><td>1034</td><td>En la lista que aparece a continuación, seleccione el servidor de base de datos que va a instalar o bien haga clic en Examinar para ver una lista de todos los servidores de bases de datos. También puede especificar la forma de autenticar su inicio de sesión utilizando sus credenciales actuales o una contraseña e ID de inicio de sesión de SQL.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLLOGIN_PSWD</td><td>1034</td><td>C&amp;ontraseña:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLLOGIN_SERVER</td><td>1034</td><td>&amp;Servidor de base de datos:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLLOGIN_SERVER2</td><td>1034</td><td>&amp;Servidor de base de datos en el que se realiza la instalación:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLLOGIN_SQL</td><td>1034</td><td>Autenticación de S&amp;QL servidor con la contraseña e ID de inicio de sesión indicados a continuación</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLLOGIN_TITLE</td><td>1034</td><td>{&amp;MSSansBold8}Servidor de base de datos</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLLOGIN_WIN</td><td>1034</td><td>&amp;Las credenciales de autenticación de Windows del usuario actual</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLSCRIPT_INSTALLING</td><td>1034</td><td>Ejecutando archivo de comandos de instalación de SQL...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SQLSCRIPT_UNINSTALLING</td><td>1034</td><td>Ejecutando archivo de comandos de desinstalación de SQL...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_STANDARD_USE_SETUPEXE</td><td>1034</td><td>La instalación no se puede ejecutar iniciando directamente el paquete MSI; debe ejecutar setup.exe.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SetupTips_Advertise</td><td>1034</td><td>{&amp;Tahoma8}Se instalará la primera vez que se use. (Disponible sólo si el componente admite esta opción).</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SetupTips_AllInstalledLocal</td><td>1034</td><td>{&amp;Tahoma8}Se instalará completamente en el disco duro local.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SetupTips_CustomSetup</td><td>1034</td><td>{&amp;MSSansBold8}Sugerencias de instalación personalizada</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SetupTips_CustomSetupDescription</td><td>1034</td><td>{&amp;Tahoma8}La instalación personalizada permite instalar componentes del programa selectivamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SetupTips_IconInstallState</td><td>1034</td><td>{&amp;Tahoma8}El icono al lado del nombre del componente indica el estado de instalación del componente. Haga clic en el icono para desplegar el menú de estado de instalación de cada componente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SetupTips_InstallState</td><td>1034</td><td>{&amp;Tahoma8}Este estado de instalación indica que el componente...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SetupTips_Network</td><td>1034</td><td>{&amp;Tahoma8}Se instalará para su ejecución desde red. (Disponible sólo si el componente admite esta opción).</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SetupTips_OK</td><td>1034</td><td>{&amp;Tahoma8}Aceptar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SetupTips_SubFeaturesInstalledLocal</td><td>1034</td><td>{&amp;Tahoma8}Algunos subcomponentes se instalarán en el disco duro local. (Disponible sólo si el componente tiene subcomponentes).</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_SetupTips_WillNotBeInstalled</td><td>1034</td><td>{&amp;Tahoma8}No se instalarán.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_Available</td><td>1034</td><td>Disponible</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_Bytes</td><td>1034</td><td>bytes</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_CompilingFeaturesCost</td><td>1034</td><td>Compilando el coste de este componente...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_Differences</td><td>1034</td><td>Diferencias</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_DiskSize</td><td>1034</td><td>Tamaño del disco</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureCompletelyRemoved</td><td>1034</td><td>Este componente se eliminará completamente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureContinueNetwork</td><td>1034</td><td>Este componente se continuará ejecutando desde red.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureFreeSpace</td><td>1034</td><td>Este componente liberará [1] en el disco duro.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureInstalledCD</td><td>1034</td><td>Este componente y todos sus subcomponentes se instalarán para ejecución desde el CD.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureInstalledCD2</td><td>1034</td><td>Este componente se instalará para ejecutar desde CD.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureInstalledLocal</td><td>1034</td><td>Este componente y todos sus subcomponentes se instalarán en el disco duro local.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureInstalledLocal2</td><td>1034</td><td>Este componente se instalará en el disco duro local.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureInstalledNetwork</td><td>1034</td><td>Este componente y todos sus subcomponentes se instalarán para su ejecución desde red.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureInstalledNetwork2</td><td>1034</td><td>Este componente se instalará para ejecutar desde red.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureInstalledRequired</td><td>1034</td><td>Se podrá instalar cuando sea necesario.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureInstalledWhenRequired</td><td>1034</td><td>Este componente se podrá instalar cuando sea necesario.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureInstalledWhenRequired2</td><td>1034</td><td>Este componente se podrá instalar cuando sea necesario.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureLocal</td><td>1034</td><td>Este componente se instalará en el disco duro local.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureLocal2</td><td>1034</td><td>Este componente se instalará en el disco duro local.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureNetwork</td><td>1034</td><td>Este componente se instalará para ejecutar desde red.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureNetwork2</td><td>1034</td><td>Este componente se instalará para su ejecución desde red.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureNotAvailable</td><td>1034</td><td>Este componente no estará disponible.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureOnCD</td><td>1034</td><td>Este componente se instalará para ejecutar desde CD.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureOnCD2</td><td>1034</td><td>Este componente estará disponible para su ejecución desde CD.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureRemainLocal</td><td>1034</td><td>Este componente permanecerá en el disco duro local.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureRemoveNetwork</td><td>1034</td><td>Este componente se eliminará del disco duro local pero estará disponible para su ejecución desde red.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureRemovedCD</td><td>1034</td><td>Este componente se eliminará del disco duro local pero estará disponible para su ejecución desde el CD.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureRemovedUnlessRequired</td><td>1034</td><td>Este componente se eliminará del disco duro local pero se podrá instalar cuando se requiera.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureRequiredSpace</td><td>1034</td><td>Este componente requiere [1] en el disco duro.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureRunFromCD</td><td>1034</td><td>Este componente se continuará ejecutando desde el CD.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureSpaceFree</td><td>1034</td><td>Este componente liberará [1] en el disco duro. Tiene seleccionados[2] de[3] subcomponentes. Estos subcomponentes liberarán [4] en el disco duro.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureSpaceFree2</td><td>1034</td><td>Este componente liberará [1] en el disco duro. Tiene seleccionados[2] de[3] subcomponentes. Estos subcomponentes requieren[4] en el disco duro.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureSpaceFree3</td><td>1034</td><td>Este componente requiere [1] en el disco duro. Tiene seleccionados[2] de[3] subcomponentes. Estos subcomponentes liberarán [4] en el disco duro.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureSpaceFree4</td><td>1034</td><td>Este componente requiere [1] en el disco duro. Tiene seleccionados [2] de[3] subcomponentes. Estos subcomponentes requieren [4] en el disco duro.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureUnavailable</td><td>1034</td><td>Este componente no estará disponible.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureUninstallNoNetwork</td><td>1034</td><td>Este componente se desinstalará completamente y no se podrá ejecutar desde red.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureWasCD</td><td>1034</td><td>Este componente se ejecutó desde CD pero se podrá instalar cuando se requiera.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureWasCDLocal</td><td>1034</td><td>Este componente se ejecutó desde el CD pero se instalará en el disco duro local.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureWasOnNetworkInstalled</td><td>1034</td><td>Este componente se ejecutó desde red pero se podrá instalar cuando se requiera.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureWasOnNetworkLocal</td><td>1034</td><td>Este componente se ejecutó desde el red pero se instalará en el disco duro local.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_FeatureWillBeUninstalled</td><td>1034</td><td>Este componente se desinstalará completamente y no se podrá ejecutar desde CD.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_Folder</td><td>1034</td><td>Carp|Carpeta nueva</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_GB</td><td>1034</td><td>GB</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_KB</td><td>1034</td><td>KB</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_MB</td><td>1034</td><td>MB</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_Required</td><td>1034</td><td>Requerido</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_TimeRemaining</td><td>1034</td><td>Tiempo restante:{[1] min. }{[2] seg}.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS_UITEXT_Volume</td><td>1034</td><td>Volumen</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__AgreeToLicense_0</td><td>1034</td><td>{&amp;Tahoma8}&amp;No acepto los términos del contrato de licencia</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__AgreeToLicense_1</td><td>1034</td><td>{&amp;Tahoma8}Ac&amp;epto los términos del contrato de licencia</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__DatabaseFolder_ChangeFolder</td><td>1034</td><td>Haga clic en Siguiente para instalar en esta carpeta o en Cambiar para instalar en una carpeta diferente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__DatabaseFolder_DatabaseDir</td><td>1034</td><td>[DATABASEDIR]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__DatabaseFolder_DatabaseFolder</td><td>1034</td><td>{&amp;MSSansBold8}Carpeta Base de datos</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__DestinationFolder_Change</td><td>1034</td><td>{&amp;Tahoma8}Ca&amp;mbiar...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__DestinationFolder_ChangeFolder</td><td>1034</td><td>{&amp;Tahoma8}Haga clic en Siguiente para instalar en esta carpeta o en Cambiar para instalar en una carpeta diferente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__DestinationFolder_DestinationFolder</td><td>1034</td><td>{&amp;MSSansBold8}Carpeta de destino</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__DestinationFolder_InstallTo</td><td>1034</td><td>{&amp;Tahoma8}Instalar[ProductName] en:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__DisplayName_Custom</td><td>1034</td><td>Personalizada</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__DisplayName_Minimal</td><td>1034</td><td>Mínima</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__DisplayName_Typical</td><td>1034</td><td>Típica</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallBrowse_11</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallBrowse_4</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallBrowse_8</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallBrowse_BrowseDestination</td><td>1034</td><td>{&amp;Tahoma8}Buscar la carpeta de destino.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallBrowse_ChangeDestination</td><td>1034</td><td>{&amp;MSSansBold8}Cambiar la carpeta de destino actual</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallBrowse_CreateFolder</td><td>1034</td><td>Crear nueva carpeta|</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallBrowse_FolderName</td><td>1034</td><td>{&amp;Tahoma8}&amp;Nombre de la carpeta:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallBrowse_LookIn</td><td>1034</td><td>{&amp;Tahoma8}&amp;Buscar en:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallBrowse_UpOneLevel</td><td>1034</td><td>Subir un nivel|</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallPointWelcome_ServerImage</td><td>1034</td><td>{&amp;Tahoma8}InstallShield(R) Wizard creará una imagen de servidor [ProductName] en la ubicación de red especificada. Para continuar, haga clic en Siguiente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallPointWelcome_Wizard</td><td>1034</td><td>{&amp;VerdanaBold14}Bienvenido a [ProductName] - InstallShield Wizard</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallPoint_Change</td><td>1034</td><td>{&amp;Tahoma8}Ca&amp;mbiar...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallPoint_EnterNetworkLocation</td><td>1034</td><td>{&amp;Tahoma8}Introduzca la ubicación de red o haga clic en Cambiar para buscar otra ubicación. Haga clic en Instalar para crear una imagen de servidor de [ProductName] en la ubicación de red especificada o haga clic en Cancelar para salir del asistente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallPoint_Install</td><td>1034</td><td>{&amp;Tahoma8}&amp;Instalar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallPoint_NetworkLocation</td><td>1034</td><td>{&amp;Tahoma8}&amp;Ubicación de red:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallPoint_NetworkLocationFormatted</td><td>1034</td><td>{&amp;MSSansBold8}Ubicación de red</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsAdminInstallPoint_SpecifyNetworkLocation</td><td>1034</td><td>{&amp;Tahoma8}Especificar una unidad de red para la imagen de servidor del producto.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsBrowseButton</td><td>1034</td><td>E&amp;xaminar...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsBrowseFolderDlg_11</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsBrowseFolderDlg_4</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsBrowseFolderDlg_8</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsBrowseFolderDlg_BrowseDestFolder</td><td>1034</td><td>{&amp;Tahoma8}Buscar la carpeta de destino.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsBrowseFolderDlg_ChangeCurrentFolder</td><td>1034</td><td>{&amp;MSSansBold8}Cambiar la carpeta de destino actual</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsBrowseFolderDlg_CreateFolder</td><td>1034</td><td>Crear nueva carpeta|</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsBrowseFolderDlg_FolderName</td><td>1034</td><td>{&amp;Tahoma8}&amp;Nombre de la carpeta:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsBrowseFolderDlg_LookIn</td><td>1034</td><td>{&amp;Tahoma8}&amp;Buscar en:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsBrowseFolderDlg_OK</td><td>1034</td><td>{&amp;Tahoma8}&amp;Aceptar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsBrowseFolderDlg_UpOneLevel</td><td>1034</td><td>Subir un nivel|</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsBrowseForAccount</td><td>1034</td><td>Buscar una cuenta de usuario</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsBrowseGroup</td><td>1034</td><td>Seleccionar un grupo de listas de usuarios</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsBrowseUsernameTitle</td><td>1034</td><td>Seleccionar un nombre de usuario</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsCancelDlg_ConfirmCancel</td><td>1034</td><td>{&amp;Tahoma8}¿Está seguro de que desea cancelar la instalación de [ProductName]?</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsCancelDlg_No</td><td>1034</td><td>{&amp;Tahoma8}&amp;No</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsCancelDlg_Yes</td><td>1034</td><td>{&amp;Tahoma8}&amp;Sí</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsConfirmPassword</td><td>1034</td><td>Con&amp;firmar contraseña:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsCreateNewUserTitle</td><td>1034</td><td>Información de nuevo usuario</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsCreateUserBrowse</td><td>1034</td><td>Información de nu&amp;evo usuario...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsCustomSelectionDlg_Change</td><td>1034</td><td>{&amp;Tahoma8}Ca&amp;mbiar...</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsCustomSelectionDlg_ClickFeatureIcon</td><td>1034</td><td>{&amp;Tahoma8}Para cambiar la forma de instalación de un componente, haga clic en un icono de la lista siguiente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsCustomSelectionDlg_CustomSetup</td><td>1034</td><td>{&amp;MSSansBold8}Instalación personalizada</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsCustomSelectionDlg_FeatureDescription</td><td>1034</td><td>{&amp;Tahoma8}Descripción del componente</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsCustomSelectionDlg_FeaturePath</td><td>1034</td><td>{&amp;Tahoma8}&lt;selected feature path&gt;</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsCustomSelectionDlg_FeatureSize</td><td>1034</td><td>{&amp;Tahoma8}Tamaño del componente</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsCustomSelectionDlg_Help</td><td>1034</td><td>{&amp;Tahoma8}A&amp;yuda</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsCustomSelectionDlg_InstallTo</td><td>1034</td><td>{&amp;Tahoma8}Instalar en:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsCustomSelectionDlg_MultilineDescription</td><td>1034</td><td>{&amp;Tahoma8}Descripción multilínea del elemento seleccionado actualmente</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsCustomSelectionDlg_SelectFeatures</td><td>1034</td><td>{&amp;Tahoma8}Seleccione los componentes del programa que desee instalar.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsCustomSelectionDlg_Space</td><td>1034</td><td>{&amp;Tahoma8}&amp;Espacio</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsDiskSpaceDlg_DiskSpace</td><td>1034</td><td>{&amp;Tahoma8}El espacio en disco necesario para la instalación excede el espacio disponible en el disco.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsDiskSpaceDlg_HighlightedVolumes</td><td>1034</td><td>{&amp;Tahoma8}El espacio en disco disponible de los volúmenes resaltados no es suficiente para los componentes seleccionados actualmente. Puede eliminar archivos de los volúmenes resaltados, instalar menos componentes en unidades locales o seleccionar otras unidades de instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsDiskSpaceDlg_Numbers</td><td>1034</td><td>{&amp;Tahoma8}{120}{70}{70}{70}{70}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsDiskSpaceDlg_OK</td><td>1034</td><td>{&amp;Tahoma8}&amp;Aceptar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsDiskSpaceDlg_OutOfDiskSpace</td><td>1034</td><td>{&amp;MSSansBold8}No hay espacio suficiente en disco</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsDomainOrServer</td><td>1034</td><td>&amp;Dominio o servidor:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsErrorDlg_Abort</td><td>1034</td><td>{&amp;Tahoma8}&amp;Anular</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsErrorDlg_ErrorText</td><td>1034</td><td>{&amp;Tahoma8}&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsErrorDlg_Ignore</td><td>1034</td><td>{&amp;Tahoma8}&amp;Ignorar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsErrorDlg_InstallerInfo</td><td>1034</td><td> Información del instalador de [ProductName]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsErrorDlg_NO</td><td>1034</td><td>{&amp;Tahoma8}&amp;No</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsErrorDlg_OK</td><td>1034</td><td>{&amp;Tahoma8}&amp;Aceptar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsErrorDlg_Retry</td><td>1034</td><td>{&amp;Tahoma8}&amp;Reintentar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsErrorDlg_Yes</td><td>1034</td><td>{&amp;Tahoma8}&amp;Sí</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsExitDialog_Finish</td><td>1034</td><td>{&amp;Tahoma8}&amp;Finalizar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsExitDialog_InstallSuccess</td><td>1034</td><td>{&amp;Tahoma8}InstallShield Wizard ha instalado [ProductName] correctamente. Haga clic en Finalizar para salir del asistente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsExitDialog_LaunchProgram</td><td>1034</td><td>Ejecutar programa</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsExitDialog_ShowReadMe</td><td>1034</td><td>Mostrar archivo Léame</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsExitDialog_UninstallSuccess</td><td>1034</td><td>{&amp;Tahoma8}InstallShield Wizard ha desinstalado [ProductName] correctamente. Haga clic en Finalizar para salir del asistente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsExitDialog_Update_InternetConnection</td><td>1034</td><td>Puede utilizar la conexión a Internet para asegurarse de que tiene las últimas actualizaciones.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsExitDialog_Update_PossibleUpdates</td><td>1034</td><td>Es posible que algunos archivos de programa se hayan actualizado desde que adquirió la copia de [ProductName].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsExitDialog_Update_SetupFinished</td><td>1034</td><td>El programa de instalación ha terminado de instalar [ProductName].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsExitDialog_Update_YesCheckForUpdates</td><td>1034</td><td>&amp;Sí, buscar actualizaciones de programas (Recomendado) una vez finalizada la instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsExitDialog_WizardCompleted</td><td>1034</td><td>{&amp;TahomaBold10}[ProductName] Finalizado - InstallShield Wizard</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFatalError_ClickFinish</td><td>1034</td><td>{&amp;Tahoma8}Haga clic en Finalizar para salir del asistente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFatalError_Finish</td><td>1034</td><td>{&amp;Tahoma8}&amp;Finalizar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFatalError_KeepOrRestore</td><td>1034</td><td>{&amp;Tahoma8}Puede guardar todos los elementos instalados en el sistema para continuar la instalación en otra ocasión o restaurar el sistema a su estado original anterior a la instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFatalError_NotModified</td><td>1034</td><td>{&amp;Tahoma8}Su sistema no ha sido modificado. Para completar la instalación en otra ocasión, vuelva a ejecutarla.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFatalError_RestoreOrContinueLater</td><td>1034</td><td>{&amp;Tahoma8}Haga clic en Restaurar o Continuar posteriormente para salir del Asistente de instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFatalError_WizardCompleted</td><td>1034</td><td>{&amp;TahomaBold10}[ProductName] Finalizado - InstallShield Wizard</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFatalError_WizardInterrupted</td><td>1034</td><td>{&amp;Tahoma8}El asistente se ha interrumpido antes de completar la instalación de [ProductName].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFeatureDetailsDlg_DiskSpaceRequirements</td><td>1034</td><td>{&amp;MSSansBold8}Requisitos de espacio en disco</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFeatureDetailsDlg_Numbers</td><td>1034</td><td>{&amp;Tahoma8}{120}{70}{70}{70}{70}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFeatureDetailsDlg_OK</td><td>1034</td><td>{&amp;Tahoma8}&amp;Aceptar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFeatureDetailsDlg_SpaceRequired</td><td>1034</td><td>{&amp;Tahoma8}Espacio en disco necesario para instalar los componentes seleccionados.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFeatureDetailsDlg_VolumesTooSmall</td><td>1034</td><td>{&amp;Tahoma8}El espacio en disco disponible de los volúmenes resaltados no es suficiente para los componentes seleccionados actualmente. Puede eliminar archivos de los volúmenes resaltados, instalar menos componentes en unidades locales o seleccionar otras unidades de instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFilesInUse_ApplicationsUsingFiles</td><td>1034</td><td>{&amp;Tahoma8}Las aplicaciones siguientes están utilizando archivos que se deben actualizar en esta instalación. Cierre estas aplicaciones y haga clic en Reintentar para continuar.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFilesInUse_Exit</td><td>1034</td><td>{&amp;Tahoma8}&amp;Salir</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFilesInUse_FilesInUse</td><td>1034</td><td>{&amp;MSSansBold8}Archivos en uso</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFilesInUse_FilesInUseMessage</td><td>1034</td><td>{&amp;Tahoma8}Se están utilizando actualmente algunos archivos que es necesario actualizar.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFilesInUse_Ignore</td><td>1034</td><td>{&amp;Tahoma8}&amp;Ignorar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsFilesInUse_Retry</td><td>1034</td><td>{&amp;Tahoma8}&amp;Reintentar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsGroup</td><td>1034</td><td>&amp;Grupo de listas de usuarios:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsGroupLabel</td><td>1034</td><td>&amp;Grupo de listas de usuarios:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsInitDlg_1</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsInitDlg_2</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsInitDlg_PreparingWizard</td><td>1034</td><td>{&amp;Tahoma8}Por favor, espere mientras el programa de instalación prepara InstallShield Wizard para guiarle durante el proceso.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsInitDlg_WelcomeWizard</td><td>1034</td><td>{&amp;VerdanaBold14}Bienvenido a [ProductName] - InstallShield Wizard</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsLicenseDlg_LicenseAgreement</td><td>1034</td><td>{&amp;MSSansBold8}Contrato de licencia</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsLicenseDlg_ReadLicenseAgreement</td><td>1034</td><td>{&amp;Tahoma8}Lea cuidadosamente el acuerdo de licencia siguiente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsLogonInfoDescription</td><td>1034</td><td>Especifique la cuenta de usuario que esta aplicación va a utilizar. Las cuentas de usuario deben tener el formato DOMINIO\Nombre de usuario.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsLogonInfoTitle</td><td>1034</td><td>{&amp;MSSansBold8}Información de inicio de sesión</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsLogonInfoTitleDescription</td><td>1034</td><td>Especifique un nombre de usuario y una contraseña.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsLogonNewUserDescription</td><td>1034</td><td>Seleccione el botón que aparece a continuación para especificar información acerca del nuevo usuario que se va a crear durante la instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsMaintenanceDlg_ChangeFeatures</td><td>1034</td><td>{&amp;Tahoma8}Cambiar los componentes del programa que se instalarán. Esta opción muestra el cuadro de diálogo Selección personalizada, en el que podrá cambiar la manera en que se instalan los componentes.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsMaintenanceDlg_MaitenanceOptions</td><td>1034</td><td>{&amp;Tahoma8}Modificar, reparar o eliminar el programa.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsMaintenanceDlg_Modify</td><td>1034</td><td>{&amp;MSSansBold8}&amp;Modificar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsMaintenanceDlg_ProgramMaintenance</td><td>1034</td><td>{&amp;MSSansBold8}Mantenimiento del programa</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsMaintenanceDlg_Remove</td><td>1034</td><td>{&amp;MSSansBold8}&amp;Eliminar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsMaintenanceDlg_RemoveProductName</td><td>1034</td><td>{&amp;Tahoma8}Eliminar [ProductName] del equipo.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsMaintenanceDlg_Repair</td><td>1034</td><td>{&amp;MSSansBold8}&amp;Reparar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsMaintenanceDlg_RepairMessage</td><td>1034</td><td>{&amp;Tahoma8}Reparar errores en el programa. Esta opción repara archivos dañados o que falten, accesos directos y entradas del registro.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsMaintenanceWelcome_MaintenanceOptionsDescription</td><td>1034</td><td>{&amp;Tahoma8}InstallShield(R) Wizard le permitirá modificar, reparar o eliminar [ProductName]. Para continuar, haga clic en Siguiente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsMaintenanceWelcome_WizardWelcome</td><td>1034</td><td>{&amp;TahomaBold10}Bienvenido a [ProductName] - InstallShield Wizard</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsMsiRMFilesInUse_ApplicationsUsingFiles</td><td>1034</td><td>Las aplicaciones siguientes están utilizando archivos que se deben actualizar en esta instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsMsiRMFilesInUse_CloseRestart</td><td>1034</td><td>Cerrar e intentar reiniciar automáticamente las aplicaciones.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsMsiRMFilesInUse_RebootAfter</td><td>1034</td><td>No cerrar las aplicaciones. (Será necesario reiniciar.)</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsPatchDlg_PatchClickUpdate</td><td>1034</td><td>InstallShield(R) Wizard instalará la revisión de [ProductName] en el ordenador.  Para continuar, haga clic en Actualizar.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsPatchDlg_PatchWizard</td><td>1034</td><td>[ProductName] Revisión - InstallShield Wizard</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsPatchDlg_Update</td><td>1034</td><td>A&amp;ctualizar &gt;</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsPatchDlg_WelcomePatchWizard</td><td>1034</td><td>{&amp;TahomaBold10}Bienvenido a la revisión de [ProductName] </td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsProgressDlg_2</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsProgressDlg_Hidden</td><td>1034</td><td>{&amp;Tahoma8}(Hidden for now)</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsProgressDlg_HiddenTimeRemaining</td><td>1034</td><td>{&amp;Tahoma8}(Hidden for now)Tiempo restante estimado:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsProgressDlg_InstallingProductName</td><td>1034</td><td>{&amp;MSSansBold8}Instalando [ProductName] </td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsProgressDlg_ProgressDone</td><td>1034</td><td>Finalizado</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsProgressDlg_SecHidden</td><td>1034</td><td>{&amp;Tahoma8}(Hidden for now) Seg.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsProgressDlg_Status</td><td>1034</td><td>{&amp;Tahoma8}Estado:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsProgressDlg_Uninstalling</td><td>1034</td><td>{&amp;MSSansBold8}Desinstalando [ProductName] </td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsProgressDlg_UninstallingFeatures</td><td>1034</td><td>{&amp;Tahoma8}Los componentes del programa seleccionados se están desinstalando.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsProgressDlg_UninstallingFeatures2</td><td>1034</td><td>{&amp;Tahoma8}Los componentes del programa seleccionados se están instalando.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsProgressDlg_WaitUninstall</td><td>1034</td><td>{&amp;Tahoma8}Por favor, espere mientras InstallShield Wizard desinstala [ProductName]. Este proceso puede durar varios minutos.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsProgressDlg_WaitUninstall2</td><td>1034</td><td>{&amp;Tahoma8}Por favor, espere mientras InstallShield Wizard instala [ProductName]. Este proceso puede durar varios minutos.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsReadmeDlg_Cancel</td><td>1034</td><td>&amp;Cancelar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsReadmeDlg_PleaseReadInfo</td><td>1034</td><td>Lea detenidamente la siguiente información de última hora.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsReadmeDlg_ReadMeInfo</td><td>1034</td><td>{&amp;MSSansBold8}Información de última hora</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsRegisterUserDlg_16</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsRegisterUserDlg_Anyone</td><td>1034</td><td>{&amp;Tahoma8}Cua&amp;lquiera que utilice este equipo (todos los usuarios)</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsRegisterUserDlg_CustomerInformation</td><td>1034</td><td>{&amp;MSSansBold8}Información del cliente</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsRegisterUserDlg_InstallFor</td><td>1034</td><td>{&amp;Tahoma8}Instalar esta aplicación para:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsRegisterUserDlg_OnlyMe</td><td>1034</td><td>{&amp;Tahoma8}Sólo para &amp;mí ([USERNAME])</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsRegisterUserDlg_Organization</td><td>1034</td><td>{&amp;Tahoma8}&amp;Organización:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsRegisterUserDlg_PleaseEnterInfo</td><td>1034</td><td>{&amp;Tahoma8}Por favor, introduzca la información.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsRegisterUserDlg_SerialNumber</td><td>1034</td><td>&amp;Número de serie:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsRegisterUserDlg_Tahoma50</td><td>1034</td><td>{50}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsRegisterUserDlg_Tahoma80</td><td>1034</td><td>{80}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsRegisterUserDlg_UserName</td><td>1034</td><td>{&amp;Tahoma8}Nombre de &amp;usuario:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsResumeDlg_ResumeSuspended</td><td>1034</td><td>{&amp;Tahoma8}InstallShield(R) Wizard acabará de realizar la instalación suspendida de [ProductName] en su equipo. Para continuar, haga clic en Siguiente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsResumeDlg_Resuming</td><td>1034</td><td>{&amp;TahomaBold10}Continuando con [ProductName] - InstallShield Wizard</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsResumeDlg_WizardResume</td><td>1034</td><td>{&amp;Tahoma8}InstallShield(R) Wizard acabará de realizar la instalación de [ProductName] en su equipo. Para continuar, haga clic en Siguiente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsSelectDomainOrServer</td><td>1034</td><td>Seleccionar un servidor de dominio</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsSelectDomainUserInstructions</td><td>1034</td><td>Utilice los botones Examinar para seleccionar un dominio\servidor y un nombre de usuario.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsSetupComplete_ShowMsiLog</td><td>1034</td><td>Mostrar el registro del instalador de Windows</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsSetupTypeMinDlg_13</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsSetupTypeMinDlg_AllFeatures</td><td>1034</td><td>{&amp;Tahoma8}Se instalarán todos los componentes del programa. (Necesita más espacio en disco).</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsSetupTypeMinDlg_ChooseFeatures</td><td>1034</td><td>{&amp;Tahoma8}Elija los componentes del programa que desee instalar y la ubicación en que se instalarán. Recomendada para usuarios avanzados.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsSetupTypeMinDlg_ChooseSetupType</td><td>1034</td><td>{&amp;Tahoma8}Elija el tipo de instalación que se adapte mejor a sus necesidades.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsSetupTypeMinDlg_Complete</td><td>1034</td><td>{&amp;MSSansBold8}Com&amp;pleta</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsSetupTypeMinDlg_Custom</td><td>1034</td><td>{&amp;MSSansBold8}Personali&amp;zada</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsSetupTypeMinDlg_Minimal</td><td>1034</td><td>{&amp;MSSansBold8}&amp;Mínima</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsSetupTypeMinDlg_MinimumFeatures</td><td>1034</td><td>{&amp;Tahoma8}Se instalarán los componentes mínimos requeridos</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsSetupTypeMinDlg_SelectSetupType</td><td>1034</td><td>{&amp;Tahoma8}Seleccione un tipo de instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsSetupTypeMinDlg_SetupType</td><td>1034</td><td>{&amp;MSSansBold8}Tipo de instalación</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsSetupTypeMinDlg_Typical</td><td>1034</td><td>{&amp;MSSansBold8}&amp;Típica</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsUserExit_ClickFinish</td><td>1034</td><td>{&amp;Tahoma8}Haga clic en Finalizar para salir del asistente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsUserExit_Finish</td><td>1034</td><td>{&amp;Tahoma8}&amp;Finalizar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsUserExit_KeepOrRestore</td><td>1034</td><td>{&amp;Tahoma8}Puede guardar todos los elementos instalados en el sistema para continuar la instalación en otra ocasión o restaurar el sistema a su estado original anterior a la instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsUserExit_NotModified</td><td>1034</td><td>{&amp;Tahoma8}Su sistema no ha sido modificado. Para instalar este programa en otra ocasión, vuelva a ejecutar el programa de instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsUserExit_RestoreOrContinue</td><td>1034</td><td>{&amp;Tahoma8}Haga clic en Restaurar o Continuar posteriormente para salir del Asistente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsUserExit_WizardCompleted</td><td>1034</td><td>{&amp;TahomaBold10}[ProductName] Finalizado - InstallShield Wizard</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsUserExit_WizardInterrupted</td><td>1034</td><td>{&amp;Tahoma8}El asistente se ha interrumpido antes de completar la instalación de [ProductName].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsUserNameLabel</td><td>1034</td><td>Nombre de &amp;usuario:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyReadyDlg_BackOrCancel</td><td>1034</td><td>{&amp;Tahoma8}Si desea revisar la configuración de la instalación o realizar algún cambio, haga clic en Atrás. Haga clic en Cancelar para salir del Asistente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyReadyDlg_ClickInstall</td><td>1034</td><td>{&amp;Tahoma8}Haga clic en Instalar para comenzar la instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyReadyDlg_Company</td><td>1034</td><td>Organización: [COMPANYNAME]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyReadyDlg_CurrentSettings</td><td>1034</td><td>Configuración actual:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyReadyDlg_DestFolder</td><td>1034</td><td>Carpeta de destino:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyReadyDlg_Install</td><td>1034</td><td>{&amp;Tahoma8}&amp;Instalar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyReadyDlg_Installdir</td><td>1034</td><td>[INSTALLDIR]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyReadyDlg_ModifyReady</td><td>1034</td><td>{&amp;MSSansBold8}Preparado para modificar el programa</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyReadyDlg_ReadyInstall</td><td>1034</td><td>{&amp;MSSansBold8}Preparado para instalar el programa</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyReadyDlg_ReadyRepair</td><td>1034</td><td>{&amp;MSSansBold8}Preparado para reparar el programa</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyReadyDlg_SelectedSetupType</td><td>1034</td><td>[SelectedSetupType]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyReadyDlg_Serial</td><td>1034</td><td>Número de serie: [ISX_SERIALNUM]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyReadyDlg_SetupType</td><td>1034</td><td>Tipo de instalación:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyReadyDlg_UserInfo</td><td>1034</td><td>Información del usuario:</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyReadyDlg_UserName</td><td>1034</td><td>Nombre: [USERNAME]</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyReadyDlg_WizardReady</td><td>1034</td><td>{&amp;Tahoma8}El Asistente está preparado para comenzar la instalación.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyRemoveAllDlg_ChoseRemoveProgram</td><td>1034</td><td>{&amp;Tahoma8}Ha elegido eliminar el programa del sistema.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyRemoveAllDlg_ClickBack</td><td>1034</td><td>{&amp;Tahoma8}Si desea revisar la configuración o realizar algún cambio, haga clic en Atrás.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyRemoveAllDlg_ClickRemove</td><td>1034</td><td>{&amp;Tahoma8}Haga clic en Eliminar para eliminar [ProductName] de su equipo. Una vez que se haya eliminado, este programa no estará disponible para su uso.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyRemoveAllDlg_Remove</td><td>1034</td><td>{&amp;Tahoma8}&amp;Eliminar</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsVerifyRemoveAllDlg_RemoveProgram</td><td>1034</td><td>{&amp;MSSansBold8}Eliminar el programa</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsWelcomeDlg_InstallProductName</td><td>1034</td><td>{&amp;Tahoma8}InstallShield(R) Wizard instalará [ProductName] en su equipo. Para continuar, haga clic en Siguiente.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsWelcomeDlg_WarningCopyright</td><td>1034</td><td>ADVERTENCIA: Este programa está protegido por las leyes de derechos de autor y otros tratados internacionales.</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__IsWelcomeDlg_WelcomeProductName</td><td>1034</td><td>{&amp;TahomaBold10}Bienvenido a [ProductName] - InstallShield Wizard</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__TargetReq_DESC_COLOR</td><td>1034</td><td>La configuración de colores del sistema no es la adecuada para ejecutar [ProductName].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__TargetReq_DESC_OS</td><td>1034</td><td>El sistema operativo no es el adecuado para ejecutar [ProductName].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1034</td><td>El procesador no es el adecuado para ejecutar [ProductName].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__TargetReq_DESC_RAM</td><td>1034</td><td>La cantidad de RAM no es la adecuada para ejecutar [ProductName].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1034</td><td>La resolución de pantalla no es la adecuada para ejecutar [ProductName].</td><td>0</td><td/><td>1696762626</td></row>
-		<row><td>ID_STRING1</td><td>1034</td><td>http://www.codigosimportantes.blogspot.com</td><td>0</td><td/><td>1696742626</td></row>
-		<row><td>ID_STRING2</td><td>1034</td><td>codigosimportantes.blogspot</td><td>0</td><td/><td>1696742626</td></row>
-		<row><td>ID_STRING3</td><td>1033</td><td>NEWSHO~1|NewShortcut1</td><td>0</td><td/><td>1696783170</td></row>
-		<row><td>ID_STRING3</td><td>1034</td><td>PASSWO~1|Password Manager</td><td>0</td><td/><td>1696732002</td></row>
-		<row><td>ID_STRING4</td><td>1033</td><td>NEWSHO~1|NewShortcut2</td><td>0</td><td/><td>1696738146</td></row>
-		<row><td>ID_STRING4</td><td>1034</td><td>PASSWO~1|Password Manager</td><td>0</td><td/><td>1696740194</td></row>
-		<row><td>ID_STRING5</td><td>1033</td><td>NEWSHO~1|NewShortcut1</td><td>0</td><td/><td>1696748802</td></row>
-		<row><td>ID_STRING5</td><td>1034</td><td>PASSWO~1|Password Manager</td><td>0</td><td/><td>1696761090</td></row>
-		<row><td>ID_STRING6</td><td>1033</td><td>NEWSHO~1|NewShortcut2</td><td>0</td><td/><td>1696767234</td></row>
-		<row><td>ID_STRING6</td><td>1034</td><td>PASSWO~1|Password Manager</td><td>0</td><td/><td>1696767234</td></row>
-		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1034</td><td>Este componente no se instalará.</td><td>0</td><td/><td>1696762626</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>Nom de votre société</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>COMPANY_NAME</td><td>1034</td><td>Compañia</td><td>0</td><td/><td>1696758135</td></row>
+		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Toujours installer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>DN_AlwaysInstall</td><td>1034</td><td>Instalar siempre</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>Les paramètres couleur de votre système ne sont pas adaptés à l'exécution de [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1034</td><td>La configuración de colores de su sistema no es adecuada para ejecutar [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION35</td><td>1033</td><td>Microsoft .NET Framework 3.5 needs to be installed for this installation to continue.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION35</td><td>1034</td><td>Microsoft .NET Framework 3.5 needs to be installed for this installation to continue.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION35SP1</td><td>1033</td><td>Microsoft .NET Framework 3.5 SP1 needs to be installed for this installation to continue.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION35SP1</td><td>1034</td><td>Microsoft .NET Framework 3.5 SP1 needs to be installed for this installation to continue.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1033</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1034</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_OS</td><td>1033</td><td>Le système d'exploitation n'est pas adapté à l'exécution de [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_OS</td><td>1034</td><td>El sistema operativo no es adecuado para ejecutar [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_PROCESSOR</td><td>1033</td><td>Le processeur n'est pas adapté à l'exécution de [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_PROCESSOR</td><td>1034</td><td>El procesador no es adecuado para ejecutar [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_RAM</td><td>1033</td><td>Le taux RAM n'est pas adapté à l'exécution de [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_RAM</td><td>1034</td><td>La cantidad de RAM no es adecuada para ejecutar [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_SCREEN</td><td>1033</td><td>La résolution de l'écran n'est pas adaptée à l'exécution [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_SCREEN</td><td>1034</td><td>La resolución de pantalla no es adecuada para ejecutar [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_COMPACT</td><td>1033</td><td>Compacte</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_COMPACT</td><td>1034</td><td>Compacta</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_COMPACT_DESC</td><td>1033</td><td>Description brève</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_COMPACT_DESC</td><td>1034</td><td>Descripción compacta</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_COMPLETE</td><td>1033</td><td>Installation standard</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_COMPLETE</td><td>1034</td><td>Completa</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_COMPLETE_DESC</td><td>1033</td><td>Installatio&amp;n standard</td><td>0</td><td>	</td><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_COMPLETE_DESC</td><td>1034</td><td>Descripción completa</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_CUSTOM</td><td>1033</td><td>Personnalisée</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_CUSTOM</td><td>1034</td><td>Personalizada</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_CUSTOM_DESC</td><td>1033</td><td>Description personnalisée</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_CUSTOM_DESC</td><td>1034</td><td>Descripción personalizada</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_CUSTOM_DESC_PRO</td><td>1033</td><td>Description personnalisée</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_CUSTOM_DESC_PRO</td><td>1034</td><td>Descripción personalizada</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_TYPICAL</td><td>1033</td><td>Par défaut</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_TYPICAL</td><td>1034</td><td>Típica</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_TYPICAL_DESC</td><td>1033</td><td>Description type</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDPROP_SETUPTYPE_TYPICAL_DESC</td><td>1034</td><td>Descripción típica</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_1</td><td>1033</td><td>[1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_1</td><td>1034</td><td>[1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_1b</td><td>1033</td><td>[1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_1b</td><td>1034</td><td>[1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_1c</td><td>1033</td><td>[1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_1c</td><td>1034</td><td>[1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_1d</td><td>1033</td><td>[1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_1d</td><td>1034</td><td>[1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Advertising</td><td>1033</td><td>Publication d'informations sur l'application</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Advertising</td><td>1034</td><td>Mostrar aplicación</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_AllocatingRegistry</td><td>1033</td><td>Allocation d'espace dans le registre</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_AllocatingRegistry</td><td>1034</td><td>Asignando espacio del registro</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_AppCommandLine</td><td>1033</td><td>Application : [1] ; Ligne de commande : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_AppCommandLine</td><td>1034</td><td>Aplicación: [1], Línea de comandos: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_AppId</td><td>1033</td><td>AppId: [1]{{, AppType: [2]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_AppId</td><td>1034</td><td>IdApl: [1]{{, Tipo de apl.: [2]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_AppIdAppTypeRSN</td><td>1033</td><td>AppId: [1]{{, AppType: [2], Users: [3], RSN: [4]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_AppIdAppTypeRSN</td><td>1034</td><td>IdApl: [1]{{, Tipo de apl.: [2], Usuarios: [3], RSN: [4]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Application</td><td>1033</td><td>Application : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Application</td><td>1034</td><td>Aplicación: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_BindingExes</td><td>1033</td><td>Liaison des exécutables</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_BindingExes</td><td>1034</td><td>Enlazando archivos ejecutables</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ClassId</td><td>1033</td><td>Identificateur de la classe : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ClassId</td><td>1034</td><td>Id. de clase: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ClsID</td><td>1033</td><td>Identificateur de la classe : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ClsID</td><td>1034</td><td>Id. de clase: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ComponentIDQualifier</td><td>1033</td><td>Identificateur du composant : [1] ; qualificateur : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ComponentIDQualifier</td><td>1034</td><td>Id. del componente: [1], capacitador: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ComponentIdQualifier2</td><td>1033</td><td>Identificateur du composant : [1] ; qualificateur : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ComponentIdQualifier2</td><td>1034</td><td>Id. del componente: [1], capacitador: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ComputingSpace</td><td>1033</td><td>Calcul de l'espace requis</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ComputingSpace</td><td>1034</td><td>Calculando el espacio necesario</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ComputingSpace2</td><td>1033</td><td>Calcul de l'espace requis</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ComputingSpace2</td><td>1034</td><td>Calculando el espacio necesario</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ComputingSpace3</td><td>1033</td><td>Calcul de l'espace requis</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ComputingSpace3</td><td>1034</td><td>Calculando el espacio necesario</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ContentTypeExtension</td><td>1033</td><td>Type de contenu MIME : [1] ; extension : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ContentTypeExtension</td><td>1034</td><td>Tipo de contenido MIME: [1], extensión: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ContentTypeExtension2</td><td>1033</td><td>Type de contenu MIME : [1] ; extension : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ContentTypeExtension2</td><td>1034</td><td>Tipo de contenido MIME: [1], extensión: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_CopyingNetworkFiles</td><td>1033</td><td>Copie des fichiers d'installation réseau</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_CopyingNetworkFiles</td><td>1034</td><td>Copiando archivos de instalación de la red</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_CopyingNewFiles</td><td>1033</td><td>Copie des nouveaux fichiers</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_CopyingNewFiles</td><td>1034</td><td>Copiando archivos nuevos</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_CreatingDuplicate</td><td>1033</td><td>Création des fichiers en double</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_CreatingDuplicate</td><td>1034</td><td>Creando archivos duplicados</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_CreatingFolders</td><td>1033</td><td>Création des dossiers</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_CreatingFolders</td><td>1034</td><td>Creando carpetas</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_CreatingIISRoots</td><td>1033</td><td>Création des racines virtuelles IIS en cours...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_CreatingIISRoots</td><td>1034</td><td>Creando raíces virtuales de IIS...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_CreatingShortcuts</td><td>1033</td><td>Création des raccourcis</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_CreatingShortcuts</td><td>1034</td><td>Creando accesos directos</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_DeletingServices</td><td>1033</td><td>Suppression des services</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_DeletingServices</td><td>1034</td><td>Eliminando servicios</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_EnvironmentStrings</td><td>1033</td><td>Mise à jour des chaînes d'environnement</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_EnvironmentStrings</td><td>1034</td><td>Actualizando cadenas de entorno</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_EvaluateLaunchConditions</td><td>1033</td><td>Évaluation des conditions de lancement</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_EvaluateLaunchConditions</td><td>1034</td><td>Evaluando condiciones de inicio</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Extension</td><td>1033</td><td>Extension : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Extension</td><td>1034</td><td>Extensión: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Extension2</td><td>1033</td><td>Extension : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Extension2</td><td>1034</td><td>Extensión: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Feature</td><td>1033</td><td>Composant : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Feature</td><td>1034</td><td>Función: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FeatureColon</td><td>1033</td><td>Composant : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FeatureColon</td><td>1034</td><td>Función: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_File</td><td>1033</td><td>Fichier : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_File</td><td>1034</td><td>Archivo: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_File2</td><td>1033</td><td>Fichier : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_File2</td><td>1034</td><td>Archivo: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDependencies</td><td>1033</td><td>Fichier : [1],  Dépendences : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDependencies</td><td>1034</td><td>Archivo: [1],  Dependencias: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDir</td><td>1033</td><td>Fichier : [1] ; répertoire : [9]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDir</td><td>1034</td><td>Archivo: [1], directorio: [9]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDir2</td><td>1033</td><td>File: [1], Directory: [9]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDir2</td><td>1034</td><td>File: [1], Directory: [9]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDir3</td><td>1033</td><td>Fichier : [1] ; répertoire : [9]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDir3</td><td>1034</td><td>Archivo: [1], directorio: [9]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDirSize</td><td>1033</td><td>Fichier : [1] ; répertoire : [9] ; taille : [6]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDirSize</td><td>1034</td><td>Archivo: [1], directorio: [9], tamaño: [6]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDirSize2</td><td>1033</td><td>File: [1],  Directory: [9],  Size: [6]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDirSize2</td><td>1034</td><td>File: [1],  Directory: [9],  Size: [6]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDirSize3</td><td>1033</td><td>Fichier : [1],  Répertoire : [9],  Taille : [6]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDirSize3</td><td>1034</td><td>Archivo: [1], directorio: [9], tamaño: [6]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDirSize4</td><td>1033</td><td>Fichier : [1] ; répertoire : [2] ; taille : [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDirSize4</td><td>1034</td><td>Archivo: [1], directorio: [2], tamaño: [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDirectorySize</td><td>1033</td><td>Fichier : [1] ; répertoire : [9] ; taille : [6]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileDirectorySize</td><td>1034</td><td>Archivo: [1], directorio: [9], tamaño: [6]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileFolder</td><td>1033</td><td>Fichier : [1] ; dossier : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileFolder</td><td>1034</td><td>Archivo: [1], carpeta: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileFolder2</td><td>1033</td><td>Fichier : [1] ; dossier : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileFolder2</td><td>1034</td><td>Archivo: [1], carpeta: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileSectionKeyValue</td><td>1033</td><td>Fichier : [1] ; section : [2] ; clé : [3] ; valeur : [4]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileSectionKeyValue</td><td>1034</td><td>Archivo: [1], sección: [2], clave: [3], valor: [4]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileSectionKeyValue2</td><td>1033</td><td>Fichier : [1] ; section : [2] ; clé : [3] ; valeur : [4]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FileSectionKeyValue2</td><td>1034</td><td>Archivo: [1], sección: [2], clave: [3], valor: [4]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Folder</td><td>1033</td><td>Dossier : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Folder</td><td>1034</td><td>Carpeta: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Folder1</td><td>1033</td><td>Dossier : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Folder1</td><td>1034</td><td>Carpeta: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Font</td><td>1033</td><td>Police : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Font</td><td>1034</td><td>Fuente: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Font2</td><td>1033</td><td>Police : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Font2</td><td>1034</td><td>Fuente: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FoundApp</td><td>1033</td><td>Application trouvée : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FoundApp</td><td>1034</td><td>Se encontró esta aplicación: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FreeSpace</td><td>1033</td><td>Espace libre : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_FreeSpace</td><td>1034</td><td>Espacio disponible: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_GeneratingScript</td><td>1033</td><td>Génération de scripts pour l'action :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_GeneratingScript</td><td>1034</td><td>Generando operaciones de secuencias de comandos para la acción:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ISLockPermissionsCost</td><td>1033</td><td>Lecture des autorisations des objets...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ISLockPermissionsCost</td><td>1034</td><td>Recogiendo información de permisos para los objetos…</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ISLockPermissionsInstall</td><td>1033</td><td>Application des autorisations aux objets...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ISLockPermissionsInstall</td><td>1034</td><td>Aplicando información de permisos para los objetos…</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_InitializeODBCDirs</td><td>1033</td><td>Initialisation des répertoires ODBC</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_InitializeODBCDirs</td><td>1034</td><td>Inicializando directorios ODBC</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_InstallODBC</td><td>1033</td><td>Installation des composants ODBC</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_InstallODBC</td><td>1034</td><td>Instalando componentes ODBC</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_InstallServices</td><td>1033</td><td>Installation des nouveaux services</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_InstallServices</td><td>1034</td><td>Instalando servicios nuevos</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_InstallingSystemCatalog</td><td>1033</td><td>Catalogue d'installation système</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_InstallingSystemCatalog</td><td>1034</td><td>Instalar catálogo del sistema</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_KeyName</td><td>1033</td><td>Clé : [1] ; nom : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_KeyName</td><td>1034</td><td>Clave: [1], nombre: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_KeyNameValue</td><td>1033</td><td>Clé : [1] ; nom : [2] ; valeur : [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_KeyNameValue</td><td>1034</td><td>Clave: [1], nombre: [2], valor: [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_LibId</td><td>1033</td><td>Identificateur de la bibliothèque : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_LibId</td><td>1034</td><td>Id. de la biblioteca: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Libid2</td><td>1033</td><td>Identificateur de la bibliothèque : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Libid2</td><td>1034</td><td>LibID: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_MigratingFeatureStates</td><td>1033</td><td>Migration d'état de composants à partir d'applications associées</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_MigratingFeatureStates</td><td>1034</td><td>Transfiriendo los estados de las características desde las aplicaciones relacionadas</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_MovingFiles</td><td>1033</td><td>Déplacement des fichiers</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_MovingFiles</td><td>1034</td><td>Moviendo archivos</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_NameValueAction</td><td>1033</td><td>Nom : [1] ; valeur : [2] ; action : [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_NameValueAction</td><td>1034</td><td>Nombre: [1], valor: [2], acción [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_NameValueAction2</td><td>1033</td><td>Nom : [1] ; valeur : [2] ; action : [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_NameValueAction2</td><td>1034</td><td>Nombre: [1], valor: [2], acción [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_PatchingFiles</td><td>1033</td><td>Exécution du correctif sur les fichiers</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_PatchingFiles</td><td>1034</td><td>Revisando archivos</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ProgID</td><td>1033</td><td>Identificateur du programme : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ProgID</td><td>1034</td><td>IdProg: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ProgID2</td><td>1033</td><td>Identificateur du programme : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_ProgID2</td><td>1034</td><td>IdProg: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_PropertySignature</td><td>1033</td><td>Propriété : [1] ; signature : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_PropertySignature</td><td>1034</td><td>Propiedad: [1], firma: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_PublishProductFeatures</td><td>1033</td><td>Publication des composants du produit</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_PublishProductFeatures</td><td>1034</td><td>Publicar funciones del producto</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_PublishProductInfo</td><td>1033</td><td>Publication des informations sur le produit</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_PublishProductInfo</td><td>1034</td><td>Publicar información del producto</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_PublishingQualifiedComponents</td><td>1033</td><td>Publication des composants qualifiés</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_PublishingQualifiedComponents</td><td>1034</td><td>Publicar componentes aceptables</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegUser</td><td>1033</td><td>Inscription de l'utilisateur</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegUser</td><td>1034</td><td>Registrando usuario</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisterClassServer</td><td>1033</td><td>Inscription des serveurs de classes</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisterClassServer</td><td>1034</td><td>Registrando servidores de clases</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisterExtensionServers</td><td>1033</td><td>Inscription des extensions serveur</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisterExtensionServers</td><td>1034</td><td>Registrando servidores de extensiones</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisterFonts</td><td>1033</td><td>Inscription des polices</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisterFonts</td><td>1034</td><td>Registrando fuentes</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisterMimeInfo</td><td>1033</td><td>Inscription des informations MIME</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisterMimeInfo</td><td>1034</td><td>Registrando información MIME</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisterTypeLibs</td><td>1033</td><td>Inscription des bibliothèques de type</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisterTypeLibs</td><td>1034</td><td>Registrando bibliotecas de tipos</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisteringComPlus</td><td>1033</td><td>Inscription des applications et des composants COM+</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisteringComPlus</td><td>1034</td><td>Registrando aplicaciones y componentes COM+</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisteringModules</td><td>1033</td><td>Inscription des modules</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisteringModules</td><td>1034</td><td>Registrando módulos</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisteringProduct</td><td>1033</td><td>Inscription du produit</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisteringProduct</td><td>1034</td><td>Registrando el producto</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisteringProgIdentifiers</td><td>1033</td><td>Inscription des identificateurs de programme</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RegisteringProgIdentifiers</td><td>1034</td><td>Registrando identificadores de programa del registro</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemoveApps</td><td>1033</td><td>Suppression d'applications en cours</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemoveApps</td><td>1034</td><td>Quitando aplicaciones</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingBackup</td><td>1033</td><td>Suppression des fichiers de sauvegarde</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingBackup</td><td>1034</td><td>Quitando copias de seguridad</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingDuplicates</td><td>1033</td><td>Suppression des fichiers en double</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingDuplicates</td><td>1034</td><td>Quitando archivos duplicados</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingFiles</td><td>1033</td><td>Suppression des fichiers</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingFiles</td><td>1034</td><td>Quitando archivos</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingFolders</td><td>1033</td><td>Suppression des dossiers</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingFolders</td><td>1034</td><td>Quitando carpetas</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingIISRoots</td><td>1033</td><td>Suppression des racines virtuelles IIS en cours...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingIISRoots</td><td>1034</td><td>Eliminando raíces virtuales de IIS...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingIni</td><td>1033</td><td>Suppression des entrées des fichiers INI</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingIni</td><td>1034</td><td>Quitando entradas de archivos INI</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingMoved</td><td>1033</td><td>Suppression des fichiers déplacés</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingMoved</td><td>1034</td><td>Quitando archivos movidos</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingODBC</td><td>1033</td><td>Suppression des composants ODBC</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingODBC</td><td>1034</td><td>Quitando componentes ODBC</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingRegistry</td><td>1033</td><td>Suppression des valeurs du registre système</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingRegistry</td><td>1034</td><td>Quitando valores del registro del sistema</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingShortcuts</td><td>1033</td><td>Suppression des raccourcis</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RemovingShortcuts</td><td>1034</td><td>Quitando accesos directos</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RollingBack</td><td>1033</td><td>Annulation de l'action :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_RollingBack</td><td>1034</td><td>Acción de restauración:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_SearchForRelated</td><td>1033</td><td>Recherche d'applications associées</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_SearchForRelated</td><td>1034</td><td>Buscando aplicaciones relacionadas</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_SearchInstalled</td><td>1033</td><td>Recherche des applications déjà installées</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_SearchInstalled</td><td>1034</td><td>Buscando aplicaciones instaladas</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_SearchingQualifyingProducts</td><td>1033</td><td>Recherche des produits qualifiants</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_SearchingQualifyingProducts</td><td>1034</td><td>Buscando productos necesarios</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_SearchingQualifyingProducts2</td><td>1033</td><td>Recherche des produits qualifiants</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_SearchingQualifyingProducts2</td><td>1034</td><td>Buscando productos necesarios</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Service</td><td>1033</td><td>Service : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Service</td><td>1034</td><td>Servicio: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Service2</td><td>1033</td><td>Service : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Service2</td><td>1034</td><td>Servicio: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Service3</td><td>1033</td><td>Service : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Service3</td><td>1034</td><td>Servicio: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Service4</td><td>1033</td><td>Service : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Service4</td><td>1034</td><td>Servicio: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Shortcut</td><td>1033</td><td>Raccourci : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Shortcut</td><td>1034</td><td>Acceso directo: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Shortcut1</td><td>1033</td><td>Raccourci : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Shortcut1</td><td>1034</td><td>Acceso directo: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_StartingServices</td><td>1033</td><td>Démarrage des services</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_StartingServices</td><td>1034</td><td>Iniciando servicios</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_StoppingServices</td><td>1033</td><td>Arrêt des services</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_StoppingServices</td><td>1034</td><td>Deteniendo servicios</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnpublishProductFeatures</td><td>1033</td><td>Annulation de la publication des composants du produit</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnpublishProductFeatures</td><td>1034</td><td>Anular publicación de funciones del producto</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnpublishQualified</td><td>1033</td><td>Annulation de la publication des composants qualifiés</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnpublishQualified</td><td>1034</td><td>Anular publicación de componentes aceptables</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnpublishingProductInfo</td><td>1033</td><td>Annulation de la publication des informations sur le produit</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnpublishingProductInfo</td><td>1034</td><td>Anular publicación de información del producto</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnregTypeLibs</td><td>1033</td><td>Annulation de l'inscription des bibliothèques de type</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnregTypeLibs</td><td>1034</td><td>Eliminando del registro bibliotecas de tipos</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnregisterClassServers</td><td>1033</td><td>Annulation de l'inscription des serveurs de classes</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnregisterClassServers</td><td>1034</td><td>Eliminar del registro los servidores de clases</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnregisterExtensionServers</td><td>1033</td><td>Annulation de l'inscription des extensions serveur</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnregisterExtensionServers</td><td>1034</td><td>Eliminando del registro los servidores de extensiones</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnregisterModules</td><td>1033</td><td>Annulation de l'inscription des modules</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnregisterModules</td><td>1034</td><td>Eliminando módulos del registro</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnregisteringComPlus</td><td>1033</td><td>Annulation de l'inscription des applications et des composants COM+</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnregisteringComPlus</td><td>1034</td><td>Quitando aplicaciones y componentes COM+ del registro</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnregisteringFonts</td><td>1033</td><td>Annulation de l'inscription des polices</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnregisteringFonts</td><td>1034</td><td>Eliminando del registro las fuentes</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnregisteringMimeInfo</td><td>1033</td><td>Annulation de l'inscription des informations MIME</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnregisteringMimeInfo</td><td>1034</td><td>Eliminando del registro información MIME</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnregisteringProgramIds</td><td>1033</td><td>Annulation de l'inscription des identificateurs de programme</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UnregisteringProgramIds</td><td>1034</td><td>Eliminando identificadores de programa del registro</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UpdateComponentRegistration</td><td>1033</td><td>Mise à jour de l'inscription des composants</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UpdateComponentRegistration</td><td>1034</td><td>Actualizando el registro de componentes</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UpdateEnvironmentStrings</td><td>1033</td><td>Mise à jour des chaînes d'environnement</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_UpdateEnvironmentStrings</td><td>1034</td><td>Actualizando cadenas de entorno</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Validating</td><td>1033</td><td>Validation de l'installation</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_Validating</td><td>1034</td><td>Validando la instalación</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_WritingINI</td><td>1033</td><td>Écriture des valeurs des fichiers INI</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_WritingINI</td><td>1034</td><td>Escribiendo valores de los archivos INI</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_WritingRegistry</td><td>1033</td><td>Écriture des valeurs du registre système</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ACTIONTEXT_WritingRegistry</td><td>1034</td><td>Escribiendo valores del registro del sistema</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_BACK</td><td>1033</td><td>&lt; &amp;Précédent</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_BACK</td><td>1034</td><td>&lt; &amp;Atrás</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_CANCEL</td><td>1033</td><td>Annuler</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_CANCEL</td><td>1034</td><td>Cancelar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_CANCEL2</td><td>1033</td><td>{&amp;Tahoma8}&amp;Annuler</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_CANCEL2</td><td>1034</td><td>{&amp;Tahoma8}&amp;Cancelar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_CHANGE</td><td>1033</td><td>&amp;Modifier...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_CHANGE</td><td>1034</td><td>&amp;Cambiar...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_COMPLUS_PROGRESSTEXT_COST</td><td>1033</td><td>Calcul des coûts de l'application COM+ : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_COMPLUS_PROGRESSTEXT_COST</td><td>1034</td><td>Coste de la aplicación COM+: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_COMPLUS_PROGRESSTEXT_INSTALL</td><td>1033</td><td>Installation de l'application COM+ : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_COMPLUS_PROGRESSTEXT_INSTALL</td><td>1034</td><td>Instalando la aplicación COM+: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_COMPLUS_PROGRESSTEXT_UNINSTALL</td><td>1033</td><td>Désinstallation de l'application COM+ : [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_COMPLUS_PROGRESSTEXT_UNINSTALL</td><td>1034</td><td>Desinstalando la aplicación COM+: [1]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_DIALOG_TEXT2_DESCRIPTION</td><td>1033</td><td>Description de la boîte de dialogue (caractères Normal)</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_DIALOG_TEXT2_DESCRIPTION</td><td>1034</td><td>Descripción normal del cuadro de diálogo</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_DIALOG_TEXT_DESCRIPTION_EXTERIOR</td><td>1033</td><td>{&amp;TahomaBold10}Titre de la boîte de dialogue (caractères Gras)</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_DIALOG_TEXT_DESCRIPTION_EXTERIOR</td><td>1034</td><td>{&amp;TahomaBold10}Título del cuadro de diálogo en negrita</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_DIALOG_TEXT_DESCRIPTION_INTERIOR</td><td>1033</td><td>{&amp;MSSansBold8}Titre de la boîte de dialogue (caractères Gras)</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_DIALOG_TEXT_DESCRIPTION_INTERIOR</td><td>1034</td><td>{&amp;MSSansBold8}Título del cuadro de diálogo en negrita</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_DIFX_AMD64</td><td>1033</td><td>[ProductName] requiert un processeur X64. Cliquez sur OK pour fermer l'assistant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_DIFX_AMD64</td><td>1034</td><td>[ProductName] requiere un procesador X64. Haga clic en Aceptar para salir del asistente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_DIFX_IA64</td><td>1033</td><td>[ProductName] requiert un processeur IA64. Cliquez sur OK pour fermer l'assistant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_DIFX_IA64</td><td>1034</td><td>[ProductName] requiere un procesador IA64. Haga clic en Aceptar para salir del asistente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_DIFX_X86</td><td>1033</td><td>[ProductName] requiert un processeur X86. Cliquez sur OK pour fermer l'assistant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_DIFX_X86</td><td>1034</td><td>[ProductName] requiere un procesador X86. Haga clic en Aceptar para salir del asistente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_DatabaseFolder_InstallDatabaseTo</td><td>1033</td><td>Installer base de données [ProductName] vers :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_DatabaseFolder_InstallDatabaseTo</td><td>1034</td><td>Instalar base de datos de [ProductName] en:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_0</td><td>1033</td><td>{{Erreur fatale : }}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_0</td><td>1034</td><td>{{Error fatal: }}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1</td><td>1033</td><td>{{Erreur [1]. }}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1</td><td>1034</td><td>{{Error [1]. }}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_10</td><td>1033</td><td>=== Début de l'écriture dans le journal : [Date]  [Time] ===</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_10</td><td>1034</td><td>=== Registro iniciado: [Date]  [Time] ===</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_100</td><td>1033</td><td>Impossible de supprimer le raccourci [2]. Vérifiez que le fichier de raccourcis existe et que vous êtes autorisé à y accéder.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_100</td><td>1034</td><td>No se puede crear el acceso directo [2]. Compruebe que el archivo de acceso directo existe y que puede obtener acceso a él.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_101</td><td>1033</td><td>Impossible d'inscrire la bibliothèque de type pour le fichier [2]. Contactez votre service de support technique.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_101</td><td>1034</td><td>No se puede registrar la biblioteca de tipos para el archivo [2]. Póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_102</td><td>1033</td><td>Impossible d'annuler l'inscription de la bibliothèque de type pour le fichier [2]. Contactez votre service de support technique.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_102</td><td>1034</td><td>No se puede quitar del registro la biblioteca de tipos del archivo [2]. Póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_103</td><td>1033</td><td>Impossible de mettre à jour le fichier INI [2][3]. Vérifiez que ce fichier existe et que vous êtes autorisé à y accéder.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_103</td><td>1034</td><td>No se puede actualizar el archivo .ini [2][3]. Compruebe que el archivo existe y que puede obtener acceso a él.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_104</td><td>1033</td><td>Impossible de planifier le remplacement du fichier [3] par le fichier [2] au démarrage. Vérifiez que vous êtes autorisé à accéder en écriture au fichier [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_104</td><td>1034</td><td>No se puede programar el archivo [2] para que reemplace a [3] cuando se reinicie el sistema. Compruebe que dispone de permisos de escritura para el archivo [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_105</td><td>1033</td><td>Erreur lors de la suppression du gestionnaire de pilotes ODBC. Erreur ODBC [2] : [3]. Contactez votre service de support technique.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_105</td><td>1034</td><td>Error al quitar el administrador de controladores ODBC; error de ODBC [2]: [3]. Póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_106</td><td>1033</td><td>Erreur lors de l'installation du gestionnaire de pilotes ODBC. Erreur ODBC [2] : [3]. Contactez votre service de support technique.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_106</td><td>1034</td><td>Error al instalar el administrador de controladores ODBC; error de ODBC [2]: [3]. Póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_107</td><td>1033</td><td>Erreur lors de la suppression du pilote ODBC [4]. Erreur ODBC [2] : [3]. Vérifiez que vous disposez des privilèges suffisants pour supprimer des pilotes ODBC.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_107</td><td>1034</td><td>Error al quitar el controlador ODBC [4]; error de ODBC [2]: [3]. Compruebe que dispone de suficientes privilegios para quitar controladores ODBC.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_108</td><td>1033</td><td>Erreur lors de l'installation du pilote ODBC [4]. Erreur ODBC [2] : [3]. Vérifiez que le fichier [4] existe et que vous êtes autorisé à y accéder.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_108</td><td>1034</td><td>Error al instalar el controlador ODBC [4]; error de ODBC [2]: [3]. Compruebe que el archivo [4] existe y que puede obtener acceso a él.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_109</td><td>1033</td><td>Erreur lors de la configuration de la source de données ODBC [4]. Erreur ODBC [2] : [3]. Vérifiez que le fichier [4] existe et que vous êtes autorisé à y accéder.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_109</td><td>1034</td><td>Error al configurar el origen de datos de ODBC [4]; error de ODBC [2]: [3]. Compruebe que el archivo [4] y que puede obtener acceso a él.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_11</td><td>1033</td><td>=== Fin de l'écriture dans le journal : [Date]  [Time] ===</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_11</td><td>1034</td><td>=== Registro detenido: [Date]  [Time] ===</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_110</td><td>1033</td><td>Échec du démarrage du service [2] ([3]). Vérifiez que vous disposez de privilèges suffisants pour démarrer les services système.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_110</td><td>1034</td><td>Fallo al iniciar el servicio '[2]' ([3]). Compruebe que dispone de suficientes privilegios para iniciar servicios del sistema.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_111</td><td>1033</td><td>Impossible d'arrêter le service [2] ([3]). Vérifiez que vous disposez de privilèges suffisants pour arrêter les services système.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_111</td><td>1034</td><td>No se puede detener el servicio '[2]' ([3]). Compruebe que dispone de suficientes privilegios para detener servicios del sistema.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_112</td><td>1033</td><td>Impossible de supprimer le service [2] ([3]). Vérifiez que vous disposez de privilèges suffisants pour supprimer les services système.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_112</td><td>1034</td><td>No se puede eliminar el servicio '[2]' ([3]). Compruebe que dispone de suficientes privilegios para quitar servicios del sistema.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_113</td><td>1033</td><td>Impossible d'installer le service [2] ([3]). Vérifiez que vous disposez de privilèges suffisants pour installer des services système.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_113</td><td>1034</td><td>No se puede instalar el servicio '[2]' ([3]). Compruebe que dispone de suficientes privilegios para instalar servicios del sistema.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_114</td><td>1033</td><td>Impossible de mettre à jour la variable d'environnement [2]. Vérifiez que vous disposez de privilèges suffisants pour modifier les variables d'environnement.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_114</td><td>1034</td><td>No se puede actualizar la variable de entorno '[2]'. Compruebe que dispone de suficientes privilegios para modificar variables de entorno.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_115</td><td>1033</td><td>Vous ne disposez pas des privilèges suffisants pour exécuter cette installation pour tous les utilisateurs de cet ordinateur. Ouvrez une session en tant qu'administrateur, puis réessayez d'exécuter cette installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_115</td><td>1034</td><td>No tiene suficientes privilegios para completar esta instalación para todos los usuarios del equipo. Inicie la sesión como administrador y vuelva a realizar la instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_116</td><td>1033</td><td>Impossible de définir la sécurité du fichier [3]. Erreur : [2]. Vérifiez que vous disposez des privilèges suffisants pour modifier les permissions sur ce fichier.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_116</td><td>1034</td><td>No se puede establecer la seguridad para el archivo '[3]'. Error: [2]. Compruebe que dispone de suficientes privilegios para modificar los permisos de seguridad para este archivo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_117</td><td>1033</td><td>Les services de composants (COM+ 1.0) ne sont pas installés sur cet ordinateur. Les services de composants sont nécessaires pour effectuer l'installation.  Ils sont disponibles sur Windows 2000.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_117</td><td>1034</td><td>Los Servicios de componente (COM+ 1.0) no están instalados en este sistema.  Para realizar esta instalación, es necesario que los Servicios de componente estén instalados. Encontrará los Servicios de componente en Windows 2000.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_118</td><td>1033</td><td>Erreur lors de l'inscription de l'application COM+. Contactez votre personnel de support technique pour des informations supplémentaires.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_118</td><td>1034</td><td>Error al registrar la aplicación COM+.  Póngase en contacto con el personal de soporte para obtener más información.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_119</td><td>1033</td><td>Erreur lors de l'annulation de l'inscription de l'application COM+. Contactez votre personnel de support technique pour des informations supplémentaires.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_119</td><td>1034</td><td>Error al quitar la aplicación COM+ del registro. Póngase en contacto con el personal de soporte para obtener más información.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_12</td><td>1033</td><td>Début de l'action [Time] : [1].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_12</td><td>1034</td><td>La acción se inició a las [Time]: [1].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_120</td><td>1033</td><td>Suppression en cours des versions antérieures de cette application...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_120</td><td>1034</td><td>Quitando las versiones anteriores de esta aplicación...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_121</td><td>1033</td><td>Suppression des versions antérieures de cette application en cours de préparation...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_121</td><td>1034</td><td>Preparando la eliminación de las versiones anteriores de esta aplicación...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_122</td><td>1033</td><td>Erreur lors de l'application du programme correctif au fichier [2]. Il a sans doute été mis à jour de manière différente et ne peut plus être modifié par ce programme correctif. Pour obtenir des informations complémentaires, contactez le revendeur de votre programme correctif. {{Erreur système : [3]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_122</td><td>1034</td><td>Error al aplicar la revisión al archivo [2].  Probablemente el archivo ya se ha actualizado por otros medios y esta revisión no puede modificarlo.  Para obtener más información, consulte al proveedor de la revisión.  {{Error del sistema: [3]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_123</td><td>1033</td><td>[2] ne peut pas installer l'un des produits requis. Contactez votre groupe de support technique. {{Erreur système : [3].}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_123</td><td>1034</td><td>[2] no puede instalar los productos requeridos. Póngase en contacto con su grupo de soporte técnico.  {{Error del sistema: [3].}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_124</td><td>1033</td><td>Impossible de supprimer la version antérieure de [2]. Contactez votre groupe de support technique.  {{Erreur système : [3].}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_124</td><td>1034</td><td>No se puede quitar la versión anterior de [2]. Póngase en contacto con su grupo de soporte técnico.  {{Error del sistema: [3].}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_125</td><td>1033</td><td>Impossible de modifier la description pour le service '[2]' ([3]).</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_125</td><td>1034</td><td>No se pudo cambiar la descripción del servicio '[2]' ([3]).</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_126</td><td>1033</td><td>Le service Windows Installer ne peut pas mettre à jour le fichier système [2] car le fichier est protégé par Windows. Vous devrez peut-être mettre à jour votre système d'exploitation pour que le programme fonctionne correctement. {{Version : [3], Version protégée du système d'exploitation : [4]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_126</td><td>1034</td><td>El servicio Windows Installer no pudo actualizar el archivo del sistema [2] porque está protegido por Windows. Es posible que tenga que actualizar el sistema operativo para que este programa funcione correctamente. {{Versión del paquete: [3], Versión protegida del SO: [4]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_127</td><td>1033</td><td>Le service Windows Installer ne peut pas mettre à jour le fichier système [2] car le fichier est protégé par Windows. {{Version : [3], Version protégée du système d'exploitation : [4], Erreur SFP : [5]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_127</td><td>1034</td><td>El servicio Windows Installer no pudo actualizar el archivo protegido de Windows [2]. {{Versión del paquete: [3], Versión protegida del SO: [4], Error SFP: [5]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_128</td><td>1033</td><td>Un ou plusieurs fichiers Windows protégés ne peuvent être mis à jour par le service Windows Installer. Erreur SFP : [2]. Liste des fichiers protégés : [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_128</td><td>1034</td><td>El servicio del Instalador del Windows no puede actualizar uno o varios archivos protegidos de Windows. Error de SFP: [2]. Lista de archivos protegidos: [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_129</td><td>1033</td><td>Les installations utilisateurs sont désactivées au moyen de règles sur l'ordinateur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_129</td><td>1034</td><td>Las instalaciones del usuario se han desactivado en el equipo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_13</td><td>1033</td><td>Fin de l'action [Time] : [1]. Valeur renvoyée : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_13</td><td>1034</td><td>La acción terminó a las [Time]: [1]. Valor devuelto: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_130</td><td>1033</td><td>Cette installation requiert Internet Information Server 4.0 ou plus pour configurer les racines virtuelles IIS. Assurez-vous de bien utiliser la version 4.0 ou plus récente de IIS.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_130</td><td>1034</td><td>Para configurar raíces virtuales de IIS, el programa de instalación necesita Internet Information Server 4.0 ó posterior. Compruebe que dispone de IIS 4.0 o posterior.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_131</td><td>1033</td><td>Cette installation requiert les privilèges d'administrateur pour configurer les racines virtuelles IIS.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_131</td><td>1034</td><td>Para configurar raíces virtuales de IIS, el programa de instalación requiere derechos de administrador.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1329</td><td>1033</td><td>Un fichier requis ne peut pas être installé car le fichier .cab [2] ne dispose pas de signature numérique. Cela signifie que le fichier .cab est peut-être corrompu.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1329</td><td>1034</td><td>No es posible instalar un archivo necesario porque el archivo .cab [2] no está firmado digitalmente. Esto puede indicar que el archivo .cab está dañado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1330</td><td>1033</td><td>Un fichier requis ne peut pas être installé car la signature numérique du fichier .cab [2] est incorrecte. Cela signifie que le fichier .cab est peut-être corrompu. { L'erreur [3] a été renvoyée par WinVerifyTrust.}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1330</td><td>1034</td><td>No es posible instalar un archivo necesario porque el archivo .cab [2] tiene una firma digital no válida. Esto puede indicar que el archivo .cab está dañado.{ El Verificador de confianza de Windows ha devuelto el error [3].}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1331</td><td>1033</td><td>Echec de copie du fichier [2] : Erreur de CRC.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1331</td><td>1034</td><td>Fallo al copiar correctamente el archivo [2]: Error de CRC.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1332</td><td>1033</td><td>Echec de correction du fichier [2] : Erreur de CRC.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1332</td><td>1034</td><td>Fallo al aplicar revisión correctamente el archivo [2]: Error de CRC.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1333</td><td>1033</td><td>Echec de correction du fichier [2] : Erreur de CRC.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1333</td><td>1034</td><td>Fallo al aplicar revisión correctamente el archivo [2]: Error de CRC.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1334</td><td>1033</td><td>Impossible d'installer le fichier '[2]' car il est introuvable dans le fichier .cab '[3]'. Cela peut indiquer une erreur de réseau, une erreur lors de la lecture à partir du CD-ROM ou un problème avec ce logiciel.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1334</td><td>1034</td><td>No es posible instalar el archivo '[2]' porque no se pudo encontrar en el archivo .cab '[3]'. Esto podría indicar un error de red, un error de lectura del CD-ROM o un problema específico de este paquete.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1335</td><td>1033</td><td>Le fichier .cab '[2]' requis pour cette installation est corrompu et ne peut pas être utilisé. Cela peut indiquer une erreur de réseau, une erreur lors de la lecture à partir du CD-ROM ou un problème avec ce logiciel.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1335</td><td>1034</td><td>El archivo .cab '[2]' necesario para esta instalación está dañado y no se puede utilizar. Esto podría indicar un error de red, un error de lectura del CD-ROM o un problema específico de este paquete.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1336</td><td>1033</td><td>Une erreur est survenue lors de la création d'un fichier temporaire nécessaire pour terminer l'installation. Dossier : [3]. Code d'erreur système : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1336</td><td>1034</td><td>Ha ocurrido un error al crear un archivo temporal necesario para completar esta instalación. Carpeta: [3]. Código de error de sistema: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_14</td><td>1033</td><td>Durée restante : {[1] minute(s) }{[2] secondes}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_14</td><td>1034</td><td>Tiempo restante: {[1] minutos }{[2] segundos}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_15</td><td>1033</td><td>Mémoire insuffisante. Fermez les autres applications avant de réessayer.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_15</td><td>1034</td><td>Memoria insuficiente. Cierre otras aplicaciones antes de intentarlo de nuevo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_16</td><td>1033</td><td>Le programme d'installation ne répond plus.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_16</td><td>1034</td><td>El instalador no responde.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1609</td><td>1033</td><td>Une erreur est survenue lors de l'application des paramètres de sécurité. [2] n'est pas un utilisateur ou un groupe valide. Il s'agit peut-être d'un problème de logiciel ou de connexion à un contrôleur de domaine du réseau. Vérifiez votre connexion réseau et cliquez sur Réessayer ou sur Annuler pour interrompre l'installation. Impossible de trouver le SID de l'utilisateur, erreur système [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1609</td><td>1034</td><td>Error al aplicar la configuración de seguridad. [2] no es un usuario o grupo válido. Puede ser un problema con el paquete o con la conexión a un controlador de dominio de la red. Compruebe la conexión de red y pulse Reintentar, o Cancelar para finalizar la instalación. No se encuentra la ID de seguridad del usuario, error de sistema [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1651</td><td>1033</td><td>L'utilisateur Admin n'a pas réussi à appliquer le correctif à une application gérée par utilisateur ou une application gérée par l'ordinateur dont l'état est Promotion.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1651</td><td>1034</td><td>El usuario de administración no ha aplicado la revisión correspondiente a una aplicación por equipos o administrada por usuarios que se encuentre en un estado de anuncio.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_17</td><td>1033</td><td>L'exécution du programme d'installation a pris fin prématurément.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_17</td><td>1034</td><td>El instalador se detuvo antes de tiempo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1715</td><td>1033</td><td>Installé [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1715</td><td>1034</td><td>[2] instalado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1716</td><td>1033</td><td>[2] configuré.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1716</td><td>1034</td><td>[2] configurado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1717</td><td>1033</td><td>[2] supprimé.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1717</td><td>1034</td><td>[2] eliminado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1718</td><td>1033</td><td>Le fichier [2] a été rejeté par une règle de signature numérique.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1718</td><td>1034</td><td>Se ha rechazado el archivo [2] por la política de firma digital.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1719</td><td>1033</td><td>Impossible d'accéder au service Windows Installer. Veuillez contacter votre support technique pour vérifier s'il est activé et enregistré correctement.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1719</td><td>1034</td><td>No se pudo acceder al servicio del Instalador de Windows. Póngase en contacto con el personal de asistencia para comprobar que está registrado y habilitado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1720</td><td>1033</td><td>Il existe un problème avec ce logiciel Windows Installer. Un script requis pour terminer l'installation n'a pas pu être exécuté. Veuillez contacter votre support technique ou votre revendeur. Action personnalisée [2] erreur de script [3], [4] : [5] Ligne [6], Colonne [7], [8]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1720</td><td>1034</td><td>Se produjo un problema con el paquete del Instalador de Windows. No se pudo ejecutar un archivo de comandos necesario para la instalación. Póngase en contacto con el personal de asistencia o el proveedor del paquete. Acción personalizada [2] error de archivo de comandos [3], [4]: [5] Línea [6], Columna [7], [8]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1721</td><td>1033</td><td>Il existe un problème avec ce logiciel Windows Installer. Un programme requis pour terminer l'installation n'a pas pu être exécuté. Veuillez contacter votre support technique ou votre revendeur. Action : [2], emplacement : [3], commande : [4]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1721</td><td>1034</td><td>Se produjo un problema con este paquete del Instalador de Windows. No se pudo ejecutar un programa necesario para esta instalación. Póngase en contacto con el personal de asistencia o el proveedor del paquete. Acción: [2], ubicación: [3], comando: [4]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1722</td><td>1033</td><td>Il existe un problème avec ce logiciel Windows Installer. Un programme faisant partie de l'installation n'a pas été exécuté correctement. Veuillez contacter votre support technique ou votre revendeur. Action [2], emplacement : [3], commande : [4]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1722</td><td>1034</td><td>Se produjo un problema con este paquete del Instalador de Windows. La ejecución de un programa perteneciente a la instalación no ha finalizado según lo esperado. Póngase en contacto con el personal de asistencia o el proveedor del paquete. Acción [2], ubicación: [3], comando: [4]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1723</td><td>1033</td><td>Il existe un problème avec ce logiciel Windows Installer. Une DLL requise pour terminer l'installation n'a pas pu être exécutée. Veuillez contacter votre support technique ou votre revendeur. Action [2], entrée : [3], bibliothèque : [4]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1723</td><td>1034</td><td>Se produjo un problema con este paquete del Instalador de Windows. No se pudo ejecutar una dll necesaria para esta instalación. Póngase en contacto con el personal de asistencia o el proveedor del paquete. Acción [2], entrada: [3], biblioteca: [4]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1724</td><td>1033</td><td>Suppression terminée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1724</td><td>1034</td><td>La eliminación se ha completado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1725</td><td>1033</td><td>Echec de la suppression.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1725</td><td>1034</td><td>La eliminación no se ha realizado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1726</td><td>1033</td><td>Publicité terminée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1726</td><td>1034</td><td>El anuncio se ha completado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1727</td><td>1033</td><td>Echec de la publicité.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1727</td><td>1034</td><td>Fallo en el anuncio.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1728</td><td>1033</td><td>Configuration terminée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1728</td><td>1034</td><td>La configuración se ha completado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1729</td><td>1033</td><td>Echec de la configuration.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1729</td><td>1034</td><td>Fallo en la configuración.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1730</td><td>1033</td><td>Vous devez être administrateur pour supprimer cette application. Pour supprimer cette application, vous pouvez vous connecter en tant qu'administrateur ou contacter votre support technique pour obtenir de l'aide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1730</td><td>1034</td><td>Debe tener derechos de administrador para eliminar esta aplicación. Para eliminar esta aplicación, puede iniciar la sesión como administrador, o bien ponerse en contacto con el servicio de asistencia técnica para obtener ayuda.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1731</td><td>1033</td><td>Le logiciel d'installation source du produit [2] n'est pas synchronisé avec le logiciel client. Réessayez d'installer avec une copie valide du logiciel d'installation '[3]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1731</td><td>1034</td><td>El paquete de instalación de origen del producto [2] no está sincronizado con el paquete cliente. Intente ejecutar la instalación de nuevo con una copia válida del paquete de instalación '[3]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1732</td><td>1033</td><td>Pour terminer l'installation [2], vous devez redémarrer l'ordinateur. D'autres utilisateurs sont actuellement connectés à cet ordinateur. Si vous redémarrez, ils perdront peut-être les données sur lesquelles ils travaillent. Souhaitez-vous redémarrer maintenant ?</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1732</td><td>1034</td><td>Es necesario reiniciar el equipo para completar la instalación de [2]. Hay otros usuarios actualmente conectados al equipo, y puede que pierdan su trabajo si reinicia. ¿Desea reiniciar el equipo ahora?</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_18</td><td>1033</td><td>Veuillez patienter pendant que Windows configure [ProductName]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_18</td><td>1034</td><td>Espere mientras Windows configura [ProductName]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_19</td><td>1033</td><td>Collecte des informations requises en cours...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_19</td><td>1034</td><td>Recopilando la información necesaria...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1935</td><td>1033</td><td>Une erreur est survenue pendant l'installation d'un composant de l'assembly '[2]'. HRESULT: [3]. {{interface assembly : [4], fonction : [5], Nom de l'assembly : [6]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1935</td><td>1034</td><td>Ha ocurrido un error durante la instalación del componente del ensamblaje [2]. HRESULT: [3]. {{interfaz de ensamblaje: [4], función: [5], nombre de ensamblaje: [6]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1936</td><td>1033</td><td>Une erreur est survenue pendant l'installation de l'assembly '[6]'. L'assembly n'est pas expressément nommé ou n'est pas signé avec la longueur minimale de clé. HRESULT: [3]. {{interface assembly : [4], fonction : [5], composant : [2]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1936</td><td>1034</td><td>Ha ocurrido un error durante la instalación del ensamblaje '[6]'. El ensamblaje no tiene un nombre seguro o no se ha registrado con la longitud de clave mínima. HRESULT: [3]. {{interfaz de ensamblaje: [4], función: [5], componente: [2]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1937</td><td>1033</td><td>Une erreur est survenue pendant l'installation de l'assembly '[6]'. La signature ou le catalogue n'ont pas pu être vérifiés ou ne sont pas valides. HRESULT: [3]. {{interface assembly : [4], fonction : [5], composant : [2]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1937</td><td>1034</td><td>Ha ocurrido un error durante la instalación del ensamblaje '[6]'. La firma del catálogo no se pudo comprobar o no es válida. HRESULT: [3]. {{interfaz de ensamblaje: [4], función: [5], componente: [2]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1938</td><td>1033</td><td>Une erreur est survenue pendant l'installation de l'assembly '[6]'. Un ou plusieurs modules de cet assembly sont introuvables. HRESULT: [3]. {{interface assembly : [4], fonction : [5], composant : [2]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_1938</td><td>1034</td><td>Ha ocurrido un error durante la instalación del ensamblaje '[6]'. No se pudieron encontrar uno o más módulos del ensamblaje. HRESULT: [3]. {{interfaz de ensamblaje: [4], función: [5], componente: [2]}}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2</td><td>1033</td><td>Avertissement [1]. </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2</td><td>1034</td><td>Advertencia [1]. </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_20</td><td>1033</td><td>Installation de {[ProductName] }terminée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_20</td><td>1034</td><td>La instalación de {[ProductName] } finalizó correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_21</td><td>1033</td><td>Échec de l'installation de {[ProductName]}.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_21</td><td>1034</td><td>Fallo en la instalación de {[ProductName]}.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2101</td><td>1033</td><td>Les raccourcis ne sont pas pris en charge par le système d'exploitation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2101</td><td>1034</td><td>El sistema operativo no admite accesos directos.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2102</td><td>1033</td><td>Action .ini incorrecte : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2102</td><td>1034</td><td>Acción .ini no válida: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2103</td><td>1033</td><td>Impossible de résoudre le chemin pour le dossier du bureau [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2103</td><td>1034</td><td>No se pudo resolver la ruta de la carpeta de shell [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2104</td><td>1033</td><td>Ecriture du fichier .ini : [3]: Erreur système : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2104</td><td>1034</td><td>Escribiendo archivo .ini: [3]: Error de sistema: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2105</td><td>1033</td><td>Echec de création [3] du raccourci. Erreur système : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2105</td><td>1034</td><td>La creación de accesos directos [3] no se ha realizado correctamente. Error de sistema: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2106</td><td>1033</td><td>Echec de suppression [3] du raccourci. Erreur système : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2106</td><td>1034</td><td>La eliminación de accesos directos [3] no se ha realizado correctamente. Error de sistema: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2107</td><td>1033</td><td>Erreur [3] lors de l'enregistrement de la bibliothèque [2] de type.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2107</td><td>1034</td><td>Error [3] al registrar la biblioteca de tipos [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2108</td><td>1033</td><td>Erreur [3] lors du désenregistrement de la bibliothèque [2] de type.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2108</td><td>1034</td><td>Error [3] al anular el registro de la biblioteca de tipos [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2109</td><td>1033</td><td>Section manquante pour l'action .ini.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2109</td><td>1034</td><td>Falta sección para acción .ini.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2110</td><td>1033</td><td>Clé manquante pour l'action .ini.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2110</td><td>1034</td><td>Falta clave para acción .ini.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2111</td><td>1033</td><td>Echec de détection des applications en cours d'exécution, impossible d'obtenir des données de performance. Opération enregistrée a renvoyé : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2111</td><td>1034</td><td>La detección de las aplicaciones en ejecución no se ha realizado correctamente; no se han podido obtener datos de rendimiento. La operación de registro ha devuelto: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2112</td><td>1033</td><td>Echec de détection des applications en cours d'exécution, impossible d'obtenir un indice de performance. Opération enregistrée a renvoyé : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2112</td><td>1034</td><td>La detección de las aplicaciones en ejecución no se ha realizado correctamente; no se ha podido obtener el índice de rendimiento. La operación de registro ha devuelto: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2113</td><td>1033</td><td>Echec de la détection des applications en cours.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2113</td><td>1034</td><td>La detección de las aplicaciones en ejecución no se ha realizado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_22</td><td>1033</td><td>Erreur lors de la lecture du fichier [2].{{ Erreur système [3].}} Vérifiez que ce fichier existe et que vous êtes autorisé à y accéder.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_22</td><td>1034</td><td>Error al leer el archivo [2]. {{ Error del sistema [3].}} Compruebe que el archivo existe y que puede obtener acceso a él.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2200</td><td>1033</td><td>Base de données : [2]. Impossible de créer l'objet de base de données, mode = [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2200</td><td>1034</td><td>Base de datos: [2]. La creación del objeto de base de datos no se ha realizado correctamente, modo = [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2201</td><td>1033</td><td>Base de données : [2]. Echec d'initialisation, mémoire insuffisante.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2201</td><td>1034</td><td>Base de datos: [2]. La inicialización no se ha realizado correctamente; no hay suficiente memoria.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2202</td><td>1033</td><td>Base de données : [2]. Impossible d'accéder aux données, plus de mémoire.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2202</td><td>1034</td><td>Base de datos: [2]. El acceso a datos no se ha realizado correctamente; no hay suficiente memoria.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2203</td><td>1033</td><td>Base de données : [2]. Impossible d'ouvrir le fichier de base de données. Erreur système [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2203</td><td>1034</td><td>Base de datos: [2]. No se puede abrir el archivo de base de datos. Error de sistema [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2204</td><td>1033</td><td>Base de données : [2]. La table existe déjà : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2204</td><td>1034</td><td>Base de datos: [2]. La tabla ya existe: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2205</td><td>1033</td><td>Base de données : [2]. La table n'existe pas : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2205</td><td>1034</td><td>Base de datos: [2]. La tabla no existe: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2206</td><td>1033</td><td>Base de données : [2]. Impossible de déposer la table : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2206</td><td>1034</td><td>Base de datos: [2]. La tabla no se pudo descartar: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2207</td><td>1033</td><td>Base de données : [2]. Violation d'intention.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2207</td><td>1034</td><td>Base de datos: [2]. Infracción de intento.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2208</td><td>1033</td><td>Base de données : [2]. Paramètres insuffisants pour Execute.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2208</td><td>1034</td><td>Base de datos: [2]. No hay suficientes parámetros para Ejecutar.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2209</td><td>1033</td><td>Base de données : [2]. L'état du curseur est incorrect.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2209</td><td>1034</td><td>Base de datos: [2]. EL estado del cursor no es válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2210</td><td>1033</td><td>Base de données : [2]. Type de données de mise à jour invalide dans la colonne [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2210</td><td>1034</td><td>Base de datos: [2]. Tipo de datos de actualización no válido en la columna [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2211</td><td>1033</td><td>Base de données : [2]. Impossible de créer la table de base de données [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2211</td><td>1034</td><td>Base de datos: [2]. No se pudo crear la tabla de base de datos [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2212</td><td>1033</td><td>Base de données : [2]. La base de données est en lecture seule.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2212</td><td>1034</td><td>Base de datos: [2]. El estado de la base de datos no permite escribir en ella.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2213</td><td>1033</td><td>Base de données : [2]. Erreur lors de l'enregistrement des tables de la base de données.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2213</td><td>1034</td><td>Base de datos: [2]. Error al guardar tablas de base de datos.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2214</td><td>1033</td><td>Base de données : [2]. Erreur d'écriture du fichier d'exportation : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2214</td><td>1034</td><td>Base de datos: [2]. Error al escribir archivo de exportación: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2215</td><td>1033</td><td>Base de données : [2]. Impossible d'ouvrir le fichier d'importation : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2215</td><td>1034</td><td>Base de datos: [2]. No se puede abrir el archivo de importación: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2216</td><td>1033</td><td>Base de données : [2]. Erreur de format du fichier d'importation : [3], Ligne [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2216</td><td>1034</td><td>Base de datos: [2]. Error de importación de formato de archivo: [3], Línea [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2217</td><td>1033</td><td>Base de données : [2]. Etat incorrect pour CreateOutputDatabase [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2217</td><td>1034</td><td>Base de datos: [2]. Estado incorrecto de Crear salida de base de datos [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2218</td><td>1033</td><td>Base de données : [2]. La table n'est pas fournie :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2218</td><td>1034</td><td>Base de datos: [2]. No se ha proporcionado el nombre de la tabla.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2219</td><td>1033</td><td>Base de données : [2]. Format de base de données Installer non valide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2219</td><td>1034</td><td>Base de datos: [2]. Formato de base de datos del instalador no válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2220</td><td>1033</td><td>Base de données : [2]. Données de ligne/colonne incorrectes.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2220</td><td>1034</td><td>Base de datos: [2]. Datos de fila/campo no válidos.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2221</td><td>1033</td><td>Base de données : [2]. Conflit de page de code dans le fichier d'importation : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2221</td><td>1034</td><td>Base de datos: [2]. Conflicto de código de página en el archivo de importación: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2222</td><td>1033</td><td>Base de données : [2]. La page de code de fusion ou de transformation [3] est différente de la page de code de [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2222</td><td>1034</td><td>Base de datos: [2]. La página de código de combinación o transformación [3] difiere de la página de código de base de datos [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2223</td><td>1033</td><td>Base de données : [2]. Les bases de données sont les mêmes : Aucune transformation générée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2223</td><td>1034</td><td>Base de datos: [2]. Las bases de datos son iguales. No se ha generado ninguna transformación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2224</td><td>1033</td><td>Base de données : [2]. GenerateTransform : Base de données corrompue. Table : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2224</td><td>1034</td><td>Base de datos: [2]. Generar transformación: Base de datos dañada. Tabla: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2225</td><td>1033</td><td>Base de données : [2]. Transform : impossible de transformer une table temporaire. Table : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2225</td><td>1034</td><td>Base de datos: [2] Transformación: No se puede transformar una tabla temporal. Tabla: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2226</td><td>1033</td><td>Base de données : [2] Echec de la transformation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2226</td><td>1034</td><td>Base de datos: [2]. La transformación no se ha realizado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2227</td><td>1033</td><td>Base de données : [2]. Identificateur '[3]' invalide dans la requête SQL : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2227</td><td>1034</td><td>Base de datos: [2]. Identificador no válido '[3]' en la consulta SQL: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2228</td><td>1033</td><td>Base de données : [2]. Table inconnue '[3]' dans la requête SQL : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2228</td><td>1034</td><td>Base de datos: [2]. Tabla desconocida '[3]' en la consulta SQL: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2229</td><td>1033</td><td>Base de données : [2]. Impossible de charger la table '[3]' dans la requête SQL : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2229</td><td>1034</td><td>Base de datos: [2]. No se pudo cargar la tabla '[3]' en la consulta SQL: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2230</td><td>1033</td><td>Base de données : [2]. Table répétée '[3]' dans la requête SQL : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2230</td><td>1034</td><td>Base de datos: [2]. Tabla repetida '[3]' en la consulta SQL: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2231</td><td>1033</td><td>Base de données : [2]. ')' manquante dans la requête SQL : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2231</td><td>1034</td><td>Base de datos: [2]. Falta ')' en la consulta SQL: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2232</td><td>1033</td><td>Base de données : [2]. Jeton '[3]' inattendu dans la requête SQL : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2232</td><td>1034</td><td>Base de datos: [2]. Símbolo inesperado '[3]' en la consulta SQL: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2233</td><td>1033</td><td>Base de données : [2]. Aucune colonne dans la clause SELECT de la requête SQL : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2233</td><td>1034</td><td>Base de datos: [2]. No hay columnas en la cláusula SELECT de la consulta SQL: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2234</td><td>1033</td><td>Base de données : [2]. Aucune colonne dans la clause ORDER BY de la requête SQL : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2234</td><td>1034</td><td>Base de datos: [2]. No hay columnas en la cláusula ORDER BY de la consulta SQL: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2235</td><td>1033</td><td>Base de données : [2]. Colonne '[3]' absente ou ambiguë dans la requête SQL : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2235</td><td>1034</td><td>Base de datos: [2]. La columna '[3]' no está presente o es ambigua en la consulta SQL: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2236</td><td>1033</td><td>Base de données : [2]. Opérateur '[3]' invalide dans la requête SQL : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2236</td><td>1034</td><td>Base de datos: [2]. Operador no válido '[3]' en la consulta SQL: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2237</td><td>1033</td><td>Base de données : [2]. Chaîne de requête incorrecte : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2237</td><td>1034</td><td>Base de datos: [2]. La cadena de consulta falta o no es válida: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2238</td><td>1033</td><td>Base de données : [2]. Clause FROM manquante dans la requête SQL : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2238</td><td>1034</td><td>Base de datos: [2]. Falta la cláusula FROM en la consulta SQL: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2239</td><td>1033</td><td>Base de données : [2]. Valeurs insuffisantes dans l'instruction INSERT SQL.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2239</td><td>1034</td><td>Base de datos: [2]. No hay suficientes valores en la instrucción INSERT de SQL.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2240</td><td>1033</td><td>Base de données : [2]. Colonnes de mise à jour manquantes dans l'instruction UPDATE SQL.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2240</td><td>1034</td><td>Base de datos: [2]. Faltan columnas de actualización en la instrucción UPDATE de SQL.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2241</td><td>1033</td><td>Base de données : [2]. Colonnes d'insertion manquantes dans l'instruction INSERT SQL.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2241</td><td>1034</td><td>Base de datos: [2]. Faltan columnas de inserción en la instrucción INSERT de SQL.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2242</td><td>1033</td><td>Base de données : [2]. Colonne '[3]' répétée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2242</td><td>1034</td><td>Base de datos: [2]. Columna '[3]' repetida.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2243</td><td>1033</td><td>Base de données : [2]. Aucune colonne primaire définie pour la création de table.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2243</td><td>1034</td><td>Base de datos: [2]. No se han definido columnas principales para la creación de tablas.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2244</td><td>1033</td><td>Base de données : [2]. Spécificateur de type '[3]' invalide dans la requête SQL [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2244</td><td>1034</td><td>Base de datos: [2]. Especificador de tipo no válido '[3]' en la consulta SQL [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2245</td><td>1033</td><td>Echec d'IStorage::Stat avec l'erreur [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2245</td><td>1034</td><td>IStorage::Stat ha fallado con el error [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2246</td><td>1033</td><td>Base de données : [2]. Format de transformation Installer non valide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2246</td><td>1034</td><td>Base de datos: [2]. Formato de transformación del instalador no válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2247</td><td>1033</td><td>Base de données : [2] Echec de lecture/écriture du flux de transformation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2247</td><td>1034</td><td>Base de datos: [2] Fallo de lectura/escritura de la secuencia de transformación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2248</td><td>1033</td><td>Base de données : [2] GenerateTransform/Merge : Le type de colonne dans la table de base ne correspond pas à la table de référence. Table : [3] n° de colonne : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2248</td><td>1034</td><td>Base de datos: [2] Generar transformación/combinación: El tipo de columna de la tabla base no coincide con el de la tabla de referencia. Tabla: [3] Nº de col: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2249</td><td>1033</td><td>Base de données : [2] GenerateTransform : Il y a plus de colonnes dans la table de base que dans la table de référence. Table : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2249</td><td>1034</td><td>Base de datos: [2] Generar transformación: Hay más columnas en la tabla base que en la tabla de referencia. Tabla: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2250</td><td>1033</td><td>Base de données : [2] Transform: Impossible d'ajouter une ligne existante. Table : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2250</td><td>1034</td><td>Base de datos: [2] Transformación: No se puede añadir la fila existente. Tabla: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2251</td><td>1033</td><td>Base de données : [2] Transform: Impossible de supprimer une ligne qui n'existe pas. Table : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2251</td><td>1034</td><td>Base de datos: [2] Transformación: No se puede suprimir una fila que no existe. Tabla: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2252</td><td>1033</td><td>Base de données : [2] Transform: Impossible d'ajouter une table existante. Table : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2252</td><td>1034</td><td>Base de datos: [2] Transformación: No se puede añadir la tabla existente. Tabla: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2253</td><td>1033</td><td>Base de données : [2] Transform: Impossible de supprimer une table qui n'existe pas. Table : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2253</td><td>1034</td><td>Base de datos: [2] Transformación: No se puede suprimir una tabla que no existe. Tabla: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2254</td><td>1033</td><td>Base de données : [2] Transform: Impossible de mettre à jour une ligne qui n'existe pas. Table : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2254</td><td>1034</td><td>Base de datos: [2] Transformación: No se puede actualizar una fila que no existe. Tabla: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2255</td><td>1033</td><td>Base de données : [2] Transform: Une colonne portant ce nom existe déjà. Table : [3] Colonne : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2255</td><td>1034</td><td>Base de datos: [2] Transformación: Ya existe una columna con este nombre. Tabla: [3] Col: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2256</td><td>1033</td><td>Base de données : [2] GenerateTransform/Merge : Le nombre de clés primaires dans la table de base ne correspond pas à la table de référence. Table : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2256</td><td>1034</td><td>Base de datos: [2] Generar transformación/combinación: El número de claves principales de la tabla base no coincide con el de la tabla de referencia. Tabla: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2257</td><td>1033</td><td>Base de données : [2]. Intention de modifier la table en lecture seule : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2257</td><td>1034</td><td>Base de datos: [2]. Intento de modificar tabla de sólo lectura: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2258</td><td>1033</td><td>Base de données : [2]. Erreur de correspondance de types dans les paramètres : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2258</td><td>1034</td><td>Base de datos: [2]. No coincide el tipo en el parámetro: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2259</td><td>1033</td><td>Base de données : [2] Echec de la mise à jour de la ou des tables</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2259</td><td>1034</td><td>Base de datos: [2] La actualización de tablas no se ha realizado correctamente</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2260</td><td>1033</td><td>Echec du stockage CopyTo. Erreur système : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2260</td><td>1034</td><td>La acción Copiar a de la ubicación de almacenamiento no se ha realizado correctamente. Error de sistema: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2261</td><td>1033</td><td>Impossible de supprimer le flux [2]. Erreur système : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2261</td><td>1034</td><td>No se pudo eliminar la secuencia [2]. Error de sistema: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2262</td><td>1033</td><td>Le flux n'existe pas : [2]. Erreur système : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2262</td><td>1034</td><td>La secuencia no existe: [2]. Error de sistema: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2263</td><td>1033</td><td>Impossible d'ouvrir le flux [2]. Erreur système : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2263</td><td>1034</td><td>No se pudo abrir la secuencia [2]. Error de sistema: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2264</td><td>1033</td><td>Impossible de supprimer le flux [2]. Erreur système : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2264</td><td>1034</td><td>No se pudo eliminar la secuencia [2]. Error de sistema: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2265</td><td>1033</td><td>Impossible de valider le stockage. Erreur système : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2265</td><td>1034</td><td>No se pudo confirmar la ubicación de almacenamiento. Error de sistema: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2266</td><td>1033</td><td>Impossible d'annuler le stockage. Erreur système : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2266</td><td>1034</td><td>No se pudo deshacer la ubicación de almacenamiento. Error de sistema: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2267</td><td>1033</td><td>Impossible de supprimer le stockage [2]. Erreur système : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2267</td><td>1034</td><td>No se pudo suprimir la ubicación de almacenamiento [2]. Error de sistema: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2268</td><td>1033</td><td>Base de données : [2]. Merge : Des conflits de fusion on été signalés dans les tables [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2268</td><td>1034</td><td>Base de datos: [2]. Combinación: Se informó de la existencia de conflictos de combinación en las tablas [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2269</td><td>1033</td><td>Base de données : [2]. Merge : Le décompte de la colonne était différent dans la table '[3]' des deux bases de données.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2269</td><td>1034</td><td>Base de datos: [2]. Combinación: El número de columnas es diferente en la tabla '[3]' de las dos bases de datos.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2270</td><td>1033</td><td>Base de données : [2]. GenerateTransform/Merge : Le nom de la colonne dans la table de base ne correspond pas à la table de référence. Table : [3] n° de colonne : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2270</td><td>1034</td><td>Base de datos: [2]. Generar transformación/combinación: El nombre de la columna de la tabla base no coincide con el de la tabla de referencia. Tabla: [3] Nº de col: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2271</td><td>1033</td><td>Echec d'écriture de SummaryInformation pour la transformation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2271</td><td>1034</td><td>La escritura de Información de resumen para la transformación no se ha realizado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2272</td><td>1033</td><td>Base de données : [2]. MergeDatabase n'écrira aucune modification car la base de données est ouverte en lecture seule.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2272</td><td>1034</td><td>Base de datos: [2]. Combinar base de datos no escribirá ningún cambio porque la base de datos está abierta en modo de sólo lectura.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2273</td><td>1033</td><td>Base de données : [2]. MergeDatabase : Une référence de la base de donnée de base a été passée comme base de donnée de référence.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2273</td><td>1034</td><td>Base de datos: [2]. Combinar base de datos: Se ha transmitido una referencia a la base de datos de base como base de datos de referencia.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2274</td><td>1033</td><td>Base de données : [2]. MergeDatabase : impossible d'inscrire les erreurs dans la table d'erreurs. Ceci peut-être dû à une colonne non vide dans une table d'erreurs définie préalablement.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2274</td><td>1034</td><td>Base de datos: [2]. Combinar base de datos: No es posible escribir errores en la tabla Error. Esto puede deberse a la existencia de una columna que no puede dejarse vacía en una tabla Error predefinida.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2275</td><td>1033</td><td>Base de données : [2]. L'opération de modification [3] spécifiée est incorrecte pour les réunions de tables.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2275</td><td>1034</td><td>Base de datos: [2]. La operación de modificación especificada [3] no es válida para las combinaciones de tablas.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2276</td><td>1033</td><td>Base de données : [2]. Page de code [3] non prise en charge par le système.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2276</td><td>1034</td><td>Base de datos: [2]. El sistema no admite la página de código [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2277</td><td>1033</td><td>Base de données : [2]. Echec de l'enregistrement de la table [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2277</td><td>1034</td><td>Base de datos: [2]. Fallo al guardar la tabla [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2278</td><td>1033</td><td>Base de données : [2]. Plafond de 32 expressions dépassé dans la clause WHERE de la requête SQL : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2278</td><td>1034</td><td>Base de datos: [2]. Se ha superado el límite de expresiones establecido en 32 en la cláusula WHERE de la consulta SQL: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2279</td><td>1033</td><td>Base de données : [2] Transform: Trop de colonnes dans la table de base [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2279</td><td>1034</td><td>Base de datos: [2] Transformación: Demasiadas columnas en la tabla base [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2280</td><td>1033</td><td>Base de données : [2]. Impossible de créer la colonne [3] pour la table [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2280</td><td>1034</td><td>Base de datos: [2]. No se pudo crear la columna [3] de la tabla [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2281</td><td>1033</td><td>Impossible de renommer le flux [2]. Erreur système : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2281</td><td>1034</td><td>No se pudo cambiar el nombre de la secuencia [2]. Error de sistema: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2282</td><td>1033</td><td>Nom de flux incorrect [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2282</td><td>1034</td><td>Nombre de secuencia [2] no válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_23</td><td>1033</td><td>Impossible de créer le fichier [2]. Un répertoire du même nom existe déjà. Annulez l'installation et essayez d'installer à un autre emplacement.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_23</td><td>1034</td><td>No se puede crear el archivo '[2]'. Ya existe un directorio con ese nombre. Cancele la instalación y pruebe a instalar en una ubicación distinta.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2302</td><td>1033</td><td>Notification de correctif : [2] octets corrigés.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2302</td><td>1034</td><td>Notificación de revisión: [2] bytes revisados hasta ahora.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2303</td><td>1033</td><td>Erreur d'obtention des informations de volume. GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2303</td><td>1034</td><td>Error al obtener información de volumen. Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2304</td><td>1033</td><td>Erreur lors de la tentative d'obtention d'espace disque. GetLastError : [2]. Volume : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2304</td><td>1034</td><td>Error al obtener espacio libre en disco. Obtener último error: [2]. Volumen: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2305</td><td>1033</td><td>Erreur d'attente du thread du correctif. GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2305</td><td>1034</td><td>Error durante la espera del subproceso de revisión. Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2306</td><td>1033</td><td>Impossible de créer un thread pour l'application de correction. GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2306</td><td>1034</td><td>No se pudo crear el subproceso de la aplicación de revisión. Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2307</td><td>1033</td><td>Le nom de fichier source est vide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2307</td><td>1034</td><td>El nombre de la clave del archivo de origen es nulo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2308</td><td>1033</td><td>Le nom de fichier de destination est vide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2308</td><td>1034</td><td>El nombre del archivo de destino es nulo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2309</td><td>1033</td><td>Tentative de correction du fichier [2] alors que le correctif est déjà en cours d'exécution.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2309</td><td>1034</td><td>Se intenta aplicar la revisión al archivo [2] con el proceso de revisión ya en curso.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2310</td><td>1033</td><td>Tentative de poursuite de la correction alors que le correctif n'est pas en cours d'exécution.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2310</td><td>1034</td><td>Se intenta continuar con la revisión cuando no hay ninguna revisión en curso.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2315</td><td>1033</td><td>Séparateur de chemin manquant : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2315</td><td>1034</td><td>Falta separador de ruta: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2318</td><td>1033</td><td>Le fichier n'existe pas : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2318</td><td>1034</td><td>El archivo no existe: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2319</td><td>1033</td><td>Erreur de définition de l'attribut du fichier : [3] GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2319</td><td>1034</td><td>Error al configurar atributo de archivo: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2320</td><td>1033</td><td>Fichier en lecture seule : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2320</td><td>1034</td><td>No se puede escribir en el archivo: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2321</td><td>1033</td><td>Erreur lors de la création du fichier : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2321</td><td>1034</td><td>Error al crear archivo: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2322</td><td>1033</td><td>Utilisateur annulé.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2322</td><td>1034</td><td>Cancelado por el usuario.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2323</td><td>1033</td><td>Attribut de fichier incorrect.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2323</td><td>1034</td><td>Atributo de archivo no válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2324</td><td>1033</td><td>Ouverture de fichier échouée : [3] GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2324</td><td>1034</td><td>Error al abrir el archivo: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2325</td><td>1033</td><td>Impossible d'obtenir l'heure fichier pour le fichier : [3] GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2325</td><td>1034</td><td>No se pudo obtener la hora de archivo del archivo: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2326</td><td>1033</td><td>Erreur dans FileToDosDateTime.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2326</td><td>1034</td><td>Error en Archivo hasta fecha/hora DOS.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2327</td><td>1033</td><td>impossible de supprimer le répertoire : [3] GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2327</td><td>1034</td><td>No se pudo eliminar el directorio: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2328</td><td>1033</td><td>Erreur d'obtention d'informations de version pour le fichier : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2328</td><td>1034</td><td>Error al obtener información sobre la versión de archivo del archivo: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2329</td><td>1033</td><td>Erreur lors de la suppression du fichier : [3]. GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2329</td><td>1034</td><td>Error al suprimir archivo: [3]. Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2330</td><td>1033</td><td>Erreur d'obtention des attributs du fichier : [3]. GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2330</td><td>1034</td><td>Error al obtener atributos de archivo: [3]. Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2331</td><td>1033</td><td>Erreur lors du chargement de la bibliothèque [2] ou de la recherche du point d'entrée [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2331</td><td>1034</td><td>Error al cargar la biblioteca [2] o al buscar el punto de entrada [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2332</td><td>1033</td><td>Erreur d'obtention des attributs du fichier. GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2332</td><td>1034</td><td>Error al obtener atributos de archivo. Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2333</td><td>1033</td><td>Erreur de définition des attributs de fichier. GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2333</td><td>1034</td><td>Error al configurar atributos de archivo. Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2334</td><td>1033</td><td>Erreur de conversion de l'heure fichier en heure locale pour le fichier : [3]. GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2334</td><td>1034</td><td>Error al convertir la hora de archivo a la hora local en el archivo: [3]. Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2335</td><td>1033</td><td>Chemin d'accès : [2] n'est pas un parent de [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2335</td><td>1034</td><td>Ruta: [2] no es un elemento principal de [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2336</td><td>1033</td><td>Erreur lors de la création d'un fichier temporaire dans le dossier : [3]. GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2336</td><td>1034</td><td>Error al crear archivo temporal en la ruta: [3]. Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2337</td><td>1033</td><td>Impossible de fermer le fichier : [3] GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2337</td><td>1034</td><td>Error al cerrar el archivo: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2338</td><td>1033</td><td>Impossible de mettre à jour la ressource pour le fichier : [3] GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2338</td><td>1034</td><td>No se pudo actualizar el recurso para el archivo: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2339</td><td>1033</td><td>Impossible définir l'heure fichier pour le fichier : [3] GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2339</td><td>1034</td><td>No se pudo establecer la hora de archivo del archivo: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2340</td><td>1033</td><td>Impossible de mettre à jour la ressource pour le fichier : [3], ressource manquante.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2340</td><td>1034</td><td>No se pudo actualizar el recurso para el archivo: [3], Falta el recurso.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2341</td><td>1033</td><td>Impossible de mettre à jour la ressource pour le fichier : [3], ressource trop importante.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2341</td><td>1034</td><td>No se pudo actualizar el recurso para el archivo: [3], El recurso es demasiado grande.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2342</td><td>1033</td><td>Impossible de mettre à jour la ressource pour le fichier : [3] GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2342</td><td>1034</td><td>No se pudo actualizar el recurso para el archivo: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2343</td><td>1033</td><td>Le chemin défini est vide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2343</td><td>1034</td><td>La ruta especificada está vacía.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2344</td><td>1033</td><td>Impossible de trouver le fichier IMAGEHLP.DLL requis pour valider le fichier :[2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2344</td><td>1034</td><td>No se pudo encontrar el archivo IMAGEHLP.DLL necesario para validar el archivo:[2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2345</td><td>1033</td><td>[2]: le fichier ne contient pas de valeur de somme de contrôle valide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2345</td><td>1034</td><td>[2]: El archivo no contiene un valor de suma de comprobación válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2347</td><td>1033</td><td>Ignorer utilisateur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2347</td><td>1034</td><td>Ignorado por el usuario.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2348</td><td>1033</td><td>Erreur lors d'une tentative de lecture à partir d'un fichier .cab.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2348</td><td>1034</td><td>Error al intentar leer desde la secuencia del archivo .cab.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2349</td><td>1033</td><td>La copie a repris avec des informations différentes.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2349</td><td>1034</td><td>Copia reanudada con información diferente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2350</td><td>1033</td><td>Erreur serveur FDI</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2350</td><td>1034</td><td>Error de servidor FDI</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2351</td><td>1033</td><td>Clé de fichier '[2]' introuvable dans le fichier .cab '[3]'. L'installation ne peut pas se poursuivre.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2351</td><td>1034</td><td>Clave de archivo '[2]' no encontrada en el archivo .cab '[3]'. El proceso de instalación no puede continuar.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2352</td><td>1033</td><td>Impossible d'initialiser le serveur de fichiers .cab. Le fichier requis 'CABINET.DLL' est peut-être manquant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2352</td><td>1034</td><td>No se pudo inicializar el servidor del archivo .cab. Puede que falte el archivo 'CABINET.DLL' requerido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2353</td><td>1033</td><td>N'est pas un fichier .cab.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2353</td><td>1034</td><td>No es un archivo .cab.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2354</td><td>1033</td><td>Impossible de gérer le fichier .cab.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2354</td><td>1034</td><td>No se puede gestionar el archivo .cab.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2355</td><td>1033</td><td>Fichier .cab corrompu.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2355</td><td>1034</td><td>Archivo .cab dañado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2356</td><td>1033</td><td>Fichier. Cab introuvable dans le flux : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2356</td><td>1034</td><td>No se pudo localizar el archivo .cab en la secuencia: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2357</td><td>1033</td><td>Impossible de définir des attributs.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2357</td><td>1034</td><td>No se pueden establecer atributos.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2358</td><td>1033</td><td>Erreur lors de la détermination de l'activité d'un fichier : [3]. GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2358</td><td>1034</td><td>Error al determinar si el archivo se encuentra en uso: [3]. Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2359</td><td>1033</td><td>Impossible de créer le fichier cible. Le fichier est peut-être en cours d'utilisation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2359</td><td>1034</td><td>No es posible crear el archivo de destino; puede que el archivo se encuentre en uso.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2360</td><td>1033</td><td>Battement de progression.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2360</td><td>1034</td><td>Marca de progreso.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2361</td><td>1033</td><td>Fichier .cab suivant nécessaire.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2361</td><td>1034</td><td>Se requiere el archivo .cab siguiente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2362</td><td>1033</td><td>Dossier introuvable : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2362</td><td>1034</td><td>Carpeta no encontrada: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2363</td><td>1033</td><td>Impossible d'énumérer les sous-dossiers pour le dossier : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2363</td><td>1034</td><td>No se pudieron enumerar las subcarpetas de la carpeta: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2364</td><td>1033</td><td>Mauvaise constante d'énumération dans l'appel CreateCopier.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2364</td><td>1034</td><td>Constante de enumeración incorrecta en la llamada Crear copiador.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2365</td><td>1033</td><td>BindImage exe pour le fichier [2] impossible.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2365</td><td>1034</td><td>No se pudo ejecutar Vincular imagen en el archivo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2366</td><td>1033</td><td>Echec utilisateur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2366</td><td>1034</td><td>Fallo del usuario.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2367</td><td>1033</td><td>Annuler utilisateur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2367</td><td>1034</td><td>Anulado por el usuario.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2368</td><td>1033</td><td>Impossible d'obtenir des informations de ressource de réseau. Erreur [2], chemin d'accès au réseau [3]. Erreur étendue : fournisseur de réseau [5], code d'erreur [4], description d'erreur [6].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2368</td><td>1034</td><td>Fallo al obtener información de los recursos de red. Error [2], ruta de red [3]. Error ampliado: proveedor de red [5], código de error [4], descripción del error [6].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2370</td><td>1033</td><td>Valeur de somme de contrôle CRC invalide pour le fichier [2]. {La valeur indiquée dans l'en-tête est [3], alors que la valeur calculée est [4].}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2370</td><td>1034</td><td>Valor de suma de comprobación por redundancia cíclica (CRC) del archivo [2] no válido.{ El encabezado indica [3] para la suma de comprobación; el valor calculado es [4].}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2371</td><td>1033</td><td>Impossible d'appliquer le correctif au fichier [2]. GetLastError : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2371</td><td>1034</td><td>No se pudo aplicar la revisión al archivo [2]. Obtener último error: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2372</td><td>1033</td><td>Le fichier correctif [2] est corrompu ou dans un format incorrect. Tentative de correction du fichier [3]. GetLastError : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2372</td><td>1034</td><td>El archivo de revisión [2] está dañado o el formato no es válido. Intentando aplicar revisión al archivo [3]. Obtener último error: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2373</td><td>1033</td><td>Le fichier [2] n'est pas un fichier correctif valide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2373</td><td>1034</td><td>El archivo [2] no es un archivo de revisión válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2374</td><td>1033</td><td>Le fichier [2] n'est pas un fichier de destination valide pour le fichier correctif [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2374</td><td>1034</td><td>El archivo [2] no es un archivo de destino válido para el archivo de revisión [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2375</td><td>1033</td><td>Erreur de correction inconnue : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2375</td><td>1034</td><td>Error de revisión desconocido: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2376</td><td>1033</td><td>Fichier .cab introuvable.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2376</td><td>1034</td><td>Archivo .cab no encontrado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2379</td><td>1033</td><td>Erreur d'ouverture du fichier en mode lecture : [3] GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2379</td><td>1034</td><td>Error al abrir el archivo para su lectura: [3] Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2380</td><td>1033</td><td>Erreur d'ouverture du fichier en mode écriture : [3]. GetLastError : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2380</td><td>1034</td><td>Error al abrir el archivo para su escritura: [3]. Obtener último error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2381</td><td>1033</td><td>Le répertoire n'existe pas : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2381</td><td>1034</td><td>El directorio no existe: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2382</td><td>1033</td><td>Lecteur non disponible : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2382</td><td>1034</td><td>La unidad no está lista: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_24</td><td>1033</td><td>Insérez le disque : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_24</td><td>1034</td><td>Inserte el disco [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2401</td><td>1033</td><td>Tentative d'enregistrement 64 bits sur un système d'exploitation 32 bits pour la clé [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2401</td><td>1034</td><td>Se ha intentado realizar una operación de registro de 64 bits en un sistema operativo de 32 bits en relación a la clave [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2402</td><td>1033</td><td>Plus de mémoire.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2402</td><td>1034</td><td>No hay suficiente memoria.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_25</td><td>1033</td><td>Le programme d'installation ne dispose pas des privilèges suffisants pour accéder au répertoire [2]. Impossible de poursuivre l'installation. Ouvrez une session en tant qu'administrateur ou contactez votre administrateur système.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_25</td><td>1034</td><td>El instalador no dispone de privilegios suficientes para obtener acceso al directorio [2] y no se puede continuar con la instalación. Inicie la sesión como administrador o póngase en contacto con el administrador del sistema.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2501</td><td>1033</td><td>Impossible de créer un énumérateur de script rollback.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2501</td><td>1034</td><td>No se pudo crear el enumerador del archivo de comandos de la acción para deshacer.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2502</td><td>1033</td><td>InstallFinalize appelé alors qu'aucune installation n'est en cours.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2502</td><td>1034</td><td>Se ha llamado a Finalizar instalación cuando no hay ninguna instalación en curso.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2503</td><td>1033</td><td>RunScript appelé s'il n'est pas en cours d'utilisation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2503</td><td>1034</td><td>Se ha llamado a Ejecutar archivo de comandos cuando no se indica que se encuentre en curso.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_26</td><td>1033</td><td>Erreur lors de l'écriture dans le fichier [2]. Vérifiez que vous êtes autorisé à accéder à ce répertoire.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_26</td><td>1034</td><td>Error al escribir en el archivo [2]. Compruebe que dispone de acceso a ese directorio.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2601</td><td>1033</td><td>Valeur incorrecte pour la propriété [2]: '[3]'</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2601</td><td>1034</td><td>Valor no válido para la propiedad [2]: '[3]'</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2602</td><td>1033</td><td>Dans la table [2], aucune entrée de la table des supports n'est associée à l'entrée '[3]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2602</td><td>1034</td><td>La [2] entrada de tabla '[3]' no tiene ninguna entrada asociada en la tabla Medios.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2603</td><td>1033</td><td>Nom de la table [2] en double.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2603</td><td>1034</td><td>Nombre de tabla [2] duplicado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2604</td><td>1033</td><td>Propriété [2] non définie.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2604</td><td>1034</td><td>[2] Propiedad no definida.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2605</td><td>1033</td><td>Serveur [2] introuvable dans [3] ou [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2605</td><td>1034</td><td>No se pudo encontrar el servidor [2] en [3] o [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2606</td><td>1033</td><td>La valeur de la propriété [2] n'est pas un chemin complet valide : '[3]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2606</td><td>1034</td><td>El valor de la propiedad [2] no es una ruta completa válida: '[3]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2607</td><td>1033</td><td>Table des supports introuvable ou vide (elle est requise pour l'installation des fichiers).</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2607</td><td>1034</td><td>La tabla Medios no se ha encontrado o está vacía (necesaria para la instalación de los archivos).</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2608</td><td>1033</td><td>Impossible de créer un descripteur de sécurité pour l'objet. Erreur : '[2]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2608</td><td>1034</td><td>No se pudo crear un descriptor de seguridad para el objeto. Error: '[2]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2609</td><td>1033</td><td>Tentative de migration des paramètres du produit avant l'initialisation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2609</td><td>1034</td><td>Intente actualizar la configuración del producto antes de la inicialización.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2611</td><td>1033</td><td>Le fichier [2] est marqué comme étant compressé, mais les entrées de support associées ne spécifient pas de fichier .cab.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2611</td><td>1034</td><td>El archivo [2] está marcado como comprimido, pero la entrada del medio asociado no especifica ningún archivo .cab.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2612</td><td>1033</td><td>Flux introuvable dans la colonne [2]. Clé primaire : '[3]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2612</td><td>1034</td><td>La secuencia no se ha encontrado en la columna '[2]'. Clave principal: '[3]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2613</td><td>1033</td><td>action RemoveExistingProducts séquencée incorrectement.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2613</td><td>1034</td><td>La secuencia de la acción Eliminar productos existentes no es correcta.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2614</td><td>1033</td><td>Impossible d'accéder à l'objet IStorage à partir du logiciel d'installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2614</td><td>1034</td><td>No se pudo acceder al objeto IStorage desde el paquete de instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2615</td><td>1033</td><td>Désinscription du module [2] ignorée, en raison de l'échec de résolution de la source.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2615</td><td>1034</td><td>Se ha omitido la anulación del registro del módulo [2] debido a un fallo de resolución de origen.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2616</td><td>1033</td><td>Le parent du fichier [2] assistant est manquant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2616</td><td>1034</td><td>Falta elemento principal del archivo complementario [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2617</td><td>1033</td><td>Composant partagé [2] introuvable dans la table des composants.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2617</td><td>1034</td><td>No se ha encontrado el componente compartido [2] en la tabla Componente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2618</td><td>1033</td><td>Composant d'application isolé [2] introuvable dans la table des composants.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2618</td><td>1034</td><td>No se ha encontrado el componente de aplicación aislado [2] en la tabla Componente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2619</td><td>1033</td><td>Composants isolés [2], [3] ne font pas partie de la même fonction.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2619</td><td>1034</td><td>Los componentes aislados [2], [3] no forman parte de la misma función.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2620</td><td>1033</td><td>Le fichier clé du composant d'application isolé [2] est introuvable dans la table des fichiers.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2620</td><td>1034</td><td>El archivo de claves del componente de aplicación aislado [2] no se encuentra en la tabla Archivo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2621</td><td>1033</td><td>informations de DLL ressource ou d'ID ressource pour le raccourci [2] mal défini.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2621</td><td>1034</td><td>La información de la ID o DLL de recursos del acceso directo [2] no se ha establecido correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27</td><td>1033</td><td>Erreur lors de la lecture du fichier [2]. {{ Erreur système [3].}}Vérifiez que ce fichier existe et que vous êtes autorisé à y accéder.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27</td><td>1034</td><td>Error al leer el archivo [2]. {{ Error del sistema [3].}} Compruebe que el archivo existe y que puede obtener acceso a él.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2701</td><td>1033</td><td>La profondeur d'une fonction dépasse la profondeur maximale acceptable de [2] niveaux dans l'arborescence.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2701</td><td>1034</td><td>La profundidad de una función excede el máximo de [2] niveles de profundidad del árbol admitidos.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2702</td><td>1033</td><td>Un enregistrement de la table Fonction ([2]) se réfère à un parent non existant dans le champ Attributs.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2702</td><td>1034</td><td>Un registro de la tabla Función ([2]) hace referencia a un elemento principal no existente en el campo Atributos.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2703</td><td>1033</td><td>Nom de propriété non défini pour le chemin source racine : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2703</td><td>1034</td><td>No se ha definido el nombre de propiedad de la ruta de origen raíz: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2704</td><td>1033</td><td>Propriété du répertoire racine non définie : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2704</td><td>1034</td><td>Propiedad de directorio raíz no definida: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2705</td><td>1033</td><td>Table invalide : [2] ; n'a pas pu être relier en tant qu'arborescence.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2705</td><td>1034</td><td>Tabla no válida: [2]; No se pudo vincular como árbol.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2706</td><td>1033</td><td>Les chemins d'accès source n'ont pas été créés. Aucun chemin d'accès n'existe pour l'entrée [2] dans la table Répertoire.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2706</td><td>1034</td><td>No se han creado las rutas de origen. No existe ninguna ruta para la entrada [2] en la tabla Directorio.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2707</td><td>1033</td><td>Les chemins d'accès cible n'ont pas été créés. Aucun chemin d'accès n'existe pour l'entrée [2] dans la table Répertoire.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2707</td><td>1034</td><td>No se han creado las rutas de destino. No existe ninguna ruta para la entrada [2] en la tabla Directorios.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2708</td><td>1033</td><td>Entrées introuvables dans la table de fichier.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2708</td><td>1034</td><td>No se han encontrado entradas en la tabla de archivos.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2709</td><td>1033</td><td>Le nom de composant spécifié ('[2]') est introuvable dans la table des composants.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2709</td><td>1034</td><td>No se ha encontrado el nombre del componente especificado ('[2]') en la tabla Componente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2710</td><td>1033</td><td>L'état 'Select' requis est illégal pour ce composant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2710</td><td>1034</td><td>El estado 'Seleccionar' solicitado no es válido para este componente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2711</td><td>1033</td><td>Le nom de fonction spécifié ('[2]') est introuvable dans la table Fonction.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2711</td><td>1034</td><td>No se ha encontrado el nombre de función especificado ('[2]') en la tabla Función.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2712</td><td>1033</td><td>Renvoi invalide de la boîte de dialogue sans mode : [3], lors de l'action [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2712</td><td>1034</td><td>Devolución no válida desde el cuadro de diálogo no modal: [3], en la acción [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2713</td><td>1033</td><td>Valeur vide dans une colonne non vide ('[2]' dans la colonne '[3]' de la table '[4]').</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2713</td><td>1034</td><td>Valor nulo en una columna que no puede dejarse vacía ('[2]' en la columna '[3]' de la tabla '[4]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2714</td><td>1033</td><td>Valeur incorrecte pour le nom du dossier par défaut : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2714</td><td>1034</td><td>Valor no válido para el nombre de carpeta predeterminado: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2715</td><td>1033</td><td>La clé de fichier spécifiée ('[2]') est introuvable dans la table Fichier.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2715</td><td>1034</td><td>No se ha encontrado la clave de archivo especificada ('[2]') en la tabla Archivo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2716</td><td>1033</td><td>Impossible de créer un nom de sous-composant aléatoire pour le composant '[2]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2716</td><td>1034</td><td>No se pudo crear un nombre de subcomponente aleatorio para el componente '[2]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2717</td><td>1033</td><td>Mauvaise condition d'action ou erreur lors de l'appel de l'action personnalisée '[2]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2717</td><td>1034</td><td>Condición de acción incorrecta o acción personalizada de llamada a error '[2]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2718</td><td>1033</td><td>Nom de package manquant pour le code produit '[2]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2718</td><td>1034</td><td>Falta el nombre de paquete para el código del producto '[2]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2719</td><td>1033</td><td>Pas de chemin UNC ni de chemin avec une lettre de lecteur trouvés dans la source '[2]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2719</td><td>1034</td><td>No se ha encontrado ni la ruta de la letra de la unidad ni la ruta UNC en el origen '[2]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2720</td><td>1033</td><td>Une erreur est survenue lors de l'ouverture de la clé de liste source. Erreur : '[2]'</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2720</td><td>1034</td><td>Error al abrir clave de lista de orígenes. Error: '[2]'</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2721</td><td>1033</td><td>Action personnalisée [2] introuvable dans le flux de la table Binaire.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2721</td><td>1034</td><td>Acción personalizada [2] no encontrada en la secuencia de la tabla Binarios.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2722</td><td>1033</td><td>Action personnalisée [2] introuvable dans la table de fichier.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2722</td><td>1034</td><td>Acción personalizada [2] no encontrada en la tabla Archivo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2723</td><td>1033</td><td>L'action personnalisée [2] définit un type non pris en charge.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2723</td><td>1034</td><td>La acción personalizada [2] especifica un tipo no admitido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2724</td><td>1033</td><td>L'étiquette de volume '[2]' du support que vous exécutez ne correspond pas à l'étiquette '[3]' listée dans la table de supports. Ceci est uniquement autorisé s'il n'existe qu'une seule entrée dans votre table des supports.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2724</td><td>1034</td><td>La etiqueta del volumen '[2]' del medio desde el que ejecuta la instalación no coincide con la etiqueta '[3]' proporcionada en la tabla Medios. Esto únicamente es posible si sólo hay 1 entrada en la tabla Medios.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2725</td><td>1033</td><td>Table de base de données incorrecte</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2725</td><td>1034</td><td>Tablas de base de datos no válidas</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2726</td><td>1033</td><td>Action introuvable : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2726</td><td>1034</td><td>Acción no encontrada: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2727</td><td>1033</td><td>L'entrée de répertoire '[2]' n'existe pas dans la table Répertoire.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2727</td><td>1034</td><td>La entrada de directorio '[2]' no existe en la tabla Directorio.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2728</td><td>1033</td><td>Erreur de définition de table : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2728</td><td>1034</td><td>Error de definición de tabla: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2729</td><td>1033</td><td>Moteur d'installation non initialisé.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2729</td><td>1034</td><td>El motor de instalación no se ha inicializado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2730</td><td>1033</td><td>Valeur incorrecte dans la base de données. Table : '[2]' ; clé primaire : '[3]' ; Colonne : '[4]'</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2730</td><td>1034</td><td>Valor incorrecto en la base de datos. Tabla: '[2]'; Clave principal: '[3]'; Columna: '[4]'</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2731</td><td>1033</td><td>Le gestionnaire de sélection n'est pas initialisé.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2731</td><td>1034</td><td>Administrador de selección no inicializado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2732</td><td>1033</td><td>Le gestionnaire de répertoire n'est pas initialisé.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2732</td><td>1034</td><td>Administrador de directorio no inicializado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2733</td><td>1033</td><td>Mauvaise clé étrangère ('[2]') dans la colonne '[3]' de la table '[4]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2733</td><td>1034</td><td>Clave externa incorrecta ('[2]') en la columna '[3]' de la tabla '[4]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2734</td><td>1033</td><td>Caractère de mode de réinstallation incorrect.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2734</td><td>1034</td><td>Carácter de modo de reinstalación no válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2735</td><td>1033</td><td>L'action personnalisée '[2]' a provoqué une exception non gérée et a été interrompue. Ceci peut être le résultat d'une erreur interne de l'action personnalisée, telle qu'une violation d'accès.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2735</td><td>1034</td><td>La acción personalizada '[2]' ha provocado una excepción no identificada y se ha detenido. Esto puede ser resultado de un error interno en la acción personalizada, como una infracción de acceso.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2736</td><td>1033</td><td>Echec de génération de fichier temporaire pour une action personnalisée [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2736</td><td>1034</td><td>La generación del archivo temporal de acción personalizada no se ha realizado correctamente: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2737</td><td>1033</td><td>Impossible d'accéder à l'action personnalisée [2], entrée [3], bibliothèque [4]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2737</td><td>1034</td><td>No se pudo acceder a la acción personalizada [2], entrada [3], biblioteca [4]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2738</td><td>1033</td><td>Impossible d'accéder à VBScript run time pour l'action personnalisée [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2738</td><td>1034</td><td>No se pudo acceder al tiempo de ejecución de VBScript para la acción personalizada [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2739</td><td>1033</td><td>Impossible d'accéder à JavaScript run time pour l'action personnalisée [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2739</td><td>1034</td><td>No se pudo acceder al tiempo de ejecución de JavaScript para la acción personalizada [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2740</td><td>1033</td><td>Action personnalisée [2] erreur de script [3], [4] : [5] Ligne [6], Colonne [7], [8].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2740</td><td>1034</td><td>Acción personalizada [2] error de archivo de comandos [3], [4]: [5] Línea [6], Columna [7], [8].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2741</td><td>1033</td><td>Les informations de configuration pour le produit [2] sont corrompues. Information incorrecte : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2741</td><td>1034</td><td>La información de configuración del producto [2] está dañada. Información no válida: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2742</td><td>1033</td><td>Echec de l'assemblage vers le serveur : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2742</td><td>1034</td><td>El cálculo de referencia del servidor no se ha realizado correctamente: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2743</td><td>1033</td><td>Impossible d'exécuter l'action personnalisée [2], emplacement : [3], commande : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2743</td><td>1034</td><td>No se pudo ejecutar la acción personalizada [2], ubicación: [3], comando: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2744</td><td>1033</td><td>Echec de l'EXE appelé par une action personnalisée [2], emplacement : [3], commande : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2744</td><td>1034</td><td>Fallo en archivo ejecutable llamado mediante la acción personalizada [2], ubicación: [3], comando: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2745</td><td>1033</td><td>Transformation [2] incorrecte pour le logiciel [3]. Langue attendue [4], langue trouvée [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2745</td><td>1034</td><td>Transformación de [2] no válida para el paquete [3]. Idioma previsto [4]; idioma encontrado [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2746</td><td>1033</td><td>Transformation [2] incorrecte pour le logiciel [3]. Produit attendu [4], produit trouvé [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2746</td><td>1034</td><td>Transformación de [2] no válida para el paquete [3]. Producto previsto [4]; producto encontrado [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2747</td><td>1033</td><td>Transformation [2] incorrecte pour le logiciel [3]. Version de produit attendue &lt; [4], version de produit trouvée [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2747</td><td>1034</td><td>Transformación de [2] no válida para el paquete [3]. Versión del producto prevista &lt; [4]; versión del producto encontrada [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2748</td><td>1033</td><td>Transformation [2] incorrecte pour le logiciel [3]. Version de produit attendue &lt;= [4], version de produit trouvée [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2748</td><td>1034</td><td>Transformación de [2] no válida para el paquete [3]. Versión del producto prevista &lt;= [4]; versión del producto encontrada [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2749</td><td>1033</td><td>Transformation [2] incorrecte pour le logiciel [3]. Version de produit attendue == [4], version de produit trouvée [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2749</td><td>1034</td><td>Transformación de [2] no válida para el paquete [3]. Versión del producto prevista == [4]; versión del producto encontrada [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2750</td><td>1033</td><td>Transformation [2] incorrecte pour le logiciel [3]. Version de produit attendue &gt;= [4], version de produit trouvée [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2750</td><td>1034</td><td>Transformación de [2] no válida para el paquete [3]. Versión del producto prevista &gt;= [4]; versión del producto encontrada [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27502</td><td>1033</td><td>Impossible de se connecter à [2] '[3]'. [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27502</td><td>1034</td><td>No se pudo conectar al [2] '[3]'. [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27503</td><td>1033</td><td>Erreur lors de la récupération de la chaîne de version depuis [2] '[3]'. [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27503</td><td>1034</td><td>Error al recuperar la cadena de la versión de [2] '[3]'. [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27504</td><td>1033</td><td>Les conditions de version SQL ne sont pas remplies : [3]. Cette installation requiert [2] [4] ou supérieur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27504</td><td>1034</td><td>No se cumplen los requisitos de la versión de SQL: [3]. Esta instalación requiere [2] [4] o posterior.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27505</td><td>1033</td><td>Impossible d'ouvrir le fichier script SQL [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27505</td><td>1034</td><td>No se pudo abrir el archivo de comandos de SQL [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27506</td><td>1033</td><td>Erreur d'exécution du script SQL [2]. Ligne [3]. [4]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27506</td><td>1034</td><td>Error al ejecutar el archivo de comandos de SQL [2]. Línea [3]. [4]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27507</td><td>1033</td><td>La recherche ou la connexion des serveurs de bases de données nécessite l'installation de MDAC.  L'assistant d'installation va maintenant se terminer.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27507</td><td>1034</td><td>Examinar servidores de bases de datos o conectarse a ellos requiere que MDAC esté instalado.  La instalación va a finalizar.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27508</td><td>1033</td><td>Erreur en installant l'application COM+ [2]. [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27508</td><td>1034</td><td>Error al instalar la aplicación COM+ [2]. [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27509</td><td>1033</td><td>Erreur en désinstallant l'application COM+ [2]. [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27509</td><td>1034</td><td>Error al desinstalar la aplicación COM+ [2]. [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2751</td><td>1033</td><td>Transformation [2] incorrecte pour le logiciel [3]. Version de produit attendue &gt; [4], version de produit trouvée [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2751</td><td>1034</td><td>Transformación de [2] no válida para el paquete [3]. Versión del producto prevista &gt; [4]; versión del producto encontrada [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27510</td><td>1033</td><td>Erreur en installant l'application COM+ [2]. Impossible de créer l'objet System.EnterpriseServices.RegistrationHelper. L'enregistrement de composants Microsoft(R) .NET nécessite l'installation de Microsoft(R) .NET Framework.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27510</td><td>1034</td><td>Error al instalar la aplicación COM+ [2]. No se pudo crear el objeto System.EnterpriseServices.RegistrationHelper. Para registrar los componentes utilizados por Microsoft(R) .NET, Microsoft(R) .NET Framework deberá estar instalado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27511</td><td>1033</td><td>Impossible d'exécuter le fichier script SQL [2]. Connexion non ouverte : [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27511</td><td>1034</td><td>No se pudo ejecutar el archivo de comandos de SQL [2]. La conexión no está abierta: [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27512</td><td>1033</td><td>Erreur au début des transactions pour [2] '[3]'. Base de données [4]. [5]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27512</td><td>1034</td><td>Error al comenzar las transacciones para [2] '[3]'. Base de datos [4]. [5]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27513</td><td>1033</td><td>Erreur dans les transactions pour [2] '[3]'. Base de données [4]. [5]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27513</td><td>1034</td><td>Error al realizar transacciones para [2] '[3]'. Base de datos [4]. [5]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27514</td><td>1033</td><td>Cette installation nécessite Microsoft SQL Server. Le serveur '[3]' défini est un Microsoft SQL Server Desktop Engine (MSDE) ou SQL Server Express.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27514</td><td>1034</td><td>Esta instalación necesita Microsoft SQL Server. El servidor especificado '[3]' es Microsoft SQL Server Desktop Engine o SQL Server Express.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27515</td><td>1033</td><td>Erreur lors de la récupération de la version du schéma depuis [2] '[3]'. Base de données : '[4]'. [5]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27515</td><td>1034</td><td>Error al recuperar la versión esquemática desde [2] '[3]'. Base de datos: '[4]'. [5]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27516</td><td>1033</td><td>Erreur lors de l'écriture de la version du schéma vers [2] '[3]'. Base de données : '[4]'. [5]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27516</td><td>1034</td><td>Error al escribir la versión esquemática hacia [2] '[3]'. Base de datos: '[4]'. [5]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27517</td><td>1033</td><td>Cette installation exige les privilèges d’administrateur pour les applications COM+. Ouvrez une session d’administrateur et relancez l’installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27517</td><td>1034</td><td>Esta instalación requiere privilegios de administrador para instalar aplicaciones COM+. Inicie sesión como administrador e intente de nuevo llevar a cabo esta instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27518</td><td>1033</td><td>L’application COM+ "[2]" est configurée sous forme de service NT ; cette application exige COM+ 1.5 (ou version ultérieure). Votre système disposant uniquement de COM+ 1.0, cette application ne sera pas installée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27518</td><td>1034</td><td>La aplicación COM+ "[2]" está configurada para funcionar como un servicio NT; esto requiere que su sistema tenga instalado COM+ 1.5 o posterior. Como su sistema tiene COM+ 1.0, esta aplicación no se instalará.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27519</td><td>1033</td><td>Erreur lors de la mise à jour du fichier XML [2]. [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27519</td><td>1034</td><td>Error al actualizar el archivo XML [2]. [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2752</td><td>1033</td><td>Impossible d'ouvrir la transformation [2] stockée en tant qu'enfant du logiciel [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2752</td><td>1034</td><td>No se pudo abrir la transformación [2] almacenada como almacenamiento secundario del paquete [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27520</td><td>1033</td><td>Erreur lors de l'ouverture du fichier XML [2]. [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27520</td><td>1034</td><td>Error al abrir el archivo XML [2]. [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27521</td><td>1033</td><td>Cette installation requiert MSXML 3.0 ou supérieur pour la configuration des fichiers XML. Assurez-vous de bien utiliser la version 3.0 ou plus récente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27521</td><td>1034</td><td>Para configurar archivos XML, el programa de instalación necesita MSXML 3.0 o posterior. Compruebe que dispone de la versión 3.0 o posterior.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27522</td><td>1033</td><td>Erreur lors de la création du fichier XML [2]. [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27522</td><td>1034</td><td>Error al crear el archivo XML [2]. [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27523</td><td>1033</td><td>Erreur lors du chargement des serveurs.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27523</td><td>1034</td><td>Error al cargar servidores.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27524</td><td>1033</td><td>Erreur lors du chargement de NetApi32.DLL. ISNetApi.dll requiert un système d'exploitation NT et le chargement correct de NetApi32.DLL.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27524</td><td>1034</td><td>Error al cargar NetApi32.DLL. ISNetApi.dll necesita que NetApi32.DLL se haya cargado correctamente y requiere un sistema operativo basado en NT.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27525</td><td>1033</td><td>Serveur introuvable. Vérifiez que le serveur spécifié existe. Le nom du serveur ne peut pas être vide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27525</td><td>1034</td><td>El servidor no se ha encontrado. Compruebe que el servidor especificado existe. El nombre de servidor no puede estar vacío.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27526</td><td>1033</td><td>Erreur non spécifique de ISNetApi.dll.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27526</td><td>1034</td><td>Error no especificado de ISNetApi.dll.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27527</td><td>1033</td><td>La mémoire tampon n'est pas assez importante.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27527</td><td>1034</td><td>El búfer es demasiado pequeño.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27528</td><td>1033</td><td>Accès refusé. Cochez les droits administratifs.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27528</td><td>1034</td><td>Acceso denegado. Compruebe los derechos de administración.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27529</td><td>1033</td><td>Ordinateur incorrect.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27529</td><td>1034</td><td>Equipo no válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2753</td><td>1033</td><td>Le fichier '[2]' n'est pas marqué pour l'installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2753</td><td>1034</td><td>El archivo '[2]' no está marcado para su instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27530</td><td>1033</td><td>Une erreur inconnue a été renvoyée par NetAPI. Erreur système : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27530</td><td>1034</td><td>Se ha recibido un error desconocido de NetAPI. Error del sistema: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27531</td><td>1033</td><td>Exception non traitée</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27531</td><td>1034</td><td>Excepción no identificada.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27532</td><td>1033</td><td>Nom d'utilisateur incorrect pour ce serveur ou ce domaine.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27532</td><td>1034</td><td>Nombre de usuario no válido para este servidor o dominio.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27533</td><td>1033</td><td>Les mots de passe respectant la casse ne correspondent pas.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27533</td><td>1034</td><td>Las contraseñas que distinguen entre mayúscula y minúscula no coinciden.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27534</td><td>1033</td><td>La liste est vide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27534</td><td>1034</td><td>La lista está vacía.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27535</td><td>1033</td><td>Violation d'accès.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27535</td><td>1034</td><td>Infracción de acceso.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27536</td><td>1033</td><td>Erreur lors de l'obtention du groupe.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27536</td><td>1034</td><td>Error al obtener grupo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27537</td><td>1033</td><td>Erreur lors de l'ajout de l'utilisateur au groupe. Vérifiez que le groupe existe pour ce domaine ou ce serveur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27537</td><td>1034</td><td>Error al añadir el usuario al grupo. Compruebe que el grupo existe para este dominio o servidor.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27538</td><td>1033</td><td>Erreur lors de la création de l'utilisateur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27538</td><td>1034</td><td>Error al crear usuario.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27539</td><td>1033</td><td>ERROR_NETAPI_ERROR_NOT_PRIMARY renvoyée par NetAPI.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27539</td><td>1034</td><td>NetAPI devolvió el código de error ERROR_NETAPI_ERROR_NOT_PRIMARY.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2754</td><td>1033</td><td>Le fichier '[2]' n'est pas un fichier correctif valide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2754</td><td>1034</td><td>El archivo '[2]' no es un archivo de revisión válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27540</td><td>1033</td><td>L'utilisateur spécifié existe déjà.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27540</td><td>1034</td><td>El usuario especificado ya existe.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27541</td><td>1033</td><td>Le groupe spécifié existe déjà.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27541</td><td>1034</td><td>El grupo especificado ya existe.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27542</td><td>1033</td><td>Mot de passe incorrect. Vérifiez que le mot de passe respecte les directives de votre réseau pour les mots de passe.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27542</td><td>1034</td><td>Contraseña no válida. Compruebe que la contraseña cumple con la política de contraseñas de red.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27543</td><td>1033</td><td>Nom incorrect.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27543</td><td>1034</td><td>Nombre no válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27544</td><td>1033</td><td>Groupe incorrect.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27544</td><td>1034</td><td>Grupo no válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27545</td><td>1033</td><td>Le nom d'utilisateur ne peut pas être laissé vide et doit avoir le format DOMAIN\NomUtilisateur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27545</td><td>1034</td><td>El nombre de usuario no se puede dejar en blanco y debe introducirse de acuerdo con el formato DOMINIO\Nombre de usuario.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27546</td><td>1033</td><td>Erreur lors du téléchargement ou de la création du fichier INI dans le répertoire TEMP de l'utilisateur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27546</td><td>1034</td><td>Error al cargar o crear el archivo INI en el directorio TEMP.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27547</td><td>1033</td><td>ISNetAPI.dll n'est pas chargé ou une erreur est survenue lors du chargement de la dll. Vous devez charger cette dll pour pouvoir effectuer cette opération. Vérifiez que la dll se trouve dans le répertoire SUPPORTDIR.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27547</td><td>1034</td><td>ISNetAPI.dll no se ha cargado o se produjo un error al cargar la dll. Deberá cargar esta dll para realizar esta operación. Compruebe que la dll se encuentra en el directorio SUPPORTDIR.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27548</td><td>1033</td><td>Erreur lors de la suppression du fichier INI contenant les nouvelles informations utilisateur du répertoire TEMP de l'utilisateur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27548</td><td>1034</td><td>Error al suprimir el archivo INI que contiene la nueva información de usuario del directorio TEMP del usuario.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27549</td><td>1033</td><td>Erreur lors de l'obtention du contrôleur de domaine principal (PDC).</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27549</td><td>1034</td><td>Error al obtener el controlador principal de dominio (PDC).</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2755</td><td>1033</td><td>Le serveur a renvoyé une erreur [2] inattendue lors de la tentative d'installation du logiciel [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2755</td><td>1034</td><td>El servidor ha devuelto un error inesperado [2] al intentar instalar el paquete [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27550</td><td>1033</td><td>Pour rendre possible la création d'un utilisateur, chaque champ doit contenir une valeur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27550</td><td>1034</td><td>Para crear un usuario, cada campo deberá tener un valor.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27551</td><td>1033</td><td>Le pilote ODBC pour [2] est introuvable. Ce pilote est requis pour établir une connexion aux serveurs de base de données [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27551</td><td>1034</td><td>No se ha encontrado el controlador ODBC para [2]. Este componente es necesario para establecer conexión con los servidores de bases de datos de [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27552</td><td>1033</td><td>Erreur lors de la création de la base de données [4]. Serveur : [2] [3]. [5]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27552</td><td>1034</td><td>Error al crear la base de datos [4]. Servidor: [2] [3]. [5]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27553</td><td>1033</td><td>Erreur lors de la connexion à la base de données [4]. Serveur : [2] [3]. [5]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27553</td><td>1034</td><td>Error al conectar a la base de datos [4]. Servidor: [2] [3]. [5]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27554</td><td>1033</td><td>Erreur lors de la tentative de connexion [2]. Aucune métadonnée de la base de données valide associée à cette connexion.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27554</td><td>1034</td><td>Error al intentar abrir la conexión [2]. No hay metadatos de base de datos válidos asociados a esta conexión.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27555</td><td>1033</td><td>Impossible d’appliquer les autorisations à l’objet : '[2]'. Erreur système : [3] ([4])</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_27555</td><td>1034</td><td>Error al intentar aplicar los permisos al objeto '[2]'. Error del sistema: [3] ([4])</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2756</td><td>1033</td><td>La propriété '[2]' a été utilisée en tant que propriété de répertoire dans une ou plusieurs tables, mais aucune valeur ne lui a jamais été attribuée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2756</td><td>1034</td><td>Se ha utilizado la propiedad '[2]' como propiedad de directorio en una o más tablas, pero no se ha asignado ningún valor jamás.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2757</td><td>1033</td><td>Impossible de créer des informations de sommaire pour la transformation [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2757</td><td>1034</td><td>No se pudo crear información de resumen para la transformación [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2758</td><td>1033</td><td>La transformation [2] ne contient pas de version MSI.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2758</td><td>1034</td><td>La transformación de [2] no contiene una versión de MSI.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2759</td><td>1033</td><td>Transformation [2] version [3] incompatible avec le moteur ; Min : [4], Max : [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2759</td><td>1034</td><td>La transformación [2] de la versión [3] no es compatible con el motor; Mín: [4], Máx: [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2760</td><td>1033</td><td>Transformation [2] incorrecte pour le logiciel [3]. Code de mise à niveau attendu [4], code trouvé [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2760</td><td>1034</td><td>Transformación de [2] no válida para el paquete [3]. Código de actualización previsto [4], encontrado [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2761</td><td>1033</td><td>Impossible de démarrer la transaction. Initialisation incorrecte du mutex global.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2761</td><td>1034</td><td>No se puede iniciar la transacción. No se ha inicializado correctamente la exclusión mutua global.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2762</td><td>1033</td><td>Impossible d'écrire l'enregistrement de script. Transaction non démarrée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2762</td><td>1034</td><td>No se puede escribir el registro del archivo de comandos. La transacción no se ha iniciado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2763</td><td>1033</td><td>Impossible de lancer le script. Transaction non démarrée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2763</td><td>1034</td><td>No se puede ejecutar el archivo de comandos. La transacción no se ha iniciado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2765</td><td>1033</td><td>Nom d'assembly manquant dans la table AssemblyName : Composant : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2765</td><td>1034</td><td>Falta el nombre de ensamblaje en la tabla Nombre de ensamblaje: Componente: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2766</td><td>1033</td><td>Le fichier [2] est un fichier de stockage MSI incorrect.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2766</td><td>1034</td><td>El archivo [2] es un archivo de almacenamiento MSI no válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2767</td><td>1033</td><td>Plus de données {lors de l'énumération de [2]}.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2767</td><td>1034</td><td>No hay más datos{ mientras se enumera [2]}.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2768</td><td>1033</td><td>La transformation du package de correction est incorrecte.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2768</td><td>1034</td><td>La transformación del paquete de revisión no es válida.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2769</td><td>1033</td><td>L'action personnalisée [2] n'a pas réussi à fermer MSIHANDLEs [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2769</td><td>1034</td><td>La acción personalizada [2] no cerró [3] MSIHANDLE.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2770</td><td>1033</td><td>Le dossier mis en cache [2] n'a pas été défini dans la table des dossiers en cache interne.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2770</td><td>1034</td><td>La carpeta almacenada en la caché local [2] no se ha definido en la tabla de carpetas de la caché interna.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2771</td><td>1033</td><td>Composant manquant dans la mise à niveau de la fonction [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2771</td><td>1034</td><td>Falta un componente en la actualización de la función [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2772</td><td>1033</td><td>La nouvelle fonction de mise à niveau [2] doit être une fonction leaf.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2772</td><td>1034</td><td>La nueva función de actualización [2] debe ser una función de hoja.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_28</td><td>1033</td><td>Le fichier est ouvert en mode exclusif dans une autre application [2]. Fermez toutes les autres applications, puis cliquez sur Réessayer.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_28</td><td>1034</td><td>Otra aplicación tiene acceso exclusivo al archivo '[2]'. Cierre todas las demás aplicaciones y haga clic en Reintentar.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2801</td><td>1033</td><td>Message inconnu -- Type [2]. Aucune action effectuée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2801</td><td>1034</td><td>Mensaje desconocido: Tipo [2]. No se realizará ninguna acción.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2802</td><td>1033</td><td>Editeur introuvable pour l'événement [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2802</td><td>1034</td><td>No se ha encontrado ningún editor para el evento [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2803</td><td>1033</td><td>Dialog View n'a pas réussi à trouver d'enregistrement pour la boîte de dialogue [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2803</td><td>1034</td><td>Vista de cuadro de diálogo no encontró un registro para el cuadro de diálogo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2804</td><td>1033</td><td>Lors de l'activation de la commande [3] dans la boîte de dialogue [2], CMsiDialog n'a pas réussi à évaluer la condition [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2804</td><td>1034</td><td>En la activación del control [3] en el cuadro de diálogo [2], Cuadro de diálogo CMsi no evaluó la condición [3] de forma satisfactoria.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2806</td><td>1033</td><td>La boîte de dialogue [2] n'a pas réussi à évaluer la condition [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2806</td><td>1034</td><td>El cuadro de diálogo [2] no ha evaluado la condición [3] correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2807</td><td>1033</td><td>L'action [2] n'est pas reconnue.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2807</td><td>1034</td><td>No se reconoce la acción [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2808</td><td>1033</td><td>Le bouton par défaut est mal défini sur la boîte de dialogue [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2808</td><td>1034</td><td>El botón predeterminado no está definido correctamente en el cuadro de diálogo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2809</td><td>1033</td><td>Dans la boîte de dialogue [2], les pointeurs de commande suivants ne forment pas un cycle. Un pointeur va de [3] à [4], mais il n'en existe pas d'autre.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2809</td><td>1034</td><td>En el cuadro de diálogo [2], los punteros de control siguientes no forman un ciclo. Hay un puntero desde [3] hasta [4], pero no hay ningún puntero más.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2810</td><td>1033</td><td>Dans la boîte de dialogue [2], les pointeurs de commande suivants ne forment pas un cycle. Il existe un pointeur allant de [3] et [5] à [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2810</td><td>1034</td><td>En el cuadro de diálogo [2], los punteros de control siguientes no forman un ciclo. Hay un puntero desde [3] y [5] hasta [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2811</td><td>1033</td><td>Dans la boîte de dialogue [2], la commande [3] doit être sélectionnée, mais cela n'est pas possible.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2811</td><td>1034</td><td>En el cuadro de diálogo [2], el control [3] debe aparecer centrado, pero esto no es posible.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2812</td><td>1033</td><td>L'événement [2] n'est pas reconnu.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2812</td><td>1034</td><td>No se reconoce el evento [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2813</td><td>1033</td><td>L'événement EndDialog a été appelé avec l'argument [2], mais la boîte de dialogue dispose d'un parent.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2813</td><td>1034</td><td>Se ha llamado al evento Fin de cuadro de diálogo con el argumento [2], pero el cuadro de diálogo tiene un elemento principal.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2814</td><td>1033</td><td>Dans la boîte de dialogue [2], la commande [3] désigne une commande [4] non existante comme commande suivante.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2814</td><td>1034</td><td>En el cuadro de diálogo [2], el control [3] menciona un control no existente [4] como el control siguiente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2815</td><td>1033</td><td>Il manque la condition pour la boîte de dialogue [2] à une ligne de la table ControlCondition.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2815</td><td>1034</td><td>La tabla Condición de control tiene una fila sin una condición para el cuadro de diálogo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2816</td><td>1033</td><td>La table EventMapping se réfère à une commande [4] incorrecte dans la boîte de dialogue [2] pour l'événement [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2816</td><td>1034</td><td>La tabla Asignación de eventos hace referencia a un control no válido [4] en el cuadro de diálogo [2] correspondiente al evento [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2817</td><td>1033</td><td>L'événement [2] n'a pas réussi à définir l'attribut pour la commande [4] dans la boîte de dialogue [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2817</td><td>1034</td><td>El evento [2] no ha establecido correctamente el atributo del control [4] en el cuadro de diálogo [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2818</td><td>1033</td><td>Argument [2] non reconnu pour EndDialog dans la table ControlEvent.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2818</td><td>1034</td><td>En la tabla Evento de control, Fin de cuadro de diálogo tiene un argumento [2] no reconocido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2819</td><td>1033</td><td>La commande [3] dans la boîte de dialogue [2] nécessite qu'une propriété lui soit attribuée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2819</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] requiere una propiedad vinculada a él.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2820</td><td>1033</td><td>Tentative d'initialisation d'un connecteur déjà initialisé :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2820</td><td>1034</td><td>Se ha intentado inicializar un controlador ya inicializado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2821</td><td>1033</td><td>Tentative d'initialisation d'une boîte de dialogue déjà initialisée : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2821</td><td>1034</td><td>Se ha intentado inicializar un cuadro de diálogo ya inicializado: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2822</td><td>1033</td><td>Aucune autre méthode ne peut être appelée pour la boîte de dialogue [2] avant que toutes les commandes ne soient ajoutées.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2822</td><td>1034</td><td>No se puede llamar a ningún otro método desde el cuadro de diálogo [2] hasta que no se hayan añadido todos los controles.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2823</td><td>1033</td><td>Tentative d'initialisation d'une commande déjà initialisée : [3] dans la boîte de dialogue [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2823</td><td>1034</td><td>Se ha intentado inicializar un control ya inicializado: [3] en el cuadro de diálogo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2824</td><td>1033</td><td>L'attribut de la boîte de dialogue [3] nécessite l'enregistrement de [2] champ(s).</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2824</td><td>1034</td><td>El atributo de cuadro de diálogo [3] requiere un registro de [2] campo(s) como mínimo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2825</td><td>1033</td><td>L'attribut de commande [3] nécessite l'enregistrement de [2] champ(s).</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2825</td><td>1034</td><td>El atributo de control [3] requiere un registro de [2] campo(s) como mínimo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2826</td><td>1033</td><td>La commande [3] dans la boîte de dialogue [2] dépasse les limites de la boîte de dialogue [4] de [5] pixels.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2826</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] excede los límites del cuadro de diálogo [4] en [5] píxeles.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2827</td><td>1033</td><td>Le bouton [4] du groupe de cases d'option [3] dans la boîte de dialogue [2] dépasse les limites du groupe [5] de [6] pixels.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2827</td><td>1034</td><td>El botón [4] del grupo de botones de opción [3] del cuadro de diálogo [2] excede los límites del grupo [5] en [6] píxeles.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2828</td><td>1033</td><td>La tentative de suppression de la commande [3] de la boîte de dialogue [2] a échoué car cette commande n'est pas un composant de cette boîte de dialogue.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2828</td><td>1034</td><td>Se ha intentado eliminar el control [3] del cuadro de diálogo [2], pero el control no forma parte del cuadro de diálogo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2829</td><td>1033</td><td>Tentative d'utilisation une boîte de dialogue non initialisée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2829</td><td>1034</td><td>Intente utilizar un cuadro de diálogo no inicializado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2830</td><td>1033</td><td>Tentative d'utilisation d'une commande non initialisée dans la boîte de dialogue [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2830</td><td>1034</td><td>Intente utilizar un control no inicializado en el cuadro de diálogo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2831</td><td>1033</td><td>La commande [3] dans la boîte de dialogue [2] ne prend pas en charge [5] l'attribut [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2831</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] no admite [5] el atributo [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2832</td><td>1033</td><td>La boîte de dialogue [2] ne prend pas en charge l'attribut [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2832</td><td>1034</td><td>El cuadro de diálogo [2] no admite el atributo [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2833</td><td>1033</td><td>La commande [4] dans la boîte de dialogue [3] a ignoré le message [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2833</td><td>1034</td><td>El control [4] del cuadro de diálogo [3] ignoró el mensaje [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2834</td><td>1033</td><td>Les prochains pointeurs dans la boîte de dialogue [2] ne forment pas une boucle unique.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2834</td><td>1034</td><td>Los punteros siguientes del cuadro de diálogo [2] no forman una única repetición continua.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2835</td><td>1033</td><td>La commande [2] est introuvable sur la boîte de dialogue [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2835</td><td>1034</td><td>No se ha encontrado el control [2] en el cuadro de diálogo [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2836</td><td>1033</td><td>La commande [3] dans la boîte de dialogue [2] ne peut pas prendre le focus.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2836</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] no puede centrarse.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2837</td><td>1033</td><td>La commande [3] dans la boîte de dialogue [2] souhaite que winproc renvoie [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2837</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] desea que winproc devuelva [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2838</td><td>1033</td><td>L'élément [2] de la table de sélection est son propre parent.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2838</td><td>1034</td><td>El elemento [2] de la tabla de selección es elemento principal de sí mismo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2839</td><td>1033</td><td>Echec de la définition de la propriété [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2839</td><td>1034</td><td>La configuración de la propiedad [2] no se ha realizado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2840</td><td>1033</td><td>Incompatibilité du nom de la boîte de dialogue d'erreur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2840</td><td>1034</td><td>El nombre del cuadro de diálogo de error no coincide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2841</td><td>1033</td><td>Bouton OK introuvable sur la boîte de dialogue d'erreur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2841</td><td>1034</td><td>No se ha encontrado ningún botón Aceptar en el cuadro de diálogo de error.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2842</td><td>1033</td><td>Champ de texte introuvable sur la boîte de dialogue d'erreur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2842</td><td>1034</td><td>No se ha encontrado ningún campo de texto en el cuadro de diálogo de error.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2843</td><td>1033</td><td>L'attribut ErrorString n'est pas pris en charge pour les boîtes de dialogue standard.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2843</td><td>1034</td><td>No se admite el atributo Cadena de error en cuadros de diálogo estándar.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2844</td><td>1033</td><td>Impossible d'exécuter une boîte de dialogue d'erreur si la chaîne d'erreur n'a pas été définie.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2844</td><td>1034</td><td>No se puede ejecutar un cuadro de diálogo de error si no se ha establecido el atributo Cadena de error.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2845</td><td>1033</td><td>La largeur totale des boutons dépasse la taille de la boîte de dialogue d'erreur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2845</td><td>1034</td><td>El ancho total de los botones excede el tamaño del cuadro de diálogo de error.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2846</td><td>1033</td><td>SetFocus n'a pas réussi à trouver la commande requise dans la boîte de dialogue d'erreur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2846</td><td>1034</td><td>Establecer enfoque no encontró el control requerido en el cuadro de diálogo de error.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2847</td><td>1033</td><td>Deux styles ont été définis pour la commande [3] dans la boîte de dialogue [2] : icône et bitmap.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2847</td><td>1034</td><td>Se ha establecido el estilo de mapa de bits y el icono del control [3] del cuadro de diálogo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2848</td><td>1033</td><td>La tentative de définir la commande [3] en tant que bouton par défaut dans la boîte de dialogue [2] a échoué, car cette commande n'existe pas.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2848</td><td>1034</td><td>Se ha intentado establecer el control [3] como el botón predeterminado del cuadro de diálogo [2], pero el control no existe.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2849</td><td>1033</td><td>Le type de la commande [3] dans la boîte de dialogue [2] n'autorise pas les valeurs entières.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2849</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] es de un tipo al que no se puede asignar un valor entero.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2850</td><td>1033</td><td>Type de volume inconnu.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2850</td><td>1034</td><td>Tipo de volumen no reconocido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2851</td><td>1033</td><td>Les données pour l'icône [2] ne sont pas valides.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2851</td><td>1034</td><td>Los datos del icono [2] no son válidos.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2852</td><td>1033</td><td>Vous devez ajouter au moins une commande à la boîte de dialogue [2] avant de l'utiliser.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2852</td><td>1034</td><td>Es necesario añadir al menos un control al cuadro de diálogo [2] antes de poder utilizarlo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2853</td><td>1033</td><td>La boîte de dialogue [2] est une boîte de dialogue sans mode. Vous ne devez pas l'appeler avec la méthode execute.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2853</td><td>1034</td><td>El cuadro de diálogo [2] es no modal. No se debe llamar al método de ejecución desde él.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2854</td><td>1033</td><td>dans la boîte de dialogue [2], la commande [3] est désignée comme la première commande active, mais une telle commande n'existe pas.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2854</td><td>1034</td><td>En el cuadro de diálogo [2], se ha designado el control [3] como el primer control activo, pero no existe tal control.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2855</td><td>1033</td><td>Le groupe de cases d'option [3] dans la boîte de dialogue [2] comporte moins de 2 boutons.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2855</td><td>1034</td><td>El grupo de botones de opción [3] del cuadro de diálogo [2] tiene menos de 2 botones.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2856</td><td>1033</td><td>Création d'une seconde copie de la boîte de dialogue [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2856</td><td>1034</td><td>Creando una segunda copia del cuadro de diálogo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2857</td><td>1033</td><td>Le répertoire [2] est mentionné dans la table de sélection, mais n'a pas été trouvé.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2857</td><td>1034</td><td>Se menciona el directorio [2] en la tabla de selección, pero no se encuentra.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2858</td><td>1033</td><td>Les données pour le bitmap [2] ne sont pas valides.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2858</td><td>1034</td><td>Los datos del mapa de bits [2] no son válidos.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2859</td><td>1033</td><td>Message d'erreur test.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2859</td><td>1034</td><td>Mensaje de error de prueba.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2860</td><td>1033</td><td>Le bouton Annuler est mal défini sur la boîte de dialogue [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2860</td><td>1034</td><td>El botón Cancelar no está definido correctamente en el cuadro de diálogo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2861</td><td>1033</td><td>Les prochains pointeurs pour les cases d'option dans la boîte de dialogue [2], commande [3] ne forment pas un cycle.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2861</td><td>1034</td><td>Los siguientes punteros de los botones de opción del control [3] del cuadro de diálogo [2] no forman un ciclo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2862</td><td>1033</td><td>Les attributs pour la commande [3] de la boîte de dialogue [2] ne définissent pas une taille d'icône valide. Définition de la taille sur 16.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2862</td><td>1034</td><td>Los atributos del control [3] del cuadro de diálogo [2] no definen un tamaño de icono válido. Estableciendo un tamaño de 16.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2863</td><td>1033</td><td>La commande [3] de la boîte de dialogue [2] nécessite l'icône [4] en taille [5]x[5], mais cette taille n'est pas disponible. Chargement de la première taille disponible.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2863</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] necesita que el icono [4] tenga el tamaño [5]x[5], pero dicho tamaño no se encuentra disponible. Cargando el primer tamaño disponible.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2864</td><td>1033</td><td>La commande [3] de la boîte de dialogue [2] a reçu un événement de type Parcourir, mais aucun répertoire configurable n'existe pour la sélection actuelle. Cause probable : le bouton Parcourir n'a pas été programmé correctement.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2864</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] recibió un evento de exploración, pero no hay ningún directorio configurable para la selección actual. La causa más probable es que el botón de exploración no se ha creado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2865</td><td>1033</td><td>La commande [3] sur le panneau [2] dépasse les limites du panneau [4] de [5] pixels.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2865</td><td>1034</td><td>El control [3] de la cartelera [2] excede los límites de la cartelera [4] en [5] píxeles.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2866</td><td>1033</td><td>La boîte de dialogue [2] n'est pas autorisée à renvoyer l'argument [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2866</td><td>1034</td><td>No se permite al cuadro de diálogo [2] devolver el argumento [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2867</td><td>1033</td><td>Propriété de boîte de dialogue d'erreur non définie.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2867</td><td>1034</td><td>No se ha establecido la propiedad del cuadro de diálogo de error.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2868</td><td>1033</td><td>Le bit de style de la boîte de dialogue d'erreur [2] n'est pas défini sur erreur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2868</td><td>1034</td><td>El cuadro de diálogo de error [2] no tiene establecido el bit de estilo de error.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2869</td><td>1033</td><td>Le bit de style de la boîte de dialogue [2] est défini sur erreur, mais il ne s'agit pas d'une boîte de dialogue d'erreur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2869</td><td>1034</td><td>Se ha establecido el bit de estilo de error en el cuadro de diálogo [2], pero no se trata de un cuadro de diálogo de error.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2870</td><td>1033</td><td>La chaîne d'aide [4] pour la commande [3] de la boîte de dialogue [2] ne contient pas de séparateur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2870</td><td>1034</td><td>La cadena de ayuda [4] del control [3] del cuadro de diálogo [2] no incluye el carácter separador.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2871</td><td>1033</td><td>La table [2] est obsolète : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2871</td><td>1034</td><td>La tabla [2] no está actualizada: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2872</td><td>1033</td><td>L'argument de l'événement de commande CheckPath dans la boîte de dialogue [2] est incorrect.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2872</td><td>1034</td><td>El argumento del control Comprobar ruta del cuadro de diálogo [2] no es válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2873</td><td>1033</td><td>Dans la boîte de dialogue [2], la commande [3] a une limite de longueur de chaîne incorrecte : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2873</td><td>1034</td><td>En el cuadro de diálogo [2], el control [3] tiene un límite de longitud de cadena no válido: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2874</td><td>1033</td><td>Echec de la modification de la police de texte en [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2874</td><td>1034</td><td>El cambio de la fuente del texto a [2] no se ha realizado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2875</td><td>1033</td><td>Echec de la modification de la couleur de texte en [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2875</td><td>1034</td><td>El cambio del color del texto a [2] no se ha realizado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2876</td><td>1033</td><td>La commande [3] dans la boîte de dialogue [2] a dû tronquer la chaîne : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2876</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] tiene que truncar la cadena: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2877</td><td>1033</td><td>Données binaires [2] introuvable</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2877</td><td>1034</td><td>No se han encontrado los datos binarios [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2878</td><td>1033</td><td>Dans la boîte de dialogue [2], la commande [3] a la valeur : [4]. Il s'agit d'une valeur incorrecte ou existant déjà.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2878</td><td>1034</td><td>En el cuadro de diálogo [2], el control [3] tiene un valor posible: [4]. Este valor no es válido o está duplicado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2879</td><td>1033</td><td>La commande [3] dans la boîte de dialogue [2] ne peut pas analyser la chaîne de masque : [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2879</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] no puede analizar la cadena de máscara: [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2880</td><td>1033</td><td>N'exécutez pas les événements de commande restants.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2880</td><td>1034</td><td>No ejecute los eventos de control restantes.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2881</td><td>1033</td><td>Echec d'initialisation de CmsiHandler.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2881</td><td>1034</td><td>La inicialización del Controlador CMsi no se ha realizado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2882</td><td>1033</td><td>Echec de l'enregistrement de la classe de fenêtre de boîte de dialogue.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2882</td><td>1034</td><td>El registro de la clase de ventana de cuadro de diálogo no se ha realizado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2883</td><td>1033</td><td>Echec de CreateNewDialog pour la boîte de dialogue [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2883</td><td>1034</td><td>Error de Crear nuevo cuadro de diálogo en el cuadro de diálogo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2884</td><td>1033</td><td>Impossible de créer une fenêtre pour la boîte de dialogue [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2884</td><td>1034</td><td>Fallo al crear una ventana para el cuadro de diálogo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2885</td><td>1033</td><td>Impossible de créer la commande [3] dans la boîte de dialogue [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2885</td><td>1034</td><td>Fallo al crear el control [3] en el cuadro de diálogo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2886</td><td>1033</td><td>Echec de la création de la table [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2886</td><td>1034</td><td>La creación de la tabla [2] no se ha realizado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2887</td><td>1033</td><td>Echec de la création d'un curseur vers la table [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2887</td><td>1034</td><td>La creación de un cursor en la tabla [2] no se ha realizado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2888</td><td>1033</td><td>Echec de l'exécution de l'affichage [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2888</td><td>1034</td><td>La ejecución de la vista [2] no se ha realizado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2889</td><td>1033</td><td>Echec de création de la fenêtre pour la commande [3] dans la boîte de dialogue [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2889</td><td>1034</td><td>La creación de la ventana para el control [3] del cuadro de diálogo [2] no se ha realizado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2890</td><td>1033</td><td>Echec de création et d'initialisation de la boîte de dialogue par le connecteur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2890</td><td>1034</td><td>Fallo del controlador al crear un cuadro de diálogo inicializado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2891</td><td>1033</td><td>Echec de la destruction de la fenêtre pour la boîte de dialogue [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2891</td><td>1034</td><td>Fallo al destruir ventana para el cuadro de diálogo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2892</td><td>1033</td><td>[2] est une commande a valeur entière, [3] n'est pas une valeur entière valide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2892</td><td>1034</td><td>[2] es un control de valores enteros exclusivamente; [3] no es un valor entero válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2893</td><td>1033</td><td>La commande [3] de la boîte de dialogue [2] accepte uniquement les valeurs de propriété contenant [5] caractères maximum. La valeur [4] dépasse cette limite et a été tronquée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2893</td><td>1034</td><td>El control [3] del cuadro de diálogo [2] acepta valores de propiedades con [5] caracteres de longitud como máximo. El valor [4] excede este límite y ha sido truncado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2894</td><td>1033</td><td>Echec du chargement de RICHED20.DLL. GetLastError () a renvoyé : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2894</td><td>1034</td><td>La carga de RICHED20.DLL no se ha realizado correctamente. GetLastError() ha devuelto: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2895</td><td>1033</td><td>Echec de libération de RICHED20.DLL. GetLastError () a renvoyé : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2895</td><td>1034</td><td>La liberación de RICHED20.DLL no se ha realizado correctamente. GetLastError() ha devuelto: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2896</td><td>1033</td><td>Echec de l'exécution de l'action [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2896</td><td>1034</td><td>La ejecución de la acción [2] no se ha realizado correctamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2897</td><td>1033</td><td>Impossible de créer une police [2] sur ce système.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2897</td><td>1034</td><td>Fallo al crear cualquier fuente [2] en este sistema.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2898</td><td>1033</td><td>Pour le style de texte [2], le système a créé une police '[3]', dans le jeu de caractères [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2898</td><td>1034</td><td>En el caso del estilo de texto [2], el sistema ha creado una fuente '[3]' en el conjunto de caracteres [4].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2899</td><td>1033</td><td>Impossible de créer le style de texte [2]. GetLastError () a renvoyé : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2899</td><td>1034</td><td>Fallo al crear estilo de texto [2]. GetLastError() ha devuelto: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_29</td><td>1033</td><td>Espace disque insuffisant pour installer le fichier [2]. Libérez de l'espace et cliquez sur Réessayer, ou cliquez sur Annuler pour quitter le programme d'installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_29</td><td>1034</td><td>No hay espacio en disco suficiente para instalar el archivo [2]. Libere espacio en disco y haga clic en Reintentar, o bien, haga clic en Cancelar para salir.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2901</td><td>1033</td><td>Paramètre invalide pour l'opération [2] : paramètre [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2901</td><td>1034</td><td>Parámetro no válido para la operación [2]: Parámetro [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2902</td><td>1033</td><td>Opération [2] n'a plus de séquences.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2902</td><td>1034</td><td>Se ha llamado a la operación [2] fuera de la secuencia.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2903</td><td>1033</td><td>Le fichier [2] est manquant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2903</td><td>1034</td><td>Falta el archivo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2904</td><td>1033</td><td>BindImage pour le fichier [2] impossible.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2904</td><td>1034</td><td>No se pudo aplicar Vincular imagen al archivo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2905</td><td>1033</td><td>Impossible de lire l'enregistrement du fichier script [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2905</td><td>1034</td><td>No se pudo leer el registro desde el archivo de comandos [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2906</td><td>1033</td><td>En-tête manquant dans le fichier script [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2906</td><td>1034</td><td>Falta encabezado en el archivo de comandos [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2907</td><td>1033</td><td>Impossible de créer un descripteur de sécurité sûr. Erreur : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2907</td><td>1034</td><td>No se pudo crear un descriptor seguro de seguridad. Error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2908</td><td>1033</td><td>Impossible d'enregistrer le composant [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2908</td><td>1034</td><td>No se pudo registrar el componente [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2909</td><td>1033</td><td>Impossible de désenregistrer le composant [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2909</td><td>1034</td><td>No se pudo anular el registro del componente [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2910</td><td>1033</td><td>Impossible de déterminer l'ID de sécurité de l'utilisateur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2910</td><td>1034</td><td>No se pudo determinar la ID de seguridad del usuario.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2911</td><td>1033</td><td>Impossible de supprimer le dossier [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2911</td><td>1034</td><td>No se pudo eliminar la carpeta [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2912</td><td>1033</td><td>Impossible de planifier la suppression du fichier [2] au redémarrage.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2912</td><td>1034</td><td>No se pudo programar el archivo [2] para su eliminación al reiniciar.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2919</td><td>1033</td><td>Aucun fichier .cab spécifié pour le fichier comprimé : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2919</td><td>1034</td><td>No se ha especificado un archivo .cab para el archivo comprimido: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2920</td><td>1033</td><td>Le répertoire source n'est pas défini pour le fichier [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2920</td><td>1034</td><td>No se ha especificado el directorio de origen para el archivo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2924</td><td>1033</td><td>La version du script [2] n'est pas prise en charge. Version du script : [3], Version minimum : [4], Version maximum : [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2924</td><td>1034</td><td>Versión del archivo de comandos [2] no admitida. Versión del archivo de comandos: [3], versión mínima: [4], versión máxima: [5].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2927</td><td>1033</td><td>ID ShellFolder [2] est incorrect.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2927</td><td>1034</td><td>La identificación de Carpeta de shell [2] no es válida.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2928</td><td>1033</td><td>Nombre de sources maximum dépassé. Ignorer la source '[2]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2928</td><td>1034</td><td>Se ha superado el número máximo de orígenes. Omitiendo origen '[2]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2929</td><td>1033</td><td>Impossible de déterminer une racine de publication. Erreur : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2929</td><td>1034</td><td>No se pudo determinar la raíz de publicación. Error: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2932</td><td>1033</td><td>Impossible de créer le fichier [2] à partir des données de script. Erreur : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2932</td><td>1034</td><td>No se pudo crear el archivo [2] a partir de los datos del archivo de comandos. Error: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2933</td><td>1033</td><td>Impossible d'initialiser un script rollback [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2933</td><td>1034</td><td>No se pudo inicializar el archivo de comandos de la acción de deshacer [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2934</td><td>1033</td><td>Impossible de sécuriser la transformation [2]. Erreur [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2934</td><td>1034</td><td>No se pudo proteger la transformación [2]. Error [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2935</td><td>1033</td><td>Impossible d'enlever la sécurité de la transformation [2]. Erreur [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2935</td><td>1034</td><td>No se pudo desproteger la transformación [2]. Error [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2936</td><td>1033</td><td>Transformation [2] introuvable.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2936</td><td>1034</td><td>No se pudo encontrar la transformación [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2937</td><td>1033</td><td>Windows Installer ne peut pas installer un catalogue de protection des fichiers système. Catalogue : [2], Erreur : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2937</td><td>1034</td><td>El Instalador de Windows no puede instalar un catálogo de protección de archivos del sistema. Catálogo: [2], Error: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2938</td><td>1033</td><td>Windows Installer n'a pas pu récupérer un catalogue de protection des fichiers système dans le cache. Catalogue : [2], Erreur : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2938</td><td>1034</td><td>El Instalador de Windows no puede recuperar un catálogo de protección de archivos del sistema de la caché local. Catálogo: [2], Error: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2939</td><td>1033</td><td>Windows Installer n'a pas pu supprimer un catalogue de protection de fichiers système du cache. Catalogue : [2], Erreur : [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2939</td><td>1034</td><td>El Instalador de Windows no puede suprimir un catálogo de protección de archivos del sistema de la caché local. Catálogo: [2], Error: [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2940</td><td>1033</td><td>Gestionnaire de répertoires non fourni pour la résolution de la source.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2940</td><td>1034</td><td>Administrador de directorio no proporcionó una resolución de origen.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2941</td><td>1033</td><td>Impossible de calculer le CRC du fichier [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2941</td><td>1034</td><td>No es posible calcular la comprobación por redundancia cíclica (CRC) del archivo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2942</td><td>1033</td><td>L'action BindImage n'a pas été exécutée sur le fichier [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2942</td><td>1034</td><td>No se ha ejecutado la acción Vincular imagen en el archivo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2943</td><td>1033</td><td>Cette version de Windows ne permet pas de déployer les logiciels 64 bits. Le script [2] est conçu pour un logiciel 64 bits.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2943</td><td>1034</td><td>Esta versión de Windows no admite la distribución de paquetes de 64 bits. El archivo de comandos [2] corresponde a un paquete de 64 bits.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2944</td><td>1033</td><td>Echec de GetProductAssignmentType.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2944</td><td>1034</td><td>Error de Obtener tipo de asignación de producto.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2945</td><td>1033</td><td>Echec de l'installation de l'application ComPlus [2] en raison de l'erreur [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_2945</td><td>1034</td><td>La instalación de ComPlus App [2] no se ha realizado correctamente a causa del error [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_3</td><td>1033</td><td>Informations [1]. </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_3</td><td>1034</td><td>Información [1]. </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_30</td><td>1033</td><td>Fichier source [2] introuvable. Vérifiez que ce fichier existe et que vous êtes autorisé à y accéder.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_30</td><td>1034</td><td>No se encuentra el archivo de origen [2]. Compruebe que el archivo existe y que puede obtener acceso a él.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_3001</td><td>1033</td><td>Les correctifs mentionnés dans cette liste contiennent des informations de séquencement incorrectes : [2][3][4][5][6][7][8][9][10][11][12][13][14][15][16].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_3001</td><td>1034</td><td>Las revisiones de esta lista contienen información de secuencia incorrecta: [2][3][4][5][6][7][8][9][10][11][12][13][14][15][16].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_3002</td><td>1033</td><td>Le correctif [2] contient des informations de séquencement incorrecte. </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_3002</td><td>1034</td><td>La revisión [2] contiene información de secuencia no válida. </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_31</td><td>1033</td><td>Erreur lors de la lecture du fichier [3].{{ Erreur système [2].}} Vérifiez que ce fichier existe et que vous êtes autorisé à y accéder.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_31</td><td>1034</td><td>Error al leer el archivo [3]. {{ Error del sistema [2].}} Compruebe que el archivo existe y que puede obtener acceso a él.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_32</td><td>1033</td><td>Erreur lors de l'écriture dans le fichier [3]. {{ Erreur système [2].}} Vérifiez que vous êtes autorisé à accéder à ce répertoire.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_32</td><td>1034</td><td>Error al escribir en el archivo [3]. {{ Error del sistema [2].}} Compruebe que dispone de acceso a ese directorio.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_33</td><td>1033</td><td>Fichier source introuvable{{(cabinet)}} : [2]. Vérifiez que ce fichier existe et que vous êtes autorisé à y accéder.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_33</td><td>1034</td><td>No se ha encontrado el archivo de origen {{(.CAB)}} [2]. Compruebe que el archivo existe y que puede obtener acceso a él.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_34</td><td>1033</td><td>Impossible de créer le répertoire [2]. Un répertoire du même nom existe déjà. Renommez ce répertoire ou supprimez-le et cliquez sur Réessayer, ou cliquez sur Annuler pour quitter le programme d'installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_34</td><td>1034</td><td>No se puede crear el directorio '[2]'. Ya existe un archivo con este nombre. Cambie el nombre al archivo o quítelo y haga clic en Reintentar, o bien haga clic en Cancelar para salir.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_35</td><td>1033</td><td>Volume [2] non disponible actuellement. Sélectionnez-en un autre.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_35</td><td>1034</td><td>El volumen [2] no está disponible en este momento. Seleccione otro volumen.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_36</td><td>1033</td><td>Chemin d'accès spécifié, [2], non disponible.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_36</td><td>1034</td><td>La ruta de acceso especificada, '[2]', no está disponible.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_37</td><td>1033</td><td>Impossible d'écrire dans le dossier spécifié : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_37</td><td>1034</td><td>No se puede escribir en la carpeta especificada, '[2]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_38</td><td>1033</td><td>Erreur au niveau du réseau lors de la tentative de lecture du fichier [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_38</td><td>1034</td><td>Se produjo un error de red al intentar leer el archivo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_39</td><td>1033</td><td>Erreur lors de la tentative de création du répertoire [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_39</td><td>1034</td><td>Se produjo un error al intentar crear el directorio [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_4</td><td>1033</td><td>Erreur interne [1]. [2]{, [3]}{, [4]}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_4</td><td>1034</td><td>Error interno [1]. [2]{, [3]}{, [4]}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_40</td><td>1033</td><td>Erreur au niveau du réseau lors de la tentative de création du répertoire [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_40</td><td>1034</td><td>Se produjo un error de red al intentar crear el directorio [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_41</td><td>1033</td><td>Erreur au niveau du réseau lors de la tentative d'ouverture du fichier CAB source [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_41</td><td>1034</td><td>Se produjo un error de red al intentar abrir el archivo .CAB de origen [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_42</td><td>1033</td><td>Chemin d'accès spécifié, [2], trop long.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_42</td><td>1034</td><td>La ruta de acceso especificada es demasiado larga: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_43</td><td>1033</td><td>Le programme d'installation ne dispose pas des privilèges suffisants pour modifier le fichier [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_43</td><td>1034</td><td>El instalador no tiene suficientes privilegios para modificar el archivo [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_44</td><td>1033</td><td>Une partie du chemin d'accès au dossier [2] n'est pas valide. Soit il est vide, soit il dépasse la longueur maximale autorisée par le système.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_44</td><td>1034</td><td>Una parte de la ruta de acceso a la carpeta '[2]'no es válida porque está vacía o supera la longitud permitida por el sistema.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_45</td><td>1033</td><td>Le chemin d'accès au dossier [2] contient des mots non valides.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_45</td><td>1034</td><td>La ruta de acceso a la carpeta '[2]' contiene palabras no válidas para rutas de acceso a carpetas.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_46</td><td>1033</td><td>Le chemin d'accès au dossier [2] contient un caractère non valide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_46</td><td>1034</td><td>La ruta de acceso a la carpeta '[2]' contiene un carácter no válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_47</td><td>1033</td><td>Le nom de fichier court [2] n'est pas valide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_47</td><td>1034</td><td>'[2]' no es un nombre corto de archivo válido.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_48</td><td>1033</td><td>Erreur lors de l'obtention des informations sur la sécurité du fichier [3] GetLastError : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_48</td><td>1034</td><td>Error al obtener la seguridad del archivo: [3]. GetLastError: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_49</td><td>1033</td><td>Lecteur [2] non valide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_49</td><td>1034</td><td>Unidad no válida: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_5</td><td>1033</td><td>{{Disque saturé : }}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_5</td><td>1034</td><td>{{Disco lleno: }}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_50</td><td>1033</td><td>Impossible de créer la clé [2].{{ Erreur système [3].}} Vérifiez que vous disposez des droits suffisants pour cette clé ou contactez votre service de support technique. </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_50</td><td>1034</td><td>No se puede crear la clave [2]. {{ Error del sistema [3].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico. </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_51</td><td>1033</td><td>Impossible d'ouvrir la clé [2].{{ Erreur système [3].}} Vérifiez que vous disposez des droits suffisants pour cette clé ou contactez votre service de support technique.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_51</td><td>1034</td><td>No se puede abrir la clave [2]. {{ Error del sistema [3].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico. </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_52</td><td>1033</td><td>Impossible de supprimer la valeur [2] de la clé [3].{{ Erreur système [4].}} Vérifiez que vous disposez des droits suffisants pour cette clé ou contactez votre service de support technique.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_52</td><td>1034</td><td>No se puede eliminar el valor [2] de la clave [3]. {{Error del sistema [4].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico. </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_53</td><td>1033</td><td>Impossible de supprimer la clé [2].{{ Erreur système [3].}} Vérifiez que vous disposez des droits suffisants pour cette clé ou contactez votre service de support technique. </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_53</td><td>1034</td><td>No se puede eliminar la clave [2]. {{Error del sistema [3].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico. </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_54</td><td>1033</td><td>Impossible de lire la valeur [2] de la clé [3].{{ Erreur système [4].}} Vérifiez que vous disposez des droits suffisants pour cette clé ou contactez votre service de support technique. </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_54</td><td>1034</td><td>No se puede leer el valor [2] de la clave [3]. {{Error del sistema [4].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico. </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_55</td><td>1033</td><td>Impossible d'écrire la valeur [2] dans la clé [3].{{ Erreur système [4].}} Vérifiez que vous disposez des droits suffisants pour cette clé ou contactez votre service de support technique.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_55</td><td>1034</td><td>No se puede escribir el valor [2] en la clave [3]. {{Error del sistema [4].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_56</td><td>1033</td><td>Impossible d'obtenir le nom des valeurs de la clé [2].{{ Erreur système [3].}} Vérifiez que vous disposez des droits suffisants pour cette clé ou contactez votre service de support technique.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_56</td><td>1034</td><td>No se pueden obtener los nombres de los valores para la clave [2]. {{Error del sistema [3].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_57</td><td>1033</td><td>Impossible d'obtenir le nom des sous-clés de la clé [2].{{ Erreur système [3].}} Vérifiez que vous disposez des droits suffisants pour cette clé ou contactez votre service de support technique.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_57</td><td>1034</td><td>No se pueden obtener los nombres de las subclaves de la clave [2]. {{Error del sistema [3].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_58</td><td>1033</td><td>Impossible de lire les informations sur la sécurité de la clé [2].{{ Erreur système [3].}} Vérifiez que vous disposez des droits suffisants pour cette clé ou contactez votre service de support technique.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_58</td><td>1034</td><td>No se puede leer la información de seguridad de la clave [2]. {{Error del sistema [3].}} Compruebe que dispone de suficientes derechos de acceso a esa clave o póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_59</td><td>1033</td><td>Impossible d'augmenter l'espace disponible dans le registre. [2] Ko d'espace doivent être libres dans le registre pour permettre l'installation de cette application.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_59</td><td>1034</td><td>No se puede aumentar el espacio disponible en el registro de configuraciones. Para instalar esta aplicación se requieren [2] KB de espacio en el registro.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_6</td><td>1033</td><td>Action [Time] : [1]. [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_6</td><td>1034</td><td>Acción [Time]: [1]. [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_60</td><td>1033</td><td>Une autre installation est en cours. Vous devez la terminer avant de poursuivre cette installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_60</td><td>1034</td><td>Ya hay otra instalación en curso. Termine esa instalación antes de continuar con ésta.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_61</td><td>1033</td><td>Erreur lors de l'accès aux données protégées. Vérifiez que Windows Installer est correctement configuré, puis recommencez l'installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_61</td><td>1034</td><td>Error al obtener acceso a los datos protegidos. Asegúrese de que Windows Installer está configurado correctamente y vuelva a intentar realizar la instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_62</td><td>1033</td><td>L'utilisateur [2] a déjà lancé l'installation du produit [3]. Il devra réexécuter cette installation avant de pouvoir utiliser le produit. L'installation en cours va se poursuivre.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_62</td><td>1034</td><td>El usuario '[2]' ya inició previamente una instalación del producto '[3]', pero deberá ejecutar la instalación de nuevo para poder utilizar el producto. La instalación actual de este producto continuará.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_63</td><td>1033</td><td>L'utilisateur [2] a déjà lancé l'installation du produit [3]. Il devra réexécuter cette installation avant de pouvoir utiliser le produit.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_63</td><td>1034</td><td>El usuario '[2]' ya inició previamente una instalación del producto '[3]', pero deberá ejecutar la instalación de nuevo para poder utilizarlo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_64</td><td>1033</td><td>Espace disque insuffisant : volume : [2] ; espace requis : [3] Ko ; espace disponible : [4] Ko. Libérez de l'espace sur le disque, puis réessayez.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_64</td><td>1034</td><td>Espacio en disco insuficiente -- Volumen: '[2]'; espacio requerido: [3] KB; espacio disponible: [4] KB. Libere espacio en disco e inténtelo de nuevo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_65</td><td>1033</td><td>Êtes-vous sûr de vouloir annuler l'installation ?</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_65</td><td>1034</td><td>¿Está seguro de que desea cancelar la operación?</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_66</td><td>1033</td><td>Le fichier [2][3] est actuellement utilisé{ par le processus suivant : Nom : [4] ; identificateur : [5] ; titre de la fenêtre : [6]}. Fermez cette application, puis réessayez.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_66</td><td>1034</td><td>El archivo [2][3] está en uso{ por el proceso siguiente: Nombre: [4], Id.: [5], Título de ventana: '[6]'}. Cierre esa aplicación e inténtelo de nuevo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_67</td><td>1033</td><td>Le produit [2] est déjà installé. Impossible d'installer ce produit car il est incompatible avec celui déjà installé.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_67</td><td>1034</td><td>El producto '[2]' ya está instalado, lo que impide que se instale este producto porque ambos productos son incompatibles entre sí.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_68</td><td>1033</td><td>Espace disque insuffisant : volume : [2] ; espace requis : [3] Ko ; espace disponible : [4] Ko. Si la fonction de restauration est désactivée, l'espace est suffisant. Cliquez sur Annuler pour quitter, sur Réessayer pour revérifier la quantité d'espace disponible ou sur Ignorer pour continuer sans la fonction de restauration.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_68</td><td>1034</td><td>Espacio en disco insuficiente -- Volumen: '[2]'; espacio requerido: [3] KB; espacio disponible: [4] KB. Si la función de restauración está deshabilitada, el espacio disponible es suficiente. Haga clic en 'Cancelar' para salir, en 'Reintentar' para volver a comprobar el espacio en disco disponible, o bien, en 'Omitir' para continuar sin habilitar la función de restauración.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_69</td><td>1033</td><td>Impossible d'accéder à l'emplacement réseau [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_69</td><td>1034</td><td>No se puede obtener acceso a la ubicación de red [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_7</td><td>1033</td><td>[ProductName]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_7</td><td>1034</td><td>[ProductName]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_70</td><td>1033</td><td>Fermez les applications suivantes avant de poursuivre l'installation :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_70</td><td>1034</td><td>Deben cerrarse las aplicaciones siguientes antes de continuar con la instalación:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_71</td><td>1033</td><td>Impossible de trouver sur cet ordinateur un produit compatible pour permettre l'installation de ce produit.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_71</td><td>1034</td><td>No se encuentra ningún producto compatible instalado en el equipo para instalar este producto.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_72</td><td>1033</td><td>Clé [2] non valide. Vérifiez que vous avez entré la clé appropriée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_72</td><td>1034</td><td>La clave [2] no es válida. Compruebe que escribió la clave correcta.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_73</td><td>1033</td><td>Le programme d'installation doit redémarrer votre système avant que la configuration de [2] puisse continuer. Cliquez sur Oui pour redémarrer maintenant, ou sur Non si vous voulez redémarrer manuellement ultérieurement.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_73</td><td>1034</td><td>El instalador debe reiniciar el sistema para que pueda continuar la configuración de [2]. Haga clic en Sí para reiniciar el sistema ahora o elija No si tiene previsto reiniciarlo manualmente más tarde.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_74</td><td>1033</td><td>Vous devez redémarrer votre système pour que les modifications apportées à la configuration de [2] prennent effet. Cliquez sur Oui pour redémarrer maintenant, ou sur Non si vous voulez redémarrer manuellement ultérieurement.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_74</td><td>1034</td><td>Debe reiniciar el sistema para que los cambios de configuración efectuados en [2] tengan efecto. Haga clic en Sí para reiniciar el sistema ahora o elija No si tiene previsto reiniciarlo manualmente más tarde.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_75</td><td>1033</td><td>L'installation de [2] est suspendue. Vous devez annuler les modifications apportée par cette installation pour continuer. Voulez-vous annuler les modifications ?</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_75</td><td>1034</td><td>Actualmente hay una instalación de [2] en suspenso. Debe deshacer los cambios realizados por dicha instalación para poder continuar. ¿Desea deshacer esos cambios?</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_76</td><td>1033</td><td>Une installation de ce produit est déjà en cours. Vous devez annuler les modifications apportées par cette installation pour continuer. Voulez-vous annuler les modifications ?</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_76</td><td>1034</td><td>Ya hay en curso una instalación anterior de este producto. Debe deshacer los cambios realizados por dicha instalación para poder continuar. ¿Desea deshacer esos cambios?</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_77</td><td>1033</td><td>Package d'installation pour le produit [2] introuvable. Réessayez d'exécuter Windows Installer avec un package d'installation valide [3].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_77</td><td>1034</td><td>No se encuentra ningún paquete de instalación para el producto [2]. Vuelva a intentar la instalación utilizando una copia válida del paquete de instalación '[3]'.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_78</td><td>1033</td><td>Installation terminée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_78</td><td>1034</td><td>La operación de instalación finalizó satisfactoriamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_79</td><td>1033</td><td>L'installation a échoué.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_79</td><td>1034</td><td>Fallo en la operación de instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_8</td><td>1033</td><td>{[2]}{, [3]}{, [4]}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_8</td><td>1034</td><td>{[2]}{, [3]}{, [4]}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_80</td><td>1033</td><td>Produit : [2] -- [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_80</td><td>1034</td><td>Producto: [2] -- [3]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_81</td><td>1033</td><td>Vous pouvez restaurer l'état antérieur de votre ordinateur ou poursuivre l'installation ultérieurement. Voulez-vous restaurer votre ordinateur ?</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_81</td><td>1034</td><td>Puede restaurar el equipo a su estado anterior o continuar con la instalación más tarde. ¿Desea restaurar el equipo?</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_82</td><td>1033</td><td>Une erreur est survenue lors de l'écriture sur le disque des informations concernant l'installation. Vérifiez que l'espace disponible sur le disque est suffisant et cliquez sur Réessayer, ou cliquez sur Annuler pour mettre fin à l'installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_82</td><td>1034</td><td>Se produjo un error mientras se escribía la información de instalación en el disco. Compruebe que hay suficiente espacio en disco disponible y haga clic en Reintentar, o bien haga clic en Cancelar para terminar la instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_83</td><td>1033</td><td>Impossible de trouver un ou plusieurs des fichiers requis pour restaurer l'état antérieur de votre ordinateur. Impossible de procéder à la restauration.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_83</td><td>1034</td><td>No se encuentran uno o varios archivos necesarios para restaurar el equipo a su estado anterior. La restauración no podrá realizarse.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_84</td><td>1033</td><td>Chemin d'accès [2] non valide. Entrez un chemin d'accès valide.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_84</td><td>1034</td><td>La ruta de acceso [2] no es válida. Especifique una ruta de acceso válida.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_85</td><td>1033</td><td>Mémoire insuffisante. Fermez les autres applications avant de réessayer.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_85</td><td>1034</td><td>Memoria insuficiente. Cierre otras aplicaciones antes de intentarlo de nuevo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_86</td><td>1033</td><td>Le lecteur [2] est vide. Insérez un disque et cliquez sur Réessayer, ou cliquez sur Annuler pour revenir au volume sélectionné précédemment.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_86</td><td>1034</td><td>No hay ningún disco en la unidad [2]. Inserte uno y haga clic en Reintentar, o bien haga clic en Cancelar para volver al volumen previamente seleccionado.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_87</td><td>1033</td><td>Le lecteur [2] est vide. Insérez un disque et cliquez sur Réessayer, ou cliquez sur Annuler pour revenir dans la boîte de dialogue Sélection de l'emplacement et sélectionner un autre volume.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_87</td><td>1034</td><td>No hay ningún disco en la unidad [2]. Inserte uno y haga clic en Reintentar, o bien haga clic en Cancelar para volver al cuadro de diálogo de examinar y seleccionar un volumen distinto.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_88</td><td>1033</td><td>Dossier [2] inexistant. Entrez le chemin d'accès d'un dossier existant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_88</td><td>1034</td><td>La carpeta [2] no existe. Escriba una ruta de acceso a una carpeta existente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_89</td><td>1033</td><td>Vous ne disposez pas des privilèges suffisants pour lire le contenu de ce dossier.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_89</td><td>1034</td><td>No dispone de privilegios para leer esta carpeta.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_9</td><td>1033</td><td>Type de message : [1] ; argument : [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_9</td><td>1034</td><td>Tipo de mensaje: [1], argumento: [2]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_90</td><td>1033</td><td>Impossible de trouver un dossier de destination valide pour l'installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_90</td><td>1034</td><td>No se puede determinar una carpeta de destino válida para la instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_91</td><td>1033</td><td>Erreur pendant la tentative de lecture de la base de données d'installation source : [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_91</td><td>1034</td><td>Error al intentar leer la base de datos de instalación de origen: [2].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_92</td><td>1033</td><td>Planification du redémarrage : Le fichier [2] est renommé [3]. Pour achever l'opération, votre système doit être redémarré.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_92</td><td>1034</td><td>Programando la operación de reinicio: cambiando el nombre del archivo [2] a [3]. Para completar la operación se debe reiniciar el equipo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_93</td><td>1033</td><td>Planification du redémarrage : Suppression du fichier [2]. Pour achever l'opération, votre système doit être redémarré.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_93</td><td>1034</td><td>Programando la operación de reinicio: eliminando el archivo [2]. Para completar la operación se debe reiniciar el equipo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_94</td><td>1033</td><td>Impossible d'inscrire le module [2]. HRESULT [3]. Contactez votre service de support technique.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_94</td><td>1034</td><td>Error al registrar el módulo [2]. HRESULT [3].  Póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_95</td><td>1033</td><td>Impossible d'annuler l'inscription du module [2]. HRESULT [3]. Contactez votre service de support technique.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_95</td><td>1034</td><td>Error al eliminar el módulo [2] del registro. HRESULT [3]. Póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_96</td><td>1033</td><td>Impossible de placer le package [2] dans le cache. Erreur : [3]. Contactez votre service de support technique.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_96</td><td>1034</td><td>Fallo al almacenar el paquete [2] en la memoria caché. Error: [3]. Póngase en contacto con el personal de soporte técnico.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_97</td><td>1033</td><td>Impossible d'inscrire la police [2]. Vérifiez que les autorisations dont vous disposez sont suffisantes pour installer des polices et que le système prend en charge cette police en particulier.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_97</td><td>1034</td><td>No se puede registrar la fuente [2]. Compruebe que dispone de suficientes permisos para instalar fuentes y que el sistema admite esta fuente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_98</td><td>1033</td><td>Impossible d'annuler l'inscription de la police [2]. Vérifiez que les autorisations dont vous disposez sont suffisantes pour supprimer des polices.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_98</td><td>1034</td><td>No se puede eliminar del registro la fuente [2]. Compruebe que dispone de suficientes permisos para quitar fuentes.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_99</td><td>1033</td><td>Impossible de créer le raccourci [2]. Vérifiez que le dossier de destination existe et que vous êtes autorisé à y accéder.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ERROR_99</td><td>1034</td><td>No se puede crear el acceso directo [2]. Compruebe que la carpeta de destino existe y que puede obtener acceso a ella.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_INSTALLDIR</td><td>1033</td><td>{&amp;Tahoma8}[INSTALLDIR]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_INSTALLDIR</td><td>1034</td><td>{&amp;Tahoma8}[INSTALLDIR]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_INSTALLSHIELD</td><td>1033</td><td>InstallShield</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_INSTALLSHIELD</td><td>1034</td><td>InstallShield</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_INSTALLSHIELD_FORMATTED</td><td>1033</td><td>{&amp;MSSWhiteSerif8}InstallShield</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_INSTALLSHIELD_FORMATTED</td><td>1034</td><td>{&amp;MSSWhiteSerif8}InstallShield</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ISSCRIPT_VERSION_MISSING</td><td>1033</td><td>Le moteur InstallScript ne se trouve pas sur cet ordinateur. S'il est disponible, veuillez exécuter ISScript.msi ou veuillez contacter le personnel de support.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ISSCRIPT_VERSION_MISSING</td><td>1034</td><td>El procesador de InstallScript no se encuentra en el equipo.  Si se encuentra disponible, ejecute ISScript.msi o póngase en contacto con el personal de asistencia para que le ayude.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ISSCRIPT_VERSION_OLD</td><td>1033</td><td>Le moteur InstallScript de cet ordinateur est antérieur à la version requise pour cette installation. Si possible, veuillez installer la dernière version de ISScript.msi ou veuillez contacter le personnel de support.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_ISSCRIPT_VERSION_OLD</td><td>1034</td><td>Para ejecutar esta instalación es necesaria una versión del procesador InstallScript más reciente que la que se encuentra en el equipo.  Si se encuentra disponible, instale la versión más reciente de ISScript.msi o póngase en contacto con el personal de asistencia para que le ayude.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_NEXT</td><td>1033</td><td>&amp;Suivant &gt;</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_NEXT</td><td>1034</td><td>&amp;Siguiente &gt;</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_OK</td><td>1033</td><td>{&amp;Tahoma8}OK</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_OK</td><td>1034</td><td>{&amp;Tahoma8}&amp;Aceptar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PREREQUISITE_SETUP_BROWSE</td><td>1033</td><td>Ouvrir le fichier [SETUPEXENAME] original de : [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PREREQUISITE_SETUP_BROWSE</td><td>1034</td><td>Abrir [SETUPEXENAME] original de [ProductName] </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PREREQUISITE_SETUP_INVALID</td><td>1033</td><td>Cet exe n’est pas l’original exigé par [ProductName]. Si vous n’utilisez pas le [SETUPEXENAME] original pour installer les dépendances complémentaires, [ProductName] ne fonctionnera pas correctement. Voulez-vous rechercher le [SETUPEXENAME] original ?</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PREREQUISITE_SETUP_INVALID</td><td>1034</td><td>Este archivo ejecutable no parece ser el archivo ejecutable original de [ProductName]. Si no se utiliza el [SETUPEXENAME] original para instalar las dependencias adicionales, es posible que [ProductName] no funcione correctamente. ¿Desea buscar el [SETUPEXENAME] original?</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PREREQUISITE_SETUP_SEARCH</td><td>1033</td><td>Cette installation exigera peut-être des dépendances complémentaires. Si certaines dépendances sont absentes, [ProductName] risque de ne pas fonctionner correctement. Voulez-vous rechercher manuellement le fichier [SETUPEXENAME] original ?</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PREREQUISITE_SETUP_SEARCH</td><td>1034</td><td>Esta instalación puede requerir dependencias adicionales. Sin ellas, es posible que [ProductName] no funcione correctamente. ¿Desea buscar el [SETUPEXENAME] original?</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PREVENT_DOWNGRADE_EXIT</td><td>1033</td><td>Une version plus récente de l’application est déjà installée sur cet ordinateur. Avant d’installer l’ancienne version, vous devez désinstaller la version plus récente. Cliquez sur OK pour quitter cet Assistant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PREVENT_DOWNGRADE_EXIT</td><td>1034</td><td>Ya tienes una versión más reciente de esta aplicación instalada en tu ordenador. Si deseas instalar esta versión, primero deberás desinstalar la versión más reciente. Haz clic en Aceptar para salir del asistente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PRINT_BUTTON</td><td>1033</td><td>&amp;Imprimer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PRINT_BUTTON</td><td>1034</td><td>&amp;Imprimir</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PRODUCTNAME_INSTALLSHIELD</td><td>1033</td><td>[ProductName] - InstallShield Wizard</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PRODUCTNAME_INSTALLSHIELD</td><td>1034</td><td>[ProductName] - InstallShield Wizard</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_CREATEAPPPOOL</td><td>1033</td><td>Création du pool d'application %s</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_CREATEAPPPOOL</td><td>1034</td><td>Creando grupo de aplicación %s</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_CREATEAPPPOOLS</td><td>1033</td><td>Création des pools d'application...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_CREATEAPPPOOLS</td><td>1034</td><td>Creando grupos de aplicación...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_CREATEVROOT</td><td>1033</td><td>Création du répertoire virtuel IIS %s</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_CREATEVROOT</td><td>1034</td><td>Creando directorio virtual de IIS %s</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_CREATEVROOTS</td><td>1033</td><td>Création des répertoires virtuels IIS...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_CREATEVROOTS</td><td>1034</td><td>Creando directorios virtuales de IIS...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_CREATEWEBSERVICEEXTENSION</td><td>1033</td><td>Création de l'extension de service Web</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_CREATEWEBSERVICEEXTENSION</td><td>1034</td><td>Creando extensión de servicio Web</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_CREATEWEBSERVICEEXTENSIONS</td><td>1033</td><td>Création des extensions de service Web...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_CREATEWEBSERVICEEXTENSIONS</td><td>1034</td><td>Creando extensiones de servicio Web...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_CREATEWEBSITE</td><td>1033</td><td>Création du site Web IIS : %s</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_CREATEWEBSITE</td><td>1034</td><td>Creando sitio web de IIS %s</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_CREATEWEBSITES</td><td>1033</td><td>Création des sites Web IIS...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_CREATEWEBSITES</td><td>1034</td><td>Creando sitios web de IIS...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_EXTRACT</td><td>1033</td><td>Extraction des informations à partir des répertoires virtuels IIS...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_EXTRACT</td><td>1034</td><td>Extrayendo información para los directorios virtuales de IIS...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_EXTRACTDONE</td><td>1033</td><td>Informations extraites à partir des répertoires virtuels IIS...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_EXTRACTDONE</td><td>1034</td><td>Información extraída para los directorios virtuales de IIS...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_REMOVEAPPPOOL</td><td>1033</td><td>Suppression du pool d'application</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_REMOVEAPPPOOL</td><td>1034</td><td>Eliminando grupo de aplicación</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_REMOVEAPPPOOLS</td><td>1033</td><td>Suppression des pools d'application...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_REMOVEAPPPOOLS</td><td>1034</td><td>Eliminando grupos de aplicación...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_REMOVESITE</td><td>1033</td><td>Suppression du site Web sur le port %d</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_REMOVESITE</td><td>1034</td><td>Eliminando el sitio Web del puerto %d</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_REMOVEVROOT</td><td>1033</td><td>Suppression du répertoire virtuel IIS %s</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_REMOVEVROOT</td><td>1034</td><td>Eliminando directorio virtual de IIS %s</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_REMOVEVROOTS</td><td>1033</td><td>Suppression des répertoires virtuels IIS...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_REMOVEVROOTS</td><td>1034</td><td>Eliminando directorios virtuales de IIS...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_REMOVEWEBSERVICEEXTENSION</td><td>1033</td><td>Suppression de l'extension de service Web</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_REMOVEWEBSERVICEEXTENSION</td><td>1034</td><td>Eliminando extensión de servicio Web</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_REMOVEWEBSERVICEEXTENSIONS</td><td>1033</td><td>Suppression des extensions de service Web...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_REMOVEWEBSERVICEEXTENSIONS</td><td>1034</td><td>Eliminando extensiones de servicio Web...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_REMOVEWEBSITES</td><td>1033</td><td>Suppression des sites Web IIS...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_REMOVEWEBSITES</td><td>1034</td><td>Eliminando sitios web de IIS...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_ROLLBACKAPPPOOLS</td><td>1033</td><td>Répétition des pools d'application...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_ROLLBACKAPPPOOLS</td><td>1034</td><td>Deshaciendo grupos de aplicación...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_ROLLBACKVROOTS</td><td>1033</td><td>Répétition du répertoire virtuel et des modifications du site Web...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_ROLLBACKVROOTS</td><td>1034</td><td>Deshaciendo cambios del sitio Web y directorio virtual...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>1033</td><td>Répétition des extensions de service Web...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>1034</td><td>Deshaciendo extensiones de servicio Web...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_TEXTFILECHANGS_REPLACE</td><td>1033</td><td>Remplacement de : %s par : %s dans : %s...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_TEXTFILECHANGS_REPLACE</td><td>1034</td><td>Reemplazando %s por %s en %s...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_XML_COSTING</td><td>1033</td><td>Calcul des coûts des fichiers XML...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_XML_COSTING</td><td>1034</td><td>Calculando espacio en disco para instalar archivos XML...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_XML_CREATE_FILE</td><td>1033</td><td>Création du fichier XML %s...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_XML_CREATE_FILE</td><td>1034</td><td>Creando archivo XML %s...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_XML_FILES</td><td>1033</td><td>Exécution des changements de fichier XML...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_XML_FILES</td><td>1034</td><td>Realizando cambios en el archivo XML...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_XML_REMOVE_FILE</td><td>1033</td><td>Suppression du fichier XML %s...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_XML_REMOVE_FILE</td><td>1034</td><td>Eliminado archivo XML %s...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_XML_ROLLBACK_FILES</td><td>1033</td><td>Répétition des changements de fichier XML...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_XML_ROLLBACK_FILES</td><td>1034</td><td>Deshaciendo cambios del archivo XML...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_XML_UPDATE_FILE</td><td>1033</td><td>Mise à jour du fichier XML %s...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_PROGMSG_XML_UPDATE_FILE</td><td>1034</td><td>Actualizando archivo XML %s...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SETUPEXE_EXPIRE_MSG</td><td>1033</td><td>Cette installation pourra fonctionner jusqu’au : %s. L’installation va être abandonnée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SETUPEXE_EXPIRE_MSG</td><td>1034</td><td>Esta configuración funcionará hasta %s. Se cerrará la instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SETUPEXE_LAUNCH_COND_E</td><td>1033</td><td>Cette installation a été réalisée avec une version d’évaluation d’InstallShield : elle doit être lancée à l’aide de la commande setup.exe.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SETUPEXE_LAUNCH_COND_E</td><td>1034</td><td>Esta configuración se creó con una versión de evaluación de InstallShield y solo se puede iniciar desde el archivo setup.exe.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLBROWSE_INTRO</td><td>1033</td><td>Sélectionnez le serveur de bases de données cible dans la liste des serveurs ci-dessous.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLBROWSE_INTRO</td><td>1034</td><td>Seleccione el servidor de base de datos de destino en la lista de servidores que aparece a continuación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1033</td><td>Sélectionnez le catalogue de base de données cible dans la liste des catalogues ci-dessous.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1034</td><td>En la lista de nombres de catálogo siguiente, seleccione el catálogo de base de datos de destino.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1033</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1034</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_BROWSE</td><td>1033</td><td>P&amp;arcourir...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_BROWSE</td><td>1034</td><td>E&amp;xaminar...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_BROWSE_DB</td><td>1033</td><td>Parc&amp;ourir...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_BROWSE_DB</td><td>1034</td><td>Exa&amp;minar...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_CATALOG</td><td>1033</td><td>&amp;Nom du catalogue de bases de données :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_CATALOG</td><td>1034</td><td>&amp;Nombre del catálogo de base de datos:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_CONNECT</td><td>1033</td><td>Connexion via :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_CONNECT</td><td>1034</td><td>Conectarse a través de:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_DESC</td><td>1033</td><td>Sélectionnez le serveur de base de données et la méthode d'authentification.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_DESC</td><td>1034</td><td>Seleccione el servidor de base de datos y el método de autenticación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_ID</td><td>1033</td><td>&amp;ID de connexion :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_ID</td><td>1034</td><td>ID &amp;inicio de sesión:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_INTRO</td><td>1033</td><td>Sélectionnez le serveur de bases de données à installer dans la liste ci-dessous ou cliquez sur Parcourir pour afficher une liste de tous les serveurs de bases de données. Vous pouvez également déterminer la façon d'authentifier votre connexion en utilisant vos informations actuelles ou un ID de connexion SQL et un mot de passe.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_INTRO</td><td>1034</td><td>En la lista que aparece a continuación, seleccione el servidor de base de datos que va a instalar o bien haga clic en Examinar para ver una lista de todos los servidores de bases de datos. También puede especificar la forma de autenticar su inicio de sesión utilizando sus credenciales actuales o una contraseña e ID de inicio de sesión de SQL.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_PSWD</td><td>1033</td><td>Mot de &amp;passe :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_PSWD</td><td>1034</td><td>C&amp;ontraseña:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_SERVER</td><td>1033</td><td>&amp;Serveur de base de données:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_SERVER</td><td>1034</td><td>&amp;Servidor de base de datos:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_SERVER2</td><td>1033</td><td>Serveur de base de &amp;données que vous installez sur :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_SERVER2</td><td>1034</td><td>&amp;Servidor de base de datos en el que se realiza la instalación:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_SQL</td><td>1033</td><td>Authentification s&amp;erveur avec ID de connexion et mot de passe ci-dessous</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_SQL</td><td>1034</td><td>Autenticación de S&amp;QL servidor con la contraseña e ID de inicio de sesión indicados a continuación</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_TITLE</td><td>1033</td><td>{&amp;MSSansBold8}Serveur de base de données</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_TITLE</td><td>1034</td><td>{&amp;MSSansBold8}Servidor de base de datos</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_WIN</td><td>1033</td><td>Informations d'authentification &amp;Windows de l'utilisateur en cours</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLLOGIN_WIN</td><td>1034</td><td>&amp;Las credenciales de autenticación de Windows del usuario actual</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLSCRIPT_INSTALLING</td><td>1033</td><td>Exécution du script d'installation SQL...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLSCRIPT_INSTALLING</td><td>1034</td><td>Ejecutando archivo de comandos de instalación de SQL...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLSCRIPT_UNINSTALLING</td><td>1033</td><td>Exécution du script de désinstallation SQL...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SQLSCRIPT_UNINSTALLING</td><td>1034</td><td>Ejecutando archivo de comandos de desinstalación de SQL...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_STANDARD_USE_SETUPEXE</td><td>1033</td><td>Cette installation ne peut être effectuée en lançant directement le logiciel MSI ; vous devez exécuter setup.exe.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_STANDARD_USE_SETUPEXE</td><td>1034</td><td>La instalación no se puede ejecutar iniciando directamente el paquete MSI; debe ejecutar setup.exe.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_Advertise</td><td>1033</td><td>{&amp;Tahoma8}La fonction sera installée lors de la première utilisation. (Disponible uniquement si la fonction prend en charge cette option.)</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_Advertise</td><td>1034</td><td>{&amp;Tahoma8}Se instalará la primera vez que se use. (Disponible sólo si el componente admite esta opción).</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_AllInstalledLocal</td><td>1033</td><td>{&amp;Tahoma8}La fonction sera installée dans son intégralité sur le disque dur local.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_AllInstalledLocal</td><td>1034</td><td>{&amp;Tahoma8}Se instalará completamente en el disco duro local.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_CustomSetup</td><td>1033</td><td>{&amp;MSSansBold8}Conseils pour l'installation personnalisée</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_CustomSetup</td><td>1034</td><td>{&amp;MSSansBold8}Sugerencias de instalación personalizada</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_CustomSetupDescription</td><td>1033</td><td>{&amp;Tahoma8}L'installation personnalisée vous permet d'installer les fonctions de votre choix.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_CustomSetupDescription</td><td>1034</td><td>{&amp;Tahoma8}La instalación personalizada permite instalar componentes del programa selectivamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_IconInstallState</td><td>1033</td><td>{&amp;Tahoma8}L'icône située en regard d'une fonction en détermine le mode d'installation. Cliquez sur cette icône pour afficher les options d'installation disponibles.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_IconInstallState</td><td>1034</td><td>{&amp;Tahoma8}El icono al lado del nombre del componente indica el estado de instalación del componente. Haga clic en el icono para desplegar el menú de estado de instalación de cada componente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_InstallState</td><td>1033</td><td>{&amp;Tahoma8}Cette icône indique que...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_InstallState</td><td>1034</td><td>{&amp;Tahoma8}Este estado de instalación indica que el componente...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_Network</td><td>1033</td><td>{&amp;Tahoma8}La fonction sera installée pour être exécutée à partir du réseau. (Disponible uniquement si la fonction prend en charge cette option.)</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_Network</td><td>1034</td><td>{&amp;Tahoma8}Se instalará para su ejecución desde red. (Disponible sólo si el componente admite esta opción).</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_OK</td><td>1033</td><td>{&amp;Tahoma8}OK</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_OK</td><td>1034</td><td>{&amp;Tahoma8}Aceptar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_SubFeaturesInstalledLocal</td><td>1033</td><td>{&amp;Tahoma8}Certaines sous-fonctions seront installées sur le disque dur local. (Disponible uniquement si la fonction comporte des sous-fonctions.)</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_SubFeaturesInstalledLocal</td><td>1034</td><td>{&amp;Tahoma8}Algunos subcomponentes se instalarán en el disco duro local. (Disponible sólo si el componente tiene subcomponentes).</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_WillNotBeInstalled</td><td>1033</td><td>{&amp;Tahoma8}La fonction ne sera pas installée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_SetupTips_WillNotBeInstalled</td><td>1034</td><td>{&amp;Tahoma8}No se instalarán.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_Available</td><td>1033</td><td>Disponibilité</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_Available</td><td>1034</td><td>Disponible</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_Bytes</td><td>1033</td><td>octets</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_Bytes</td><td>1034</td><td>bytes</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_CompilingFeaturesCost</td><td>1033</td><td>La compilation pour cette fonction exige...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_CompilingFeaturesCost</td><td>1034</td><td>Compilando el coste de este componente...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_Differences</td><td>1033</td><td>Différences</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_Differences</td><td>1034</td><td>Diferencias</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_DiskSize</td><td>1033</td><td>Taille du disque</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_DiskSize</td><td>1034</td><td>Tamaño del disco</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureCompletelyRemoved</td><td>1033</td><td>Cette fonction sera entièrement supprimée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureCompletelyRemoved</td><td>1034</td><td>Este componente se eliminará completamente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureContinueNetwork</td><td>1033</td><td>Cette fonction sera toujours exécutée depuis le réseau.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureContinueNetwork</td><td>1034</td><td>Este componente se continuará ejecutando desde red.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureFreeSpace</td><td>1033</td><td>Cette fonction libère [1] de votre disque dur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureFreeSpace</td><td>1034</td><td>Este componente liberará [1] en el disco duro.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledCD</td><td>1033</td><td>Cette fonction et toutes ses sous-fonctions seront installées pour être exécutées depuis le CD.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledCD</td><td>1034</td><td>Este componente y todos sus subcomponentes se instalarán para ejecución desde el CD.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledCD2</td><td>1033</td><td>Cette fonction sera installée pour être exécutée depuis le CD.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledCD2</td><td>1034</td><td>Este componente se instalará para ejecutar desde CD.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledLocal</td><td>1033</td><td>Cette fonction et toutes ses sous-fonctions seront installées pour être exécutées depuis le disque dur local.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledLocal</td><td>1034</td><td>Este componente y todos sus subcomponentes se instalarán en el disco duro local.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledLocal2</td><td>1033</td><td>Cette fonction sera installée sur le disque dur local.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledLocal2</td><td>1034</td><td>Este componente se instalará en el disco duro local.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledNetwork</td><td>1033</td><td>Cette fonction et toutes ses sous-fonctions seront installées pour être exécutées depuis le réseau.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledNetwork</td><td>1034</td><td>Este componente y todos sus subcomponentes se instalarán para su ejecución desde red.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledNetwork2</td><td>1033</td><td>Cette fonction sera installée pour être exécutée depuis le réseau.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledNetwork2</td><td>1034</td><td>Este componente se instalará para ejecutar desde red.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledRequired</td><td>1033</td><td>Sera installée lorsque ce sera requis.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledRequired</td><td>1034</td><td>Se podrá instalar cuando sea necesario.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledWhenRequired</td><td>1033</td><td>Cette fonction sera installée lorsque ce sera requis.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledWhenRequired</td><td>1034</td><td>Este componente se podrá instalar cuando sea necesario.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledWhenRequired2</td><td>1033</td><td>Cette fonction sera installée au moment nécessaire.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureInstalledWhenRequired2</td><td>1034</td><td>Este componente se podrá instalar cuando sea necesario.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureLocal</td><td>1033</td><td>Cette fonction sera installée sur le disque dur local.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureLocal</td><td>1034</td><td>Este componente se instalará en el disco duro local.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureLocal2</td><td>1033</td><td>Cette fonction sera installée sur votre disque dur local.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureLocal2</td><td>1034</td><td>Este componente se instalará en el disco duro local.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureNetwork</td><td>1033</td><td>Cette fonction sera installée pour être exécutée depuis le réseau.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureNetwork</td><td>1034</td><td>Este componente se instalará para ejecutar desde red.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureNetwork2</td><td>1033</td><td>Cette fonction sera disponible pour être exécutée depuis le réseau.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureNetwork2</td><td>1034</td><td>Este componente se instalará para su ejecución desde red.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureNotAvailable</td><td>1033</td><td>Cette fonction ne sera pas installée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureNotAvailable</td><td>1034</td><td>Este componente no estará disponible.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureOnCD</td><td>1033</td><td>Cette fonction sera installée pour être exécutée depuis le CD.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureOnCD</td><td>1034</td><td>Este componente se instalará para ejecutar desde CD.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureOnCD2</td><td>1033</td><td>Cette fonction sera disponible pour être exécutée depuis le CD.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureOnCD2</td><td>1034</td><td>Este componente estará disponible para su ejecución desde CD.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureRemainLocal</td><td>1033</td><td>Cette fonction restera sur votre disque dur local.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureRemainLocal</td><td>1034</td><td>Este componente permanecerá en el disco duro local.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureRemoveNetwork</td><td>1033</td><td>Cette fonction sera supprimée de votre disque dur local mais pourra toujours être exécutée depuis le réseau.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureRemoveNetwork</td><td>1034</td><td>Este componente se eliminará del disco duro local pero estará disponible para su ejecución desde red.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureRemovedCD</td><td>1033</td><td>Cette fonction sera supprimée de votre disque dur local mais pourra toujours être exécutée depuis votre CD.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureRemovedCD</td><td>1034</td><td>Este componente se eliminará del disco duro local pero estará disponible para su ejecución desde el CD.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureRemovedUnlessRequired</td><td>1033</td><td>Cette fonction sera supprimée de votre disque dur local mais sera installée lorsque ce sera requis.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureRemovedUnlessRequired</td><td>1034</td><td>Este componente se eliminará del disco duro local pero se podrá instalar cuando se requiera.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureRequiredSpace</td><td>1033</td><td>Cette fonction nécessite [1] d'espace disque.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureRequiredSpace</td><td>1034</td><td>Este componente requiere [1] en el disco duro.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureRunFromCD</td><td>1033</td><td>Cette fonction sera toujours exécutée depuis le CD.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureRunFromCD</td><td>1034</td><td>Este componente se continuará ejecutando desde el CD.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureSpaceFree</td><td>1033</td><td>Cette fonction libère [1] de votre disque dur. Vous avez sélectionné [2] de [3] sous-fonctions. Les sous-fonctions libèrent [4] de votre disque dur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureSpaceFree</td><td>1034</td><td>Este componente liberará [1] en el disco duro. Tiene seleccionados[2] de[3] subcomponentes. Estos subcomponentes liberarán [4] en el disco duro.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureSpaceFree2</td><td>1033</td><td>Cette fonction libère [1] de votre disque dur. Vous avez sélectionné [2] de [3] sous-fonctions. Les sous-fonctions requièrent [4] de votre disque dur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureSpaceFree2</td><td>1034</td><td>Este componente liberará [1] en el disco duro. Tiene seleccionados[2] de[3] subcomponentes. Estos subcomponentes requieren[4] en el disco duro.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureSpaceFree3</td><td>1033</td><td>Cette fonction requiert [1] de votre disque dur. Vous avez sélectionné [2] de [3] sous-fonctions. Les sous-fonctions libèrent [4] de votre disque dur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureSpaceFree3</td><td>1034</td><td>Este componente requiere [1] en el disco duro. Tiene seleccionados[2] de[3] subcomponentes. Estos subcomponentes liberarán [4] en el disco duro.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureSpaceFree4</td><td>1033</td><td>Cette fonction requiert [1] de votre disque dur. Vous avez sélectionné [2] de [3] sous-fonctions. Les sous-fonctions requièrent [4] de votre disque dur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureSpaceFree4</td><td>1034</td><td>Este componente requiere [1] en el disco duro. Tiene seleccionados [2] de[3] subcomponentes. Estos subcomponentes requieren [4] en el disco duro.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureUnavailable</td><td>1033</td><td>Cette fonction ne sera plus disponible.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureUnavailable</td><td>1034</td><td>Este componente no estará disponible.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureUninstallNoNetwork</td><td>1033</td><td>Cette fonction sera entièrement désinstallée et vous ne pourrez pas l'exécuter depuis le réseau.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureUninstallNoNetwork</td><td>1034</td><td>Este componente se desinstalará completamente y no se podrá ejecutar desde red.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureWasCD</td><td>1033</td><td>Cette fonction était exécutée depuis le CD mais sera installée lorsque ce sera requis.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureWasCD</td><td>1034</td><td>Este componente se ejecutó desde CD pero se podrá instalar cuando se requiera.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureWasCDLocal</td><td>1033</td><td>Cette fonction était exécutée depuis le CD mais sera installée sur le disque dur local.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureWasCDLocal</td><td>1034</td><td>Este componente se ejecutó desde el CD pero se instalará en el disco duro local.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureWasOnNetworkInstalled</td><td>1033</td><td>Cette fonction était exécutée depuis le réseau mais sera installée lorsque ce sera requis.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureWasOnNetworkInstalled</td><td>1034</td><td>Este componente se ejecutó desde red pero se podrá instalar cuando se requiera.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureWasOnNetworkLocal</td><td>1033</td><td>Cette fonction était exécutée depuis le réseau mais sera installée sur le disque dur local.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureWasOnNetworkLocal</td><td>1034</td><td>Este componente se ejecutó desde el red pero se instalará en el disco duro local.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureWillBeUninstalled</td><td>1033</td><td>Cette fonction sera entièrement désinstallée et vous ne pourrez pas l'exécuter depuis le CD.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_FeatureWillBeUninstalled</td><td>1034</td><td>Este componente se desinstalará completamente y no se podrá ejecutar desde CD.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_Folder</td><td>1033</td><td>Fldr|Nouveau dossier</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_Folder</td><td>1034</td><td>Carp|Carpeta nueva</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_GB</td><td>1033</td><td>Go</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_GB</td><td>1034</td><td>GB</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_KB</td><td>1033</td><td>ko</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_KB</td><td>1034</td><td>KB</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_MB</td><td>1033</td><td>Mo</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_MB</td><td>1034</td><td>MB</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_Required</td><td>1033</td><td>Requis</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_Required</td><td>1034</td><td>Requerido</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_TimeRemaining</td><td>1033</td><td>Temps restant: {[1] min }{[2] sec}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_TimeRemaining</td><td>1034</td><td>Tiempo restante:{[1] min. }{[2] seg}.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_Volume</td><td>1033</td><td>Volume</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS_UITEXT_Volume</td><td>1034</td><td>Volumen</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__AgreeToLicense_0</td><td>1033</td><td>{&amp;Tahoma8}Je n'accepte pas les termes &amp;de ce contrat de licence</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__AgreeToLicense_0</td><td>1034</td><td>{&amp;Tahoma8}&amp;No acepto los términos del contrato de licencia</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__AgreeToLicense_1</td><td>1033</td><td>{&amp;Tahoma8}&amp;J'accepte les termes de ce contrat de licence</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__AgreeToLicense_1</td><td>1034</td><td>{&amp;Tahoma8}Ac&amp;epto los términos del contrato de licencia</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DatabaseFolder_ChangeFolder</td><td>1033</td><td>Cliquez sur Suivant pour installer les fichiers dans ce dossier ou sur Modifier pour les installer dans un autre dossier.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DatabaseFolder_ChangeFolder</td><td>1034</td><td>Haga clic en Siguiente para instalar en esta carpeta o en Cambiar para instalar en una carpeta diferente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DatabaseFolder_DatabaseDir</td><td>1033</td><td>[DATABASEDIR]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DatabaseFolder_DatabaseDir</td><td>1034</td><td>[DATABASEDIR]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DatabaseFolder_DatabaseFolder</td><td>1033</td><td>{&amp;MSSansBold8}Dossier de base de données</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DatabaseFolder_DatabaseFolder</td><td>1034</td><td>{&amp;MSSansBold8}Carpeta Base de datos</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DestinationFolder_Change</td><td>1033</td><td>{&amp;Tahoma8}&amp;Modifier...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DestinationFolder_Change</td><td>1034</td><td>{&amp;Tahoma8}Ca&amp;mbiar...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DestinationFolder_ChangeFolder</td><td>1033</td><td>{&amp;Tahoma8}Cliquez sur Suivant pour installer les fichiers dans ce dossier ou sur Modifier pour les installer dans un autre dossier.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DestinationFolder_ChangeFolder</td><td>1034</td><td>{&amp;Tahoma8}Haga clic en Siguiente para instalar en esta carpeta o en Cambiar para instalar en una carpeta diferente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DestinationFolder_DestinationFolder</td><td>1033</td><td>{&amp;MSSansBold8}Dossier cible</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DestinationFolder_DestinationFolder</td><td>1034</td><td>{&amp;MSSansBold8}Carpeta de destino</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DestinationFolder_InstallTo</td><td>1033</td><td>{&amp;Tahoma8}Installer [ProductName] vers:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DestinationFolder_InstallTo</td><td>1034</td><td>{&amp;Tahoma8}Instalar[ProductName] en:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DisplayName_Custom</td><td>1033</td><td>Personnalisé</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DisplayName_Custom</td><td>1034</td><td>Personalizada</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DisplayName_Minimal</td><td>1033</td><td>Minimal</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DisplayName_Minimal</td><td>1034</td><td>Mínima</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DisplayName_Typical</td><td>1033</td><td>Par défaut</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__DisplayName_Typical</td><td>1034</td><td>Típica</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_11</td><td>1033</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_11</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_4</td><td>1033</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_4</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_8</td><td>1033</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_8</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_BrowseDestination</td><td>1033</td><td>{&amp;Tahoma8}Indiquez le dossier cible à utiliser.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_BrowseDestination</td><td>1034</td><td>{&amp;Tahoma8}Buscar la carpeta de destino.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_ChangeDestination</td><td>1033</td><td>{&amp;MSSansBold8}Modification du dossier cible</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_ChangeDestination</td><td>1034</td><td>{&amp;MSSansBold8}Cambiar la carpeta de destino actual</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_CreateFolder</td><td>1033</td><td>Créer nouveau dossier|</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_CreateFolder</td><td>1034</td><td>Crear nueva carpeta|</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_FolderName</td><td>1033</td><td>{&amp;Tahoma8}&amp;Nom de dossier:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_FolderName</td><td>1034</td><td>{&amp;Tahoma8}&amp;Nombre de la carpeta:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_LookIn</td><td>1033</td><td>{&amp;Tahoma8}&amp;Rechercher dans:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_LookIn</td><td>1034</td><td>{&amp;Tahoma8}&amp;Buscar en:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_UpOneLevel</td><td>1033</td><td>Dossier parent|</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallBrowse_UpOneLevel</td><td>1034</td><td>Subir un nivel|</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallPointWelcome_ServerImage</td><td>1033</td><td>{&amp;Tahoma8}L'InstallShield(R) Wizard va créer une image serveur de [ProductName] à l'emplacement réseau spécifié. Pour continuer, cliquez sur Suivant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallPointWelcome_ServerImage</td><td>1034</td><td>{&amp;Tahoma8}InstallShield(R) Wizard creará una imagen de servidor [ProductName] en la ubicación de red especificada. Para continuar, haga clic en Siguiente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallPointWelcome_Wizard</td><td>1033</td><td>{&amp;VerdanaBold14}Bienvenue dans l'InstallShield Wizard pour [ProductName]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallPointWelcome_Wizard</td><td>1034</td><td>{&amp;VerdanaBold14}Bienvenido a [ProductName] - InstallShield Wizard</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallPoint_Change</td><td>1033</td><td>{&amp;Tahoma8}&amp;Modifier...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallPoint_Change</td><td>1034</td><td>{&amp;Tahoma8}Ca&amp;mbiar...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallPoint_EnterNetworkLocation</td><td>1033</td><td>{&amp;Tahoma8}Veuillez saisir un emplacement réseau ou cliquer sur Modifier pour rechercher un emplacement. Cliquez sur Installer pour créer une image serveur de [ProductName] à l'emplacement réseau spécifié ou cliquez sur Annuler pour quitter l'assistant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallPoint_EnterNetworkLocation</td><td>1034</td><td>{&amp;Tahoma8}Introduzca la ubicación de red o haga clic en Cambiar para buscar otra ubicación. Haga clic en Instalar para crear una imagen de servidor de [ProductName] en la ubicación de red especificada o haga clic en Cancelar para salir del asistente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallPoint_Install</td><td>1033</td><td>{&amp;Tahoma8}&amp;Installer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallPoint_Install</td><td>1034</td><td>{&amp;Tahoma8}&amp;Instalar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallPoint_NetworkLocation</td><td>1033</td><td>{&amp;Tahoma8}&amp;Emplacement réseau:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallPoint_NetworkLocation</td><td>1034</td><td>{&amp;Tahoma8}&amp;Ubicación de red:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallPoint_NetworkLocationFormatted</td><td>1033</td><td>{&amp;MSSansBold8}Emplacement réseau</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallPoint_NetworkLocationFormatted</td><td>1034</td><td>{&amp;MSSansBold8}Ubicación de red</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallPoint_SpecifyNetworkLocation</td><td>1033</td><td>{&amp;Tahoma8}Veuillez spécifier un emplacement réseau pour l'image serveur du produit.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsAdminInstallPoint_SpecifyNetworkLocation</td><td>1034</td><td>{&amp;Tahoma8}Especificar una unidad de red para la imagen de servidor del producto.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseButton</td><td>1033</td><td>P&amp;arcourir...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseButton</td><td>1034</td><td>E&amp;xaminar...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_11</td><td>1033</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_11</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_4</td><td>1033</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_4</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_8</td><td>1033</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_8</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_BrowseDestFolder</td><td>1033</td><td>{&amp;Tahoma8}Indiquez le dossier cible à utiliser.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_BrowseDestFolder</td><td>1034</td><td>{&amp;Tahoma8}Buscar la carpeta de destino.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_ChangeCurrentFolder</td><td>1033</td><td>{&amp;MSSansBold8}Modification du dossier cible</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_ChangeCurrentFolder</td><td>1034</td><td>{&amp;MSSansBold8}Cambiar la carpeta de destino actual</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_CreateFolder</td><td>1033</td><td>Créer nouveau dossier|</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_CreateFolder</td><td>1034</td><td>Crear nueva carpeta|</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_FolderName</td><td>1033</td><td>{&amp;Tahoma8}&amp;Nom de dossier:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_FolderName</td><td>1034</td><td>{&amp;Tahoma8}&amp;Nombre de la carpeta:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_LookIn</td><td>1033</td><td>{&amp;Tahoma8}&amp;Rechercher dans:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_LookIn</td><td>1034</td><td>{&amp;Tahoma8}&amp;Buscar en:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_OK</td><td>1033</td><td>{&amp;Tahoma8}OK</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_OK</td><td>1034</td><td>{&amp;Tahoma8}&amp;Aceptar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_UpOneLevel</td><td>1033</td><td>Dossier parent|</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseFolderDlg_UpOneLevel</td><td>1034</td><td>Subir un nivel|</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseForAccount</td><td>1033</td><td>Rechercher un compte utilisateur</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseForAccount</td><td>1034</td><td>Buscar una cuenta de usuario</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseGroup</td><td>1033</td><td>Sélectionner un groupe de listes d'utilisateurs</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseGroup</td><td>1034</td><td>Seleccionar un grupo de listas de usuarios</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseUsernameTitle</td><td>1033</td><td>Sélectionnez un nom d'utilisateur</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsBrowseUsernameTitle</td><td>1034</td><td>Seleccionar un nombre de usuario</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCancelDlg_ConfirmCancel</td><td>1033</td><td>{&amp;Tahoma8}Souhaitez-vous vraiment annuler l'installation de [ProductName] ?</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCancelDlg_ConfirmCancel</td><td>1034</td><td>{&amp;Tahoma8}¿Está seguro de que desea cancelar la instalación de [ProductName]?</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCancelDlg_No</td><td>1033</td><td>{&amp;Tahoma8}&amp;Non</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCancelDlg_No</td><td>1034</td><td>{&amp;Tahoma8}&amp;No</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCancelDlg_Yes</td><td>1033</td><td>{&amp;Tahoma8}&amp;Oui</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCancelDlg_Yes</td><td>1034</td><td>{&amp;Tahoma8}&amp;Sí</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsConfirmPassword</td><td>1033</td><td>Con&amp;firmer le mot de passe :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsConfirmPassword</td><td>1034</td><td>Con&amp;firmar contraseña:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCreateNewUserTitle</td><td>1033</td><td>Informations concernant le nouvel utilisateur</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCreateNewUserTitle</td><td>1034</td><td>Información de nuevo usuario</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCreateUserBrowse</td><td>1033</td><td>Informations conc&amp;ernant le nouvel utilisateur...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCreateUserBrowse</td><td>1034</td><td>Información de nu&amp;evo usuario...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_Change</td><td>1033</td><td>{&amp;Tahoma8}&amp;Modifier...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_Change</td><td>1034</td><td>{&amp;Tahoma8}Ca&amp;mbiar...</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_ClickFeatureIcon</td><td>1033</td><td>{&amp;Tahoma8}Pour modifier les paramètres d'installation d'une fonction, cliquez sur l'icône correspondante dans la liste ci-dessous.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_ClickFeatureIcon</td><td>1034</td><td>{&amp;Tahoma8}Para cambiar la forma de instalación de un componente, haga clic en un icono de la lista siguiente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_CustomSetup</td><td>1033</td><td>{&amp;MSSansBold8}Installation personnalisée</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_CustomSetup</td><td>1034</td><td>{&amp;MSSansBold8}Instalación personalizada</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_FeatureDescription</td><td>1033</td><td>{&amp;Tahoma8}Description de la fonction</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_FeatureDescription</td><td>1034</td><td>{&amp;Tahoma8}Descripción del componente</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_FeaturePath</td><td>1033</td><td>{&amp;Tahoma8}&lt;chemin sélectionné de la fonction&gt;</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_FeaturePath</td><td>1034</td><td>{&amp;Tahoma8}&lt;selected feature path&gt;</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_FeatureSize</td><td>1033</td><td>{&amp;Tahoma8}Taille de la fonction</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_FeatureSize</td><td>1034</td><td>{&amp;Tahoma8}Tamaño del componente</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_Help</td><td>1033</td><td>{&amp;Tahoma8}&amp;Aide</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_Help</td><td>1034</td><td>{&amp;Tahoma8}A&amp;yuda</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_InstallTo</td><td>1033</td><td>{&amp;Tahoma8}Installer sur:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_InstallTo</td><td>1034</td><td>{&amp;Tahoma8}Instalar en:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_MultilineDescription</td><td>1033</td><td>{&amp;Tahoma8}Description multiligne de l'élément actuellement installé</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_MultilineDescription</td><td>1034</td><td>{&amp;Tahoma8}Descripción multilínea del elemento seleccionado actualmente</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_SelectFeatures</td><td>1033</td><td>{&amp;Tahoma8}Sélectionnez les fonctions du programme que vous souhaitez installer.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_SelectFeatures</td><td>1034</td><td>{&amp;Tahoma8}Seleccione los componentes del programa que desee instalar.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_Space</td><td>1033</td><td>{&amp;Tahoma8}&amp;Espace</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsCustomSelectionDlg_Space</td><td>1034</td><td>{&amp;Tahoma8}&amp;Espacio</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsDiskSpaceDlg_DiskSpace</td><td>1033</td><td>{&amp;Tahoma8}L'espace disque requis pour l'installation dépasse l'espace disque disponible.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsDiskSpaceDlg_DiskSpace</td><td>1034</td><td>{&amp;Tahoma8}El espacio en disco necesario para la instalación excede el espacio disponible en el disco.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsDiskSpaceDlg_HighlightedVolumes</td><td>1033</td><td>{&amp;Tahoma8}L'espace disponible sur les volumes mis en évidence est insuffisant pour permettre l'installation des fonctions sélectionnées. Libérez de l'espace sur ces volumes, désélectionnez certaines fonctions ou choisissez un autre emplacement cible.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsDiskSpaceDlg_HighlightedVolumes</td><td>1034</td><td>{&amp;Tahoma8}El espacio en disco disponible de los volúmenes resaltados no es suficiente para los componentes seleccionados actualmente. Puede eliminar archivos de los volúmenes resaltados, instalar menos componentes en unidades locales o seleccionar otras unidades de instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsDiskSpaceDlg_Numbers</td><td>1033</td><td>{&amp;Tahoma8}{120}{70}{70}{70}{70}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsDiskSpaceDlg_Numbers</td><td>1034</td><td>{&amp;Tahoma8}{120}{70}{70}{70}{70}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsDiskSpaceDlg_OK</td><td>1033</td><td>{&amp;Tahoma8}&amp;OK</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsDiskSpaceDlg_OK</td><td>1034</td><td>{&amp;Tahoma8}&amp;Aceptar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsDiskSpaceDlg_OutOfDiskSpace</td><td>1033</td><td>{&amp;MSSansBold8}Espace disque insuffisant</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsDiskSpaceDlg_OutOfDiskSpace</td><td>1034</td><td>{&amp;MSSansBold8}No hay espacio suficiente en disco</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsDomainOrServer</td><td>1033</td><td>&amp;Domaine ou serveur :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsDomainOrServer</td><td>1034</td><td>&amp;Dominio o servidor:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsErrorDlg_Abort</td><td>1033</td><td>{&amp;Tahoma8}A&amp;bandonner</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsErrorDlg_Abort</td><td>1034</td><td>{&amp;Tahoma8}&amp;Anular</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsErrorDlg_ErrorText</td><td>1033</td><td>{&amp;Tahoma8}&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsErrorDlg_ErrorText</td><td>1034</td><td>{&amp;Tahoma8}&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;&lt;error text goes here&gt;</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsErrorDlg_Ignore</td><td>1033</td><td>{&amp;Tahoma8}&amp;Ignorer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsErrorDlg_Ignore</td><td>1034</td><td>{&amp;Tahoma8}&amp;Ignorar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsErrorDlg_InstallerInfo</td><td>1033</td><td>Informations sur l'installation de [ProductName]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsErrorDlg_InstallerInfo</td><td>1034</td><td> Información del instalador de [ProductName]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsErrorDlg_NO</td><td>1033</td><td>{&amp;Tahoma8}&amp;Non</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsErrorDlg_NO</td><td>1034</td><td>{&amp;Tahoma8}&amp;No</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsErrorDlg_OK</td><td>1033</td><td>{&amp;Tahoma8}&amp;OK</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsErrorDlg_OK</td><td>1034</td><td>{&amp;Tahoma8}&amp;Aceptar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsErrorDlg_Retry</td><td>1033</td><td>{&amp;Tahoma8}&amp;Réessayer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsErrorDlg_Retry</td><td>1034</td><td>{&amp;Tahoma8}&amp;Reintentar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsErrorDlg_Yes</td><td>1033</td><td>{&amp;Tahoma8}&amp;Oui</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsErrorDlg_Yes</td><td>1034</td><td>{&amp;Tahoma8}&amp;Sí</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_Finish</td><td>1033</td><td>{&amp;Tahoma8}&amp;Terminer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_Finish</td><td>1034</td><td>{&amp;Tahoma8}&amp;Finalizar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_InstallSuccess</td><td>1033</td><td>{&amp;Tahoma8}L'InstallShield Wizard a installé [ProductName] avec succès. Cliquez sur Terminer pour quitter l'assistant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_InstallSuccess</td><td>1034</td><td>{&amp;Tahoma8}InstallShield Wizard ha instalado [ProductName] correctamente. Haga clic en Finalizar para salir del asistente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_LaunchProgram</td><td>1033</td><td>Lancer le programme</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_LaunchProgram</td><td>1034</td><td>Ejecutar programa</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_ShowReadMe</td><td>1033</td><td>Afficher le fichier Lisez-moi</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_ShowReadMe</td><td>1034</td><td>Mostrar archivo Léame</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_UninstallSuccess</td><td>1033</td><td>{&amp;Tahoma8}L'InstallShield a désinstallé [ProductName] avec succès. Cliquez sur Terminer pour quitter l'assistant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_UninstallSuccess</td><td>1034</td><td>{&amp;Tahoma8}InstallShield Wizard ha desinstalado [ProductName] correctamente. Haga clic en Finalizar para salir del asistente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_Update_InternetConnection</td><td>1033</td><td>Votre connexion Internet vous permet de vérifier si vous disposez des mises à jour les plus récentes.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_Update_InternetConnection</td><td>1034</td><td>Puede utilizar la conexión a Internet para asegurarse de que tiene las últimas actualizaciones.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_Update_PossibleUpdates</td><td>1033</td><td>Il se peut que certains fichiers aient été mis à jour depuis l'achat de votre copie de [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_Update_PossibleUpdates</td><td>1034</td><td>Es posible que algunos archivos de programa se hayan actualizado desde que adquirió la copia de [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_Update_SetupFinished</td><td>1033</td><td>L'assistant a terminé l'installation de [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_Update_SetupFinished</td><td>1034</td><td>El programa de instalación ha terminado de instalar [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_Update_YesCheckForUpdates</td><td>1033</td><td>&amp;Oui, vérifier les mises à jour du programme(Recommandé) une fois l'installation terminée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_Update_YesCheckForUpdates</td><td>1034</td><td>&amp;Sí, buscar actualizaciones de programas (Recomendado) una vez finalizada la instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_WizardCompleted</td><td>1033</td><td>{&amp;TahomaBold10}InstallShield Wizard de [ProductName] terminé</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsExitDialog_WizardCompleted</td><td>1034</td><td>{&amp;TahomaBold10}[ProductName] Finalizado - InstallShield Wizard</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFatalError_ClickFinish</td><td>1033</td><td>{&amp;Tahoma8}Cliquez sur Terminer pour quitter l'assistant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFatalError_ClickFinish</td><td>1034</td><td>{&amp;Tahoma8}Haga clic en Finalizar para salir del asistente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFatalError_Finish</td><td>1033</td><td>{&amp;Tahoma8}&amp;Terminer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFatalError_Finish</td><td>1034</td><td>{&amp;Tahoma8}&amp;Finalizar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFatalError_KeepOrRestore</td><td>1033</td><td>{&amp;Tahoma8}Vous pouvez conserver les éléments installés existant sur votre système pour poursuivre l'installation ultérieurement ou restaurer l'état de votre système avant l'installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFatalError_KeepOrRestore</td><td>1034</td><td>{&amp;Tahoma8}Puede guardar todos los elementos instalados en el sistema para continuar la instalación en otra ocasión o restaurar el sistema a su estado original anterior a la instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFatalError_NotModified</td><td>1033</td><td>{&amp;Tahoma8}Aucune modification n'a été apportée sur le système. Pour terminer l'installation ultérieurement, veuillez relancer l'installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFatalError_NotModified</td><td>1034</td><td>{&amp;Tahoma8}Su sistema no ha sido modificado. Para completar la instalación en otra ocasión, vuelva a ejecutarla.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFatalError_RestoreOrContinueLater</td><td>1033</td><td>{&amp;Tahoma8}Cliquez sur Restaurer ou sur Poursuivre ultérieurement pour quitter l'assistant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFatalError_RestoreOrContinueLater</td><td>1034</td><td>{&amp;Tahoma8}Haga clic en Restaurar o Continuar posteriormente para salir del Asistente de instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFatalError_WizardCompleted</td><td>1033</td><td>{&amp;TahomaBold10}InstallShield Wizard de [ProductName]terminé</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFatalError_WizardCompleted</td><td>1034</td><td>{&amp;TahomaBold10}[ProductName] Finalizado - InstallShield Wizard</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFatalError_WizardInterrupted</td><td>1033</td><td>{&amp;Tahoma8}L'assistant a été interrompu avant la fin de l'installation de [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFatalError_WizardInterrupted</td><td>1034</td><td>{&amp;Tahoma8}El asistente se ha interrumpido antes de completar la instalación de [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFeatureDetailsDlg_DiskSpaceRequirements</td><td>1033</td><td>{&amp;MSSansBold8}Besoins en espace disque</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFeatureDetailsDlg_DiskSpaceRequirements</td><td>1034</td><td>{&amp;MSSansBold8}Requisitos de espacio en disco</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFeatureDetailsDlg_Numbers</td><td>1033</td><td>{&amp;Tahoma8}{120}{70}{70}{70}{70}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFeatureDetailsDlg_Numbers</td><td>1034</td><td>{&amp;Tahoma8}{120}{70}{70}{70}{70}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFeatureDetailsDlg_OK</td><td>1033</td><td>{&amp;Tahoma8}OK</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFeatureDetailsDlg_OK</td><td>1034</td><td>{&amp;Tahoma8}&amp;Aceptar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFeatureDetailsDlg_SpaceRequired</td><td>1033</td><td>{&amp;Tahoma8}Espace disque requis pour l'installation des fonctions sélectionnées.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFeatureDetailsDlg_SpaceRequired</td><td>1034</td><td>{&amp;Tahoma8}Espacio en disco necesario para instalar los componentes seleccionados.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFeatureDetailsDlg_VolumesTooSmall</td><td>1033</td><td>{&amp;Tahoma8}Les volumes surlignés n'ont pas assez d'espace disque disponible pour les fonctions actuellement sélectionnées. Vous pouvez supprimer les fichiers des volumes surlignés, choisir d'installer moins de fonctions sur les lecteurs locaux ou sélectionner d'autres lecteurs cible.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFeatureDetailsDlg_VolumesTooSmall</td><td>1034</td><td>{&amp;Tahoma8}El espacio en disco disponible de los volúmenes resaltados no es suficiente para los componentes seleccionados actualmente. Puede eliminar archivos de los volúmenes resaltados, instalar menos componentes en unidades locales o seleccionar otras unidades de instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFilesInUse_ApplicationsUsingFiles</td><td>1033</td><td>{&amp;Tahoma8}Les programmes suivants utilisent des fichiers devant être mis à jour par cette installation. Veuillez fermer ces programmes et cliquer sur Réessayer pour poursuivre.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFilesInUse_ApplicationsUsingFiles</td><td>1034</td><td>{&amp;Tahoma8}Las aplicaciones siguientes están utilizando archivos que se deben actualizar en esta instalación. Cierre estas aplicaciones y haga clic en Reintentar para continuar.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFilesInUse_Exit</td><td>1033</td><td>{&amp;Tahoma8}&amp;Quitter</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFilesInUse_Exit</td><td>1034</td><td>{&amp;Tahoma8}&amp;Salir</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFilesInUse_FilesInUse</td><td>1033</td><td>{&amp;MSSansBold8}Fichiers en cours d'utilisation</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFilesInUse_FilesInUse</td><td>1034</td><td>{&amp;MSSansBold8}Archivos en uso</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFilesInUse_FilesInUseMessage</td><td>1033</td><td>{&amp;Tahoma8}Certains fichiers devant être mis à jour sont en cours d'utilisation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFilesInUse_FilesInUseMessage</td><td>1034</td><td>{&amp;Tahoma8}Se están utilizando actualmente algunos archivos que es necesario actualizar.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFilesInUse_Ignore</td><td>1033</td><td>{&amp;Tahoma8}&amp;Ignorer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFilesInUse_Ignore</td><td>1034</td><td>{&amp;Tahoma8}&amp;Ignorar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFilesInUse_Retry</td><td>1033</td><td>{&amp;Tahoma8}&amp;Réessayer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsFilesInUse_Retry</td><td>1034</td><td>{&amp;Tahoma8}&amp;Reintentar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsGroup</td><td>1033</td><td>Groupe de listes d'&amp;utilisateurs :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsGroup</td><td>1034</td><td>&amp;Grupo de listas de usuarios:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsGroupLabel</td><td>1033</td><td>Groupe de listes d'&amp;utilisateurs :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsGroupLabel</td><td>1034</td><td>&amp;Grupo de listas de usuarios:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsInitDlg_1</td><td>1033</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsInitDlg_1</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsInitDlg_2</td><td>1033</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsInitDlg_2</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsInitDlg_PreparingWizard</td><td>1033</td><td>{&amp;Tahoma8}Veuillez attendre que l'InstallShield(R) soit prêt pour vous guider à travers le processus d'installation</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsInitDlg_PreparingWizard</td><td>1034</td><td>{&amp;Tahoma8}Por favor, espere mientras el programa de instalación prepara InstallShield Wizard para guiarle durante el proceso.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsInitDlg_WelcomeWizard</td><td>1033</td><td>{&amp;VerdanaBold14}Bienvenue dans l'InstallShield Wizard de [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsInitDlg_WelcomeWizard</td><td>1034</td><td>{&amp;VerdanaBold14}Bienvenido a [ProductName] - InstallShield Wizard</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsLicenseDlg_LicenseAgreement</td><td>1033</td><td>{&amp;MSSansBold8}Contrat de licence</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsLicenseDlg_LicenseAgreement</td><td>1034</td><td>{&amp;MSSansBold8}Contrato de licencia</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsLicenseDlg_ReadLicenseAgreement</td><td>1033</td><td>{&amp;Tahoma8}Lisez attentivement le contrat de licence suivant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsLicenseDlg_ReadLicenseAgreement</td><td>1034</td><td>{&amp;Tahoma8}Lea cuidadosamente el acuerdo de licencia siguiente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsLogonInfoDescription</td><td>1033</td><td>Spécifiez le compte utilisateur devant être utilisé par cette application. Les comptes utilisateurs doivent avoir le format DOMAINE\Nomutilisateur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsLogonInfoDescription</td><td>1034</td><td>Especifique la cuenta de usuario que esta aplicación va a utilizar. Las cuentas de usuario deben tener el formato DOMINIO\Nombre de usuario.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsLogonInfoTitle</td><td>1033</td><td>{&amp;MSSansBold8}Informations de connexion</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsLogonInfoTitle</td><td>1034</td><td>{&amp;MSSansBold8}Información de inicio de sesión</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsLogonInfoTitleDescription</td><td>1033</td><td>Spécifiez un nom d'utilisateur et un mot de passe</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsLogonInfoTitleDescription</td><td>1034</td><td>Especifique un nombre de usuario y una contraseña.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsLogonNewUserDescription</td><td>1033</td><td>Sélectionnez le bouton ci-dessous pour spécifier des informations concernant un nouvel utilisateur qui sera créé au cours de l'installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsLogonNewUserDescription</td><td>1034</td><td>Seleccione el botón que aparece a continuación para especificar información acerca del nuevo usuario que se va a crear durante la instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceDlg_ChangeFeatures</td><td>1033</td><td>{&amp;Tahoma8}Modifier les fonctions du programme à installer. L'option affiche la boîte de dialogue Installation personnalisée dans laquelle vous pouvez modifier l'installation des fonctions.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceDlg_ChangeFeatures</td><td>1034</td><td>{&amp;Tahoma8}Cambiar los componentes del programa que se instalarán. Esta opción muestra el cuadro de diálogo Selección personalizada, en el que podrá cambiar la manera en que se instalan los componentes.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceDlg_MaitenanceOptions</td><td>1033</td><td>{&amp;Tahoma8}Modifier, réparer ou supprimer le programme.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceDlg_MaitenanceOptions</td><td>1034</td><td>{&amp;Tahoma8}Modificar, reparar o eliminar el programa.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceDlg_Modify</td><td>1033</td><td>{&amp;MSSansBold8}&amp;Modifier</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceDlg_Modify</td><td>1034</td><td>{&amp;MSSansBold8}&amp;Modificar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceDlg_ProgramMaintenance</td><td>1033</td><td>{&amp;MSSansBold8}Maintenance du programme</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceDlg_ProgramMaintenance</td><td>1034</td><td>{&amp;MSSansBold8}Mantenimiento del programa</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceDlg_Remove</td><td>1033</td><td>{&amp;MSSansBold8}S&amp;upprimer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceDlg_Remove</td><td>1034</td><td>{&amp;MSSansBold8}&amp;Eliminar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceDlg_RemoveProductName</td><td>1033</td><td>{&amp;Tahoma8}Supprimer [ProductName] de votre ordinateur.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceDlg_RemoveProductName</td><td>1034</td><td>{&amp;Tahoma8}Eliminar [ProductName] del equipo.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceDlg_Repair</td><td>1033</td><td>{&amp;MSSansBold8}&amp;Réparer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceDlg_Repair</td><td>1034</td><td>{&amp;MSSansBold8}&amp;Reparar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceDlg_RepairMessage</td><td>1033</td><td>{&amp;Tahoma8}Réparer les erreurs dans le programme. Cette option répare les fichiers, les raccourcis et les entrées de registre manquants ou altérés.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceDlg_RepairMessage</td><td>1034</td><td>{&amp;Tahoma8}Reparar errores en el programa. Esta opción repara archivos dañados o que falten, accesos directos y entradas del registro.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceWelcome_MaintenanceOptionsDescription</td><td>1033</td><td>{&amp;Tahoma8}L'InstallShield(R) Wizard vous permettra de modifier, de réparer ou de supprimer [ProductName]. Pour continuer, cliquez sur Suivant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceWelcome_MaintenanceOptionsDescription</td><td>1034</td><td>{&amp;Tahoma8}InstallShield(R) Wizard le permitirá modificar, reparar o eliminar [ProductName]. Para continuar, haga clic en Siguiente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceWelcome_WizardWelcome</td><td>1033</td><td>{&amp;TahomaBold10}Bienvenue dans l'InstallShield Wizard de [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMaintenanceWelcome_WizardWelcome</td><td>1034</td><td>{&amp;TahomaBold10}Bienvenido a [ProductName] - InstallShield Wizard</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMsiRMFilesInUse_ApplicationsUsingFiles</td><td>1033</td><td>Les applications suivantes utilisent des fichiers devant être mis à jour par cette installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMsiRMFilesInUse_ApplicationsUsingFiles</td><td>1034</td><td>Las aplicaciones siguientes están utilizando archivos que se deben actualizar en esta instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMsiRMFilesInUse_CloseRestart</td><td>1033</td><td>Fermeture automatique et tentative de redémarrage des applications.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMsiRMFilesInUse_CloseRestart</td><td>1034</td><td>Cerrar e intentar reiniciar automáticamente las aplicaciones.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMsiRMFilesInUse_RebootAfter</td><td>1033</td><td>Ne fermez pas les applications. (Vous devrez réinitialiser.)</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsMsiRMFilesInUse_RebootAfter</td><td>1034</td><td>No cerrar las aplicaciones. (Será necesario reiniciar.)</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsPatchDlg_PatchClickUpdate</td><td>1033</td><td>L'InstallShield(R) Wizard va installer le patch pour [ProductName] sur votre ordinateur. Pour continuer, cliquez sur Mise à jour.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsPatchDlg_PatchClickUpdate</td><td>1034</td><td>InstallShield(R) Wizard instalará la revisión de [ProductName] en el ordenador.  Para continuar, haga clic en Actualizar.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsPatchDlg_PatchWizard</td><td>1033</td><td>Patch [ProductName] - InstallShield Wizard</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsPatchDlg_PatchWizard</td><td>1034</td><td>[ProductName] Revisión - InstallShield Wizard</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsPatchDlg_Update</td><td>1033</td><td>Mise à jo&amp;ur &gt;</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsPatchDlg_Update</td><td>1034</td><td>A&amp;ctualizar &gt;</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsPatchDlg_WelcomePatchWizard</td><td>1033</td><td>{&amp;TahomaBold10}Bienvenue dans le patch pour [ProductName]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsPatchDlg_WelcomePatchWizard</td><td>1034</td><td>{&amp;TahomaBold10}Bienvenido a la revisión de [ProductName] </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_2</td><td>1033</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_2</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_Hidden</td><td>1033</td><td>{&amp;Tahoma8}(masqué)</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_Hidden</td><td>1034</td><td>{&amp;Tahoma8}(Hidden for now)</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_HiddenTimeRemaining</td><td>1033</td><td>{&amp;Tahoma8}(masqué)Temps restant estimé:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_HiddenTimeRemaining</td><td>1034</td><td>{&amp;Tahoma8}(Hidden for now)Tiempo restante estimado:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_InstallingProductName</td><td>1033</td><td>{&amp;MSSansBold8}Installation de [ProductName] </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_InstallingProductName</td><td>1034</td><td>{&amp;MSSansBold8}Instalando [ProductName] </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_ProgressDone</td><td>1033</td><td>Opération terminée</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_ProgressDone</td><td>1034</td><td>Finalizado</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_SecHidden</td><td>1033</td><td>{&amp;Tahoma8}(masqué)sec.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_SecHidden</td><td>1034</td><td>{&amp;Tahoma8}(Hidden for now) Seg.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_Status</td><td>1033</td><td>{&amp;Tahoma8}Etat:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_Status</td><td>1034</td><td>{&amp;Tahoma8}Estado:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_Uninstalling</td><td>1033</td><td>{&amp;MSSansBold8}Désinstallation de [ProductName] </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_Uninstalling</td><td>1034</td><td>{&amp;MSSansBold8}Desinstalando [ProductName] </td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_UninstallingFeatures</td><td>1033</td><td>{&amp;Tahoma8}Les fonctions sont en cours de désinstallation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_UninstallingFeatures</td><td>1034</td><td>{&amp;Tahoma8}Los componentes del programa seleccionados se están desinstalando.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_UninstallingFeatures2</td><td>1033</td><td>{&amp;Tahoma8}Les fonctions sont en cours d'installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_UninstallingFeatures2</td><td>1034</td><td>{&amp;Tahoma8}Los componentes del programa seleccionados se están instalando.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_WaitUninstall</td><td>1033</td><td>{&amp;Tahoma8}[ProductName] est en cours de désinstallation. L'opération peut prendre quelques minutes.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_WaitUninstall</td><td>1034</td><td>{&amp;Tahoma8}Por favor, espere mientras InstallShield Wizard desinstala [ProductName]. Este proceso puede durar varios minutos.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_WaitUninstall2</td><td>1033</td><td>{&amp;Tahoma8}[ProductName] est en cours d'installation. L'opération peut prendre quelques minutes.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsProgressDlg_WaitUninstall2</td><td>1034</td><td>{&amp;Tahoma8}Por favor, espere mientras InstallShield Wizard instala [ProductName]. Este proceso puede durar varios minutos.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsReadmeDlg_Cancel</td><td>1033</td><td>&amp;Annuler</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsReadmeDlg_Cancel</td><td>1034</td><td>&amp;Cancelar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsReadmeDlg_PleaseReadInfo</td><td>1033</td><td>Veuillez lire attentivement les informations lisez-moi suivantes.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsReadmeDlg_PleaseReadInfo</td><td>1034</td><td>Lea detenidamente la siguiente información de última hora.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsReadmeDlg_ReadMeInfo</td><td>1033</td><td>{&amp;MSSansBold8}Informations Lisez-moi</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsReadmeDlg_ReadMeInfo</td><td>1034</td><td>{&amp;MSSansBold8}Información de última hora</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_16</td><td>1033</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_16</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_Anyone</td><td>1033</td><td>{&amp;Tahoma8}&amp;Tous les utilisateur du système</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_Anyone</td><td>1034</td><td>{&amp;Tahoma8}Cua&amp;lquiera que utilice este equipo (todos los usuarios)</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_CustomerInformation</td><td>1033</td><td>{&amp;MSSansBold8}Informations client</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_CustomerInformation</td><td>1034</td><td>{&amp;MSSansBold8}Información del cliente</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_InstallFor</td><td>1033</td><td>{&amp;Tahoma8}Installer ce programme pour:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_InstallFor</td><td>1034</td><td>{&amp;Tahoma8}Instalar esta aplicación para:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_OnlyMe</td><td>1033</td><td>{&amp;Tahoma8}L'utilisateur en cours unique&amp;ment ([USERNAME])</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_OnlyMe</td><td>1034</td><td>{&amp;Tahoma8}Sólo para &amp;mí ([USERNAME])</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_Organization</td><td>1033</td><td>{&amp;Tahoma8}&amp;Organisation:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_Organization</td><td>1034</td><td>{&amp;Tahoma8}&amp;Organización:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_PleaseEnterInfo</td><td>1033</td><td>{&amp;Tahoma8}Indiquez les informations demandées.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_PleaseEnterInfo</td><td>1034</td><td>{&amp;Tahoma8}Por favor, introduzca la información.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_SerialNumber</td><td>1033</td><td>&amp;Numéro de série :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_SerialNumber</td><td>1034</td><td>&amp;Número de serie:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_Tahoma50</td><td>1033</td><td>{50}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_Tahoma50</td><td>1034</td><td>{50}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_Tahoma80</td><td>1033</td><td>{80}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_Tahoma80</td><td>1034</td><td>{80}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_UserName</td><td>1033</td><td>{&amp;Tahoma8}Nom &amp;utilisateur:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsRegisterUserDlg_UserName</td><td>1034</td><td>{&amp;Tahoma8}Nombre de &amp;usuario:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsResumeDlg_ResumeSuspended</td><td>1033</td><td>{&amp;Tahoma8}L'InstallShield(R) Wizard terminera l'installation interrompue de [ProductName] sur votre ordinateur. Pour continuer, cliquez sur Suivant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsResumeDlg_ResumeSuspended</td><td>1034</td><td>{&amp;Tahoma8}InstallShield(R) Wizard acabará de realizar la instalación suspendida de [ProductName] en su equipo. Para continuar, haga clic en Siguiente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsResumeDlg_Resuming</td><td>1033</td><td>{&amp;TahomaBold10}Reprendre l'InstallShield Wizard de [ProductName]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsResumeDlg_Resuming</td><td>1034</td><td>{&amp;TahomaBold10}Continuando con [ProductName] - InstallShield Wizard</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsResumeDlg_WizardResume</td><td>1033</td><td>{&amp;Tahoma8}L'InstallShield(R) Wizard terminera l'installation de [ProductName] sur votre ordinateur. Pour continuer, cliquez sur Suivant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsResumeDlg_WizardResume</td><td>1034</td><td>{&amp;Tahoma8}InstallShield(R) Wizard acabará de realizar la instalación de [ProductName] en su equipo. Para continuar, haga clic en Siguiente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSelectDomainOrServer</td><td>1033</td><td>Sélectionner un domaine ou un serveur</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSelectDomainOrServer</td><td>1034</td><td>Seleccionar un servidor de dominio</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSelectDomainUserInstructions</td><td>1033</td><td>Sélectionnez le bouton ci-dessous pour spécifier des informations concernant un nouvel utilisateur qui sera créé au cours de l'installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSelectDomainUserInstructions</td><td>1034</td><td>Utilice los botones Examinar para seleccionar un dominio\servidor y un nombre de usuario.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupComplete_ShowMsiLog</td><td>1033</td><td>Afficher le journal de Windows Installer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupComplete_ShowMsiLog</td><td>1034</td><td>Mostrar el registro del instalador de Windows</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_13</td><td>1033</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_13</td><td>1034</td><td>{&amp;Tahoma8}</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_AllFeatures</td><td>1033</td><td>{&amp;Tahoma8}Permet d'installer toutes les fonctions du programme. (Besoins maximum en espace disque.)</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_AllFeatures</td><td>1034</td><td>{&amp;Tahoma8}Se instalarán todos los componentes del programa. (Necesita más espacio en disco).</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_ChooseFeatures</td><td>1033</td><td>{&amp;Tahoma8}Permet d'effectuer une installation sélective et de définir l'emplacement cible des fonctions choisies. S'adresse aux utilisateurs plus expérimentés.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_ChooseFeatures</td><td>1034</td><td>{&amp;Tahoma8}Elija los componentes del programa que desee instalar y la ubicación en que se instalarán. Recomendada para usuarios avanzados.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_ChooseSetupType</td><td>1033</td><td>{&amp;Tahoma8}Sélectionnez le type d'installation voulu.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_ChooseSetupType</td><td>1034</td><td>{&amp;Tahoma8}Elija el tipo de instalación que se adapte mejor a sus necesidades.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_Complete</td><td>1033</td><td>{&amp;MSSansBold8}Installatio&amp;n standard</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_Complete</td><td>1034</td><td>{&amp;MSSansBold8}Com&amp;pleta</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_Custom</td><td>1033</td><td>{&amp;MSSansBold8}Installation personnalisé&amp;e</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_Custom</td><td>1034</td><td>{&amp;MSSansBold8}Personali&amp;zada</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_Minimal</td><td>1033</td><td>{&amp;MSSansBold8}&amp;Minimal</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_Minimal</td><td>1034</td><td>{&amp;MSSansBold8}&amp;Mínima</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_MinimumFeatures</td><td>1033</td><td>{&amp;Tahoma8}Les fonctionnalités minimales requises seront installées</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_MinimumFeatures</td><td>1034</td><td>{&amp;Tahoma8}Se instalarán los componentes mínimos requeridos</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_SelectSetupType</td><td>1033</td><td>{&amp;Tahoma8}Veuillez sélectionner un type d'installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_SelectSetupType</td><td>1034</td><td>{&amp;Tahoma8}Seleccione un tipo de instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_SetupType</td><td>1033</td><td>{&amp;MSSansBold8}Type d'installation</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_SetupType</td><td>1034</td><td>{&amp;MSSansBold8}Tipo de instalación</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_Typical</td><td>1033</td><td>{&amp;MSSansBold8}Par &amp;défaut</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsSetupTypeMinDlg_Typical</td><td>1034</td><td>{&amp;MSSansBold8}&amp;Típica</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsUserExit_ClickFinish</td><td>1033</td><td>{&amp;Tahoma8}Cliquez sur Terminer pour quitter l'assistant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsUserExit_ClickFinish</td><td>1034</td><td>{&amp;Tahoma8}Haga clic en Finalizar para salir del asistente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsUserExit_Finish</td><td>1033</td><td>{&amp;Tahoma8}&amp;Terminer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsUserExit_Finish</td><td>1034</td><td>{&amp;Tahoma8}&amp;Finalizar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsUserExit_KeepOrRestore</td><td>1033</td><td>{&amp;Tahoma8}Vous pouvez conserver les éléments installés existant sur votre système pour poursuivre l'installation ultérieurement ou restaurer l'état de votre système avant l'installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsUserExit_KeepOrRestore</td><td>1034</td><td>{&amp;Tahoma8}Puede guardar todos los elementos instalados en el sistema para continuar la instalación en otra ocasión o restaurar el sistema a su estado original anterior a la instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsUserExit_NotModified</td><td>1033</td><td>{&amp;Tahoma8}Aucune modification n'a été apportée sur le système. Pour installer ce programme ultérieurement, veuillez relancer l'installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsUserExit_NotModified</td><td>1034</td><td>{&amp;Tahoma8}Su sistema no ha sido modificado. Para instalar este programa en otra ocasión, vuelva a ejecutar el programa de instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsUserExit_RestoreOrContinue</td><td>1033</td><td>{&amp;Tahoma8}Cliquez sur Restaurer ou sur Poursuivre ultérieurement pour quitter l'assistant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsUserExit_RestoreOrContinue</td><td>1034</td><td>{&amp;Tahoma8}Haga clic en Restaurar o Continuar posteriormente para salir del Asistente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsUserExit_WizardCompleted</td><td>1033</td><td>{&amp;TahomaBold10}InstallShield Wizard terminé</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsUserExit_WizardCompleted</td><td>1034</td><td>{&amp;TahomaBold10}[ProductName] Finalizado - InstallShield Wizard</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsUserExit_WizardInterrupted</td><td>1033</td><td>{&amp;Tahoma8}L'assistant a été interrompu avant la fin de l'installation de [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsUserExit_WizardInterrupted</td><td>1034</td><td>{&amp;Tahoma8}El asistente se ha interrumpido antes de completar la instalación de [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsUserNameLabel</td><td>1033</td><td>Nom &amp;utilisateur :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsUserNameLabel</td><td>1034</td><td>Nombre de &amp;usuario:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_BackOrCancel</td><td>1033</td><td>{&amp;Tahoma8}Pour vérifier les paramètres d'installation ou les modifier, cliquez sur Précédent. Pour quitter l'assistant sans installer le programme, cliquez sur Annuler.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_BackOrCancel</td><td>1034</td><td>{&amp;Tahoma8}Si desea revisar la configuración de la instalación o realizar algún cambio, haga clic en Atrás. Haga clic en Cancelar para salir del Asistente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_ClickInstall</td><td>1033</td><td>{&amp;Tahoma8}Cliquez sur Installer pour commencer l'installation.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_ClickInstall</td><td>1034</td><td>{&amp;Tahoma8}Haga clic en Instalar para comenzar la instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_Company</td><td>1033</td><td>Société: [COMPANYNAME]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_Company</td><td>1034</td><td>Organización: [COMPANYNAME]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_CurrentSettings</td><td>1033</td><td>Configuration actuelle:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_CurrentSettings</td><td>1034</td><td>Configuración actual:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_DestFolder</td><td>1033</td><td>Dossier cible :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_DestFolder</td><td>1034</td><td>Carpeta de destino:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_Install</td><td>1033</td><td>{&amp;Tahoma8}&amp;Installer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_Install</td><td>1034</td><td>{&amp;Tahoma8}&amp;Instalar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_Installdir</td><td>1033</td><td>[INSTALLDIR]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_Installdir</td><td>1034</td><td>[INSTALLDIR]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_ModifyReady</td><td>1033</td><td>{&amp;MSSansBold8}La modification du programme peut commencer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_ModifyReady</td><td>1034</td><td>{&amp;MSSansBold8}Preparado para modificar el programa</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_ReadyInstall</td><td>1033</td><td>{&amp;MSSansBold8}L'installation du programme peut commencer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_ReadyInstall</td><td>1034</td><td>{&amp;MSSansBold8}Preparado para instalar el programa</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_ReadyRepair</td><td>1033</td><td>{&amp;MSSansBold8}La réparation du programme peut commencer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_ReadyRepair</td><td>1034</td><td>{&amp;MSSansBold8}Preparado para reparar el programa</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_SelectedSetupType</td><td>1033</td><td>[SelectedSetupType]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_SelectedSetupType</td><td>1034</td><td>[SelectedSetupType]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_Serial</td><td>1033</td><td>Numéro de série : [ISX_SERIALNUM]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_Serial</td><td>1034</td><td>Número de serie: [ISX_SERIALNUM]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_SetupType</td><td>1033</td><td>Type d'installation :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_SetupType</td><td>1034</td><td>Tipo de instalación:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_UserInfo</td><td>1033</td><td>Informations utilisateur :</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_UserInfo</td><td>1034</td><td>Información del usuario:</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_UserName</td><td>1033</td><td>Nom: [USERNAME]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_UserName</td><td>1034</td><td>Nombre: [USERNAME]</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_WizardReady</td><td>1033</td><td>{&amp;Tahoma8}Toutes les informations nécessaires à l'installation sont réunies.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyReadyDlg_WizardReady</td><td>1034</td><td>{&amp;Tahoma8}El Asistente está preparado para comenzar la instalación.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyRemoveAllDlg_ChoseRemoveProgram</td><td>1033</td><td>{&amp;Tahoma8}Vous avez choisi de supprimer le programme de votre système.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyRemoveAllDlg_ChoseRemoveProgram</td><td>1034</td><td>{&amp;Tahoma8}Ha elegido eliminar el programa del sistema.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyRemoveAllDlg_ClickBack</td><td>1033</td><td>{&amp;Tahoma8}Pour vérifier les paramètres ou les modifier, cliquez sur Précédent.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyRemoveAllDlg_ClickBack</td><td>1034</td><td>{&amp;Tahoma8}Si desea revisar la configuración o realizar algún cambio, haga clic en Atrás.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyRemoveAllDlg_ClickRemove</td><td>1033</td><td>{&amp;Tahoma8}Cliquez sur Supprimer pour supprimer [ProductName] de votre ordinateur. Après la suppression, ce programme ne sera plus disponible.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyRemoveAllDlg_ClickRemove</td><td>1034</td><td>{&amp;Tahoma8}Haga clic en Eliminar para eliminar [ProductName] de su equipo. Una vez que se haya eliminado, este programa no estará disponible para su uso.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyRemoveAllDlg_Remove</td><td>1033</td><td>{&amp;Tahoma8}&amp;Supprimer</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyRemoveAllDlg_Remove</td><td>1034</td><td>{&amp;Tahoma8}&amp;Eliminar</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyRemoveAllDlg_RemoveProgram</td><td>1033</td><td>{&amp;MSSansBold8}Suppression du programme</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsVerifyRemoveAllDlg_RemoveProgram</td><td>1034</td><td>{&amp;MSSansBold8}Eliminar el programa</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsWelcomeDlg_InstallProductName</td><td>1033</td><td>{&amp;Tahoma8}L'InstallShield(R) Wizard va installer [ProductName] sur votre système. Pour continuer, cliquez sur Suivant.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsWelcomeDlg_InstallProductName</td><td>1034</td><td>{&amp;Tahoma8}InstallShield(R) Wizard instalará [ProductName] en su equipo. Para continuar, haga clic en Siguiente.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsWelcomeDlg_WarningCopyright</td><td>1033</td><td>ATTENTION : Ce programme est protégé par la loi du copyright et les conventions internationales.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsWelcomeDlg_WarningCopyright</td><td>1034</td><td>ADVERTENCIA: Este programa está protegido por las leyes de derechos de autor y otros tratados internacionales.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsWelcomeDlg_WelcomeProductName</td><td>1033</td><td>{&amp;TahomaBold10}Bienvenue dans l'InstallShield Wizard pour [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__IsWelcomeDlg_WelcomeProductName</td><td>1034</td><td>{&amp;TahomaBold10}Bienvenido a [ProductName] - InstallShield Wizard</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__TargetReq_DESC_COLOR</td><td>1033</td><td>Les paramètres couleur de votre système ne sont pas corrects pour exécuter [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__TargetReq_DESC_COLOR</td><td>1034</td><td>La configuración de colores del sistema no es la adecuada para ejecutar [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__TargetReq_DESC_OS</td><td>1033</td><td>Le système d'exploitation n'est pas correct pour exécuter [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__TargetReq_DESC_OS</td><td>1034</td><td>El sistema operativo no es el adecuado para ejecutar [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1033</td><td>Le processeur n'est pas correct pour exécuter [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1034</td><td>El procesador no es el adecuado para ejecutar [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>Le taux RAM n'est pas correct pour exécuter [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__TargetReq_DESC_RAM</td><td>1034</td><td>La cantidad de RAM no es la adecuada para ejecutar [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>La résolution de l'écran n'est pas correcte pour exécuter [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1034</td><td>La resolución de pantalla no es la adecuada para ejecutar [ProductName].</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>http://www.TheKiller.com</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>ID_STRING1</td><td>1034</td><td>http://www.Compañia.com</td><td>0</td><td/><td>1696758135</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>Compañia</td><td>0</td><td/><td>1696758135</td></row>
+		<row><td>ID_STRING2</td><td>1034</td><td>TheKiller</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>ID_STRING3</td><td>1033</td><td>PASSWO~1|Password Manager</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>ID_STRING3</td><td>1034</td><td>PASSWO~1|Password Manager</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>ID_STRING4</td><td>1033</td><td>PASSWO~1|Password Manager</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>ID_STRING4</td><td>1034</td><td>PASSWO~1|Password Manager</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>La fonction ne sera pas installée.</td><td>0</td><td/><td>1696729303</td></row>
+		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1034</td><td>Este componente no se instalará.</td><td>0</td><td/><td>1696729303</td></row>
 	</table>
 
 	<table name="ISSwidtagProperty">
 		<col key="yes" def="s72">Name</col>
 		<col def="s0">Value</col>
-		<row><td>UniqueId</td><td>B9AAC4C0-AF2A-4A75-8725-F53638A039F7</td></row>
+		<row><td>UniqueId</td><td>589E3F5E-8EA8-4258-B200-587934A5B670</td></row>
 	</table>
 
 	<table name="ISTargetImage">
@@ -3881,9 +4981,9 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I2">ISIconIndex</col>
 		<row><td>ARPPRODUCTICON.exe</td><td/><td>C:\Users\TheKillero001\Downloads\icon Instalador.ico</td><td>0</td></row>
-		<row><td>NewShortcut1_1A23D0C394404DD493C938028B84F638.exe</td><td/><td>C:\Users\TheKillero001\Downloads\icon Instalador.ico</td><td>0</td></row>
-		<row><td>NewShortcut2_62274A304ED64B75BF203004FF22CB3E.exe</td><td/><td>C:\Users\TheKillero001\Downloads\icon Instalador.ico</td><td>0</td></row>
-		<row><td>UNINST_Uninstall_P_0521B0D35338480291435D52FA35F825.exe</td><td/><td>C:\Program Files (x86)\InstallShield\2013LE\Redist\Language Independent\OS Independent\uninstall.ico</td><td>0</td></row>
+		<row><td>NewShortcut1_2DA567E174794E9F8C1E56E9D2AC80E3.exe</td><td/><td>C:\Users\TheKillero001\Downloads\icon Instalador.ico</td><td>0</td></row>
+		<row><td>NewShortcut2_7AD9F867317B4173A76A120973D186E0.exe</td><td/><td>C:\Users\TheKillero001\Downloads\icon Instalador.ico</td><td>0</td></row>
+		<row><td>UNINST_Uninstall_S_848C8572799542AB8C50A380E698A503.exe</td><td/><td>C:\Program Files (x86)\InstallShield\2013LE\Redist\Language Independent\OS Independent\uninstall.ico</td><td>0</td></row>
 	</table>
 
 	<table name="IniFile">
@@ -4014,9 +5114,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISCompilerOption_WarningLevel</td><td>3</td></row>
 		<row><td>ISCompilerOption_WarningsAsErrors</td><td>1</td></row>
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
-		<row><td>ISUSLock</td><td>{0E7D0251-A2B1-4CB6-ABD9-22249E37700D}</td></row>
-		<row><td>ISUSSignature</td><td>{52B312CB-3AC9-4FFD-82EF-AAD25ECB2037}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewISToday,viewProject,viewUpdateService,viewSetupDesign,viewShortcuts,viewUI,viewAppFiles,viewAppV</td></row>
+		<row><td>ISUSLock</td><td>{D842C53D-CDD3-4112-ADA0-32765AA7CD8E}</td></row>
+		<row><td>ISUSSignature</td><td>{5E6FF37D-C0EE-4371-A420-BCC1752325B5}</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewShortcuts,viewISToday,viewProject,viewUI</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4030,6 +5130,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>SccPath</td><td/></row>
 		<row><td>SchemaVersion</td><td>774</td></row>
 		<row><td>Type</td><td>MSIE</td></row>
+		<row><td>VSSccAuxPath</td><td/></row>
+		<row><td>VSSccLocalPath</td><td/></row>
+		<row><td>VSSccProvider</td><td/></row>
 	</table>
 
 	<table name="InstallUISequence">
@@ -4332,7 +5435,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>AgreeToLicense</td><td>No</td><td/></row>
 		<row><td>ApplicationUsers</td><td>AllUsers</td><td/></row>
 		<row><td>DWUSINTERVAL</td><td>30</td><td/></row>
-		<row><td>DWUSLINK</td><td>CEFCE0D8B9BC97E8F9ACB0B8DE2C978F9EECB08F59AB8778CE9BA0E8AE6C978899FC97BFF9AC</td><td/></row>
+		<row><td>DWUSLINK</td><td>CEBB40AF89FCF7CFCEAC97C8DECB978FEECCA78FCEABA08FCEBB80C8BE8CD0B88EBB8028C9AC</td><td/></row>
 		<row><td>DefaultUIFont</td><td>ExpressDefault</td><td/></row>
 		<row><td>DialogCaption</td><td>InstallShield for Windows Installer</td><td/></row>
 		<row><td>DiskPrompt</td><td>[1]</td><td/></row>
@@ -4365,6 +5468,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>IS_SQLSERVER_USERNAME</td><td>sa</td><td/></row>
 		<row><td>InstallChoice</td><td>AR</td><td/></row>
 		<row><td>LAUNCHPROGRAM</td><td>1</td><td/></row>
+		<row><td>LAUNCHPROGRAMCOMPCODE</td><td>{4FF91D62-B708-48B0-8083-394B3306D186}</td><td/></row>
+		<row><td>LAUNCHPROGRAMFILEKEY</td><td>passwordmanager.resultado_pr</td><td/></row>
 		<row><td>LAUNCHREADME</td><td>1</td><td/></row>
 		<row><td>Manufacturer</td><td>##COMPANY_NAME##</td><td/></row>
 		<row><td>PIDKEY</td><td/><td/></row>
@@ -4392,8 +5497,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKAPPPOOLS</td><td>##IDS_PROGMSG_IIS_ROLLBACKAPPPOOLS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKVROOTS</td><td>##IDS_PROGMSG_IIS_ROLLBACKVROOTS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
-		<row><td>ProductCode</td><td>{A32DC09D-82DB-44B6-8E40-20F961C3119B}</td><td/></row>
-		<row><td>ProductName</td><td>Password Manager</td><td/></row>
+		<row><td>PROGRAMFILETOLAUNCHATEND</td><td>[INSTALLDIR]PasswordManager.Resultado principal</td><td/></row>
+		<row><td>ProductCode</td><td>{067E962F-763E-4B0F-A324-A29EAA6A369D}</td><td/></row>
+		<row><td>ProductName</td><td>Setup</td><td/></row>
 		<row><td>ProductVersion</td><td>1.00.0000</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
@@ -4406,10 +5512,11 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>RestartManagerOption</td><td>CloseRestart</td><td/></row>
 		<row><td>SERIALNUMBER</td><td/><td/></row>
 		<row><td>SERIALNUMVALSUCCESSRETVAL</td><td>1</td><td/></row>
-		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR;DOTNETVERSION35SP1;DOTNETVERSION35;DOTNETVERSION45FULL</td><td/></row>
+		<row><td>SHOWLAUNCHPROGRAM</td><td>-1</td><td/></row>
+		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR;DOTNETVERSION35;DOTNETVERSION35SP1;DOTNETVERSION45FULL</td><td/></row>
 		<row><td>SelectedSetupType</td><td>##IDS__DisplayName_Typical##</td><td/></row>
 		<row><td>SetupType</td><td>Typical</td><td/></row>
-		<row><td>UpgradeCode</td><td>{82949AB3-A143-4F3F-8CF3-0BCEBCD4CD41}</td><td/></row>
+		<row><td>UpgradeCode</td><td>{685C9130-E29F-4454-9F03-4743A201E21B}</td><td/></row>
 		<row><td>_IsMaintenance</td><td>Change</td><td/></row>
 		<row><td>_IsSetupTypeMin</td><td>Typical</td><td/></row>
 	</table>
@@ -4472,8 +5579,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L255">FileName</col>
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
-		<row><td>NewShortcut1</td><td>PasswordManager.Resultado_principal</td><td/><td>password_manager</td><td>2</td></row>
-		<row><td>UNINST_Uninstall_Password_Manager</td><td>NewComponent1</td><td/><td>password_manager</td><td>2</td></row>
+		<row><td>NewShortcut1</td><td>PasswordManager.Resultado_principal</td><td/><td>setup</td><td>2</td></row>
+		<row><td>UNINST_Uninstall_Setup</td><td>NewComponent1</td><td/><td>setup</td><td>2</td></row>
 	</table>
 
 	<table name="RemoveIniFile">
@@ -4559,9 +5666,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>NewShortcut1</td><td>password_manager</td><td>##ID_STRING5##</td><td>PasswordManager.Resultado_principal</td><td>AlwaysInstall</td><td/><td/><td/><td>NewShortcut1_1A23D0C394404DD493C938028B84F638.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>NewShortcut2</td><td>DesktopFolder</td><td>##ID_STRING6##</td><td>PasswordManager.Resultado_principal</td><td>AlwaysInstall</td><td/><td/><td/><td>NewShortcut2_62274A304ED64B75BF203004FF22CB3E.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>UNINST_Uninstall_Password_Manager</td><td>password_manager</td><td>UNINST|Uninstall Password Manager</td><td>NewComponent1</td><td>[SystemFolder]msiexec.exe</td><td>/x {A32DC09D-82DB-44B6-8E40-20F961C3119B}</td><td/><td/><td>UNINST_Uninstall_P_0521B0D35338480291435D52FA35F825.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>NewShortcut1</td><td>setup</td><td>##ID_STRING3##</td><td>PasswordManager.Resultado_principal</td><td>AlwaysInstall</td><td/><td/><td/><td>NewShortcut1_2DA567E174794E9F8C1E56E9D2AC80E3.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>NewShortcut2</td><td>DesktopFolder</td><td>##ID_STRING4##</td><td>PasswordManager.Resultado_principal</td><td>AlwaysInstall</td><td/><td/><td/><td>NewShortcut2_7AD9F867317B4173A76A120973D186E0.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>UNINST_Uninstall_Setup</td><td>setup</td><td>UNINST|Uninstall Setup</td><td>NewComponent1</td><td>[SystemFolder]msiexec.exe</td><td>/x {067E962F-763E-4B0F-A324-A29EAA6A369D}</td><td/><td/><td>UNINST_Uninstall_S_848C8572799542AB8C50A380E698A503.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">

@@ -45,6 +45,9 @@ namespace PasswordManager.Algoritmo_Encriptacion
                 server.Send(mnsj);
 
                 return 1;
+            }catch(FormatException fe){
+                Console.WriteLine("FE envia correo"+fe.Message);
+                return 2;
             }
             catch (Exception e)
             {

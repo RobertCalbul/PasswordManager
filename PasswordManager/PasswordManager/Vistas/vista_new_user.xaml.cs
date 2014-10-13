@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PasswordManager.Algoritmo_Encriptacion;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,6 +27,10 @@ namespace PasswordManager.Vistas
         {
             InitializeComponent();
             this.main = main;
+
+            Placeholder.SetText(this.txt_username, "E-Mail");
+            Placeholder.SetText(this.txt_password, "Password");
+            Placeholder.SetText(this.txt_repassword, "Repita Password");
         }
 
         private void btn_registrar_MouseDown(object sender, MouseButtonEventArgs e)
@@ -36,23 +41,36 @@ namespace PasswordManager.Vistas
             Login login = new Login(username, password);
             controller_login c_login = new controller_login();
 
-            if (equal_passsword)
-            {                
-                if (c_login.agregar(login) > 0)
+            if (validar_campos() == true)
+            {
+                if (equal_passsword)
                 {
-                    this.main.grid_body.Children.Clear();
-                    this.main.grid_body.Children.Add(new Vistas.vista_login(this.main));
+                    if (c_login.agregar(login) > 0)
+                    {
+                        this.main.grid_body.Children.Clear();
+                        this.main.grid_body.Children.Add(new Vistas.vista_login(this.main));
+                    }
+                    else
+                    {
+                        new Vistas.dialogo(this.main, "El usuario ya se encuentra registrado.").ShowDialog();
+                    }
                 }
                 else
                 {
-                    new Vistas.dialogo(this.main, "El usuario ya se encuentra registrado.").ShowDialog();
+                    new Vistas.dialogo(this.main, "Las contraseñas no considen.").ShowDialog();
                 }
-            }
-            else {
-                new Vistas.dialogo(this.main, "Las contraseñas no considen.").ShowDialog();
+            } else
+            {
+                new Vistas.dialogo(this.main, "Uno o mas campos estan vacios.").ShowDialog();
+
             }
         }
 
+        public Boolean validar_campos() {
+            Boolean ok = false;
+            ok = !string.IsNullOrEmpty(this.txt_username.Text) && !string.IsNullOrEmpty(this.txt_password.Password) && !string.IsNullOrEmpty(this.txt_repassword.Password) ? true : false;
+            return ok;
+        }
         private void btn_back_MouseDown(object sender, MouseButtonEventArgs e)
         {
             this.main.grid_body.Children.Clear();
