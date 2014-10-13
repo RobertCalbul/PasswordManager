@@ -16,8 +16,8 @@ namespace PasswordManager
         {
             // create a new database connection:  Version=3;New=False;Compress=True;
             try
-            {  
-                sqlite_conn = new SQLiteConnection(@"Data Source=C:\\PasswordManager\\database.db;Version=3;New=False;Compress=True;");
+            {
+                sqlite_conn = new SQLiteConnection(@"Data Source=C:\PasswordManager\database.db;Version=3;New=False;Compress=True;");
                 return sqlite_conn;
             }
             catch (Exception e) {
@@ -28,7 +28,7 @@ namespace PasswordManager
         }
 
         public void copyBD() {
-            System.IO.Directory.CreateDirectory(@"C:\PasswordManager");
+
             string fileName = "database.db";
             string sourcePath = @"C:\Program Files (x86)\TheKiller\Setup\";
             string targetPath = @"C:\PasswordManager";
@@ -48,7 +48,11 @@ namespace PasswordManager
                 {
                     System.IO.Directory.CreateDirectory(targetPath);
                 }
-                System.IO.File.Copy(sourceFile, destFile, true);
+                if (!System.IO.File.Exists(destFile))
+                {
+                    MessageBox.Show("NO EXISTE");
+                    System.IO.File.Copy(sourceFile, destFile, true);
+                }
             }
             catch (Exception e) {
                 Console.WriteLine("Error conexion_sqlite.copyDB(): "+e.Message);
