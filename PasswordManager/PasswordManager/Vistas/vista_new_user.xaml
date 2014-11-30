@@ -26,7 +26,7 @@
             <ColumnDefinition Width="28*"/>
         </Grid.ColumnDefinitions>
         <TextBox x:Name="txt_username" Grid.Column="1" Margin="3" Grid.Row="2" TextWrapping="Wrap" Padding="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Futura LT" BorderThickness="0" Grid.ColumnSpan="2"/>
-        <Label x:Name="btn_registrar" Content="Registrar" Grid.Column="1" Margin="3" Grid.Row="6" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FFE3005A" Foreground="White" FontFamily="Futura LT" MouseDown="btn_registrar_MouseDown" Grid.ColumnSpan="2"/>
+        <Label x:Name="btn_registrar" Content="Registrar" Grid.Column="1" Margin="3" Grid.Row="6" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FFF50057" Foreground="White" FontFamily="Futura LT" MouseDown="btn_registrar_MouseDown" Grid.ColumnSpan="2"/>
         <PasswordBox x:Name="txt_password" Grid.Column="1" Margin="3" Grid.Row="3" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" BorderThickness="0" Grid.ColumnSpan="2" FontFamily="Futura LT"/>
         <PasswordBox x:Name="txt_repassword" Grid.Column="1" Margin="3" Grid.Row="4" BorderThickness="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="2" KeyUp="txt_repassword_KeyUp" FontFamily="Futura LT"/>
         <Image x:Name="btn_back" Grid.Column="2" Margin="0" Grid.Row="1" Source="/PasswordManager;component/src/back.png" MouseDown="btn_back_MouseDown"/>

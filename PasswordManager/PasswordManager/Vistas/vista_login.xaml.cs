@@ -39,8 +39,7 @@ namespace PasswordManager.Vistas
         Huan.WhiteDwarf.UI.Placeholder.SetText(TextBoxName, PlaceholderText);*/
         }
 
-        private void btn_login_MouseDown(object sender, MouseButtonEventArgs e)
-        {
+        private void LogIn(){
             String username = this.txt_username.Text.Trim();
             String password = this.txt_password.Password.Trim();
 
@@ -54,10 +53,15 @@ namespace PasswordManager.Vistas
                 this.main.grid_body.Children.Clear();
                 this.main.grid_body.Children.Add(new Vistas.vista_manager(this.main));
             }
-            else {
+            else
+            {
                 this.main.session = 0;
-                new Vistas.dialogo(this.main, "Revise el usuario o password.").ShowDialog(); 
+                new Vistas.dialogo(this.main, "Revise el usuario o password.").ShowDialog();
             }
+        }
+        private void btn_login_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            LogIn();
         }
 
         private void link_recuperar_pass_MouseDown(object sender, MouseButtonEventArgs e)
@@ -70,6 +74,14 @@ namespace PasswordManager.Vistas
         {
             this.main.grid_body.Children.Clear();
             this.main.grid_body.Children.Add(new Vistas.vista_new_user(this.main));
+        }
+
+        private void UserControl_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                LogIn();
+            }
         }
 
     }

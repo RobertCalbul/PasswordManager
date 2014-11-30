@@ -27,7 +27,7 @@
         <TextBox x:Name="txt_username" Grid.Column="1" Margin="3" Grid.Row="1" TextWrapping="Wrap" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Futura LT" BorderThickness="0" Opacity="0.9"/>
         <TextBox x:Name="txt_password" Grid.Column="2" Margin="3" Grid.Row="1" TextWrapping="Wrap" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Futura LT" BorderThickness="0" Opacity="0.9"/>
         <TextBox x:Name="txt_url" Grid.Column="3" Margin="3" Grid.Row="1" TextWrapping="Wrap" FontFamily="Futura LT" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" BorderThickness="0" Opacity="0.9"/>
-        <Label x:Name="btn_agregar_item" Content="Agregar" Grid.Column="3" Margin="3" Grid.Row="2" Foreground="White" Background="#FFE3005A" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Futura LT" MouseDown="btn_agregar_item_MouseDown"/>
+        <Label x:Name="btn_agregar_item" Content="Agregar" Grid.Column="3" Margin="3" Grid.Row="2" Foreground="White" Background="#FFF50057" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Futura LT" MouseDown="btn_agregar_item_MouseDown"/>
         <Image x:Name="btn_close_agregar_item" Grid.Column="2" Margin="5" Grid.Row="3" Source="/PasswordManager;component/src/arrow-up.png" MouseDown="btn_close_agregar_item_MouseDown"/>
     </Grid>
 

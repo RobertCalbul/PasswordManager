@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:src="clr-namespace:PasswordManager.Algoritmo_Encriptacion"
              mc:Ignorable="d" 
-             d:DesignHeight="500" d:DesignWidth="500">
+             d:DesignHeight="500" d:DesignWidth="500" KeyDown="UserControl_KeyDown">
     <Grid MinWidth="300" MinHeight="300">
         <Grid.RowDefinitions>
             <RowDefinition Height="14*"/>
@@ -23,7 +23,7 @@
             <ColumnDefinition Width="65*"/>
         </Grid.ColumnDefinitions>
         <TextBox x:Name="txt_username" Grid.Column="1" Margin="3" Grid.Row="2" TextWrapping="Wrap" Padding="1,8,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Futura LT" BorderThickness="0" Grid.ColumnSpan="2"/>
-        <Label x:Name="btn_login" Content="Login" Grid.Column="1" Margin="3" Grid.Row="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FFE3005A" Foreground="White" FontFamily="Futura LT" MouseDown="btn_login_MouseDown" Grid.ColumnSpan="2"/>
+        <Label x:Name="btn_login" Content="Login" Grid.Column="1" Margin="3" Grid.Row="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FFF50057" Foreground="White" FontFamily="Futura LT" MouseDown="btn_login_MouseDown" Grid.ColumnSpan="2"/>
         <Label x:Name="link_recuperar_pass" Content="Recuperar Contraseña" Grid.Column="1" Margin="3,3,3,0" Grid.Row="4" FontFamily="Futura LT" Foreground="#FF3398DC" HorizontalContentAlignment="Center" MouseDown="link_recuperar_pass_MouseDown" VerticalAlignment="Top" Height="26" Grid.ColumnSpan="2"/>
         <PasswordBox x:Name="txt_password" Grid.Column="1" Margin="3" Grid.Row="3" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" BorderThickness="0" Grid.ColumnSpan="2" FontFamily="Futura LT"/>
         <Image x:Name="btn_nuevo_registro" Grid.Column="2" Margin="0" Grid.Row="1" Source="/PasswordManager;component/src/agregar.png" MouseDown="btn_nuevo_registro_MouseDown"/>

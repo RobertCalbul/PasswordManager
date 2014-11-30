@@ -96,5 +96,69 @@ namespace PasswordManager
                 return password;
             }  
         }
+
+        public int findById(Login login)
+        {
+            String passwordEncrypt = new Algoritmo_Encriptacion.Encriptacion().EncryptText(login.password);
+            //String passwordDecencrypt = new Algoritmo_Encriptacion.Encriptacion().DecryptText(passwordEncrypt, login.password);
+            try
+            {
+                using (SQLiteConnection c = new conexion_sqlite().getConection())
+                {
+                    c.Open();
+                    String sql = "SELECT id FROM LOGIN WHERE username ='" + login.username + "' AND password = '" + passwordEncrypt + "'";
+                    using (SQLiteCommand cmd = new SQLiteCommand(sql, c))
+                    {
+                        using (SQLiteDataReader rdr = cmd.ExecuteReader())
+                        {
+                            if (rdr.Read())
+                            {
+                                return 1;
+                            }
+                            else
+                            {
+                                return 0;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return 0;
+            }
+        }
+        public int ifExit(Login login)
+        {
+            String passwordEncrypt = new Algoritmo_Encriptacion.Encriptacion().EncryptText(login.password);
+            try
+            {
+                using (SQLiteConnection c = new conexion_sqlite().getConection())
+                {
+                    c.Open();
+                    String sql = "SELECT id FROM LOGIN WHERE id ='" + login.id + "' AND password = '" + passwordEncrypt + "'";
+                    using (SQLiteCommand cmd = new SQLiteCommand(sql, c))
+                    {
+                        using (SQLiteDataReader rdr = cmd.ExecuteReader())
+                        {
+                            if (rdr.Read())
+                            {
+                                return 1;
+                            }
+                            else
+                            {
+                                return 0;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return 0;
+            }
+        }
     }
 }

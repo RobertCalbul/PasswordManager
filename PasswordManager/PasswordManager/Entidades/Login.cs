@@ -22,6 +22,11 @@ namespace PasswordManager
         {
             this.username = username;
         }
+        public Login(int id, String password)
+        {
+            this.id = id;
+            this.password = password;
+        }
         public Login(int id, String username, String password)
         {
             this.id = id;

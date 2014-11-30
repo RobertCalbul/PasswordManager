@@ -12,7 +12,7 @@ namespace PasswordManager.Algoritmo_Encriptacion
     {
         public string EncryptText(string inputValue/*, string inputsalt*/)
         {
-            string salt = "test123455666666666" + "CLAVESTATICAGENERICA";// inputsalt;
+            string salt = "-*.-.*.-TESTprueba__:" + "CLAVESTATICAGENERICA";// inputsalt;
             byte[] utfData = UTF8Encoding.UTF8.GetBytes(inputValue);
             byte[] saltBytes = Encoding.UTF8.GetBytes(salt);
             string encryptedString = string.Empty;
@@ -44,7 +44,7 @@ namespace PasswordManager.Algoritmo_Encriptacion
 
         public string DecryptText(string inputValue/*, string inputsalt*/)
         {
-            string salt = "test123455666666666" + "CLAVESTATICAGENERICA";// inputsalt;
+            string salt = "-*.-.*.-TESTprueba__:" + "CLAVESTATICAGENERICA";// inputsalt;
             byte[] encryptedBytes = Convert.FromBase64String(inputValue);
             byte[] saltBytes = Encoding.UTF8.GetBytes(salt);
             string decryptedString = string.Empty;

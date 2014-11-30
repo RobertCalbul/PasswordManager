@@ -16,6 +16,10 @@ namespace PasswordManager
         public Manager() 
         { 
         }
+        public Manager(int id)
+        {
+            this.id = id;
+        }
         public Manager(String username, String password, String url, int login)
         {
             this.username = username;

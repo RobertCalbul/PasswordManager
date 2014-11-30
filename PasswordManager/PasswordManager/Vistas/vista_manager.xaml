@@ -19,15 +19,16 @@
             <ColumnDefinition Width="41*"/>
             <ColumnDefinition Width="229*"/>
             <ColumnDefinition Width="139*"/>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="39"/>
+            <ColumnDefinition Width="15"/>
+            <ColumnDefinition Width="37*"/>
         </Grid.ColumnDefinitions>
         <Image x:Name="btn_cambia_usuario" Margin="0" Grid.Row="1" Grid.Column="3" Source="/PasswordManager;component/src/cambio_user.png" MouseDown="btn_cambia_usuario_MouseDown"/>
-        <Grid x:Name="grid_datos" Grid.Column="1" Margin="0" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="3"/>
+        <Grid x:Name="grid_datos" Grid.Column="1" Margin="0" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="4"/>
 
-        <Label x:Name="btn_agregar_nuevo_item" Content="Agregar Nuevo Item" Grid.Column="1" Margin="3" Grid.Row="4" Background="#FFE3005A" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MouseDown="btn_agregar_nuevo_item_MouseDown" Grid.ColumnSpan="3" FontFamily="Futura LT"/>
-        <Label x:Name="btn_mostrar_password" Content="Mostrar Contraseñas" Grid.Column="2" Margin="3" Grid.Row="1" Background="#FFE3005A" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MouseDown="btn_mostrar_password_MouseDown" FontFamily="Futura LT"/>
-        <Grid x:Name="grid_agregar_items" RenderTransformOrigin="3.146,3.833" Grid.RowSpan="3" Grid.ColumnSpan="5" Panel.ZIndex="1" >
+        <Label x:Name="btn_agregar_nuevo_item" Content="Agregar Nuevo Item" Grid.Column="1" Margin="3" Grid.Row="4" Background="#FFF50057" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MouseDown="btn_agregar_nuevo_item_MouseDown" Grid.ColumnSpan="4" FontFamily="Futura LT"/>
+        <Label x:Name="btn_mostrar_password" Content="Mostrar Contraseñas" Grid.Column="2" Margin="3" Grid.Row="1" Background="#FFF50057" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MouseDown="btn_mostrar_password_MouseDown" FontFamily="Futura LT"/>
+        <Grid x:Name="grid_agregar_items" RenderTransformOrigin="3.146,3.833" Grid.RowSpan="3" Grid.ColumnSpan="6" Panel.ZIndex="1" >
         </Grid>
     </Grid>
 </UserControl>
