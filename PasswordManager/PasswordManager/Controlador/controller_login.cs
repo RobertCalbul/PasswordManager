@@ -21,7 +21,7 @@ namespace PasswordManager
                 using (SQLiteConnection c = new conexion_sqlite().getConection())
                 {
                     c.Open();
-                    String sql = "INSERT OR IGNORE INTO LOGIN (username, password) values ('" + login.username + "','" + password + "')";
+                    String sql = "INSERT INTO LOGIN (username, password) values ('" + login.username + "','" + password + "')";
                     using (SQLiteCommand cmd = new SQLiteCommand(sql, c))
                     {
                         return cmd.ExecuteNonQuery();
@@ -129,6 +129,7 @@ namespace PasswordManager
                 return 0;
             }
         }
+
         public int ifExit(Login login)
         {
             String passwordEncrypt = new Algoritmo_Encriptacion.Encriptacion().EncryptText(login.password);

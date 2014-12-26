@@ -47,6 +47,15 @@ namespace PasswordManager.Vistas
                 {
                     if (c_login.agregar(login) > 0)
                     {
+
+                        EnviaCorreo e_correo = new EnviaCorreo(username, password);
+
+                        switch (e_correo.send())
+                        {
+                            case 0: new Vistas.dialogo(this.main, "La password no se envio corectamente\n Porfavor reenvie el correo."); break;
+                            case 1: new Vistas.dialogo(this.main, "La password se envio a su correo correctamente.").ShowDialog(); break;
+                            case 2: new Vistas.dialogo(this.main, "Ingrese un correo valido.").ShowDialog(); break;
+                        }
                         this.main.grid_body.Children.Clear();
                         this.main.grid_body.Children.Add(new Vistas.vista_login(this.main));
                     }

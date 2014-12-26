@@ -218,18 +218,32 @@ namespace PasswordManager.Vistas
         }
         private void btn_delete(object sender, MouseButtonEventArgs e)
         {
-            String getId = ((Image)sender).Name.ToString().Substring(((Image)sender).Name.ToString().Length-5,5);
-            int id = Convert.ToInt32(getId);
-            Manager manager_ = new Manager(id);
-            controller_manager c_manager = new controller_manager();
-            if (c_manager.deleteById(manager_) > 0)
+            try
             {
-                new dialogo(this.main, "Se ha borrado correctamente.").ShowDialog();
-                load_data(this.mostrar_pass);
+                dialogo_pregunta d_pregunta = new dialogo_pregunta(this.main, "¿Desea borrar estos datos definitivamente?");
+                d_pregunta.ShowDialog();
+                if (d_pregunta.DialogResult == true)
+                {
+                    String getId = ((Image)sender).Name.ToString().Substring(((Image)sender).Name.ToString().Length - 5, 5);
+                    int id = Convert.ToInt32(getId);
+                    Manager manager_ = new Manager(id);
+                    controller_manager c_manager = new controller_manager();
+                    if (c_manager.deleteById(manager_) > 0)
+                    {
+                        new dialogo(this.main, "Se ha borrado correctamente.").ShowDialog();
+                        load_data(this.mostrar_pass);
+                    }
+                    else
+                    {
+                        new dialogo(this.main, "Ha ocurrido un error al borrar, porfavor intente nuevamente.").ShowDialog();
+                    }
+                }
             }
-            else { 
-                new dialogo(this.main, "Ha ocurrido un error al borrar, porfavor intente nuevamente.").ShowDialog();
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
+            
         }
 
         private void btn_edit(object sender, MouseButtonEventArgs e)

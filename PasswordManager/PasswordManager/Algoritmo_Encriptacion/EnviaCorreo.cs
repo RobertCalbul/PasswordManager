@@ -40,8 +40,8 @@ namespace PasswordManager.Algoritmo_Encriptacion
                 mnsj.To.Add(new MailAddress(this.to));
                 mnsj.From = new MailAddress(json.correo);
                 // mnsj.Attachments.Add(new Attachment("C:\\archivo.pdf"));
-
-                mnsj.Body = " Su contraseña es: "+this.password;
+                
+                mnsj.Body = "TUS DATOS:\n Usuario: "+this.to+"\ncontraseña: "+this.password;
                 server.Send(mnsj);
 
                 return 1;
